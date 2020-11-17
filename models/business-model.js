@@ -11,7 +11,7 @@ const businessSchema = new Schema(
       type: String, enum: ['Mode & Accessoires', 'Beauté & Soins','Maison','Vin & Gastronomie','Sport','Technologie','Jeux & Gadgets']
       },
     country: {
-        type: String,
+        type : Schema.Types.ObjectId, ref: 'Country', 
         trim: true,
         required: [true, 'Country is required.']
         //match : mettre une liste deroulante ou contrainte de 2 characters type FR

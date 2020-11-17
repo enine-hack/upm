@@ -55,11 +55,10 @@ const userSchema = new Schema(
           type : String,
         },
         country : {
-          // [{type : Schema.Types.ObjectId, ref: 'Countries'}]
-          type : String,
+          type :  Schema.Types.ObjectId, ref: 'Country',
         },
         nationality : {
-          type : String,
+          type :  Schema.Types.ObjectId, ref: 'Country',
         },
         mobileNumber : {
           type : String,
@@ -73,7 +72,22 @@ const userSchema = new Schema(
       }
     ],
 
-    favoritebrands: [{ type : Schema.Types.ObjectId, ref: 'Brand' }]
+    favoritebrands: [
+      {
+        brandname : { 
+          type : Schema.Types.ObjectId, ref: 'Brand'
+        },
+        notes : {
+          type : String
+        },
+        image : {
+          type : String
+        },
+        feedback : {
+          type : String
+      }
+      }
+    ]
   },
 
   {
