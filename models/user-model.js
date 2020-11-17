@@ -87,6 +87,34 @@ const userSchema = new Schema(
           type : String
       }
       }
+    ],
+
+    fidelityaccount: [
+      {
+        spencerlevel : { 
+          type : String
+        },
+        title : {
+          type : String
+        },
+        description : {
+          type : String
+        }
+      }
+    ],
+
+    purchaseHistory: [
+      {
+        dateofpurchase : { 
+          type : String
+        },
+        amount : {
+          type : String
+        },
+        uploadimage : {
+          type : String
+        }
+      }
     ]
   },
 
