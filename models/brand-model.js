@@ -8,7 +8,7 @@ const brandSchema = new Schema({
     websiteUrl: String,
     NewsUrl: String,
     coverImage : String,
-    shop : String,
+    shopUrl : String,
     ReturnPolicyUrl: String,
     },
     {
