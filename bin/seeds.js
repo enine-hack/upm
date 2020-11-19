@@ -30,10 +30,10 @@ var datas = [
     popularity: '2', 
     logoUrl: 'https://pbs.twimg.com/profile_images/531817357136498691/a_8f4Mj0.jpeg',
     websiteUrl: 'https://shop.andtradition.com/',
-    NewsUrl: 'https://shop.andtradition.com/collections/news',
+    newinUrl: 'https://shop.andtradition.com/collections/news',
     coverImage: 'https://wp.andtradition.com/wp-content/uploads/2019/03/ATD_front_cropped5-copy-1200x630.jpg',
     shopUrl: 'https://www.andtradition.com/stores',
-    ReturnPolicyUrl: 'https://shop.andtradition.com/policies/refund-policy'
+    returnPolicyUrl: 'https://shop.andtradition.com/policies/refund-policy'
     },
     {
     brandname: 'ABERCROMBIE & FITCH',
@@ -41,10 +41,10 @@ var datas = [
     popularity: '3', 
     logoUrl: 'https://www.myzeil.de/fileadmin/user_upload/GLOBAL/brand_stores/logos/abercrombieandfitch.jpg',
     websiteUrl: 'https://www.abercrombie.com/shop/eu-fr',
-    NewsUrl:'https://www.abercrombie.com/shop/eu-fr/homme-nouveaut%C3%A9s',
+    newinUrl:'https://www.abercrombie.com/shop/eu-fr/homme-nouveaut%C3%A9s',
     coverImage: 'https://assets2.mr-mag.com/wp-content/uploads/2018/07/Abercrombie_Denim_Fall_2018_28.jpg',
     shopUrl:'https://www.abercrombie.com/shop/StoreLocator?storeId=19159&catalogId=11556&langId=-2',
-    ReturnPolicyUrl:'https://www.abercrombie.com/shop/eu-fr/help/instore-return-exchange-policy'
+    returnPolicyUrl:'https://www.abercrombie.com/shop/eu-fr/help/instore-return-exchange-policy'
     },
     {
     brandname: 'ADEN + ANAIS',
@@ -52,10 +52,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://mma.prnewswire.com/media/995839/aden_anais_Logo.jpg?p=publish',
     websiteUrl: 'https://www.adenandanais.fr/',
-    NewsUrl:'https://www.adenandanais.fr/nouveautes/',
+    newinUrl:'https://www.adenandanais.fr/nouveautes/',
     coverImage:'https://www.preggiebaby.com/wp-content/uploads/2018/12/aden-anais-baby-swaddle-4pk-seafaring-3_2071.jpg',
     shopUrl: 'https://www.adenandanais.fr/storelocator',
-    ReturnPolicyUrl:'https://www.adenandanais.fr/shipping-returns'
+    returnPolicyUrl:'https://www.adenandanais.fr/shipping-returns'
     },
     {
     brandname: 'AESOP',
@@ -63,10 +63,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://assets.fontsinuse.com/static/use-media-items/92/91004/upto-700xauto/5d162bc1/Aesop.png?resolution=0',
     websiteUrl: 'https://www.aesop.com/',
-    NewsUrl: 'https://www.aesop.com/',
+    newinUrl: 'https://www.aesop.com/',
     coverImage: 'https://www.aesop.com/medias/Aesop-Emporium-II-Hero-Bleed-Desktop-2880x1620px.jpg?context=bWFzdGVyfGltYWdlc3w2ODY1NzJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDM5L2hlMi85MTA0MDkyNzU4MDQ2LmpwZ3w5ZjQ3ODcyOThjMGFhOTg0MGIwZjQ2MjliMGIzNGU0YTg2Yjk4NTU3MzllOTgzYTU1ZTA5ZDg1Y2FmNmRjMzM4',
     shopUrl: 'https://www.aesop.com/fr/fr/visit/?visitMenu=open',
-    ReturnPolicyUrl:'https://assistance.aesop.com/hc/fr-fr/articles/360001100755-Comment-puis-je-%C3%A9changer-des-produits-achet%C3%A9s-en-ligne-'
+    returnPolicyUrl:'https://assistance.aesop.com/hc/fr-fr/articles/360001100755-Comment-puis-je-%C3%A9changer-des-produits-achet%C3%A9s-en-ligne-'
     },
     {
     brandname: 'AIGLE',
@@ -74,10 +74,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://www.carlstahl-epi.fr/boutique/images_familles/aigle.png',
     websiteUrl: 'https://www.aigle.com/',
-    NewsUrl: 'https://www.aigle.com/fr/fr/nouveautes-femme',
+    newinUrl: 'https://www.aigle.com/fr/fr/nouveautes-femme',
     coverImage: 'https://i.pinimg.com/originals/31/90/1a/31901adc0f6d12a63d4ad1d0848d03f2.jpg',
     shopUrl: 'https://www.aigle.com/fr/fr/magasins-aigle',
-    ReturnPolicyUrl: 'https://www.aigle.com/fr/fr/returns.html#aide_6'
+    returnPolicyUrl: 'https://www.aigle.com/fr/fr/returns.html#aide_6'
     },
     {
     brandname: 'AMERICAN VINTAGE',
@@ -85,10 +85,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.urbansublime.com/wp-content/uploads/2015/03/logoAmericanVintage-1.jpg',
     websiteUrl: 'https://fr.americanvintage-store.com/fr/',
-    NewsUrl: 'https://fr.americanvintage-store.com/fr/nouvelle-collection-tous-produits-mixte#facet:&productBeginIndex:0&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&',
+    newinUrl: 'https://fr.americanvintage-store.com/fr/nouvelle-collection-tous-produits-mixte#facet:&productBeginIndex:0&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&',
     coverImage:'https://img.grouponcdn.com/seocms/iUW3D3QrD9wf5Xuz68Ewp6/American_Vintage-1389x900-1389x900.jpeg',
     shopUrl:'https://fr.americanvintage-store.com/fr/localisateur-de-magasins',
-    ReturnPolicyUrl: 'https://fr.americanvintage-store.com/fr/retours-fr'
+    returnPolicyUrl: 'https://fr.americanvintage-store.com/fr/retours-fr'
     },
     {
     brandname: 'ARMANI',
@@ -96,10 +96,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://journalduluxe.fr/wp-content/uploads/2017/05/armani-logo.jpg',
     websiteUrl: 'https://www.armani.com/',
-    NewsUrl: 'https://www.armani.com/fr/armanicom/giorgio-armani/homme/nouveautes-vetements',
+    newinUrl: 'https://www.armani.com/fr/armanicom/giorgio-armani/homme/nouveautes-vetements',
     coverImage: 'https://lesfacons.com/wp-content/uploads/2020/03/EMPORIO-ARMANI-SPRING-2020-CAMPAIGN-FILM.jpg',
     shopUrl:'https://www.armani.com/experience/fr/store-locator/',
-    ReturnPolicyUrl: 'https://www.armani.com/system/selfservice.controller?CONFIGURATION=2059&PARTITION_ID=1&CMD=BROWSE_TOPIC&LANGUAGE=fr&COUNTRY=fr&USERTYPE=1&TOPIC_ID=1023'
+    returnPolicyUrl: 'https://www.armani.com/system/selfservice.controller?CONFIGURATION=2059&PARTITION_ID=1&CMD=BROWSE_TOPIC&LANGUAGE=fr&COUNTRY=fr&USERTYPE=1&TOPIC_ID=1023'
     },
     {
     brandname: 'ANNICK GOUTAL',
@@ -107,10 +107,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://fimgs.net/mdimg/dizajneri/o.4.jpg',
     websiteUrl: 'https://www.goutalparis.com/',
-    NewsUrl: 'https://www.goutalparis.com/pages/le-temps-des-reves',
+    newinUrl: 'https://www.goutalparis.com/pages/le-temps-des-reves',
     coverImage: 'https://i.ytimg.com/vi/KInW4ALuEuM/maxresdefault.jpg',
     shopUrl: 'https://www.goutalparis.com/store-locator',
-    ReturnPolicyUrl: 'https://www.goutalparis.com/pages/livraison-et-retours#return-and-refund'
+    returnPolicyUrl: 'https://www.goutalparis.com/pages/livraison-et-retours#return-and-refund'
     },
     {
     brandname: 'BA&SH',
@@ -118,10 +118,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://i.pinimg.com/280x280_RS/16/56/49/1656492db14da85a73ef57d683aea3ff.jpg',
     websiteUrl: 'https://ba-sh.com/',
-    NewsUrl: 'https://ba-sh.com/fr/fr/nouveautes-2/',
+    newinUrl: 'https://ba-sh.com/fr/fr/nouveautes-2/',
     coverImage: 'https://ba-sh.com/on/demandware.static/-/Library-Sites-BashSharedLibrary/default/dw3ea09f29/SLIDER_DESKTOP_HShop.jpg',
     shopUrl: 'https://ba-sh.com/fr/fr/stores',
-    ReturnPolicyUrl: 'https://ba-sh.com/fr/fr/returns-refund-worldwide.html'
+    returnPolicyUrl: 'https://ba-sh.com/fr/fr/returns-refund-worldwide.html'
     },
     {
     brandname: 'BACCARAT',
@@ -129,10 +129,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://upload.wikimedia.org/wikipedia/fr/4/4e/LOGO-BACCARAT.jpg',
     websiteUrl: 'https://www.baccarat.fr/',
-    NewsUrl: 'https://www.baccarat.fr/fr/nouvelles-collections/',
+    newinUrl: 'https://www.baccarat.fr/fr/nouvelles-collections/',
     coverImage: 'https://jingdaily.com/wp-content/uploads/2019/04/BACCARAT-TAN-ZHUO.jpg',
     shopUrl: 'https://www.baccarat.fr/fr/points-vente/',
-    ReturnPolicyUrl: 'https://www.baccarat.fr/fr/service-client/#returns'
+    returnPolicyUrl: 'https://www.baccarat.fr/fr/service-client/#returns'
     },
     {
     brandname: 'BAGHERA',
@@ -140,10 +140,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'hhttps://i.pinimg.com/280x280_RS/f0/b8/0b/f0b80b317b44ab0d2294d1dbcd4efb18.jpg',
     websiteUrl: 'https://www.baghera.fr/',
-    NewsUrl: 'https://www.baghera.fr/99-voitures-a-pedales',
+    newinUrl: 'https://www.baghera.fr/99-voitures-a-pedales',
     coverImage: 'https://www.baghera.fr/modules/prestatemplatev2/page-builder/wp-content/uploads/Rosalie-porteur-Baghera.jpg',
     shopUrl: 'https://www.baghera.fr/magasins',
-    ReturnPolicyUrl: 'https://baebrow.com/pages/refund-policy'
+    returnPolicyUrl: 'https://baebrow.com/pages/refund-policy'
     },
     {
     brandname: 'BALENCIAGA',
@@ -151,10 +151,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2018/03/Logo-Balenciaga-1.jpg',
     websiteUrl: 'https://www.balenciaga.com/fr',
-    NewsUrl: 'https://www.balenciaga.com/fr/all/printemps-21-tout',
+    newinUrl: 'https://www.balenciaga.com/fr/all/printemps-21-tout',
     coverImage: 'https://theimpression.com/wp-content/uploads/2020/02/Balenciaga-instagram-campaign-Spring-2020-Pictures-the-impression-header-017-scaled.jpg',
     shopUrl: 'https://www.balenciaga.com/experience/fr/store-locator/',
-    ReturnPolicyUrl: 'https://www.balenciaga.com/customerservice/fr/#/returns/'
+    returnPolicyUrl: 'https://www.balenciaga.com/customerservice/fr/#/returns/'
     },
     {
     brandname: 'BALMAIN',
@@ -162,10 +162,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://www.olfastory.com/sites/www.olfastory.com/files/styles/400x400/public/balmain.jpg?itok=J3WPkBsM',
     websiteUrl: 'https://www.balmain.com/fr',
-    NewsUrl: 'https://www.balmainwatches.com/fr/collections/novelties-2020',
+    newinUrl: 'https://www.balmainwatches.com/fr/collections/novelties-2020',
     coverImage: 'https://www.balmain.com/assets/2019-11/19AW_SP_Cara-Balmain_CAMPAIGN_2501_RGB%5B1%5D.jpg',
     shopUrl: 'https://www.balmain.com/storelocator/fr/',
-    ReturnPolicyUrl: 'https://www.balmain.com/system/selfservice.controller?CONFIGURATION=2171&PARTITION_ID=1&CMD=BROWSE_TOPIC&LANGUAGE=fr&COUNTRY=fr&USERTYPE=1&TOPIC_ID=1023'
+    returnPolicyUrl: 'https://www.balmain.com/system/selfservice.controller?CONFIGURATION=2171&PARTITION_ID=1&CMD=BROWSE_TOPIC&LANGUAGE=fr&COUNTRY=fr&USERTYPE=1&TOPIC_ID=1023'
     },
     {
     brandname: 'BERENICE',
@@ -173,10 +173,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://www.justacote.com/photos_entreprises/boutique-berenice-hyeres-14067985620.jpg',
     websiteUrl: 'https://www.berenice.net/',
-    NewsUrl: 'https://berenice.net/fr/619-nouvelle-collection',
+    newinUrl: 'https://berenice.net/fr/619-nouvelle-collection',
     coverImage: 'https://medias.fashionnetwork.com/image/upload/v1/medias/1a4cd5c1d8c020e7d16ab0b9fb9bce4f2367013.jpg',
     shopUrl: 'https://www.berenice.net/fr/magasins',
-    ReturnPolicyUrl: 'https://berenice.net/fr/content/5-livraison'
+    returnPolicyUrl: 'https://berenice.net/fr/content/5-livraison'
     },
     {
     brandname: 'BOBBI BROWN',
@@ -184,10 +184,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5AjGeMQVDB9YDe7_tq41FbY3cxlH36zzlMA&usqp=CAU',
     websiteUrl: 'https://www.bobbibrowncosmetics.com/',
-    NewsUrl: 'https://www.bobbibrowncosmetics.com/products/14460/new',
+    newinUrl: 'https://www.bobbibrowncosmetics.com/products/14460/new',
     coverImage: 'https://www.tendaysinparis.com/wp-content/uploads/2019/05/BobbiBrown.ConfidentBeauty.Campaign.Launching.Party_.0028.jpg',
     shopUrl: 'https://www.bobbibrowncosmetics.fr/store_locator',
-    ReturnPolicyUrl: 'https://www.bobbibrowncosmetics.com/customer-service-returns#returns-instructions' 
+    returnPolicyUrl: 'https://www.bobbibrowncosmetics.com/customer-service-returns#returns-instructions' 
     },
     {
     brandname: 'BOBBIES',
@@ -195,10 +195,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.fanny-chaussures.com/blog/wp-content/uploads/bobbies-618x550.png',
     websiteUrl: 'https://www.bobbies.com/',
-    NewsUrl: 'https://www.bobbies.com/en/218101941-autumn-winter-2020-new-in',
+    newinUrl: 'https://www.bobbies.com/en/218101941-autumn-winter-2020-new-in',
     coverImage: 'https://cdn2.bobbies.com/modules/bobbieslookbook/views/img/w20/2/women/1.jpg',
     shopUrl: 'https://www.bobbies.com/fr/retailers',
-    ReturnPolicyUrl: 'https://www.bobbies.com/en/delivery-returns',
+    returnPolicyUrl: 'https://www.bobbies.com/en/delivery-returns',
     },
     {
     brandname: 'BONPOINT',
@@ -206,10 +206,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://i.pinimg.com/originals/a7/5f/4a/a75f4a415955e23049d28fdc76a52e9d.jpg',
     websiteUrl: 'https://www.bonpoint.com/',
-    NewsUrl: 'https://www.bonpoint.com/fr/collection-croisiere.html',
+    newinUrl: 'https://www.bonpoint.com/fr/collection-croisiere.html',
     coverImage: 'https://i.ytimg.com/vi/YLXQxgFatmM/maxresdefault.jpg',
     shopUrl: 'https://www.bonpoint.com/fr/storelocator',
-    ReturnPolicyUrl: 'https://www.bonpoint.com/fr/faq'
+    returnPolicyUrl: 'https://www.bonpoint.com/fr/faq'
     },
     {
     brandname: 'BOSS',
@@ -217,10 +217,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://generalperfume.com/wp-content/uploads/2016/07/hugo-boss.jpg',
     websiteUrl: 'https://www.hugoboss.com/fr/',
-    NewsUrl: 'https://www.hugoboss.com/fr/hommes-toutes-nouveautes/',
+    newinUrl: 'https://www.hugoboss.com/fr/hommes-toutes-nouveautes/',
     coverImage: 'https://theimpression.com/wp-content/uploads/2020/02/Boss-ad-campaign-Fabien-Baron-Craig-McDean-Spring-2020-Pictures-the-impression-header-02-scaled.jpg',
     shopUrl: 'https://www.hugoboss.com/fr/stores',
-    ReturnPolicyUrl: 'https://www.hugoboss.com/fr/customer-service/retour/returns.html'
+    returnPolicyUrl: 'https://www.hugoboss.com/fr/customer-service/retour/returns.html'
     },
     {
     brandname: 'BOTTEGA VENETA',
@@ -228,10 +228,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://www.mesmarques-enbourse.com/wp-content/themes/mes-marques-en-bourse/logos/600x600/21283401600.jpg',
     websiteUrl: 'https://www.bottegaveneta.com/',
-    NewsUrl: 'https://www.bottegaveneta.com/fr/onlineboutique/nouveautes-femme',
+    newinUrl: 'https://www.bottegaveneta.com/fr/onlineboutique/nouveautes-femme',
     coverImage: 'https://theimpression.com/wp-content/uploads/2019/11/bottega-veneta-pre-spring-2020-ad-campaign-The-Impression-010-scaled.jpg',
     shopUrl: 'https://www.bottegaveneta.com/experience/fr/store-locator/',
-    ReturnPolicyUrl: 'https://www.bottegaveneta.com/serviceclients/fr/faq/'
+    returnPolicyUrl: 'https://www.bottegaveneta.com/serviceclients/fr/faq/'
     },
     {
     brandname: 'BURBERRY',
@@ -239,10 +239,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/96/ea/fa/96eafaedc9df66fe69ab833230d8ab46.jpg',
     websiteUrl: 'https://fr.burberry.com/',
-    NewsUrl: 'https://fr.burberry.com/nouveautes-femme-nouveaux-arrivages/',
+    newinUrl: 'https://fr.burberry.com/nouveautes-femme-nouveaux-arrivages/',
     coverImage: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sora-choi-irina-shayk-freja-beha-erichsen-and-fran-summers-photographed-by-danko-steiner-for-the-burberry-autumn-winter-2019-campaign-c-courtesy-of-burberry-danko-steiner-1566312967.jpg',
     shopUrl: 'https://fr.burberry.com/boutiques/france/',
-    ReturnPolicyUrl: 'https://fr.burberry.com/service-client/retours/'
+    returnPolicyUrl: 'https://fr.burberry.com/service-client/retours/'
     },
     {
     brandname: 'CABAÏA',
@@ -250,10 +250,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.blue-box.fr/wp-content/uploads/2019/08/CABAIA.jpg',
     websiteUrl: 'https://www.cabaia.com',
-    NewsUrl: 'https://www.cabaia.fr/pages/nouveautes',
+    newinUrl: 'https://www.cabaia.fr/pages/nouveautes',
     coverImage: 'https://wesoundcompany.com/wp-content/uploads/2016/09/Cabaia-wsc-010-copie-web.jpg',
     shopUrl: 'https://www.cabaia.fr/apps/store-locator',
-    ReturnPolicyUrl: 'https://aide.cabaia.fr/hc/fr/sections/360003114740--Les-3-R-R%C3%89CLAMATIONS-RETOURS-ET-REMBOURSEMENTS-'
+    returnPolicyUrl: 'https://aide.cabaia.fr/hc/fr/sections/360003114740--Les-3-R-R%C3%89CLAMATIONS-RETOURS-ET-REMBOURSEMENTS-'
     },
     {
     brandname: 'CAFE COTON',
@@ -261,10 +261,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://www.cartesesame.com/uploads/media/partner_logo/0001/12/thumb_11029_partner_logo_normal.jpeg',
     websiteUrl: 'https://www.cafecoton.fr/',
-    NewsUrl: 'https://www.cafecoton.fr/113-chemise-homme?q=Ligne-Exclusive',
+    newinUrl: 'https://www.cafecoton.fr/113-chemise-homme?q=Ligne-Exclusive',
     coverImage: 'https://i.ytimg.com/vi/_LysRGFtR7I/maxresdefault.jpg',
     shopUrl: 'https://www.cafecoton.fr/nos-magasins',
-    ReturnPolicyUrl: 'https://www.cafecoton.fr/content/3-les-conditions-generales-de-vente#8'
+    returnPolicyUrl: 'https://www.cafecoton.fr/content/3-les-conditions-generales-de-vente#8'
     },
     {
     brandname: 'CALVIN KLEIN',
@@ -272,10 +272,10 @@ var datas = [
     
     logoUrl: 'https://www.latroikastore.com/media/cache/brand_thumbnail/b0/fe/8664c0be93d6645edc6d202bd27a.jpeg',
     websiteUrl: 'https://www.calvinklein.fr/',
-    NewsUrl: 'https://www.calvinklein.fr/femme-nouvelle-collection',
+    newinUrl: 'https://www.calvinklein.fr/femme-nouvelle-collection',
     coverImage: 'https://ds1.static.rtbf.be/article/image/1240x800/7/0/e/1287997566.jpg',
     shopUrl: 'https://www.calvinklein.fr/store-locator',
-    ReturnPolicyUrl: 'https://www.calvinklein.fr/service-clientele-retours'
+    returnPolicyUrl: 'https://www.calvinklein.fr/service-clientele-retours'
     },
     {
     brandname: 'CAMPER',
@@ -283,10 +283,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://cdn.worldvectorlogo.com/logos/camper-1.svg',
     websiteUrl: 'https://m.camper.com/',
-    NewsUrl: 'https://m.camper.com/fr_FR/homme/chaussures/fall_winter_season',
+    newinUrl: 'https://m.camper.com/fr_FR/homme/chaussures/fall_winter_season',
     coverImage: 'https://i.pinimg.com/originals/8b/da/49/8bda492d25a9864a0b4958604f803cfc.jpg',
     shopUrl: 'https://m.camper.com/fr_FR/buscador-tiendas.xhtml',
-    ReturnPolicyUrl: 'https://m.camper.com/fr_FR/at_cliente_faq.xhtml#'
+    returnPolicyUrl: 'https://m.camper.com/fr_FR/at_cliente_faq.xhtml#'
     },
     {
     brandname: 'CANADA GOOSE',
@@ -294,10 +294,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.commeuncamion.com/content/uploads/cache/2010/03/Logo-Canada-Goose/3462872367.png',
     websiteUrl: 'https://www.canadagoose.com/',
-    NewsUrl: 'https://www.canadagoose.com/fr/fr/faites-vos-achats/hommes/nouveautes-prochainement/',
+    newinUrl: 'https://www.canadagoose.com/fr/fr/faites-vos-achats/hommes/nouveautes-prochainement/',
     coverImage: 'https://images.radio-canada.ca/q_auto,w_1250/v1/ici-info/16x9/chine-canada-goose-magasin-ouverture-pekin.jpg',
     shopUrl: 'https://www.canadagoose.com/ca/fr/trouver-un-distributeur/Find-Distributors.html',
-    ReturnPolicyUrl: 'https://www.canadagoose.com/fr/fr/politique-de-retours/returns.html'
+    returnPolicyUrl: 'https://www.canadagoose.com/fr/fr/politique-de-retours/returns.html'
     },
     {
     brandname: 'CARAMEL',
@@ -305,10 +305,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://cdn.shopify.com/s/files/1/2863/0972/t/11/assets/logo.svg?v=17108630161849822663',
     websiteUrl: 'https://www.caramel-shop.co.uk/',
-    NewsUrl: 'https://www.caramel-shop.co.uk/collections/new-arrivals',
+    newinUrl: 'https://www.caramel-shop.co.uk/collections/new-arrivals',
     coverImage: 'https://cdn.shopify.com/s/files/1/2863/0972/files/home-banner-1400x728_2_0000_Caramel5_2048x.jpg?v=1605267586',
     shopUrl: 'https://www.caramel-shop.co.uk/pages/stores',
-    ReturnPolicyUrl: 'https://www.caramel-shop.co.uk/pages/returns'
+    returnPolicyUrl: 'https://www.caramel-shop.co.uk/pages/returns'
     },
     {
     brandname: 'CARAN D\'ACHE',
@@ -316,10 +316,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://cdn.worldvectorlogo.com/logos/caran-d-ache.svg',
     websiteUrl: 'https://www.carandache.com/',
-    NewsUrl: 'https://www.carandache.com/fr/fr/leman-rouge-carmin-s-1173.htm',
+    newinUrl: 'https://www.carandache.com/fr/fr/leman-rouge-carmin-s-1173.htm',
     coverImage: 'https://www.leparisien.fr/images/2015/04/29/4734251_carandache-0048.jpg',
     shopUrl: 'https://www.carandache.com/ch/fr/magasins/recherche.cfm?lat=46.1841714&long=6.2151084',
-    ReturnPolicyUrl: 'https://www.carandache.com/fr/fr/cgv.cfm#3.8'
+    returnPolicyUrl: 'https://www.carandache.com/fr/fr/cgv.cfm#3.8'
     },
     {
     brandname: 'CARHARTT WIP',
@@ -327,10 +327,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://verygoodlord.com/wp-content/uploads/2020/01/logo-carhartt.png',
     websiteUrl: 'https://www.carhartt-wip.com/',
-    NewsUrl: 'https://www.carhartt-wip.com/fr/homme-nouveautes',
+    newinUrl: 'https://www.carhartt-wip.com/fr/homme-nouveautes',
     coverImage: 'https://www.modzik.com/wp-content/uploads/2018/01/header_1.jpg',
     shopUrl: 'https://www.carhartt-wip.com/fr/stores/stockists',
-    ReturnPolicyUrl: 'https://www.carhartt-wip.com/fr/service/faqs'
+    returnPolicyUrl: 'https://www.carhartt-wip.com/fr/service/faqs'
     },
     {
     brandname: 'CAROLINA HERRERA',
@@ -338,10 +338,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbfFanYyyrI64-fn8VHBpbRf04bQ6JhFTlGg&usqp=CAU',
     websiteUrl: 'https://chcarolinaherrera.com/fr/en',
-    NewsUrl: 'https://chcarolinaherrera.com/fr/en/women/new-collection-6814668-1002',
+    newinUrl: 'https://chcarolinaherrera.com/fr/en/women/new-collection-6814668-1002',
     coverImage: 'https://www.maryosbazaar.com/wp-content/uploads/2015/09/Carolina-Herrera-Fall-2015-by-Mario-Testino.jpg',
     shopUrl: 'https://chcarolinaherrera.com/fr/en/storelocator',
-    ReturnPolicyUrl: 'https://chcarolinaherrera.com/fr/en'
+    returnPolicyUrl: 'https://chcarolinaherrera.com/fr/en'
     },
     {
     brandname: 'CARRERA',
@@ -349,10 +349,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.sauber-group.com/wp-content/uploads/2019/01/carrera_600x600-480x480.png',
     websiteUrl: 'https://www.carreraworld.com/',
-    NewsUrl: 'https://www.carreraworld.com/fr-fr/collections/collection-automne-hiver-2020.html',
+    newinUrl: 'https://www.carreraworld.com/fr-fr/collections/collection-automne-hiver-2020.html',
     coverImage: 'https://www.carreraworld.com/content/dam/carrerasite/05_Collection/Lenses/Lenses_Preview_Video.jpg',
     shopUrl: 'https://www.carreraworld.com/fr-fr/store-locator.html',
-    ReturnPolicyUrl: 'https://www.carreraworld.com/fr-fr/retours-remboursements.html'
+    returnPolicyUrl: 'https://www.carreraworld.com/fr-fr/retours-remboursements.html'
     },
     {
     brandname: 'CARVEN',
@@ -360,10 +360,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://journalduluxe.fr/wp-content/uploads/2015/03/Carven.jpg',
     websiteUrl: 'https://www.carven.com/fr_fr/',
-    NewsUrl: 'https://www.carven.com/fr_fr/nouveautes-601.html',
+    newinUrl: 'https://www.carven.com/fr_fr/nouveautes-601.html',
     coverImage: 'https://i.ytimg.com/vi/djQ98lWwypQ/maxresdefault.jpg',
     shopUrl: 'https://www.carven.com/fr_fr/ozcms/stores/locator/',
-    ReturnPolicyUrl: 'https://www.carven.com/fr_fr/aide'
+    returnPolicyUrl: 'https://www.carven.com/fr_fr/aide'
     },
     {
     brandname: 'CASADEI',
@@ -371,10 +371,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.fashionsauce.com/img/brands/casadei-stockists.jpg',
     websiteUrl: 'https://www.casadei.com/',
-    NewsUrl: 'https://www.casadei.com/fr/nouveaute-all/',
+    newinUrl: 'https://www.casadei.com/fr/nouveaute-all/',
     coverImage: 'https://i.pinimg.com/originals/13/83/56/138356b4190845530ed20c89873cedb9.jpg',
     shopUrl: 'https://www.casadei.com/fr/store-locator',
-    ReturnPolicyUrl: 'https://www.casadei.com/fr/service-client?cid=customer-service-menu-returns'
+    returnPolicyUrl: 'https://www.casadei.com/fr/service-client?cid=customer-service-menu-returns'
     },
     {
     brandname: 'CELINE',
@@ -382,10 +382,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2018/12/C%C3%A9line-Logo-1.jpg',
     websiteUrl: 'https://www.celine.com/',
-    NewsUrl: 'https://www.celine.com/fr-fr/celine-boutique-femme/winter-20-new-collection/',
+    newinUrl: 'https://www.celine.com/fr-fr/celine-boutique-femme/winter-20-new-collection/',
     coverImage: 'https://i.pinimg.com/originals/c3/02/b9/c302b9e4ce24a91a6a5b7b5cda0f92de.jpg',
     shopUrl: 'https://stores.celine.com/fr_fr/home',
-    ReturnPolicyUrl: 'https://www.celine.com/fr-fr/returnsrefunds/'
+    returnPolicyUrl: 'https://www.celine.com/fr-fr/returnsrefunds/'
     },
     {
     brandname: 'CHAMPION',
@@ -393,10 +393,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/67/37/7d/67377da62f8d079c808b7457ba71791e.png',
     websiteUrl: 'https://www.championstore.com/fr_fr',
-    NewsUrl: 'https://www.championstore.com/fr_fr/collections/premium',
+    newinUrl: 'https://www.championstore.com/fr_fr/collections/premium',
     coverImage: 'https://www.sportbuzzbusiness.fr/wp-content/uploads/2019/02/champion-100-ans.jpg',
     shopUrl: 'https://www.championstore.com/fr_fr',
-    ReturnPolicyUrl: 'https://www.championstore.com/fr_fr/livraison-et-retours'
+    returnPolicyUrl: 'https://www.championstore.com/fr_fr/livraison-et-retours'
     },
     {
     brandname: 'CHANEL',
@@ -404,10 +404,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://www.makrea.com/167039-thickbox_default/sticker-logo-chanel.jpg',
     websiteUrl: 'https://www.chanel.com/',
-    NewsUrl: 'https://www.chanel.com/en_WW/fashion/collection/spring-summer-2021.html',
+    newinUrl: 'https://www.chanel.com/en_WW/fashion/collection/spring-summer-2021.html',
     coverImage: 'https://i.pinimg.com/originals/c8/c8/d4/c8c8d4b3046a7a876739e90d1f49b4eb.jpg',
     shopUrl: 'https://services.chanel.com/fr_FR/storelocator',
-    ReturnPolicyUrl: 'https://www.chanel.com/en_WW/fashion/services/care-instructions.html#contact/'
+    returnPolicyUrl: 'https://www.chanel.com/en_WW/fashion/services/care-instructions.html#contact/'
     },
     {
     brandname: 'CHANTELLE',
@@ -415,10 +415,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://upload.wikimedia.org/wikipedia/fr/d/d3/Logo_Chantelle.jpg',
     websiteUrl: 'https://us.chantelle.com/',
-    NewsUrl: 'https://us.chantelle.com/collection.html',
+    newinUrl: 'https://us.chantelle.com/collection.html',
     coverImage: 'https://www.lingeriefrancaise.com/image/9898c50a018b8a67c0aadea537a91739_image.jpg',
     shopUrl: 'https://us.chantelle.com/ustorelocator/location/map/',
-    ReturnPolicyUrl: 'https://us.chantelle.com/returns-exchanges'
+    returnPolicyUrl: 'https://us.chantelle.com/returns-exchanges'
     },
     {
     brandname: 'CHARLY JAMES',
@@ -426,10 +426,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://i.pinimg.com/280x280_RS/bb/94/1a/bb941adf257df5f5157e9724fef400f4.jpg',
     websiteUrl: 'https://www.charlyjames.fr/',
-    NewsUrl: 'https://www.charlyjames.fr/product-category/nouveautes/',
+    newinUrl: 'https://www.charlyjames.fr/product-category/nouveautes/',
     coverImage: 'https://www.charlyjames.fr/wp-content/uploads/2019/03/Medaillon_Jeanne_1024x1024.jpg',
     shopUrl: 'https://www.charlyjames.fr/nous-retrouver/',
-    ReturnPolicyUrl: 'https://www.charlyjames.fr/faq/'    
+    returnPolicyUrl: 'https://www.charlyjames.fr/faq/'    
     },
     {
     brandname: 'CHEVIGNON',
@@ -437,10 +437,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://logos-marques.com/wp-content/uploads/2020/06/Chevignon-logo.png',
     websiteUrl: 'https://www.chevignon.fr/',
-    NewsUrl: 'https://www.chevignon.fr/nouvelle-capsule/dans-les-bagages/tout-voir.html',
+    newinUrl: 'https://www.chevignon.fr/nouvelle-capsule/dans-les-bagages/tout-voir.html',
     coverImage: 'https://lareclame-scanbook.s3.amazonaws.com/chevignon11506964420.jpg',
     shopUrl: 'https://www.chevignon.fr/nos-boutiques.php',
-    ReturnPolicyUrl: 'https://www.chevignon.fr/faq.php'
+    returnPolicyUrl: 'https://www.chevignon.fr/faq.php'
     },
     {
     brandname: 'CHILDHOME',
@@ -448,10 +448,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://carovnysvethraciek.sk/img/m/48.jpg',
     websiteUrl: 'https://childhome.com/',
-    NewsUrl: 'https://childhome.com/nl/collectie-2021',
+    newinUrl: 'https://childhome.com/nl/collectie-2021',
     coverImage: 'https://www.gardeningknowhow.com/wp-content/uploads/2017/06/HP-child-room.jpg',
     shopUrl: 'https://childhome.com/en/store-locator',
-    ReturnPolicyUrl: 'https://childhome.com/fr/service-client/termes-conditions-generales'
+    returnPolicyUrl: 'https://childhome.com/fr/service-client/termes-conditions-generales'
     },
     {
     brandname: 'CHLOE',
@@ -459,10 +459,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://www.vision-optique-orgeval.com/wp-content/uploads/2016/11/logo-chloe.png',
     websiteUrl: 'https://www.chloe.com/',
-    NewsUrl: 'https://www.chloe.com/fr/chloe/shop-online/femme/pret-a-porter-nouveautes',
+    newinUrl: 'https://www.chloe.com/fr/chloe/shop-online/femme/pret-a-porter-nouveautes',
     coverImage: 'https://www.chloe.com/cloud/chloewp/uploads/2019/02/Chlo%C3%A9Girls_ASSETS_1200x989-1.jpg',
     shopUrl: 'https://www.chloe.com/experience/fr/boutiques/#search/continent/europe/store-type/chloe',
-    ReturnPolicyUrl: 'https://www.chloe.com/system/selfservice.controller?CONFIGURATION=1815&PARTITION_ID=1&secureFlag=false&TIMEZONE_OFFSET=&CMD=BROWSE_TOPIC&TOPIC_ID=1023&USERTYPE=1'
+    returnPolicyUrl: 'https://www.chloe.com/system/selfservice.controller?CONFIGURATION=1815&PARTITION_ID=1&secureFlag=false&TIMEZONE_OFFSET=&CMD=BROWSE_TOPIC&TOPIC_ID=1023&USERTYPE=1'
     },
     {
     brandname: 'CHOCOLATE SOCIETY',
@@ -470,10 +470,10 @@ var datas = [
     popularity: '0',
     logoUrl: 'https://pbs.twimg.com/profile_images/1248997222315933697/Pke1oD0O_400x400.jpg',
     websiteUrl: 'https://www.chocolate.co.uk/',
-    NewsUrl: 'https://www.chocolate.co.uk/collections',
+    newinUrl: 'https://www.chocolate.co.uk/collections',
     coverImage: 'https://pbs.twimg.com/media/CsP5r9WWAAAR3XU.jpg:large',
     shopUrl: 'https://www.chocolate.co.uk/',
-    ReturnPolicyUrl: 'https://www.chocolate.co.uk/'
+    returnPolicyUrl: 'https://www.chocolate.co.uk/'
     },
     {
     brandname: 'CHRISTIAN DIOR',
@@ -481,10 +481,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://passion-stickers.com/4393-large_default/stickers-christian-diorr.jpg',
     websiteUrl: 'https://www.dior.com/',
-    NewsUrl: 'https://www.dior.com/fr_fr/mode-femme/collection-croisere-2021',
+    newinUrl: 'https://www.dior.com/fr_fr/mode-femme/collection-croisere-2021',
     coverImage: 'https://www.dior.com/couture/var/dior/storage/images/horizon/womens-fashion/folder-campaign/campagne-fall-2020/cover-texte-1/20044206-1-fre-FR/cover-texte-1_1440_1200.jpg',
     shopUrl: 'https://www.dior.com/store/fr_fr?origin=onedior&codeLanguage=fr_fr',
-    ReturnPolicyUrl: 'https://www.dior.com/fr_fr/faq-couture#la-boutique-en-ligne-procedure-de-retour-et-dechange'
+    returnPolicyUrl: 'https://www.dior.com/fr_fr/faq-couture#la-boutique-en-ligne-procedure-de-retour-et-dechange'
     },
     {
     brandname: 'CHRISTOFLE',
@@ -492,10 +492,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://images.hbjo-online.com/images/all/5e4bb8caa5e78_christoflelogo-parisblackexe.jpg',
     websiteUrl: 'https://www.christofle.com/',
-    NewsUrl: 'https://www.christofle.com/eu_fr/couverts/categories/nouveautes-couverts.html',
+    newinUrl: 'https://www.christofle.com/eu_fr/couverts/categories/nouveautes-couverts.html',
     coverImage: 'https://i.ytimg.com/vi/nR-CSfZtvoM/maxresdefault.jpg',
     shopUrl: 'https://www.christofle.com/eu_fr/mw-store-locator',
-    ReturnPolicyUrl: 'https://www.christofle.com/eu_fr/livraison-retours'
+    returnPolicyUrl: 'https://www.christofle.com/eu_fr/livraison-retours'
     },
     {
     brandname: 'CLAE',
@@ -503,10 +503,10 @@ var datas = [
     popularity: '1',
     logoUrl: 'https://logos-download.com/wp-content/uploads/2016/04/Clae_logo_logotype.png',
     websiteUrl: 'https://www.clae.eu/',
-    NewsUrl: 'https://www.clae.eu/pages/bradley-cactus-leather',
+    newinUrl: 'https://www.clae.eu/pages/bradley-cactus-leather',
     coverImage: 'https://cdn.shopify.com/s/files/1/0891/2262/files/AW20-CACTUS-DESKTOP-V3_1800x.jpg?v=1604570089',
     shopUrl: 'https://www.clae.eu/',
-    ReturnPolicyUrl: 'https://clae.eu/a/returns'
+    returnPolicyUrl: 'https://clae.eu/a/returns'
     },
     {
     brandname: 'CLARINS',
@@ -514,10 +514,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://dly4mho8u118u.cloudfront.net/wp-content/uploads/2017/07/19081224/logo-client-body-client-case-study-clarins.png',
     websiteUrl: 'https://www.clarins.fr/',
-    NewsUrl: 'https://www.clarins.fr/nouveautes/100/',
+    newinUrl: 'https://www.clarins.fr/nouveautes/100/',
     coverImage: 'https://cdn-p.isobar.com/-/jssmedia/isobardotcom/data/media/regional/united-kingdom/case-study/1_clarins_cover.jpg?mw=1920',
     shopUrl: 'https://www.clarins.fr/trouver-un-magasin-spa',
-    ReturnPolicyUrl: 'https://www.clarins.fr/support.html?thematic=conditions-retour'
+    returnPolicyUrl: 'https://www.clarins.fr/support.html?thematic=conditions-retour'
     },
     {
     brandname: 'CLARKS',
@@ -525,10 +525,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://d353r0i7qv3gvw.cloudfront.net/21/23921/stage-mobile/480184.jpg',
     websiteUrl: 'https://www.clarks.eu/fr/',
-    NewsUrl: 'https://www.clarks.eu/fr/fr/nouveautes-nouveautes/homme/nouveautes-chaussures/',
+    newinUrl: 'https://www.clarks.eu/fr/fr/nouveautes-nouveautes/homme/nouveautes-chaussures/',
     coverImage: 'https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/f5jyz0lzlx2sjchdtf37/clarks-originals-2019-campaign',
     shopUrl: 'https://www.clarks.eu/fr/fr/store-locator',
-    ReturnPolicyUrl: 'https://support.clarks.eu/hc/fr/categories/360002211419-Retours?_ga=2.1680505.998609023.1605714514-1942898739.1605714514'
+    returnPolicyUrl: 'https://support.clarks.eu/hc/fr/categories/360002211419-Retours?_ga=2.1680505.998609023.1605714514-1942898739.1605714514'
     },
     {
     brandname: 'CLAUDIE PIERLOT',
@@ -536,10 +536,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://lh3.googleusercontent.com/proxy/RH2AodYXSNT520Ns2eiZ7Lxja19PEkFhwr6IbBtkfArF26XJb7PkoVLaDLwMb6voNtdE95EQGAPOYRqkTDlADXQaU6yR2WRoB_fG_EM4SBv2c9cIIQ',
     websiteUrl: 'https://fr.claudiepierlot.com',
-    NewsUrl: 'https://fr.claudiepierlot.com/fr/tendances/theme-6/',
+    newinUrl: 'https://fr.claudiepierlot.com/fr/tendances/theme-6/',
     coverImage: 'https://fr.claudiepierlot.com/on/demandware.static/-/Library-Sites-ClaudiePierlot/default/dw9b2da344/rupture/Edito/Robes.jpg',
     shopUrl: 'https://fr.claudiepierlot.com/fr/boutiques',
-    ReturnPolicyUrl: 'https://fr.claudiepierlot.com/fr/aide-et-faq/faqsretours-bis.html'
+    returnPolicyUrl: 'https://fr.claudiepierlot.com/fr/aide-et-faq/faqsretours-bis.html'
     },
     {
     brandname: 'CLEAN RESERVE',
@@ -547,10 +547,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://perfumesociety.org/wp-content/uploads/2020/02/SQUARE-LOGO-1.jpg',
     websiteUrl: 'https://www.cleanbeauty.com/',
-    NewsUrl: 'https://www.cleanbeauty.com/pages/shop',
+    newinUrl: 'https://www.cleanbeauty.com/pages/shop',
     coverImage: 'https://cdn.shopify.com/s/files/1/0123/4314/8608/files/Clean_Beauty_Shoot1434_a8d2f63b-5991-4538-ae76-98995f15000c_x800.jpg?v=1588282907',
     shopUrl: 'https://www.cleanbeauty.com/pages/store-locator',
-    ReturnPolicyUrl: 'https://www.cleanbeauty.com/pages/shipping-and-returns'
+    returnPolicyUrl: 'https://www.cleanbeauty.com/pages/shipping-and-returns'
     },
     {
     brandname: 'CLINIQUE',
@@ -558,10 +558,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://cdn.worldvectorlogo.com/logos/clinique.svg',
     websiteUrl: 'https://m.fr.clinique.com/',
-    NewsUrl: 'https://www.fr.clinique.com/products/1667/soins',
+    newinUrl: 'https://www.fr.clinique.com/products/1667/soins',
     coverImage: 'https://pbs.twimg.com/media/DxCIfSfW0AExk7o.jpg',
     shopUrl: 'https://www.fr.clinique.com/store_locator',
-    ReturnPolicyUrl: 'https://www.fr.clinique.com/customer-care/returns-exchanges'
+    returnPolicyUrl: 'https://www.fr.clinique.com/customer-care/returns-exchanges'
     },
     {
     brandname: 'CLUSE',
@@ -569,10 +569,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.sarnioro.it/files/2018/02/201802221649261.jpg',
     websiteUrl: 'https://fr.cluse.com/',
-    NewsUrl: 'https://fr.cluse.com/collections/new-in',
+    newinUrl: 'https://fr.cluse.com/collections/new-in',
     coverImage: 'https://i.ytimg.com/vi/LWit0zNP2sY/maxresdefault.jpg',
     shopUrl: 'https://fr.cluse.com/pages/store-locator',
-    ReturnPolicyUrl: 'https://fr.cluse.com/pages/return-policy'
+    returnPolicyUrl: 'https://fr.cluse.com/pages/return-policy'
     },
     {
     brandname: 'COACH',
@@ -580,10 +580,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://cdn.worldvectorlogo.com/logos/coach.svg',
     websiteUrl: 'https://fr.coach.com/',
-    NewsUrl: 'https://fr.coach.com/fr_FR/shop/femme-nouveautes-toutes-les-nouveautes?viewAll=true',
+    newinUrl: 'https://fr.coach.com/fr_FR/shop/femme-nouveautes-toutes-les-nouveautes?viewAll=true',
     coverImage: 'https://theimpression.com/wp-content/uploads/2020/01/coach-spring-2020-ad-campaign-jennifer-lopez-the-impression.jpg',
     shopUrl: 'https://fr.coach.com/fr_FR/stores-edit-country?dwfrm_storelocator_address_international=FR&dwfrm_storelocator_findbycountry=Search%2Bcountry',
-    ReturnPolicyUrl: 'https://fr.coach.com/fr_FR/returns-exchanges.html'
+    returnPolicyUrl: 'https://fr.coach.com/fr_FR/returns-exchanges.html'
     },
     {
     brandname: 'COCOEKO',
@@ -591,10 +591,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://i.pinimg.com/280x280_RS/35/15/7a/35157a184498a0801330a7c7aa0de1aa.jpg',
     websiteUrl: 'https://www.cocoeko.fr/',
-    NewsUrl: 'https://www.cocoeko.fr/78-collection-bebe-cocoeko',
+    newinUrl: 'https://www.cocoeko.fr/78-collection-bebe-cocoeko',
     coverImage: 'https://www.aprileleven.fr/img/cms/menu/cocoeko/COCOEKO%20(5).jpg',
     shopUrl: 'https://www.cocoeko.fr/',
-    ReturnPolicyUrl: 'https://www.cocoeko.fr/content/1-livraison'
+    returnPolicyUrl: 'https://www.cocoeko.fr/content/1-livraison'
     },
     {
     brandname: 'COLUMBIA',
@@ -602,10 +602,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://www.worldfootwear.com/media/images/news/wf201964063p.png',
     websiteUrl: 'https://www.columbia.com/',
-    NewsUrl: 'https://www.columbiasportswear.fr/FR/c/homme-nouveautes',
+    newinUrl: 'https://www.columbiasportswear.fr/FR/c/homme-nouveautes',
     coverImage: 'https://namebrandapparel.com/clothing/wp-content/uploads/2012/10/Columbia-Mountain.jpg',
     shopUrl: 'https://www.columbiasportswear.fr/FR/l/stores',
-    ReturnPolicyUrl: 'https://www.columbiasportswear.fr/FR/retours'
+    returnPolicyUrl: 'https://www.columbiasportswear.fr/FR/retours'
     },
     {
     brandname: 'COMPTOIR DES COTONNIERS',
@@ -613,10 +613,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf-9IozOccv3XiZydgLgRbd_13TA8Z-yIQaQ&usqp=CAU',
     websiteUrl: 'https://www.comptoirdescotonniers.com/',
-    NewsUrl: 'https://www.comptoirdescotonniers.com/pret-a-porter/tous-les-vetements',
+    newinUrl: 'https://www.comptoirdescotonniers.com/pret-a-porter/tous-les-vetements',
     coverImage: 'https://www.comptoirdescotonniers.eu/on/demandware.static/-/Library-Sites-CDCSharedLibrary/default/dw3bd2d21d/SS20/PAGE-CAMPAGNE/nous.jpg',
     shopUrl: 'https://www.comptoirdescotonniers.com/boutiques',
-    ReturnPolicyUrl: 'https://www.comptoirdescotonniers.com/services-en-ligne-c134.html'
+    returnPolicyUrl: 'https://www.comptoirdescotonniers.com/services-en-ligne-c134.html'
     },
     {
     brandname: 'COS',
@@ -624,10 +624,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://logo.allindigital.se/cosstores.com?size=256',
     websiteUrl: 'https://www.cosstores.com/', 
-    NewsUrl: 'https://www.cosstores.com/en_eur/new-arrivals.html',
+    newinUrl: 'https://www.cosstores.com/en_eur/new-arrivals.html',
     coverImage: 'https://s3-eu-west-1.amazonaws.com/emap-nibiru-prod/wp-content/uploads/sites/2/2020/06/25083515/COS_AW20.jpg',
     shopUrl: 'https://www.cosstores.com/en_eur/store-locator.html',
-    ReturnPolicyUrl: 'https://www.cosstores.com/en_eur/customer-service/return-and-refund-policy.html'
+    returnPolicyUrl: 'https://www.cosstores.com/en_eur/customer-service/return-and-refund-policy.html'
     },
     {
     brandname: 'LA MER',
@@ -635,10 +635,10 @@ var datas = [
     popularity: '3',
     logoUrl: 'https://fontmeme.com/images/Lar-Mer-Logo.jpg',
     websiteUrl: 'https://m.cremedelamer.fr/',
-    NewsUrl: 'https://m.cremedelamer.fr/collections/luxury-skincare-beauty-products',
+    newinUrl: 'https://m.cremedelamer.fr/collections/luxury-skincare-beauty-products',
     coverImage: 'https://excellencemagazine.luxury/wp-content/uploads/2020/05/La-Mer3-e1589381731989.jpg',
     shopUrl: 'https://m.cremedelamer.fr/stores',
-    ReturnPolicyUrl: 'https://m.cremedelamer.fr/customer-service-returns'
+    returnPolicyUrl: 'https://m.cremedelamer.fr/customer-service-returns'
     },
     {
     brandname: 'CUISSE DE GRENOUILLE',
@@ -646,10 +646,10 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://glltn.com/wp-content/blogs.dir/1/files/2014/01/logo-cuisse-de-grenouille.jpg',
     websiteUrl: 'https://www.cuissedegrenouille.com/fr/',
-    NewsUrl: 'https://www.cuissedegrenouille.com/fr/215-collection-hiver',
+    newinUrl: 'https://www.cuissedegrenouille.com/fr/215-collection-hiver',
     coverImage: 'https://media.lexception.com/img/products/cuisse-de-grenouille/89137-cuisse-de-grenouille-sweatshirtlamouraparisembbico-01.jpg',
     shopUrl: 'https://www.cuissedegrenouille.com/fr/content/15-retailers',
-    ReturnPolicyUrl: 'https://www.cuissedegrenouille.com/fr/content/1-livraison'
+    returnPolicyUrl: 'https://www.cuissedegrenouille.com/fr/content/1-livraison'
     },
     {
     brandname: 'CYRILLUS',
@@ -657,402 +657,718 @@ var datas = [
     popularity: '2',
     logoUrl: 'https://media.illicado.com/media/Illicado_partners/brands/image/c/y/cyrillus_1.jpg',
     websiteUrl: 'https://www.cyrillus.fr/',
-    NewsUrl: 'https://www.cyrillus.fr/',
+    newinUrl: 'https://www.cyrillus.fr/',
     coverImage: 'https://i.ytimg.com/vi/edeRU_KzYDI/maxresdefault.jpg',
     shopUrl: 'https://magasin.cyrillus.fr//',
-    ReturnPolicyUrl: 'https://www.cyrillus.fr/page/guide-des-services.htm#services_retour'
+    returnPolicyUrl: 'https://www.cyrillus.fr/page/guide-des-services.htm#services_retour'
     },
     {
     brandname: 'DANIEL WELLINGTON',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://stdavidscardiff.com/sites/st_davids/files/styles/shop_logo/public/images/shops/logos/sd_shoplogo_danielwellington_630x560.jpg?itok=m9EIerAh',
     websiteUrl: 'https://www.danielwellington.com/fr/',
-    NewsUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    ReturnPolicyUrl: ''
+    newinUrl: 'https://www.danielwellington.com/fr/dw-collections/',
+    coverImage: 'https://images-eu.ssl-images-amazon.com/images/G/08/products/watches/divers/image_wellington._V345737341_.jpg',
+    shopUrl: 'https://storelocator.danielwellington.com/fr',
+    returnPolicyUrl: 'https://www.danielwellington.com/fr/return-policy/'
     },
     {
-    brandname: 'DEAN DAVIDSON',
-    categorie: 'Mode et Accessoires',
-    logoUrl: 'data:image/png;base64,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',
-    websiteUrl: 'https://www.deandavidson.com/'
+    brandname: 'DAVID MALLETT',
+    categorie: 'Beauté et Soins',
+    popularity: '2',
+    logoUrl: 'https://www.leadingsalons.com/multimedia/salons/2f7303e213225b8522b2b441d878c50c.jpg',
+    newinUrl: 'https://david-mallett.com/produit/styling-cream/',
+    coverImage: 'https://www.ritzparis.com/sites/default/files/styles/1440x748/public/images/services_2/ritz-club-paris-david-mallett-header2.jpg?itok=1sGizCPJ',
+    shopUrl: 'https://david-mallett.com/salons',
+    returnPolicyUrl: 'https://david-mallett.com/cgv/'
     },
     {
     brandname: 'DELSEY',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://p.ventesprivees-fr.com/delsey.png',
-    websiteUrl: 'https://www.delsey.com/fr/fr/home'
+    websiteUrl: 'https://www.delsey.com/fr/fr/home',
+    newinUrl: 'https://www.delsey.com/fr/fr/l/valise/',
+    coverImage: 'https://i.ytimg.com/vi/2Z8WgIO89lI/maxresdefault.jpg',
+    shopUrl: 'https://www.delsey.com/fr/fr/stores',
+    returnPolicyUrl: 'https://www.delsey.com/fr/fr/c/retour_-echange_-remboursement' 
     },
     {
     brandname: 'DES PETITS HAUTS',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.groupevuillermet.fr/wp-content/uploads/2018/10/29792119_1225214527614113_5128931659154080485_n.png',
-    websiteUrl: 'https://www.despetitshauts.com/fr/'
+    websiteUrl: 'https://www.despetitshauts.com/fr/',
+    newinUrl: 'https://www.despetitshauts.com/fr/nouvelle-collection-97.html',
+    coverImage: 'https://i2.wp.com/www.lineandcolor.fr/wp-content/uploads/2019/09/des-petits-hauts-automne-hiver-2019-banner.jpg?resize=1170%2C780&ssl=1',
+    shopUrl: 'https://www.despetitshauts.com/fr/nos-boutiques',
+    returnPolicyUrl: 'https://www.despetitshauts.com/fr/aide#ancre33'
     },
     {
     brandname: 'DIADORA',
     categorie: 'Sport',
+    popularity: '2',
     logoUrl: 'https://cdn.worldvectorlogo.com/logos/diadora-2.svg',
-    websiteUrl: 'https://www.diadora.com/'
+    websiteUrl: 'https://www.diadora.com/',
+    newinUrl: 'https://www.diadora.com/fr/fr/homme-new_arrivals/',
+    coverImage: 'https://versus.uk.com/wp-content/uploads/2018/02/Diadora-Powered-By-Defiance-SS18-campaign-4-3.jpg',
+    shopUrl: 'https://www.diadora.com/fr/fr/stores',
+    returnPolicyUrl: 'https://www.diadora.com/fr/fr/reso.html'
     },
     {
     brandname: 'DIESEL',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://www.guide-piscine.fr/medias/image/diesel-16648-640-0.jpg',
-    websiteUrl: 'https://fr.diesel.com/fr/'
+    websiteUrl: 'https://fr.diesel.com/fr/',
+    newinUrl: 'https://fr.diesel.com/fr/homme/nouveaut%C3%A9s/',
+    coverImage: 'https://pauseonline.s3.eu-west-2.amazonaws.com/wp-content/uploads/2020/05/2-15.jpg',
+    shopUrl: 'https://fr.diesel.com/fr/stores',
+    returnPolicyUrl: 'https://fr.diesel.com/fr/help-show?content=returns'
     },
     {
     brandname: 'DIPTYQUE',
     categorie: 'Maison',
+    popularity: '2',
     logoUrl: 'https://i.pinimg.com/originals/8b/5d/6a/8b5d6ad0a6f109c3db5be4d266a47d28.jpg',
-    websiteUrl: 'https://www.diptyqueparis.com/'
+    websiteUrl: 'https://www.diptyqueparis.com/',
+    newinUrl: 'https://collection-hiver.diptyqueparis.com/fr_fr/products/interior',
+    coverImage: 'https://les-graphiquants.fr/en/assets/img/16-DIPTYQUE/DIPTYQUE_Boites_2015_01-min.jpg',
+    shopUrl: 'https://les-graphiquants.fr/en/assets/img/16-DIPTYQUE/DIPTYQUE_Boites_2015_01-min.jpg',
+    returnPolicyUrl: 'https://www.diptyqueparis.com/fr_fr/c/livraison-et-retours.html#terms'
     },
     {
     brandname: 'DITA',
     categorie: 'Mode et Accessoires',
-    logoUrl: 'https://images.squarespace-cdn.com/content/v1/58504e24579fb348904b9c44/1577810258982-S9ZIS7NEZE1HZLHWWCO3/ke17ZwdGBToddI8pDm48kBXh9yK2oyB64ZrFgLX366tZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxMNtGeYqBTjnPFUyJELAgfwngsed3cV5taUT2LTegxcTm97GbOVIHlRfOT2rtvKxs/dita_logo_eyewear.png?format=750w',
-    websiteUrl: 'https://dita.com/fr-fr/'
+    popularity: '2',
+    logoUrl: 'https://le-cdn.website-editor.net/2bd8042f4151419c851ca4f47d30cc51/dms3rep/multi/opt/Dita-logo-V2-2x0a066gcrm1izvgzysw7e-640w.jpg',
+    websiteUrl: 'https://dita.com/fr-fr/',
+    newinUrl: 'https://dita.com/sun/new-release-sun',
+    coverImage: 'https://i.pinimg.com/originals/85/01/f9/8501f9d35de4f6d71db69c389b08cf8f.jpg',
+    shopUrl: 'https://dita.com/fr-fr/stores/',
+    returnPolicyUrl: 'https://dita.com/returns'
     },
     {
     brandname: 'DOLCE & GABBANA',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://passion-stickers.com/994-large_default/stickers-dolce-gabbana-dg.jpg',
-    websiteUrl: 'https://www.dolcegabbana.com/en/'
+    websiteUrl: 'https://www.dolcegabbana.com/en/',
+    newinUrl: 'https://www.dolcegabbana.com/fr/nouveautes/',
+    coverImage: 'https://fashionweekdaily.com/wp-content/uploads/2018/07/dolce-ad.jpg',
+    shopUrl: 'https://www.dolcegabbana.com/fr/nouveautes/',
+    returnPolicyUrl: 'https://www.dolcegabbana.com/fr/service-client?cid=customer-service-menu-returns'
     },
     {
     brandname: 'DR. HAUSCHKA',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'data:image/png;base64,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',
-    websiteUrl: 'https://www.drhauschka.fr/'
+    websiteUrl: 'https://www.drhauschka.fr/',
+    newinUrl: 'https://www.drhauschka.fr/cosmetiques-naturels-et-biologiques/?p=1',
+    coverImage: 'https://www.ignant.com/wp-content/uploads/2020/03/ignant-video-hauschka-marina-denisova-15-2880x1920.jpg',
+    shopUrl: 'https://www.drhauschka.fr/rechercher-un-revendeur',
+    returnPolicyUrl: 'https://www.drhauschka.fr/retour-echange/'
     },
     {
     brandname: 'DSQUARED2',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i1.wp.com/allestimentivetrinesardegna.it/wp-content/uploads/2020/06/Dsquared-LOGO.jpg?resize=500%2C500&ssl=1',
-    websiteUrl: 'https://www.dsquared2.com/fr'
+    websiteUrl: 'https://www.dsquared2.com/fr',
+    newinUrl: 'https://www.dsquared2.com/fr/collections_section',
+    coverImage: 'https://theimpression.com/wp-content/uploads/2020/10/Dsquared2-fall-2020-ad-campaign-the-impression-header.png',
+    shopUrl: 'https://www.dsquared2.com/experience/fr/stores/',
+    returnPolicyUrl: 'https://www.dsquared2.com/fr/ProductExchange/SearchOrder'
     },
     {
-    brandname: 'E-TWOW',
+    brandname: 'DYSON',
     categorie: 'Technologie',
-    logoUrl: 'https://rooelec.com/4504-large_default/pieces-et-accessoires-e-twow-kit-etwow-monster-sport-e-twow.jpg',
-    websiteUrl: 'http://www.e-twow.fr/'
+    popularity: '2',
+    logoUrl: 'https://www.electroguide.com/wp-content/uploads/2018/09/logo-dyson-marque.jpg',
+    websiteUrl: 'https://www.dyson.fr/fr',
+    newinUrl: 'https://www.dyson.fr/aspirateurs/sans-fil',
+    coverImage: 'https://ds1.static.rtbf.be/article/image/1248x702/d/d/7/b48eb67eb95b4ec2fbfd829cc6b867c3-1520252432.png',
+    shopUrl: 'https://www.dyson.fr/a-propos-de-dyson/dyson-demo',
+    returnPolicyUrl: 'https://www.dyson.fr/a-propos-de-dyson/conditions-generales/details-de-livraison'
     },
     {
     brandname: 'EDEN PARK',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.lejournaldesventes.fr/logos/eden-park.png',
-    websiteUrl: 'https://www.eden-park.fr/fr_fr/'
-    },
-    {
-    brandname: 'ELLA AND THE ROO',
-    categorie: 'Enfants',
-    logoUrl: 'https://cdn.notonthehighstreet.com/fs/59/5e/c405-911a-42e3-90e6-519e99994361/large.jpg',
-    websiteUrl: 'https://ellaandtheroo.com/'
+    websiteUrl: 'https://www.eden-park.fr/fr_fr/',
+    newinUrl: 'https://www.eden-park.fr/fr_fr/homme/inspiration/nouveautes.html',
+    coverImage: 'https://i.ytimg.com/vi/OS3oCxPeXGs/maxresdefault.jpg',
+    shopUrl: 'https://stores.eden-park.com/fr_fr/vetements/',
+    returnPolicyUrl: 'https://www.eden-park.fr/fr_fr/conditions-retractation/'
     },
     {
     brandname: 'ELLESSE',
     categorie: 'Sport',
+    popularity: '2',
     logoUrl: 'https://i2.wp.com/linkup97.com/wp-content/uploads/2019/06/8a8bcc6cb527c7bc727f7e9b886fcfef.png?fit=400%2C400&ssl=1',
-    websiteUrl: 'https://www.ellesse.com/'
+    websiteUrl: 'https://www.ellesse.com/',
+    newinUrl: 'https://www.ellesse.com/uk/en/collections',
+    coverImage: 'https://yard.media/wp-content/uploads/2017/04/ellesse.jpg',
+    shopUrl: 'https://www.ellesse.com/',
+    returnPolicyUrl: 'https://www.ellesse.com/uk/en/returns'
     },
     {
     brandname: 'EMOI EMOI',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-JsATmIylVD4w5VKOetAbn6fSsWQRyIlUHg&usqp=CAU',
-    websiteUrl: 'https://www.emoi-emoi.com/'
+    websiteUrl: 'https://www.emoi-emoi.com/',
+    newinUrl: 'https://emoi-emoi.com/collections/all-products',
+    coverImage: 'https://media-exp1.licdn.com/dms/image/C561BAQHIAofFkHtC3g/company-background_10000/0?e=2159024400&v=beta&t=aTapnlFfWGGGiTSpR7odLUNuVmGHBG00xN6ZGlOxm8w',
+    shopUrl: 'https://emoi-emoi.com/pages/pop-up',
+    returnPolicyUrl: 'https://emoiemoi.zendesk.com/hc/fr/categories/360000259718-Retour-et-remboursement'
     },
     {
     brandname: 'ENFANCE PARIS',
     categorie: 'Enfants',
+    popularity: '2',
     logoUrl: 'https://peekandpack.com/wp-peekandpack/wp-content/uploads/2015/03/logo_enfance-560x597.jpg',
-    websiteUrl: 'https://www.enfance-paris.com/fr/'
+    websiteUrl: 'https://www.enfance-paris.com/fr/',
+    newinUrl: 'https://www.enfance-paris.com/fr/',
+    coverImage: 'https://www.beaumarket.com/wp-content/uploads/2018/06/enfance-paris.png',
+    shopUrl: 'https://www.enfance-paris.com/fr/magasins',
+    returnPolicyUrl: 'https://www.enfance-paris.com/fr/content/3-conditions-utilisation'
     },
     {
     brandname: 'ESTÉE LAUDER',
     categorie: 'Beauté et Soins',
+    popularity: '3',
     logoUrl: 'https://brandwiki.ru/up/brands/product/190208_4616.jpg',
-    websiteUrl: 'https://m.esteelauder.fr/'
+    websiteUrl: 'https://m.esteelauder.fr/',
+    newinUrl: 'https://www.esteelauder.fr/products/20071/boutiques/nouveautes-soin',
+    coverImage: 'https://i.ytimg.com/vi/z4DPMpJNSHw/maxresdefault.jpg',
+    shopUrl: 'https://www.esteelauder.fr/store-locator',
+    returnPolicyUrl: 'https://www.esteelauder.fr/customer-service/returns'
     },
     {
     brandname: 'EVERLAST',
     categorie: 'Sport',
+    popularity: '2',
     logoUrl: 'https://pbs.twimg.com/profile_images/728302826112360448/67sTAyHp_400x400.jpg',
-    websiteUrl: 'https://www.everlast.com/'
+    websiteUrl: 'https://www.everlast.com/',
+    newinUrl: 'https://www.everlast.com/fight/boxing/gloves',
+    coverImage: 'https://i.ytimg.com/vi/kab772PXbYI/maxresdefault.jpg',
+    shopUrl: 'https://www.everlast.com/',
+    returnPolicyUrl: 'https://www.everlast.com/returns'
     },
     {
     brandname: 'FAÇONNABLE',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://carrieres.sciencespo.fr/images/cache/300_849f89638d2c247fb96e860b8beeaaec495426e5.png',
-    websiteUrl: 'https://www.faconnable.com/fr/'
+    websiteUrl: 'https://www.faconnable.com/fr/',
+    newinUrl: 'https://www.faconnable.com/fr_eu/collection/',
+    coverImage: 'https://i.pinimg.com/originals/93/68/6c/93686c2cad8cf7a615caeebb0c880097.jpg',
+    shopUrl: 'https://www.faconnable.com/fr/shops/locator/map/',
+    returnPolicyUrl: 'https://www.faconnable.com/fr_eu/returns.html'
     },
     {
     brandname: 'FATBOY',
     categorie: 'Maison',
+    popularity: '2',
     logoUrl: 'https://www.fatboy.com/assets/og-fb.png',
-    websiteUrl: 'https://www.fatboy.com/fr-fr'
+    websiteUrl: 'https://www.fatboy.com/fr-fr',
+    newinUrl: 'https://www.fatboy.com/fr-fr/grands-poufs',
+    coverImage: 'https://www.einrichten-design.fr/thumbnail/a3/bd/9d/1597958705/Fatboy%20Sitzsack%20Slim%20Velvet%202_1920x1920.jpg',
+    shopUrl: 'https://www.fatboy.com/fr-fr/store-locator',
+    returnPolicyUrl: 'https://service.fatboy.com/hc/fr-fr/sections/115001126345-Renvoyer'
     },
     {
     brandname: 'FENDI',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/31/c6/ed/31c6ed61d88c89323a91c59654570ba6.png',
-    websiteUrl: 'https://www.fendi.com/'
+    websiteUrl: 'https://www.fendi.com/',
+    newinUrl: 'https://www.fendi.com/fr/nouveautes-femme',
+    coverImage: 'https://i1.wp.com/www.theglassmagazine.com/wp/wp-content/uploads/2020/08/Peekaboo-Global-Campaign-Feature-.jpg?fit=1400%2C900&ssl=1',
+    shopUrl: 'https://www.fendi.com/fr/services-fendi',
+    returnPolicyUrl: 'https://www.fendi.com/fr/info/customer-care/returns-and-refunds'
     },
     {
     brandname: 'FERM LIVING',
     categorie: 'Maison',
+    popularity: '2',
     logoUrl: 'https://matea.com/library/local/TimThumb/TimThumb.php?src=https://matea.com/app/media/common/images/brand/logo5295d85698060.jpg&h=400&w=400&zc=2',
-    websiteUrl: 'https://fermliving.com/'
+    websiteUrl: 'https://fermliving.com/',
+    newinUrl: 'https://fermliving.com/collections/all-products',
+    coverImage: 'https://www.einrichten-design.fr/thumbnail/06/cf/f1/1597938664/Ferm%20Living%20Bau%20Pot%20Blumentopf%20Gro%C3%9F%2051_1920x1920.jpg',
+    shopUrl: 'https://fermliving.com/',
+    returnPolicyUrl: 'https://fermliving.com/pages/cancellation'
     },
     {
     brandname: 'FILA',
     categorie: 'Sport',
+    popularity: '3',
     logoUrl: 'https://media.gemo.fr/dyn/dyn/MEDIA_ProductCatalog/m2350279_logo-marque-3-min.jpg',
-    websiteUrl: 'https://www.fila.de/en/home/'
+    websiteUrl: 'https://www.fila.de/en/home/',
+    newinUrl: 'https://www.fila.de/New-Arrivals/',
+    coverImage: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/d0f46558555065.5a00ed83ec58a.jpg',
+    shopUrl: 'https://www.fila.de/en/home/',
+    returnPolicyUrl: "https://www.fila.de/index.php?cl=faq&subject=420&lang=1"
     },
     {
     brandname: 'FJALLRAVEN',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.latroikastore.com/media/cache/brand_thumbnail/72/d8/484354ba7d74c3b78dcfb3c9dd35.jpeg',
-    websiteUrl: 'https://www.fjallraven.com/'
+    websiteUrl: 'https://www.fjallraven.com/',
+    newinUrl: 'https://www.fjallraven.com/fr/fr-fr/sacs-et-equipement/nouveautes',
+    coverImage: 'https://i.pinimg.com/originals/23/dc/04/23dc0491b534da4c9cdde5c87887906f.jpg',
+    shopUrl: 'https://www.fjallraven.com/fr/fr-fr/service-clients/store-locator',
+    returnPolicyUrl: 'https://www.fjallraven.com/fr/fr-fr/service-clients/retours'
     },
     {
     brandname: 'FOSSIL',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://opticiens.optic2000.com/media/brands/2102/fr_FR/picturePath/originals/logo_0417.jpg',
-    websiteUrl: 'https://www.fossil.com/'
+    websiteUrl: 'https://www.fossil.com/',
+    newinUrl: 'https://www.fossil.com/fr-fr/nouveautes/femmes/montres/',
+    coverImage: 'https://i.pinimg.com/originals/27/e3/dd/27e3dd2b4f10a665e3934fa5cd5da103.jpg',
+    shopUrl: 'https://www.fossil.com/fr-fr/store-locator.html',
+    returnPolicyUrl: 'https://support.fossil.com/hc/fr/articles/115005671166-RETOURS-ET-%C3%89CHANGES'
     },
     {
     brandname: 'FRED PERRY',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://ae01.alicdn.com/kf/HTB11B4LQyLaK1RjSZFxq6ymPFXa2/Fred-Perry-Mode-Marque-Logo-Autocollant-Voiture-Autocollant-Vinyle-Imperm-able-L-eau-Autocollant-de-Fen.jpg_640x640.jpg',
-    websiteUrl: 'https://www.fredperry.com/eu-fr/'
+    websiteUrl: 'https://www.fredperry.com/eu-fr/',
+    newinUrl: 'https://www.fredperry.com/eu-fr/homme/nouveautes',
+    coverImage: 'https://www.propermag.com/wp-content/uploads/2015/02/584NC_Leica5_.jpg',
+    shopUrl: 'https://www.fredperry.com/eu-fr/shop-finder',
+    returnPolicyUrl: 'https://www.fredperry.com/eu-fr/helpcentre/category/retours-et-echanges'
     },
     {
-    brandname: 'FUJIFILM INSTAX',
-    categorie: 'Jeux et Gadgets',
-    logoUrl: 'https://camerastorestorage.blob.core.windows.net/70dbf2066dcc4220bfa96dbe9f4a86c9/Images/Products12714-1000x1000-371510.jpg',
-    websiteUrl: 'https://boutique.fujifilm.fr/'
+    brandname: 'FURLA',
+    categorie: 'Mode et Accessoires',
+    popularity: '3',
+    logoUrl: 'https://pbs.twimg.com/profile_images/1164483210576879616/UCKIwkq3_400x400.jpg',
+    websiteUrl: 'https://www.furla.com/',
+    newinUrl: 'https://www.furla.com/fr/fr/eshop/new-arrivals/',
+    coverImage: 'https://thedcedit.com/wp-content/uploads/2018/10/Furla-Fall-2018-Collection-Thumbnail.jpg',
+    shopUrl: 'https://www.furla.com/fr/fr/stores/',
+    returnPolicyUrl: 'https://www.furla.com/fr/fr/eshop/customer-service/returns/'
     },
     {
     brandname: 'FUSALP',
     categorie: 'Sport',
+    popularity: '1',
     logoUrl: 'https://ibp.info6tm.fr/api/v1/images/view/5dc2d21f8fe56f1e9d643866/ibp_preview/image.jpg',
-    websiteUrl: 'https://www.fusalp.com/'
+    websiteUrl: 'https://www.fusalp.com/',
+    newinUrl: 'https://www.fusalp.com/fr/1863-nouveautes-homme',
+    coverImage: 'https://media.lesechos.com/api/v1/images/view/5c0536f48fe56f396f012313/1280x720/0211812990830-web.jpg',
+    shopUrl: 'https://www.fusalp.com/fr/magasins',
+    returnPolicyUrl: 'https://www.fusalp.com/fr/content/22-retours-et-echanges'
     },
     {
     brandname: 'GAMIN GAMINE.',
     categorie: 'Enfants',
+    popularity: '1',
     logoUrl: 'https://touteslesbox.fr/wp-content/uploads/2019/09/gamin-gamine-fond.png',
-    websiteUrl: 'https://www.gaminetgamine.com/'
+    websiteUrl: 'https://www.gaminetgamine.com/',
+    newinUrl: 'https://www.gaminetgamine.com/3-shop-kids-mini',
+    coverImage: 'https://touteslesbox.fr/wp-content/uploads/2019/09/fw_19_naturemorte_131.jpg',
+    shopUrl: 'https://www.gaminetgamine.com/',
+    returnPolicyUrl: 'https://www.gaminetgamine.com/content/3-conditions-generales'
     },
     {
     brandname: 'GANT',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.alombredesmarques.fr/media/gantlogo1__094953000_1634_24042019.jpg',
-    websiteUrl: 'https://fr.gant.com/'
+    websiteUrl: 'https://fr.gant.com/',
+    newinUrl: 'https://fr.gant.com/nouveautes-homme',
+    coverImage: 'https://images.complex.com/complex/image/upload/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/gp0tsubqtjwij7ob9crf.jpg',
+    shopUrl: 'https://stores.gant.com/?_ga=2.83138070.1818709888.1592821488-599251370.1592821488',
+    returnPolicyUrl: 'https://fr.gant.com/retours'
     },
     {
     brandname: 'GEORG JENSEN',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://res.cloudinary.com/westfielddg/image/upload/westfield-media/uk/retailer/logos/hokwgflrc84osbvmtqvp.png',
-    websiteUrl: 'https://www.georgjensen.com/global'
+    websiteUrl: 'https://www.georgjensen.com/global',
+    newinUrl: 'https://www.georgjensen.com/europe/new-arrivals',
+    coverImage: 'https://d3kjsgjzc88yq5.cloudfront.net/wp-content/uploads/2016/08/GJ_1.jpg',
+    shopUrl: 'https://www.georgjensen.com/global/storelocator',
+    returnPolicyUrl: 'https://www.georgjensen.com/europe/exchange-and-returns'
     },
     {
     brandname: 'GERARD DAREL',
     categorie: 'Mode et Accessoires',
-    logoUrl: 'https://lh3.googleusercontent.com/proxy/OWT53tGDvqpZKzXOX0A3bNmjYMnl3ZJlrUxRsBixnpZ1J7-AkyPEIk5GN4YFZxVOdaZehN9-7OIJRoqdudadbpn3kfiA9Z0K-736hKoSqmuQGO8MbED2cg',
-    websiteUrl: 'https://www.gerarddarel.com/fr_fr/'
+    popularity: '2',
+    logoUrl: 'https://d1ub23vf8gaa82.cloudfront.net/brand/gerard%20darel/4a62925d-215a-40e1-84f1-3c46d31486af_500_500.jpg',
+    websiteUrl: 'https://www.gerarddarel.com/fr_fr/',
+    newinUrl: 'https://www.gerarddarel.com/fr_fr/new-1481.html',
+    coverImage: 'https://i.ytimg.com/vi/Aqh3MD29YWg/maxresdefault.jpg',
+    shopUrl: 'https://www.gerarddarel.com/fr_fr/ozcms/stores/locator/',
+    returnPolicyUrl: 'https://www.gerarddarel.com/fr_fr/aide/'
     },
     {
-    brandname: 'GILI\'S',
+    brandname: 'GIANVITO ROSSI',
     categorie: 'Mode et Accessoires',
-    logoUrl: 'https://s3-eu-west-1.amazonaws.com/tpd/logos/5c54450327234c0001998263/0x0.png',
-    websiteUrl: 'https://fr.gilis.com/'
+    popularity: '3',
+    logoUrl: 'https://i.pinimg.com/280x280_RS/76/32/ee/7632ee53ee9e69788bf75b3c26444a3e.jpg',
+    websiteUrl: 'https://www.gianvitorossi.com/fr_en/',
+    newinUrl: 'https://www.gianvitorossi.com/fr_en/woman/new-arrivals.html#more1',
+    coverImage: 'https://i.ytimg.com/vi/Ay_v4NY24VY/maxresdefault.jpg',
+    shopUrl: 'https://www.gianvitorossi.com/fr_en/boutiques',
+    returnPolicyUrl: 'https://www.gianvitorossi.com/fr_en/returns-and-refunds'
     },
     {
     brandname: 'GIVENCHY',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://www.graphic-jobs.com/portfolio/images/2935826a94f6888bf5614a0ed66e5a12.jpg',
-    websiteUrl: 'https://www.givenchy.com/fr/fr/homepage'
+    websiteUrl: 'https://www.givenchy.com/fr/fr/homepage',
+    newinUrl: 'https://www.givenchy.com/fr/fr/femme/nouveautes/',
+    coverImage: 'https://www.sleek-mag.com/wp-content/uploads/2017/02/tights1-lea-t-.jpg',
+    shopUrl: 'https://www.givenchy.com/fr/fr/storelocator',
+    returnPolicyUrl: 'https://www.givenchy.com/fr/fr/return-refund.html'
     },
     {
     brandname: 'GOLDEN GOOSE',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://i.dlpng.com/static/png/7239480_preview.png',
-    websiteUrl: 'https://www.goldengoose.com/fr/fr'
+    websiteUrl: 'https://www.goldengoose.com/fr/fr',
+    newinUrl: 'https://www.goldengoose.com/fr/fr/whats-new/new-arrivals-woman.html',
+    coverImage: 'https://i.pinimg.com/originals/c1/d4/1c/c1d41cbedb322322e490dcf916a49cee.jpg',
+    shopUrl: 'https://www.goldengoose.com/fr/fr/store-locator?showMap=true&horizontalView=true&isForm=true',
+    returnPolicyUrl: 'https://www.goldengoose.com/fr/fr/customercare/shippingandreturn.html'
     },
     {
     brandname: 'GREEN FACTORY',
     categorie: 'Maison',
+    popularity: '1',
     logoUrl: 'data:image/png;base64,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',
-    websiteUrl: 'https://www.greenfactory.fr/'
+    websiteUrl: 'https://www.greenfactory.fr/',
+    newinUrl: 'https://www.greenfactory.fr/collections',
+    coverImage: 'https://www.photosmurales.fr/media/catalog/product/cache/3/thumbnail/9df78eab33525d08d6e5fb8d27136e95/s/h/sh041-vd4_into_the_jungle_web.jpg',
+    shopUrl: 'https://www.greenfactory.fr/pages/nos-boutiques',
+    returnPolicyUrl: 'https://www.greenfactory.fr/pages/cgv-green-factory'
     },
     {
     brandname: 'GUCCI',
     categorie: 'Mode et Accessoires',
-    logoUrl: 'https://designetvue.files.wordpress.com/2014/04/logo-gucci.png?w=450',
-    websiteUrl: 'https://www.gucci.com/fr/fr/'
+    popularity: '3',
+    logoUrl: 'https://www.twinpix.biz/img/clients/logo21.png',
+    websiteUrl: 'https://www.gucci.com/fr/fr/',
+    newinUrl: 'https://www.gucci.com/fr/fr/st/what-new',
+    coverImage: 'https://imageproxy.themaven.net//https%3A%2F%2Ffashionista.com%2F.image%2FMTc0MzA3NzUxNjA0NzkxMTY0%2Fgucci-fall-2020.png',
+    shopUrl: 'https://www.gucci.com/fr/fr/store?store-search=&search-cat=store-locator',
+    returnPolicyUrl: 'https://www.gucci.com/fr/fr/st/faq#returns-and-exchanges'
+    },
+    {
+      brandname: 'GUERLAIN',
+      categorie: 'Mode et Accessoires',
+      popularity: '3',
+      logoUrl: 'https://designetvue.files.wordpress.com/2014/04/logo-gucci.png?w=450',
+      websiteUrl: 'https://m.guerlain.com/fr/fr-fr',
+      newinUrl: 'https://www.guerlain.com/fr/fr-fr/parfum/les-nouveautes/',
+      coverImage: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/angelina-jolie-ad-1564851178.jpg',
+      shopUrl: 'https://stores.guerlain.com/fr/fr_FR',
+      returnPolicyUrl: 'https://www.guerlain.com/fr/fr-fr/c/FAQ.html#FAQ_8'
     },
     {
     brandname: 'GUESS',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://static-pepper.dealabs.com/threads/thread_large/default/1318367_2.jpg',
-    websiteUrl: 'https://www.guess.eu/'
+    websiteUrl: 'https://www.guess.eu/',
+    newinUrl: 'https://www.guess.eu/fr-fr/lookbook.html',
+    coverImage: 'https://mms.businesswire.com/media/20190716005621/en/733161/5/1.jpg',
+    shopUrl: 'https://www.guess.eu/en-fr/StoreLocator',
+    returnPolicyUrl: 'https://www.guess.eu/fr-fr/eu-needhelp-content.html#returns'
     },
     {
     brandname: 'HALSTON',
     categorie: 'Mode et Accessoires',
+    popularity: '1',
     logoUrl: 'https://i.pinimg.com/280x280_RS/37/49/bc/3749bc0f946150940f3564f85e97c9b3.jpg',
-    websiteUrl: 'https://halston.com/'
+    websiteUrl: 'https://halston.com/',
+    newinUrl: 'https://halston.com/collections/halston-new-arrivals',
+    coverImage: 'https://i.ytimg.com/vi/T5bjVtYZC_U/maxresdefault.jpg',
+    shopUrl: 'https://halston.com/',
+    returnPolicyUrl: 'https://halston.com/pages/returns'
     },
     {
     brandname: 'HELLY HANSEN',
     categorie: 'Sport',
+    popularity: '2',
     logoUrl: 'https://www.pionniers-chamonix.com/mojolib/uploads/2019/01/Logo-Helly-Hansen-site.jpg',
-    websiteUrl: 'https://www.hellyhansen.com/fr_fr/'
+    websiteUrl: 'https://www.hellyhansen.com/fr_fr/',
+    newinUrl: 'https://www.hellyhansen.com/fr_fr/mens',
+    coverImage: 'https://i.ytimg.com/vi/RUi3UVO0Nik/maxresdefault.jpg',
+    shopUrl: 'https://www.hellyhansen.com/store-finder',
+    returnPolicyUrl: 'https://www.hellyhansen.com/en_fr/returns'
     },
     {
     brandname: 'HERMÈS',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2019/11/Herm%C3%A8s-Logo-1.jpg',
-    websiteUrl: 'https://www.hermes.com/'
+    websiteUrl: 'https://www.hermes.com/',
+    newinUrl: 'https://www.hermes.com/fr/fr/category/femme/pret-a-porter/pre-collection-automne-hiver/#||Cat%C3%A9gorie',
+    coverImage: 'https://assets.hermes.cn/is/image/hermesedito/P_169_Institutional_Campaign_Women_silk_EN_cover?wid=1200',
+    shopUrl: 'https://www.hermes.com/fr/fr/recherche-boutique/',
+    returnPolicyUrl: 'https://www.hermes.com/fr/fr/faq/achat-en-ligne-fr/#retour-et-%C3%A9changes'
     },
     {
     brandname: 'HERSCHEL',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/08/b0/f0/08b0f01cb320415d27a017b4e8fa14e7.jpg',
-    websiteUrl: 'https://herschelsupply.fr/'
+    websiteUrl: 'https://herschelsupply.fr/',
+    newinUrl: 'https://herschelsupply.fr/shop/collections/backpacks',
+    coverImage: 'https://cdn.herschelsupply.com/uploads/2015/10/F15_Marketing_Select-06_web.jpg',
+    shopUrl: 'https://herschelsupply.fr/store-locator',
+    returnPolicyUrl: 'https://herschelsupply.fr/returns'
     },
     {
     brandname: 'HOLUBAR',
     categorie: 'Mode et Accessoires',
+    popularity: '0',
     logoUrl: 'https://www.fashionsauce.com/img/brands/holubar-stockists.jpg',
-    websiteUrl: 'https://www.holubar.com/en/'
+    websiteUrl: 'https://www.holubar.com/en/',
+    newinUrl: 'https://www.holubar.com/it/new-arrivals/?RwGal=true&nodi_ID=230',
+    coverImage: 'https://classic-kontor.com/media/image/60/e0/9c/IMG_0271.jpg',
+    shopUrl: 'https://www.holubar.com/en/stores.php',
+    returnPolicyUrl: 'https://www.holubar.com/it/servizio_clienti/sc_resi_rimborsi.php'
     },
     {
     brandname: 'HYPSOE',
     categorie: 'Maison',
+    popularity: '0',
     logoUrl: 'https://cabana29.online/wp-content/uploads/2019/06/hypsoe-logo.jpg',
-    websiteUrl: 'https://www.hypsoe.fr/'
+    websiteUrl: 'https://www.hypsoe.fr/',
+    newinUrl: 'https://www.hypsoe.fr/bougies-parfumees.html',
+    coverImage: 'https://i.pinimg.com/originals/88/7c/9f/887c9fde47ac1c6a97b5b620cd8506ca.jpg',
+    shopUrl: 'https://www.hypsoe.fr/',
+    returnPolicyUrl: 'https://www.hypsoe.fr/cgv.html'
     },
     {
     brandname: 'IIYAMA',
     categorie: 'Technologie',
+    popularity: '0',
     logoUrl: 'https://cdn.worldvectorlogo.com/logos/iiyama-1.svg',
-    websiteUrl: 'https://iiyama.com/'
+    websiteUrl: 'https://iiyama.com/',
+    newinUrl: 'https://iiyama.com/fr_fr/produits/#/filter',
+    coverImage: 'https://cdn2.expertreviews.co.uk/sites/expertreviews/files/2018/03/iiyama_prolite_xb2779qqs_review.jpg',
+    shopUrl: 'https://iiyama.com/fr_fr/ou-acheter/#trouver-un-revendeur-local',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'ILIA',
     categorie: 'Beauté et Soins',
+    popularity: '2',
     logoUrl: 'https://i.vimeocdn.com/portrait/10206339_640x640',
-    websiteUrl: 'https://iliabeauty.com/'
+    websiteUrl: 'https://iliabeauty.com/',
+    newinUrl: 'https://iliabeauty.com/',
+    coverImage: 'https://www.freshlab.be/pub/media/catalog/category/Hayley_Mascara_1_1296x.jpeg',
+    shopUrl: 'https://iliabeauty.com/pages/find-a-store',
+    returnPolicyUrl: 'https://iliabeauty.com/pages/return-policy'
     },
     {
     brandname: 'IRO',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtlf7c0Lx71fjtio3FCx4qxkDFoKJDrHxWBQ&usqp=CAU',
-    websiteUrl: 'https://www.iroparis.com/fr'
+    websiteUrl: 'https://www.iroparis.com/fr',
+    newinUrl: 'https://www.iroparis.com/fr/c/women/hiver-20/',
+    coverImage: 'https://i.pinimg.com/originals/03/07/1b/03071b7631188fda43e0e24a01b8d78e.jpg',
+    shopUrl: 'https://www.iroparis.com/fr/stores',
+    returnPolicyUrl: 'https://www.iroparis.com/fr/assistance/shipping-returns.html'
     },
     {
     brandname: 'ISABEL MARANT',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://ladresse-boutique.com/pub/media/ves/brand/cache/i/s/isabelmarant-logo_500x455.jpg',
-    websiteUrl: 'https://www.isabelmarant.com/fr'
+    websiteUrl: 'https://www.isabelmarant.com/fr',
+    newinUrl: 'https://www.isabelmarant.com/fr/lookbooks/isabel-marant/automne-2020/',
+    coverImage: 'https://media.lesechos.com/api/v1/images/view/5d19fe798fe56f7ae919f1cc/1280x720/0601485135616-web-tete.jpg',
+    shopUrl: 'https://www.isabelmarant.com/fr/boutiques/',
+    returnPolicyUrl: 'https://www.isabelmarant.com/system/selfservice.controller?CMD=BROWSE_TOPIC&CONFIGURATION=2009&COUNTRY=fr&LANGUAGE=fr&PARTITION_ID=1&TOPIC_ID=1023&USERTYPE=1&secureFlag=false'
     },
     {
     brandname: 'JACADI',
     categorie: 'Enfants',
+    popularity: '2',
     logoUrl: 'https://kirchberg-shopping.lu/media/sys_master/root/h14/h67/8952887509022/Jacadi-kirchberg062020.png',
-    websiteUrl: 'https://www.jacadi.fr/'
+    websiteUrl: 'https://www.jacadi.fr/',
+    newinUrl: 'https://www.jacadi.fr/nouvelle-collection',
+    coverImage: 'https://mediaslide-europe.storage.googleapis.com/boutchou/pictures/1296/1801/large-1473175976-87b4da8785cf598e94c41da898587a1f.jpg',
+    shopUrl: 'https://www.jacadi.fr/store-finder',
+    returnPolicyUrl: 'https://www.jacadi.fr/conditions-generales-de-vente#articl10'
     },
     {
-    brandname: 'JANOD',
-    categorie: 'Enfants',
-    logoUrl: 'https://cdn.shopify.com/s/files/1/0659/5547/collections/janod_1200x1200.jpg?v=1490722636',
-    websiteUrl: 'https://www.janod.com/fr/'
+    brandname: 'JACQUEMUS',
+    categorie: 'Mode et Accessoires',
+    popularity: '3',
+    logoUrl: 'https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/jrd6qhbmrnpoqp7u1dsg',
+    websiteUrl: 'https://www.jacquemus.com/fr/',
+    newinUrl: 'https://www.jacquemus.com/fr/categorie-produit/femme/nouveautes',
+    coverImage: 'https://dazedimg-dazedgroup.netdna-ssl.com/1200/0-660-1926-1284/azure/dazed-prod/1180/4/1184558.jpg',
+    shopUrl: 'https://www.jacquemus.com/fr/company/retailers',
+    returnPolicyUrl: 'https://www.jacquemus.com/fr/service-client/returns-and-exchanges'
     },
     {
     brandname: 'JIMMY CHOO',
     categorie: 'Beauté et Soins',
+    popularity: '3',
     logoUrl: 'https://passion-stickers.com/4423-large_default/stickers-jimmychoo.jpg',
-    websiteUrl: 'https://row.jimmychoo.com/'
+    websiteUrl: 'https://row.jimmychoo.com/',
+    newinUrl: 'https://row.jimmychoo.com/fr_FR/femme/nouveaut%C3%A9s/',
+    coverImage: 'https://i.ytimg.com/vi/Y8WUmDerdvE/maxresdefault.jpg',
+    shopUrl: 'https://row.jimmychoo.com/fr_FR/store-locator',
+    returnPolicyUrl: 'https://row.jimmychoo.com/fr_FR/service-client%C3%A8le/delivery-returns.html'
     },
     {
     brandname: 'JONAK',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://pbs.twimg.com/profile_images/793096613443010560/jnYeE13q_400x400.jpg',
-    websiteUrl: 'https://www.jonak.fr/'
+    websiteUrl: 'https://www.jonak.fr/',
+    newinUrl: 'https://www.jonak.fr/collection/chaussures/nouveautes.html',
+    coverImage: 'https://i.pinimg.com/originals/a3/13/a1/a313a113d363af7aea864ffa3d5738d0.jpg',
+    shopUrl: 'https://www.jonak.fr/nos-boutiques.php',
+    returnPolicyUrl: 'https://www.jonak.fr/procedure-retour.php'
     },
     {
     brandname: 'JORDAN',
     categorie: 'Sport',
+    popularity: '3',
     logoUrl: 'https://www.nicekicks.com/files/2020/06/air-jordan-jumpman-logo.jpg',
-    websiteUrl: 'https://www.nike.com/fr/jordan'
+    websiteUrl: 'https://www.nike.com/fr/jordan',
+    newinUrl: 'https://www.nike.com/fr/w/jordan-37eef',
+    coverImage: 'https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/air-dior/cover-air-dior-registration/20380120-29-eng-GB/cover-air-dior-registration4_1440_1200.jpg',
+    shopUrl: 'https://www.nike.com/fr/retail?page=1&storesPerPage=15',
+    returnPolicyUrl: 'https://www.nike.com/fr/help/a/conditions-de-retour-ue'
     },
     {
     brandname: 'JULIETTE HAS A GUN',
     categorie: 'Beauté et Soins',
+    popularity: '2',
     logoUrl: 'data:image/png;base64,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',
-    websiteUrl: 'https://www.juliettehasagun.com/'
+    websiteUrl: 'https://www.juliettehasagun.com/',
+    newinUrl: 'https://www.juliettehasagun.com/fr/27-nouveautes',
+    coverImage: 'https://thejournalmag.com/wp-content/uploads/2019/11/ADP_Julietter-Has-A-Gun_19.11.19_%C2%A9Esteban-La-Tessa-26.jpg',
+    shopUrl: 'https://www.juliettehasagun.com/fr/magasins',
+    returnPolicyUrl: 'https://www.juliettehasagun.com/fr/content/7-conditions-generales-de-vente'
     },
     {
     brandname: 'K-WAY',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://lirp-cdn.multiscreensite.com/47c8ae12/dms3rep/multi/opt/asset%2023-600x600-448w.jpeg',
-    websiteUrl: 'https://www.k-way.fr/'
+    websiteUrl: 'https://www.k-way.fr/',
+    newinUrl: 'https://www.k-way.fr/361-nouvelle-collection-ah20',
+    coverImage: 'https://resize-parismatch.lanmedia.fr/img/var/news/storage/images/paris-match/vivre/mode/k-way-le-vent-en-poupe-1503221/24583559-1-fre-FR/K-way-le-vent-en-poupe.jpg',
+    shopUrl: 'https://www.k-way.fr/nos-boutiques',
+    returnPolicyUrl: 'https://www.k-way.fr/content/23-livraisons-et-retours'
     },
     {
     brandname: 'KANGOL',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBXcIIOsw1dkoNEp-3aVMi8EAAakeosf4CoA&usqp=CAU',
-    websiteUrl: 'https://www.kangol.com/'
+    websiteUrl: 'https://www.kangol.com/',
+    newinUrl: 'https://www.kangol.com/collections/new-arrivals',
+    coverImage: 'https://www.b-reel.com/static/58e2da561b4d42b7ac72163c06eb05f4/c1679/53dd96a7-6299-4838-a450-1f30b570f011_H%2526M%2Bx%2BKangol_Still%2B1.jpg',
+    shopUrl: 'https://www.kangol.com/stores',
+    returnPolicyUrl: 'https://www.kangol.com/returns/'
     },
     {
     brandname: 'KARL LAGERFELD',
+    popularity: '3',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://www.mybeauty.it/img/m/10809-large_default.jpg',
-    websiteUrl: 'https://www.karl.com/fr'
+    websiteUrl: 'https://www.karl.com/fr',
+    newinUrl: 'https://www.karl.com/fr/femme/nouveautes',
+    coverImage: 'https://photos.prnewswire.com/prnfull/20160830/402760',
+    shopUrl: 'https://www.karl.com/experience/fr/store-locator/',
+    returnPolicyUrl: 'https://www.karl.com/system/selfservice.controller?CMD=BROWSE_TOPIC&CONFIGURATION=1610&COUNTRY=fr&LANGUAGE=fr&PARTITION_ID=1&TOPIC_ID=1023&USERTYPE=1&secureFlag=false'
     },
     {
     brandname: 'KATE SPADE NEW YORK',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0mPMogPNTraYR0c5Y6krJw07x9-YvT94CpQ&usqp=CAU',
-    websiteUrl: 'https://www.katespade.com/'
+    websiteUrl: 'https://www.katespade.com/',
+    newinUrl: 'https://eu.katespade.com/en-fr/new-arrivals/',
+    coverImage: 'https://wwd.com/wp-content/uploads/2019/04/kate-spade-s19-ad-01-1.jpg',
+    shopUrl: 'https://eu.katespade.com/en-fr/stores/',
+    returnPolicyUrl: 'https://eu.katespade.com/en-fr/customer-care/return-rules-restrictions.html'
     },
     {
     brandname: 'KENZO',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://pingpong.fr/wp-content/uploads/2011/05/logo-KENZO.jpg',
-    websiteUrl: 'https://m.kenzo.com/eu/fr/accueil'
+    websiteUrl: 'https://m.kenzo.com/eu/fr/accueil',
+    newinUrl: 'https://www.kenzo.com/eu/fr/femmes',
+    coverImage: 'https://imgix.bustle.com/uploads/image/2020/8/28/40ec4c54-543f-4fcf-acbb-ac6a4c7225ac-06_677-f1-00384-kenzo-sport-by-tim-elkaim.jpg',
+    shopUrl: 'https://www.kenzo.com/eu/fr/recherche-magasin',
+    returnPolicyUrl: 'https://www.kenzo.com/eu/fr/returns'
     },
     {
     brandname: 'KICKERS',
     categorie: 'Mode et Accessoires',
+    popularity: '1',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlCMrGZnyNC-CF2CWD-ceypsmcRgBWKFlCWg&usqp=CAU',
-    websiteUrl: 'https://www.kickers.com/fr/'
+    websiteUrl: 'https://www.kickers.com/fr/',
+    newinUrl: 'https://www.kickers.com/fr/s/638/nouvelle-collection',
+    coverImage: 'https://payload.cargocollective.com/1/11/354222/8835775/Kickers_Luca_Patrone_01_1340_c.jpg',
+    shopUrl: 'https://www.kickers.com/fr/content/46-les-boutiques-kickers',
+    returnPolicyUrl: 'https://www.kickers.com/fr/content/21-faq'
     },
     {
     brandname: 'KIKO+ & GG',
     categorie: 'Enfants',
+    popularity: '1',
     logoUrl: 'https://powwowkids.com/wp-content/uploads/2019/09/powwowkids-logo-thumbnail-marques-partenaires-kiko-and-gg.jpg',
-    websiteUrl: 'https://www.kikoandgg.com/'
+    websiteUrl: 'https://www.kikoandgg.com/',
+    newinUrl: 'https://www.kikoandgg.com/collections/all-products',
+    coverImage: 'https://i.pinimg.com/originals/9e/82/ec/9e82eccd7fc3f0889d1d09ed6f976fc1.jpg',
+    shopUrl: 'https://www.kikoandgg.com/',
+    returnPolicyUrl: 'https://www.kikoandgg.com/pages/returns-exchanges'
     },
     {
-    brandname: 'KITCHENAID',
-    categorie: 'Maison',
-    logoUrl: 'https://d1taeeuvo4duww.cloudfront.net/images/feature_variant/10/kitchenaid.png?t=1525990677',
-    websiteUrl: 'https://www.kitchenaid.fr/'
+    brandname: 'KIPLING',
+    categorie: 'Mode et Accessoires',
+    popularity: '2',
+    logoUrl: 'https://pbs.twimg.com/profile_images/1013684116510904320/eXCAlEZj.jpg',
+    websiteUrl: 'https://www.kipling.com/fr-fr/',
+    newinUrl: 'https://www.kipling.com/fr-fr/nouveautes-c10525/',
+    coverImage: 'https://fashionunited.uk/images/201911/Kipling-Debut-4.jpg',
+    shopUrl: 'https://www.kipling.com/fr-fr/selectedstores/',
+    returnPolicyUrl: 'https://www.kipling.com/fr-fr/returns/'
     },
     {
     brandname: 'KUJTEN',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://payload.cargocollective.com/1/4/128060/7169741/Kujten-web-2.jpg',
-    websiteUrl: 'https://www.kujten.com/fr/'
+    websiteUrl: 'https://www.kujten.com/fr/',
+    newinUrl: 'https://www.kujten.com/eshop/collections/toutes-nos-selections/nouveautes.html',
+    coverImage: 'https://media.lexception.com/img/products/kujten/94925-kujten-melah-01.jpg',
+    shopUrl: 'https://www.kujten.com/nos-boutiques.php',
+    returnPolicyUrl: 'https://www.kujten.com/faq.php'
     },
     {   
     brandname: 'KYPRIS',
     categorie: 'Beauté et Soins',
+    popularity: '2',
     logoUrl: 'https://cdn.shopify.com/s/files/1/0075/8562/files/kypris-logo-feat.jpg?v=1579648721',
     websiteUrl: 'https://kyprisbeauty.com/'
     },
@@ -1342,7 +1658,7 @@ var datas = [
     brandname: 'NUXE',
     categorie: 'Beauté et Soins',
     logoUrl: 'https://pbs.twimg.com/profile_images/989496105326039040/gJ2ZFFXg_400x400.jpg',
-    websiteUrl: 'https://fr.nuxe.com/'
+    websiteUrl: 'https://fr.nuxe.com/',
     },
     {
     brandname: 'OBEY',

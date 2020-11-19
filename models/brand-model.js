@@ -6,10 +6,10 @@ const brandSchema = new Schema({
     popularity: String,
     logoUrl: String,
     websiteUrl: String,
-    NewsUrl: String,
+    newinUrl: String,
     coverImage : String,
     shopUrl : String,
-    ReturnPolicyUrl: String,
+    returnPolicyUrl: String,
     },
     {
         timestamps: true
