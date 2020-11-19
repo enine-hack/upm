@@ -1,30 +1,32 @@
 const express    = require('express');
 const authRoutes = express.Router();
+
 const bcrypt     = require('bcryptjs');
 
-// require the user model !!!!
 const User       = require('../models/user-model');
+
+//SIGN UP
 authRoutes.post('/signup', (req, res, next) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  if (!username || !password) {
-    res.status(400).json({ message: 'Provide username and password' });
+  const {email, password} = req.body
+
+  if (!email || !password) {
+    res.status(400).json({ message: 'Provide email and password' });
     return;
   }
-  if (password.length < 7) {
+  if (password.length < 8) {
     res.status(400).json({ message: 'Please make your password at least 8 characters long for security purposes.' });
     return;
   }
-  User.findOne({ username })
+  User.findOne({ email })
     .then(foundUser => {
       if (foundUser) {
-        res.status(400).json({ message: 'Username taken. Choose another one.' });
+        res.status(400).json({ message: 'E-mail taken. Choose another one.' });
         return;
       }
       const salt     = bcrypt.genSaltSync(10);
       const hashPass = bcrypt.hashSync(password, salt);
       const aNewUser = new User({
-        username:username,
+        email:email,
         password: hashPass
       });
       aNewUser.save()
@@ -34,20 +36,23 @@ authRoutes.post('/signup', (req, res, next) => {
          res.status(200).json(aNewUser);
         })
         .catch(err => {
+          console.log(err , 'error')
           res.status(400).json({ message: 'Saving user to database went wrong.' });
         })
       ;
     })
     .catch(err => {
-      res.status(500).json({message: "Username check went bad."});
+      res.status(500).json({message: "Email check went bad."});
     })
   ;
 });
+
+//LOG IN
 authRoutes.post('/login', (req, res, next) => {
-  const {username, password} = req.body
-  User.findOne({username}).then(user => {
+  const {email, password} = req.body
+  User.findOne({email}).then(user => {
     if (!user) {
-      return next(new Error('No user with that username'))
+      return next(new Error('No user with that e-mail'))
     }
     // compareSync
     if (bcrypt.compareSync(password, user.password) !== true) {
@@ -58,10 +63,14 @@ authRoutes.post('/login', (req, res, next) => {
     }
   }).catch(next)
 });
+
+//LOG OUT
 authRoutes.post('/logout', (req, res, next) => {
   req.session.destroy()
   res.json({message: 'Your are now logged out.'})
 });
+
+//LOGGED IN
 authRoutes.get('/loggedin', (req, res, next) => {
   // req.isAuthenticated() is defined by passport
   if (req.session.currentUser) {
@@ -70,6 +79,7 @@ authRoutes.get('/loggedin', (req, res, next) => {
   }
   res.status(403).json({ message: 'Unauthorized' });
 });
+
 module.exports = authRoutes;
 
 
