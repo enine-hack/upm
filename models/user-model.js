@@ -58,9 +58,9 @@ const userSchema = new Schema(
     },
 
     favoritebrands: [{ type : Schema.Types.ObjectId, ref: 'Brand' }], 
-    notes: [{ type : Schema.Types.ObjectId, ref: 'Notes' }], 
-    fidelityAccount: [{ type : Schema.Types.ObjectId, ref: 'Fidelity' }],
-    purchaseHistory: [{ type : Schema.Types.ObjectId, ref: 'Purchase' }]
+    // notes: [{ type : Schema.Types.ObjectId, ref: 'Notes' }], 
+    // fidelityAccount: [{ type : Schema.Types.ObjectId, ref: 'Fidelity' }],
+    // purchaseHistory: [{ type : Schema.Types.ObjectId, ref: 'Purchase' }]
 
   },
 

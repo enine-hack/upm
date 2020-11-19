@@ -57,6 +57,13 @@ app.use(session({
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
+// ADD CORS SETTINGS HERE TO ALLOW CROSS-ORIGIN INTERACTION:
+const cors = require('cors');
+app.use(cors({
+  credentials: true,
+  origin: ['http://localhost:3000']
+}));
+
 // Routes middleware
 app.use('/api', require('./routes/auth-routes'));
 
