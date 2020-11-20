@@ -34,6 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h1>UPOSH|ME</h1>
        {/* <Navbar userInSession={this.state.loggedInUser} updateUser={this.updateLoggedInUser} /> */}
         <Switch>
           <Route exact path="/signup" render={() => <Signup updateUser={this.updateLoggedInUser}/>} />
