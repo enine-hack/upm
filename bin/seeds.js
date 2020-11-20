@@ -1368,177 +1368,315 @@ var datas = [
     {   
     brandname: 'KYPRIS',
     categorie: 'Beauté et Soins',
-    popularity: '2',
+    popularity: '1',
     logoUrl: 'https://cdn.shopify.com/s/files/1/0075/8562/files/kypris-logo-feat.jpg?v=1579648721',
-    websiteUrl: 'https://kyprisbeauty.com/'
+    websiteUrl: 'https://kyprisbeauty.com/',
+    newinUrl: 'https://kyprisbeauty.com/collections/shop-all',
+    coverImage: 'https://pbs.twimg.com/media/Du4O7M7XQAA3QuP.jpg',
+    shopUrl: 'https://kyprisbeauty.com/',
+    returnPolicyUrl: 'https://kyprisbeauty.com/pages/kypris-return-policy/'
     },
     {
     brandname: 'L\'OCCITANE EN PROVENCE',
     categorie: 'Beauté et Soins',
+    popularity: '3',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2018/01/lOccitane-logo-1.jpg',
-    websiteUrl: 'https://fr.loccitane.com/'
+    websiteUrl: 'https://fr.loccitane.com/',
+    newinUrl: 'https://fr.loccitane.com/nouveaut%C3%A9s-cosm%C3%A9tique-et-produits-naturels-loccitane-france,74,1,26285,0.htm#maxp=120&nbproducts=15',
+    coverImage: 'https://www.luberoncotesud.com/image/66496-normal.jpg',
+    shopUrl: 'https://fr.loccitane.com/trouvez-la-boutique-la-plus-proche,74,1,22917,222916.htm?country=France',
+    returnPolicyUrl:'https://fr.loccitane.com/aide-et-contact,74,1,36012,363929.htm?eptsec=26'
     },
     {
     brandname: 'LA BOITE DU FROMAGER',
     categorie: 'Vin et Gastronomie',
+    popularity: '0',
     logoUrl: 'https://touteslesbox.fr/wp-content/uploads/2014/03/laboitedufromager-logo.png',
-    websiteUrl: 'https://www.laboitedufromager.com/'
+    websiteUrl: 'https://www.laboitedufromager.com/',
+    newinUrl: 'https://www.laboitedufromager.com/categorie-fromage/fromage/',
+    coverImage: 'https://www.les-bons-plans-bordeaux.com/wp-content/uploads/2017/11/les-bons-plans-bordeaux-la-boite-du-fromager-fromages-livres-directement-chez-vous-01.jpg',
+    shopUrl: 'https://www.laboitedufromager.com/',
+    returnPolicyUrl:'https://www.laboitedufromager.com/conditions-generales-de-vente/'
     },
     {
     brandname: 'LA COQUETA',
     categorie: 'Enfants',
+    popularity: '2',
     logoUrl: 'https://pbs.twimg.com/profile_images/1196719147977248771/vcj5oiyJ_400x400.jpg',
-    websiteUrl: 'https://www.lacoquetakids.com/'
+    websiteUrl: 'https://www.lacoquetakids.com/',
+    newinUrl: 'https://www.lacoquetakids.com/shop-by/editors-pick/new-collection',
+    coverImage: 'https://thisisthemarket.com/wp-content/uploads/2019/09/la-coqueta-featured.jpg',
+    shopUrl: 'https://www.lacoquetakids.com/flagship-store',
+    returnPolicyUrl:'https://www.lacoquetakids.com/delivery-returns'
     },
     {
     brandname: 'LA PANOPLIE',
     categorie: 'Mode et Accessoires',
+    popularity: '0',
     logoUrl: 'https://pbs.twimg.com/profile_images/489083250451574785/BmBABm0j.jpeg',
-    websiteUrl: 'http://la-panoplie.com/'
+    websiteUrl: 'http://la-panoplie.com/',
+    newinUrl: 'https://la-panoplie.com/EN/page/n2.html',
+    coverImage: 'https://media.lexception.com/img/products/la-panoplie/11241172948-08GR-la-panoplie-sweattouchsuede-01.jpg',
+    shopUrl: 'https://la-panoplie.com/en/page/point_of_sales.html',
+    returnPolicyUrl:'https://la-panoplie.com/en/page/politique_de_retour.html'
     },
     {
-    brandname: 'LABEL CHAUSSETTE',
-    categorie: 'Mode et Accessoires',
-    logoUrl: 'https://coqprod.com/wp-content/uploads/2019/02/logo-labelchaussette.png',
-    websiteUrl: 'https://www.label-chaussette.com/'
+    brandname: 'LABORATORIO OLFATTIVO',
+    categorie: 'Beauté et Soins',
+    popularity: '0',
+    logoUrl: 'https://d353r0i7qv3gvw.cloudfront.net/40/5525740/stage-mobile/5699962.jpg',
+    websiteUrl: 'https://www.laboratorioolfattivo.com/fr/',
+    newinUrl: 'https://www.laboratorioolfattivo.com/fr/product-categories/masters-collection-fr/',
+    coverImage: 'https://www.switch-magazine.net/wp-content/uploads/2019/10/feature.jpg',
+    shopUrl: 'https://www.laboratorioolfattivo.com/store-locator/',
+    returnPolicyUrl:'https://www.laboratorioolfattivo.com/fr/conditions-de-vente-et-dexpedition/'
     },
     {
     brandname: 'LACOSTE',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://www.presenceleadership.net/wp-content/uploads/2017/12/logo-lacoste-c.jpg',
-    websiteUrl: 'https://www.lacoste.com/fr/'
+    websiteUrl: 'https://www.lacoste.com/fr/',
+    newinUrl: 'https://www.lacoste.com/fr/collection-unisexe/',
+    coverImage: 'https://payload.cargocollective.com/1/8/286347/12485728/Lacoste_02_1600_c.jpg',
+    shopUrl: 'https://www.lacoste.com/fr/stores',
+    returnPolicyUrl:'https://www.lacoste.com/fr/FAQ.html'
     },
     {
     brandname: 'LANCASTER',
+    popularity:'2',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://barretmaroquinerie.fr/site/wp-content/uploads/2017/01/logo-lancaster.jpg',
-    websiteUrl: 'https://fr.lancaster.com/'
+    websiteUrl: 'https://fr.lancaster.com/',
+    newinUrl: 'https://fr.lancaster.com/nouveautes.html',
+    coverImage: 'https://i.pinimg.com/originals/42/31/3d/42313d13a27808418bbf77717a09635f.jpg',
+    shopUrl: 'https://fr.lancaster.com/our-shops',
+    returnPolicyUrl:'https://fr.lancaster.com/livraisons-et-retours'
     },
     {
     brandname: 'LANCEL',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://barretmaroquinerie.fr/site/wp-content/uploads/2018/12/LOGO-LANCEL.png',
-    websiteUrl: 'https://www.lancel.com/fr_fr/'
+    websiteUrl: 'https://www.lancel.com/fr_fr/',
+    newinUrl: 'https://www.lancel.com/fr_fr/femme/nouveautes.html?___store=fr_fr',
+    coverImage: 'https://i.pinimg.com/originals/3f/33/6a/3f336ae5907d42b7151c0564e75a9a06.jpg',
+    shopUrl: 'https://www.lancel.com/fr_fr/storelocator',
+    returnPolicyUrl:'https://www.lancel.com/fr_fr/faq#5-retour'
     },
     {
     brandname: 'LANCÔME',
     categorie: 'Beauté et Soins',
+    popularity: '3',
     logoUrl: 'https://www.brandslex.de/img/logos/xl/l/logo-lancome-01.png',
-    websiteUrl: 'https://www.lancome.fr/'
+    websiteUrl: 'https://www.lancome.fr/',
+    newinUrl: 'https://www.lancome.fr/nouveautes/',
+    coverImage: 'https://i.ytimg.com/vi/BVw2VWVfE-0/maxresdefault.jpg',
+    shopUrl: 'https://www.lancome.fr/landing-pages/storelocator-page/',
+    returnPolicyUrl:'https://www.lancome.fr/customer-service/customer-service/conditions-generales-de-vente/customer-service-terms-sale.html#SecTitle7'
     },
     {
     brandname: 'LANVIN',
-    categorie: 'Beauté et Soins',
+    categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/a1/42/91/a1429172d99d9142a59f8f4f09ff0706.jpg',
-    websiteUrl: 'https://www.lanvin.com/fr/'
+    websiteUrl: 'https://www.lanvin.com/fr/',
+    newinUrl: 'https://www.lanvin.com/fr/femme/nouveautes.html',
+    coverImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9VbEyLgFFjIVX02JYbDJx_6NkDT8LjMV-A&usqp=CAU',
+    shopUrl: 'https://www.lanvin.com/fr/store-locator',
+    returnPolicyUrl:'https://www.lanvin.com/fr/customer-care-return-refund'
     },
     {
     brandname: 'LE PETIT BALLON',
     categorie: 'Vin et Gastronomie',
+    popularity: '1',
     logoUrl: 'https://touteslesbox.fr/wp-content/uploads/2012/09/logo_le_petit_ballon_ttb-130x130@2x.jpg',
-    websiteUrl: 'https://www.lepetitballon.com/'
+    websiteUrl: 'https://www.lepetitballon.com/',
+    newinUrl: 'https://www.lepetitballon.com/vins/',
+    coverImage: 'https://www.inrap.fr/dossiers/userdata/c_bloc_album/1/1195/1600_1195_vignette_DSC-5446.jpg',
+    shopUrl: 'https://www.lepetitballon.com/',
+    returnPolicyUrl:'https://faq.lepetitballon.com/hc/fr/sections/360002498033-LIVRAISON'
     },
     {
     brandname: 'LE TANNEUR',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://barretmaroquinerie.fr/site/wp-content/uploads/2017/01/logo-letanneur.jpg',
-    websiteUrl: 'https://www.letanneur.com/'
+    websiteUrl: 'https://www.letanneur.com/',
+    newinUrl: 'https://www.letanneur.com/collections/nouveautes-femme',
+    coverImage: 'https://i.ytimg.com/vi/2D2Fv2sbXUA/maxresdefault.jpg',
+    shopUrl: 'https://www.letanneur.com/apps/store-locator/',
+    returnPolicyUrl:'https://www.letanneur.com/pages/retours'
     },
     {
     brandname: 'LEGO',
     categorie: 'Jeux et Gadgets',
+    popularity: '3',
     logoUrl: 'https://grupoformax.com/wp-content/uploads/2020/07/Lego-Logo.jpg',
-    websiteUrl: 'https://www.lego.com/fr-fr'
+    websiteUrl: 'https://www.lego.com/fr-fr',
+    newinUrl: 'https://www.lego.com/fr-fr/categories/new-sets-and-products',
+    coverImage: 'https://i0.wp.com/www.adobomagazine.com/wp-content/uploads/2019/09/Lego-Hero-Image.jpg?fit=1440%2C757&ssl=1',
+    shopUrl: 'https://www.lego.com/fr-fr/stores',
+    returnPolicyUrl:'https://www.lego.com/fr-fr/service/help/shopping/retours'
     },
     {
     brandname: 'LEICA',
     categorie: 'Technologie',
+    popularity: '3',
     logoUrl: 'https://www.brandslex.de/img/logos/xl/l/logo-leica-02.png',
-    websiteUrl: 'https://fr.leica-camera.com/'
+    websiteUrl: 'https://fr.leica-camera.com/',
+    newinUrl: 'https://fr.leica-camera.com/Photographie/Aper%C3%A7u-bo%C3%AEtier',
+    coverImage: 'https://i.pinimg.com/originals/bf/4c/c7/bf4cc7ba7b67bded82b40eae26bec919.jpg',
+    shopUrl: 'https://fr.leica-camera.com/Stores-Revendeurs/Leica-Stores-dans-le-monde',
+    returnPolicyUrl:''
     },
     {
     brandname: 'LEVI\'S',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROUpt8jv9HHaZc4sXhUHGYTaYCaaDrx7kG4g&usqp=CAU',
-    websiteUrl: 'https://www.levi.com/'
+    websiteUrl: 'https://www.levi.com/',
+    newinUrl: 'https://www.levi.com/FR/fr_FR/curated-by-unlabeled/c/levi_collections_unlabeled_curated',
+    coverImage: 'https://media1.popsugar-assets.com/files/thumbor/MD7Q7Wh_FNy-EINkk5Eiivb2leU/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/27/777/n/1922564/5fe6b86a69316f1a_19_1018_Levis_501_Hailey_Jaden_2018/i/hailey-bieber-jaden-smith-levis-campaign-spring-2020.jpg',
+    shopUrl: 'https://www.levi.com/FR/fr_FR/store-finder/store-directory',
+    returnPolicyUrl:'https://levihelp.levi.com/hc/fr-fr/categories/360004011774'
     },
     {
     brandname: 'LIPAULT',
     categorie: 'Maison',
+    popularity:'2',
     logoUrl: 'https://barretmaroquinerie.fr/site/wp-content/uploads/2017/01/logo-lipault.jpg',
-    websiteUrl: 'https://www.lipault.fr/fr/home/'
+    websiteUrl: 'https://www.lipault.fr/fr/home/',
+    newinUrl: 'https://www.lipault.fr/fr/nouveautes/',
+    coverImage: 'https://www.lipault.com.hk/on/demandware.static/-/Library-Sites-LipaultSharedLibrary/default/dwd80f82c9/slides/lipa_homecover-slide_mylipaultmoment/images/bgr_mylipaultmoment.jpg',
+    shopUrl: 'https://www.lipault.fr/fr/lipault-store/',
+    returnPolicyUrl:'https://www.lipault.fr/fr/conditions-d%E2%80%99utilisation-et-de-vente/terms.html#returns'
     },
     {
     brandname: 'LIU JO',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0013/7111/brand.gif?itok=0ApIyzC6',
-    websiteUrl: 'https://www.liujo.com/fr/'
+    websiteUrl: 'https://www.liujo.com/fr/',
+    newinUrl: 'https://www.liujo.com/fr/femme/new-arrivals',
+    coverImage: 'https://www.gotceleb.com/wp-content/uploads/photos/kendall-jenner/liu-jo-campaign-2020-photoshoot/Kendall-Jenner---Liu-Jo-Campaign-2020-Photoshoot-22.jpg',
+    shopUrl: 'https://www.liujo.com/fr/storelocator/',
+    returnPolicyUrl:'https://www.liujo.com/fr/customer-care/retours-et-remboursements'
     },
     {
     brandname: 'LONGCHAMP',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.cegid.com/uploads/2018/11/longchamp_LOGO.png',
-    websiteUrl: 'https://www.longchamp.com/fr/fr'
+    websiteUrl: 'https://www.longchamp.com/fr/fr',
+    newinUrl: 'https://www.longchamp.com/fr/fr',
+    coverImage: 'https://lesfacons.com/wp-content/uploads/2020/02/LONGCHAMP-SPRING-2020-AD-CAMPAIGN-FEATURING-KENDALL-JENNER.jpg',
+    shopUrl: 'https://www.longchamp.com/fr/fr/boutiques?showMap=true',
+    returnPolicyUrl:'https://www.longchamp.com/fr/fr/la-vente-en-ligne/retours-et-echanges/'
     },
     {
     brandname: 'LOU.YETU',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://media-exp1.licdn.com/dms/image/C4D0BAQGpxkLo6BdUQg/company-logo_200_200/0?e=2159024400&v=beta&t=8p5G9qU2CpSuOC9PtPeSbN624TMNbzgUEF1HHpHLcoM',
-    websiteUrl: 'https://louyetu.fr/fr'
+    websiteUrl: 'https://louyetu.fr/fr',
+    newinUrl: 'https://louyetu.fr/fr/shop/concepts/les-accumulations.html',
+    coverImage: 'https://i.pinimg.com/originals/ba/d1/de/bad1deca7aba82bb8414a224b27c28e6.jpg',
+    shopUrl: 'https://louyetu.fr/fr/journal/boutiques/',
+    returnPolicyUrl:'https://louyetu.fr/fr/journal/cgv/'
     },
     {
     brandname: 'LOUBOUTIN',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://passion-stickers.com/2540-home_default/stickers-christian-louboutin.jpg',
-    websiteUrl: 'http://eu.christianlouboutin.com/fr_fr/'
+    websiteUrl: 'http://eu.christianlouboutin.com/fr_fr/',
+    newinUrl: 'https://eu.christianlouboutin.com/fr_fr/femme/nouveautes/',
+    coverImage: 'https://assets.vogue.in/photos/5ce4671bb8031186bb8fbc17/master/pass/Louboutin-featured.jpg',
+    shopUrl: 'https://eu.christianlouboutin.com/fr_fr/storelocator',
+    returnPolicyUrl:'https://eu.christianlouboutin.com/fr_fr/rma/order/search/'
     },
     {
     brandname: 'LOUIS VUITTON',
     categorie: 'Mode et Accessoires',
+    poupularity: '3',
     logoUrl: 'https://journalduluxe.fr/wp-content/uploads/2018/08/Louis-Vuitton-Logo-3.jpg',
-    websiteUrl: 'https://fr.louisvuitton.com/'
+    websiteUrl: 'https://fr.louisvuitton.com/',
+    newinUrl: 'https://fr.louisvuitton.com/fra-fr/nouveautes/femme/dernieres-nouveautes/_/N-1ns9qn3',
+    coverImage: 'https://r.lvmh-static.com/uploads/2020/07/news-cover-10-1584x872.jpg',
+    shopUrl: 'https://fr.louisvuitton.com/fra-fr/magasins',
+    returnPolicyUrl:'https://fr.louisvuitton.com/fra-fr/service-impact'
     },
     {
     brandname: 'LOVE MOSCHINO',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTswOBkM7JDR6TMTT9E8p0wsFA6eOoBgDAVQ&usqp=CAU',
-    websiteUrl: 'https://www.moschino.com/fr_fr/love-moschino.html'
+    websiteUrl: 'https://www.moschino.com/fr_fr/love-moschino.html',
+    newinUrl: 'https://www.moschino.com/fr_fr/love-moschino/femme/pret-a-porter.html',
+    coverImage: 'https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1500&h=785&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F07%2F17.48.52.1587003_v1_qc_srgb-1.jpg',
+    shopUrl: 'https://www.moschino.com/fr_fr/storelocator/',
+    returnPolicyUrl:'https://www.moschino.com/fr_fr/returns-and-refunds'
     },
     {
     brandname: 'MAISON LEJABY',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://p.ventesprivees-fr.com/maison-lejaby.png',
-    websiteUrl: 'https://www.maisonlejaby.com/'
+    websiteUrl: 'https://www.maisonlejaby.com/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl:''
     },
     {
     brandname: 'MAJE',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://cdn.palbin.com/users/31359/images/27576e3e4dc4721cee518fe834b4e5fa--maje-logo-google-1547724437.jpg',
-    websiteUrl: 'https://fr.maje.com/'
+    websiteUrl: 'https://fr.maje.com/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl:''
     },
     {
     brandname: 'MAKE UP FOREVER',
     categorie: 'Beauté et Soins',
     logoUrl: '',
-    websiteUrl: 'https://www.makeupforever.com/fr/fr'
+    websiteUrl: 'https://www.makeupforever.com/fr/fr',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl:''
     },
     {
     brandname: 'MANFIELD',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://p.ventesprivees-fr.com/manfield.png',
-    websiteUrl: 'https://www.manfield.fr/'
+    websiteUrl: 'https://www.manfield.fr/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl:''
     },
     {
     brandname: 'MARC JACOBS',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2019/11/Marc-Jacobs.jpg',
-    websiteUrl: 'https://www.marcjacobs.com/'
+    websiteUrl: 'https://www.marcjacobs.com/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl:''
     },
     {
     brandname: 'MARSHALL',
     categorie: 'Maison',
     logoUrl: 'https://cdn2.bigcommerce.com/server1500/ac84d/products/837/images/1788/Marshall_Amplification_-_Logo__49156.1324795724.380.380.jpg?c=2',
-    websiteUrl: 'http://www.marshallamps.fr/'
+    websiteUrl: 'http://www.marshallamps.fr/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl:''
     },
     {
     brandname: 'MELLOW YELLOW',
