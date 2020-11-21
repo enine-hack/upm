@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {login} from './auth-service';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Login extends Component {
   state = { email: '', password: '' }
@@ -21,18 +22,28 @@ class Login extends Component {
   }
   render(){
     return(
-      <div>
-        <form onSubmit={this.handleFormSubmit}>
-          <label>Email:</label>
-          <input type="text" name="email" value={this.state.email} onChange={e => this.handleChange(e)} />
-          <label>Password:</label>
-          <textarea name="password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-          <input type="submit" value="Login" />
-        </form>
-        <p>Don't have account? 
-          <Link to={"/signup"}>Register</Link>
-        </p>
-      </div>
+      <Container style={{ marginTop: "50px", marginBottom: "50px"}}>
+        SIGN UP
+        <Row style={{ justifyContent: "center" }}>
+          <form onSubmit={this.handleFormSubmit}>
+            <Col>
+              <label>Email</label>
+              <input type="text" name="email" value={this.state.email} onChange={e => this.handleChange(e)} />
+            </Col>
+            <Col>
+              <label>Password</label>
+              <textarea name="password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+            </Col>
+            <Col><input type="submit" value="LogIn" /></Col>
+            <Col>
+              <p>Don't have account?  
+              <Link to={"/signup"}> Register</Link>
+              </p>
+            </Col>
+          </form>
+        </Row>
+          
+      </Container>
     )
   }
 }
