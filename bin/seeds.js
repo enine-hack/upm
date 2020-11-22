@@ -1621,230 +1621,416 @@ var datas = [
     {
     brandname: 'MAISON LEJABY',
     categorie: 'Mode et Accessoires',
+    popularity: '1',
     logoUrl: 'https://p.ventesprivees-fr.com/maison-lejaby.png',
     websiteUrl: 'https://www.maisonlejaby.com/',
-    newinUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    returnPolicyUrl:''
+    newinUrl: 'https://www.maisonlejaby.com/nouveautes/nouveautes.html',
+    coverImage: 'https://img.over-blog-kiwi.com/1/52/16/16/20151216/ob_c72bf2_maison-lejaby-collection-2016-lingerie.jpg',
+    shopUrl: 'https://www.maisonlejaby.com/nos-boutiques.php',
+    returnPolicyUrl:'https://www.maisonlejaby.com/faq.php'
     },
     {
     brandname: 'MAJE',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://cdn.palbin.com/users/31359/images/27576e3e4dc4721cee518fe834b4e5fa--maje-logo-google-1547724437.jpg',
     websiteUrl: 'https://fr.maje.com/',
-    newinUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    returnPolicyUrl:''
+    newinUrl: 'https://fr.maje.com/fr/pret-a-porter/collection/nouvelle-collection/',
+    coverImage: 'https://www.fashionela.net/wp-content/uploads/2019/09/Maje_FW19_Fashionela.jpg',
+    shopUrl: 'https://fr.maje.com/fr/boutiques/',
+    returnPolicyUrl:'https://fr.maje.com/fr/faqs/?category=6353-retour-remboursement'
     },
     {
     brandname: 'MAKE UP FOREVER',
     categorie: 'Beauté et Soins',
-    logoUrl: '',
+    popularity: '3',
+    logoUrl: 'https://r.lvmh-static.com/uploads/2014/09/mufe_logo.png',
     websiteUrl: 'https://www.makeupforever.com/fr/fr',
-    newinUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    returnPolicyUrl:''
+    newinUrl: 'https://www.makeupforever.com/fr/fr/rougeartist/',
+    coverImage: 'https://www.multivu.com/players/uk/8272151-make-up-for-ever-artists-ultra-hd-campaign/image/Image6_1518175667370-16-HR.jpg',
+    shopUrl: 'https://www.makeupforever.com/fr/fr/boutiques/?showMap=true&horizontalView=true&isForm=true',
+    returnPolicyUrl:'https://www.makeupforever.com/fr/fr/shipping-and-return.html'
     },
     {
     brandname: 'MANFIELD',
     categorie: 'Mode et Accessoires',
+    popularity: '1',
     logoUrl: 'https://p.ventesprivees-fr.com/manfield.png',
     websiteUrl: 'https://www.manfield.fr/',
-    newinUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    returnPolicyUrl:''
+    newinUrl: 'https://www.manfield.fr/',
+    coverImage: 'https://i.ytimg.com/vi/SPGmGUnRYlk/maxresdefault.jpg',
+    shopUrl: 'https://www.manfield.fr/nos-boutiques',
+    returnPolicyUrl:'https://www.manfield.fr/retour'
     },
     {
     brandname: 'MARC JACOBS',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2019/11/Marc-Jacobs.jpg',
     websiteUrl: 'https://www.marcjacobs.com/',
-    newinUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    returnPolicyUrl:''
+    newinUrl: 'https://www.marcjacobs.com/runway-marc-jacobs/fall-2020/shop-the-collection/',
+    coverImage: 'https://secureservercdn.net/72.167.243.119/2a1.ee3.myftpupload.com/wp-content/uploads/2017/08/Ad-Campaign-Marc-Jacobs-FallWinter-2017-2018.jpg',
+    shopUrl: 'https://www.marcjacobs.com/stores',
+    returnPolicyUrl:'https://www.marcjacobs.com/help#shipping-returns'
     },
     {
     brandname: 'MARSHALL',
     categorie: 'Maison',
+    popularity: '2',
     logoUrl: 'https://cdn2.bigcommerce.com/server1500/ac84d/products/837/images/1788/Marshall_Amplification_-_Logo__49156.1324795724.380.380.jpg?c=2',
-    websiteUrl: 'http://www.marshallamps.fr/',
-    newinUrl: '',
-    coverImage: '',
-    shopUrl: '',
-    returnPolicyUrl:''
+    websiteUrl: 'https://www.marshallheadphones.com/fr/fr/',
+    newinUrl: 'https://www.marshallheadphones.com/fr/fr/1005696.html',
+    coverImage: 'https://i.ytimg.com/vi/iZg6naoxxqA/maxresdefault.jpg',
+    shopUrl: 'https://www.marshallheadphones.com/fr/fr/',
+    returnPolicyUrl:'https://www.marshallheadphones.com/fr/fr/exchange-return.html'
+    },
+    {
+      brandname: 'MAX MARA',
+      categorie: 'Mode et Accessoires',
+      popularity: '3',
+      logoUrl: 'https://i.pinimg.com/originals/e6/54/2c/e6542cbf0592b200d6014c7a7b5e5274.png',
+      websiteUrl: 'https://fr.maxmara.com/',
+      newinUrl: 'https://fr.maxmara.com/nouveautes',
+      coverImage: 'https://lesfacons.com/wp-content/uploads/2020/01/MAX-MARA-SPRING-2020-AD-CAMPAIGN.jpg',
+      shopUrl: 'https://fr.maxmara.com/store-locator',
+      returnPolicyUrl:'https://fr.maxmara.com/info/customer-care/returns-and-refunds'
     },
     {
     brandname: 'MELLOW YELLOW',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://le133cannes.com/wp-content/uploads/2017/02/mellow-yellow-logo.png',
-    websiteUrl: 'https://mellowyellow.com/'
+    websiteUrl: 'https://mellowyellow.com/',
+    newinUrl: 'https://www.mellowyellow.com/fr/ah-19/chaussures/nouveautes.html',
+    coverImage: 'https://medias.fashionnetwork.com/image/upload/v1/medias/765b8bc95eceebceb575f6470787d78e2411390.jpg',
+    shopUrl: 'https://mellowyellow.com/fr/boutiques/',
+    returnPolicyUrl: 'https://www.mellowyellow.com/fr/conditions-generales#partie12'
     },
     {
     brandname: 'MERI MERI',
     categorie: 'Maison',
+    popularity: '2',
     logoUrl: 'https://cdn.shopify.com/s/files/1/1404/9714/collections/AAEAAQAAAAAAAAlCAAAAJGY4Yzg4OTIxLWUzYzctNDFlMC1iYTNhLWM3YmE3Yjg0YmU5MA_1200x630.png?v=1495127582',
-    websiteUrl: 'https://merimeri.com/'
+    websiteUrl: 'https://merimeri.com/',
+    newinUrl: 'https://merimeri.eu/fr/collections/christmas-party-decorations',
+    coverImage: 'https://assets.smallable.com/default/0001/18/fe5f9cb79b8bcbcd29f41db9694bdf7a79a9bcb2.jpeg',
+    shopUrl: 'https://merimeri.com/',
+    returnPolicyUrl: 'https://merimeri.eu/fr/pages/returns-1'
     },
     {
     brandname: 'MICHAEL KORS',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2019/04/Michael-Kors-logo-1.jpg',
-    websiteUrl: 'https://www.michaelkors.fr/'
+    websiteUrl: 'https://www.michaelkors.fr/',
+    newinUrl: 'https://www.michaelkors.fr/tendance/nouveaut%C3%A9s/_/N-1xohqhs',
+    coverImage: 'https://www.awayinstyle.com/wp-content/uploads/2020/03/SP20_MMK_AD_HORI_1.jpg',
+    shopUrl: 'https://www.michaelkors.fr/stores/',
+    returnPolicyUrl: 'https://www.michaelkors.fr/info/retours-et-echanges/eus220121'
     },
     {
     brandname: 'MIU MIU',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/b9/e2/08/b9e20804c67acf5c3e50db91f7d62ac0.jpg',
-    websiteUrl: 'https://www.miumiu.com/fr/fr.html'
+    websiteUrl: 'https://www.miumiu.com/fr/fr.html',
+    newinUrl: 'https://www.miumiu.com/fr/fr/collections/fall-winter-2020.html',
+    coverImage: 'https://aeworld.com/wp-content/uploads/2019/07/4-MIUMIU_FW19_combo7.jpg',
+    shopUrl: 'https://www.miumiu.com/fr/fr/store-locator.html',
+    returnPolicyUrl: 'https://www.miumiu.com/fr/fr/return-order.html'
     },
     {
     brandname: 'MIZUNO',
     categorie: 'Sport',
+    popularity: '2',
     logoUrl: 'https://www.groupement-eurogolf.com/uploads/brands/images/mizuno-630x630.png',
-    websiteUrl: 'https://emea.mizuno.com/eu/fr-fr/home/'
+    websiteUrl: 'https://emea.mizuno.com/eu/fr-fr/home/',
+    newinUrl: 'https://emea.mizuno.com/eu/fr-fr/homme/featured/new-arrivals/',
+    coverImage: 'https://emea.mizuno.com/on/demandware.static/-/Library-Sites-sharedLibrary_Mizuno/default/dwda88e4f6/images/campaigns/Wave%20Rider%2024/wave_rider_2500x1667/wave_rider_24_product_image_2500x1667_1.jpg',
+    shopUrl: 'https://www.miumiu.com/fr/fr/store-locator.html',
+    returnPolicyUrl: 'https://emea.mizuno.com/eu/fr-fr/help-and-faq.html#tab-2'
     },
     {
     brandname: 'MONCLER',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/02/3a/4b/023a4b43dee70bfdbdedc5e983883cae.jpg',
-    websiteUrl: 'https://www.moncler.com/'
+    websiteUrl: 'https://www.moncler.com/',
+    newinUrl: 'https://store.moncler.com/fr-fr/homme/nouveautes',
+    coverImage: 'https://www.businessoffashion.com/articles/luxury/site/uploads/2020/01/MONCLER-GENIUS-2020.jpg',
+    shopUrl: 'https://www.moncler.com/fr/storeslocator/',
+    returnPolicyUrl: 'https://store.moncler.com/system/selfservice.controller?CONFIGURATION=1552&PARTITION_ID=1&CMD=BROWSE_TOPIC&LANGUAGE=fr&COUNTRY=fr&USERTYPE=1&TOPIC_ID=1023'
     },
     {
     brandname: 'MONTBLANC',
     categorie: 'Maison',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/4e/5f/fe/4e5ffef0dfba17637143d206c8e87f6d.jpg',
-    websiteUrl: 'https://www.montblanc.com/fr-fr/home.html'
+    websiteUrl: 'https://www.montblanc.com/fr-fr/home.html',
+    newinUrl: 'https://www.montblanc.com/fr-fr/collection/cadeaux/inspiration/nos-dernieres-creations',
+    coverImage: 'https://www.europastar.com/local/cache-vignettes/L1400xH700/arton1004092182-a4f91.jpg?1598875785',
+    shopUrl: 'https://www.montblanc.com/fr-fr/find-montblanc.html',
+    returnPolicyUrl: 'https://www.montblanc.com/fr-fr/customer-service/online-services-faq#returns'
+    },
+    {
+    brandname: 'MUGLER',
+    categorie: 'Beauté et Soins',
+    popularity: '2',
+    logoUrl: 'https://cdn.cms.tagadamedia.com/testonsensemble/wp-content/uploads/2016/09/Mugler.jpg',
+    websiteUrl: 'https://www.mugler.fr/',
+    newinUrl: 'https://www.mugler.fr/parfum-angel/',
+    coverImage: 'https://www.mugler.ca/on/demandware.static/-/Library-Sites-mugler-v3/default/dwce85cd81/assets/img/angel/angel-desktop.jpg',
+    shopUrl: 'https://www.mugler.fr/parfum-angel/',
+    returnPolicyUrl: 'https://www.mugler.fr/faqs.html'
     },
     {
     brandname: 'MULBERRY',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.jacksoninteriors.co.uk/wp-content/uploads/2018/11/Screen-Shot-2018-11-23-at-10.49.38.png',
-    websiteUrl: 'https://www.mulberry.com/fr/'
+    websiteUrl: 'https://www.mulberry.com/fr/',
+    newinUrl: 'https://www.mulberry.com/fr/collections/aw20',
+    coverImage: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/09/10/portobello.jpg',
+    shopUrl: 'https://www.mulberry.com/fr/stores-list',
+    returnPolicyUrl: 'https://www.mulberry.com/fr/customer-services/returns'
     },
     {
     brandname: 'MVMT',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://cdn.shopify.com/s/files/1/1288/3045/files/MVMT_Logo-01.jpg?895739141999749972',
-    websiteUrl: 'https://www.mvmtwatches.com/'
+    websiteUrl: 'https://www.mvmtwatches.com/',
+    newinUrl: 'https://www.mvmt.com/new-jewelry-2020.html',
+    coverImage: 'https://d1otfi4uhdq3fm.cloudfront.net/wp-content/uploads/2020/09/30015047/Arceau_L_heure_de_la_lune_Pierre_de_lune_PR_copyright_Joel_Von_Allmen-e1601403059505-1920x1171.jpg',
+    shopUrl: 'https://www.mvmt.com/stores-find?showMap=true&amp;horizontalView=true&amp;isForm=true',
+    returnPolicyUrl: 'https://www.mvmt.com/on/demandware.store/Sites-MVMTUS-Site/en_US/FAQ-Show?activetab=tab-2#faq-page-returns-tab'
     },
     {
     brandname: 'NAPAPIJRI',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.groupevuillermet.fr/wp-content/uploads/2014/09/logo-Napapijri-Chambery.jpg',
-    websiteUrl: 'https://www.napapijri.fr/'
+    websiteUrl: 'https://www.napapijri.fr/',
+    newinUrl: 'https://www.napapijri.fr/shop/fr/npj-fr/homme-au-premier-plan-nouveautes?gclsrc=aw.ds&&gclid=CjwKCAiAtej9BRAvEiwA0UAWXnECJSIA43t5pY_SbmJ5fsQpEDD4OCysuCNv9o13uAo8B5pcRoXs0hoCHmoQAvD_BwE',
+    coverImage: 'https://www.wearedink.com/img/casestudies/napapijri/napapijri-banner.jpg',
+    shopUrl: 'https://www.napapijri.fr/utility/trouver-une-boutique.html',
+    returnPolicyUrl: 'https://www.napapijri.fr/aide/retours.html'
     },
     {
     brandname: 'NARS COSMETICS',
     categorie: 'Beauté et Soins',
+    popularity: '3',
     logoUrl: 'https://www.dealninja.com/wp-content/uploads/2017/11/nars-logo.png',
-    websiteUrl: 'https://www.narscosmetics.fr/fr'
+    websiteUrl: 'https://www.narscosmetics.fr/fr',
+    newinUrl: 'https://www.narscosmetics.fr/fr/nouveautes/nouveautes',
+    coverImage: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F14%2F2018%2F12%2F20%2F122018-naomi-campbell-nars-02-2000.jpg',
+    shopUrl: 'https://www.narscosmetics.fr/fr/Boutiques',
+    returnPolicyUrl: 'https://www.narscosmetics.fr/fr/customer-service.html'
     },
     {
     brandname: 'NAT ET NIN',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://www.brandarex.fr/public/images/brands/1076@2x.png',
-    websiteUrl: 'https://www.nat-nin.fr/fr/'
+    websiteUrl: 'https://www.nat-nin.fr/fr/',
+    newinUrl: 'https://www.nat-nin.fr/fr/maroquinerie/nouveautes',
+    coverImage: 'https://blog.greatfriendsagency.com/wp-content/uploads/GreatFriends_Guillaume_Lechat_NAT_NIN_Campaign_SS2020_8.jpg',
+    shopUrl: 'https://www.nat-nin.fr/fr/magasins',
+    returnPolicyUrl: 'https://www.nat-nin.fr/fr/maroquinerie/livraison-et-retours'
     },
     {
     brandname: 'NESPRESSO',
     categorie: 'Maison',
+    popularity: '2',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2018/06/Logo-Nespresso-1.jpg',
-    websiteUrl: 'https://www.nespresso.com/fr/fr/'
+    websiteUrl: 'https://www.nespresso.com/fr/fr/',
+    newinUrl: 'https://www.nespresso.com/fr/fr/order/machines/vertuo/',
+    coverImage: 'https://www.prolificlondon.co.uk/sites/prolificlondon.co.uk/files/styles/lightbox_large/public/images/news/jwtnespresso.jpg?itok=rJYuVEVz',
+    shopUrl: 'https://www.nespresso.com/boutiques-fr/nous-trouver',
+    returnPolicyUrl: 'https://www.nespresso.com/fr/fr/service-faq'
     },
     {
     brandname: 'NEW BALANCE',
     categorie: 'Sport',
+    popularity: '3',
     logoUrl: 'https://media.cdnws.com/_i/69106/302/1800/5/lofo-nb.gif',
-    websiteUrl: 'https://www.newbalance.fr/'
+    websiteUrl: 'https://www.newbalance.fr/',
+    newinUrl: 'https://www.newbalance.fr/fr/nouveautes/hommes/',
+    coverImage: 'https://cdn.shopify.com/s/files/1/0302/7829/files/blog-1_bad8e5ca-e189-4f87-8105-8359e88d0bea_2048x2048.jpg?v=1583770433',
+    shopUrl: 'https://www.newbalance.fr/fr/stores',
+    returnPolicyUrl: 'https://www.newbalance.fr/fr/Customer-Service-ReturnsExchanges.html'
     },
     {
     brandname: 'NIKE',
     categorie: 'Sport',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/c8/06/c3/c806c3221ebfbfac514a472e988abb75.jpg',
-    websiteUrl: 'https://www.nike.com/fr/   '
+    websiteUrl: 'https://www.nike.com/fr/',
+    newinUrl: 'https://www.nike.com/fr/w/nouveau-3n82y',
+    coverImage: 'https://images.ctfassets.net/ckso4uqg4vio/5EakGp1mTYKaqmk6wuu6UO/ac56061556753664c3102a822c6f4190/BronEdit.0.jpg?w=1800&q=80',
+    shopUrl: 'https://www.nike.com/retail/?page=1&storesPerPage=15',
+    returnPolicyUrl: 'https://www.nike.com/fr/help/a/conditions-de-retour-ue'
     },
     {
     brandname: 'NIKON',
     categorie: 'Technologie',
+    popularity: '2',
     logoUrl: 'https://upload.wikimedia.org/wikipedia/fr/thumb/d/d3/Nikon_logo.svg/1024px-Nikon_logo.svg.png',
-    websiteUrl: 'https://store.nikon.fr/'
+    websiteUrl: 'https://store.nikon.fr/',
+    newinUrl: 'https://www.nikon.fr/fr_FR/products/category_pages/digital_cameras/category_mirrorless.page',
+    coverImage: 'https://www.mm.be/userfiles/media/160588727205873910-1605873875-1605873838-nikon.jpg',
+    shopUrl: 'https://www.nikon.fr/fr_FR/where_to_buy/where_to_buy.page',
+    returnPolicyUrl: 'https://store.nikon.fr/page/FAQ#Returns'
+    },
+    {
+    brandname: 'NILAÏ',
+    categorie: 'Mode et Accessoires',
+    popularity: '2',
+    logoUrl: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0014/9268/brand.gif?itok=dWaeAvKF',
+    websiteUrl: 'https://ninewest.com/',
+    newinUrl: 'https://www.nilai.fr/fr/83-nouveaut%C3%A9s',
+    coverImage: 'https://bombastikgirl.com/wp-content/uploads/2020/08/collection-bijoux-ete-2020-Nilai-Paris-Bombastikgirl.com-blog-mode-femme-7.jpg',
+    shopUrl: 'https://www.nilai.fr/fr/magasins',
+    returnPolicyUrl: 'https://www.nilai.fr/fr/infos/6-cgv'
     },
     {
     brandname: 'NINE WEST',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0014/9268/brand.gif?itok=dWaeAvKF',
-    websiteUrl: 'https://ninewest.com/'
+    websiteUrl: 'https://ninewest.com/',
+    newinUrl: 'https://ninewest.com/collections/new',
+    coverImage: 'https://i.pinimg.com/originals/67/c9/46/67c946ea07c27e7605d033fb2e58c48b.jpg',
+    shopUrl: 'https://www.ninewest.com.au/stores',
+    returnPolicyUrl: 'https://ninewest.com/pages/customer-service#returns'
     },
     {
     brandname: 'NINTENDO',
     categorie: 'Jeux et Gadgets',
+    popularity: '3',
     logoUrl: 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc-q96KEeDo/w:auto/h:auto/q:90/https://bleedingcool.com/wp-content/uploads/2019/07/nintendo-logo-large-red-white.jpg',
-    websiteUrl: 'https://www.nintendo.fr/'
+    websiteUrl: 'https://www.nintendo.fr/',
+    newinUrl: 'https://www.nintendo.fr/Jeux/Nintendo-Switch/Hyrule-Warriors-L-Ere-du-Fleau-1838129.html',
+    coverImage: 'https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg',
+    shopUrl: 'https://www.nintendo.fr/',
+    returnPolicyUrl: 'https://www.nintendo.fr/Mentions-legales/My-Nintendo-Store-Conditions-generales-de-Vente-665042.html'
     },
     {
     brandname: 'NOBODINOZ',
     categorie: 'Enfants',
+    popularity: '2',
     logoUrl: 'https://www.berceaumagique.com/images/marques/logo/nobodinoz.jpg',
-    websiteUrl: 'https://www.nobodinoz.com/fr'
+    websiteUrl: 'https://www.nobodinoz.com/fr',
+    newinUrl: 'https://www.nobodinoz.com/fr/new.html',
+    coverImage: 'https://www.cmonpremier.fr/image/388308/1200x900/1/nobodinoz-n103181-tapis-de-jeu-colorado-100x100-cm-gold-stella-night-blue-coin-detente.jpg',
+    shopUrl: 'https://www.nobodinoz.com/fr/tiendas/',
+    returnPolicyUrl: 'https://www.nobodinoz.com/fr/returns',
     },
     {
     brandname: 'NUXE',
     categorie: 'Beauté et Soins',
+    popularity: '2',
     logoUrl: 'https://pbs.twimg.com/profile_images/989496105326039040/gJ2ZFFXg_400x400.jpg',
     websiteUrl: 'https://fr.nuxe.com/',
+    newinUrl: 'https://fr.nuxe.com/coffrets-cadeaux/calendrier-de-l-avent-nuxe-24-surprises',
+    coverImage: 'https://www.needsandmoods.com/wp-content/uploads/2020/09/nuxe-huile-prodigieuse.jpg',
+    shopUrl: 'https://fr.nuxe.com/points-de-vente-nuxe',
+    returnPolicyUrl: 'https://fr.nuxe.com/faq-commande'
     },
     {
     brandname: 'OBEY',
     categorie: 'Mode et Accessoires',
+    popularity: '2',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2019/04/Logo-Obey-1.jpg',
-    websiteUrl: 'https://obeyclothing.com/'
+    websiteUrl: 'https://obeyclothing.com/',
+    newinUrl: 'https://obeyclothing.eu/collections/men-latest',
+    coverImage: 'https://viacomit.net/wp-content/uploads/2020/08/dickies-life-x-obey-00.jpg',
+    shopUrl: 'https://obeyclothing.com/',
+    returnPolicyUrl: 'https://obeyclothing.eu/pages/returns'
+    },
+    {
+    brandname: 'OFF WHITE',
+    categorie: 'Mode et Accessoires',
+    popularity: '3',
+    logoUrl: 'https://i.pinimg.com/originals/46/78/a2/4678a244fbb4f7ef16a9acd72b69ca82.jpg',
+    websiteUrl: 'https://www.off---white.com/',
+    newinUrl: 'https://www.off---white.com/en-fr/shopping/man/clothing?seasons=14731449&pageindex=1',
+    coverImage: 'https://www.vanityfair.fr/uploads/images/thumbs/202009/02/vf_off_white_ah20_home_7548.jpeg_north_1200x_white.jpg',
+    shopUrl: 'https://www.off---white.com/en-us/stores',
+    returnPolicyUrl: 'https://www.off---white.com/en-fr/customer-service/shipping-and-delivery'
     },
     {
     brandname: 'OMEGA',
     categorie: 'Mode et Accessoires',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/e8/95/90/e89590f53bbc359fb43dbb2c6e2e8deb.png',
-    websiteUrl: 'https://www.omegawatches.com/fr/'
+    websiteUrl: 'https://www.omegawatches.com/fr/',
+    newinUrl: 'https://www.omegawatches.com/fr/watches/constellation/constellation/product',
+    coverImage: 'https://static01.nyt.com/images/2020/02/19/multimedia/19sp-omega-inyt2/merlin_168531777_3c9353bb-7e93-4144-9895-7dacd5dce8ca-superJumbo.jpg',
+    shopUrl: 'https://www.omegawatches.com/fr/store/country/france',
+    returnPolicyUrl: ''
+
     },
     {
     brandname: 'OPI',
     categorie: 'Beauté et Soins',
+    popularity: '3',
     logoUrl: 'https://i.pinimg.com/originals/7d/41/9e/7d419e3bc0fe3abe2d9c2ab1a54d9c3a.png',
-    websiteUrl: 'http://boutique.opi-france.com/'
+    websiteUrl: 'https://www.opi.com/fr-fr',
+    newinUrl: 'https://www.opi.com/fr-fr/nouveautes',
+    coverImage: 'https://www.probeauticinstitut.com/media/OPI.jpg',
+    shopUrl: 'https://www.opi.com/fr-fr/where-to-buy',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'P.F. CANDLE CO.',
     categorie: 'Maison',
     logoUrl: 'https://www.dealexpert.net/wp-content/uploads/2020/06/pfcandlecocom-1.jpg',
-    websiteUrl: 'https://pfcandleco.eu/'
+    websiteUrl: 'https://pfcandleco.eu/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'PACO RABANNE',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYX3tRqDezWkOzQclcmoN8nWdBXuVSvyl0Iw&usqp=CAU',
-    websiteUrl: 'https://www.pacorabanne.com/'
+    websiteUrl: 'https://www.pacorabanne.com/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'PANDORA',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://cdn.1min30.com/wp-content/uploads/2018/06/Logo-Pandora-1.jpg',
-    websiteUrl: 'https://fr.pandora.net/fr/'
+    websiteUrl: 'https://fr.pandora.net/fr/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'PATAGONIA',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://cdn11.bigcommerce.com/s-sq9zkarfah/products/73175/images/152332/Patagonia-Mountain-Decal-Sticker__53711.1510987342.500.750.jpg?c=2',
-    websiteUrl: 'https://eu.patagonia.com/'
+    websiteUrl: 'https://eu.patagonia.com/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'PAUL & JOE',
     categorie: 'Mode et Accessoires',
     logoUrl: 'https://media.glassdoor.com/sqll/1134715/paul-and-joe-squarelogo-1456487241636.png',
-    websiteUrl: 'https://paulandjoe.com/        '
+    websiteUrl: 'https://paulandjoe.com/',
+    newinUrl: '',
+    coverImage: '',
+    shopUrl: '',
+    returnPolicyUrl: ''
     },
     {
     brandname: 'PAUL SMITH',
