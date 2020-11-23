@@ -22,7 +22,7 @@ class Login extends Component {
   }
   render(){
     return(
-      <Container style={{ marginTop: "50px", marginBottom: "50px"}}>
+      <Container style={{ marginTop: "100px", marginBottom: "100px"}}>
         SIGN UP
         <Row style={{ justifyContent: "center" }}>
           <form onSubmit={this.handleFormSubmit}>
