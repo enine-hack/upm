@@ -11,8 +11,10 @@ class Login extends Component {
     const password = this.state.password;
     login(email, password)
       .then(response => {
+        console.log('connected to your account')
           this.setState({ email: "", password: "" });
-          this.props.updateUser(response)
+          this.props.updateUser(response);
+          
       })
       .catch( error => console.log(error) )
   }
