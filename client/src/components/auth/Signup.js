@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {signup} from './auth-service'
 import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Signup extends Component {
   state = { email: '', password: '' }
@@ -24,19 +25,31 @@ class Signup extends Component {
   // handleChange() and handleSubmit() will be added here
   render() {
     return (
-      <div>
-        {/* HERE */}
+      <Container style={{ marginTop: "80px", marginBottom: "200px"}}>
+        <h2 style={{ paddingBottom: "30px" }}>MY ACCOUNT</h2>
+        <Row style={{ justifyContent: "center", alignItems: "center", height: "40px"}}>
+          <Col xs lg="2" style={{ height: "40px" }}><Link to={"/"}>CONNEXION</Link></Col>
+          <Col xs lg="2" style={{ borderBottom: "solid", height: "40px", paddingRight: "0px", paddingLeft: "0px" }}><b>CREATE AN ACCOUNT</b></Col>
+        </Row>
+        
+        <hr style={{ marginTop: "0px", marginBottom: "40px", width: "380px" }}></hr>
+
+        <p style={{ marginBottom: "30px", textAlign: "center", marginLeft: "auto", marginRight: "auto", width: "390px", }}>Create an account for a personalized luxious shopping fidelity experience and gain privileges faster.</p>
+
+        <Row style={{ marginTop: "40px", justifyContent: "center"}}>
         <form onSubmit={this.handleFormSubmit}>
-          <label>Email:</label>
-          <input type="text" name="email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
-          <label>Password:</label>
-          <input name="password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-          <button>Signup</button>
+        <Col >
+          <input style={{ width: "380px", marginBottom: "30px", borderStyle: "none none solid none", borderWidth: "1px", borderColor: "#E5E5E5" }}
+                 type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
+        </Col>
+        <Col>
+          <input style={{ width: "380px", marginBottom: "40px", borderStyle: "none none solid none", borderWidth: "1px", borderColor: "#E5E5E5" }} 
+                 type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+        </Col>
+          <Col><button style={{ width: "380px", height: "45px", border: "none", backgroundColor: "#1a1a1a", color: "white" }}>SIGN UP</button></Col>
         </form>
-        <p>Already have account? 
-          <Link to={"/"}>Login</Link>
-        </p>
-      </div>
+        </Row>
+      </Container>
     )
   }
 }

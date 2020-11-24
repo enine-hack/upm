@@ -22,11 +22,19 @@ const navbar = (props) => {
             </li>
         </ul>
       ) : (
-        <Container fluid>
-            <Row >
-                <Col xs lg="1"></Col>
-                <Col>UPOSH|ME</Col>
-                <Col md="auto"><Link to='/signup' style={{textDecoration: 'none'}}>Signup</Link></Col>
+        <Container fluid >
+            <Row style={{ height: "50px", alignItems: "center" }}>
+
+                <Col md="auto" style={{ paddingLeft: "15px" }}>
+                  <Link to='/signup'>
+                    <img style= {{ width: "30px", height: "30px", marginLeft: "20px"}} 
+                        src="https://www.ofunifr.ch/assets/navigation.png" alt="menu"/></Link></Col>
+
+                <Col style={{ fontSize: "17px" }}>UPOSH | ME</Col>
+
+                <Col md="auto">
+                  <Link to='/signup' style={{textDecoration: 'none'}}>
+                    <img style= {{ width: "25px", height: "25px" }} src="https://image.flaticon.com/icons/png/128/3106/3106773.png" alt="profil"/></Link></Col>
             </Row>
         </Container>
       )}

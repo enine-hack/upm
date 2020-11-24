@@ -8,6 +8,7 @@ import Signup from './components/auth/Signup';
 import Login from './components/auth/Login'
 import Navbar from './components/navbar/Navbar';
 import Menu from './components/landing/Menu';
+import Footer from './components/footer/Footer';
 import {loggedin} from './components/auth/auth-service';
 
 class App extends Component {
@@ -50,6 +51,7 @@ class App extends Component {
           <Route exact path="/projects/:id/tasks/:taskId" component={TaskDetails} /> */}
         </Switch>
         <Route exact path="/" component={Menu}/>
+        <Route exact path="/" component={Footer}/>
       </div>
     );
   }
