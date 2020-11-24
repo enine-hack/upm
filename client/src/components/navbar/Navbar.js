@@ -10,7 +10,7 @@ const navbar = (props) => {
     <nav className="nav-style">
       {props.userInSession ? (
         <ul>
-            <li>Welcome, {props.userInSession.username}</li>
+            <li>Welcome, {props.userInSession.firstname} {props.userInSession.lastname}</li>
             <li>
                 <Link to='/' style={{textDecoration: 'none'}}>Brands</Link>
             </li>

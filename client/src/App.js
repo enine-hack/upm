@@ -9,6 +9,7 @@ import Login from './components/auth/Login'
 import Navbar from './components/navbar/Navbar';
 import Menu from './components/landing/Menu';
 import Footer from './components/footer/Footer';
+import Profil from './components/profil/Profil'
 import {loggedin} from './components/auth/auth-service';
 
 class App extends Component {
@@ -45,7 +46,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/signup" render={() => <Signup updateUser={this.updateLoggedInUser}/>} />
           <Route exact path='/' render={() => <Login updateUser={this.updateLoggedInUser}/>}/>
-          
+          <Route exact path='/profil' component={Profil}/>
           {/* <Route exact path="/projects" component={ProjectList}/>
           <Route exact path="/projects/:id" component={ProjectDetails} />
           <Route exact path="/projects/:id/tasks/:taskId" component={TaskDetails} /> */}
