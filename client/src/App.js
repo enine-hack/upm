@@ -11,6 +11,7 @@ import Menu from './components/landing/Menu';
 import Footer from './components/footer/Footer';
 import Profil from './components/profil/Profil'
 import {loggedin} from './components/auth/auth-service';
+import Cover from './components/landing/Cover';
 
 class App extends Component {
   state = { loggedInUser: null }
@@ -40,19 +41,25 @@ class App extends Component {
       <div className="App">
       
        <Navbar userInSession={this.state.loggedInUser} updateUser={this.updateLoggedInUser} />
-       
-       <img src ={"https://www.fcls.fr/wp-content/uploads/elementor/thumbs/fcls_voiture_avec_chauffeur_transfert_aeroport-3000x2226-oqj5gvhmki198vhv6ytm2jet1eblg1lhffk9nu0oso.jpg"}/>
         
+       <Route exact path="/" component={Cover}/>
+
         <Switch>
-          <Route exact path="/signup" render={() => <Signup updateUser={this.updateLoggedInUser}/>} />
+          
           <Route exact path='/' render={() => <Login updateUser={this.updateLoggedInUser}/>}/>
+          <Route exact path="/signup" render={() => <Signup updateUser={this.updateLoggedInUser}/>} />
+  
+
           <Route exact path='/profil' component={Profil}/>
           {/* <Route exact path="/projects" component={ProjectList}/>
           <Route exact path="/projects/:id" component={ProjectDetails} />
           <Route exact path="/projects/:id/tasks/:taskId" component={TaskDetails} /> */}
         </Switch>
+        
         <Route exact path="/" component={Menu}/>
         <Route exact path="/" component={Footer}/>
+        
+
       </div>
     );
   }
