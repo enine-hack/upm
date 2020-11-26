@@ -24,7 +24,7 @@ export {logout}
 
 export {profil}
 function profil() {
-  return service.get('/profil', {email, password}).then(response => response.data)
+  return service.get('/profil', {}).then(response => response.data)
 }
 
 
