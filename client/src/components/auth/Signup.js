@@ -28,7 +28,7 @@ class Signup extends Component {
       <Container style={{ marginTop: "80px", marginBottom: "200px"}}>
         <h2 style={{ paddingBottom: "30px" }}>MY ACCOUNT</h2>
         <Row style={{ justifyContent: "center", alignItems: "center", height: "40px"}}>
-          <Col xs lg="2" style={{ height: "40px" }}><Link to={"/"}>CONNEXION</Link></Col>
+          <Col xs lg="2" style={{ height: "40px" }}><Link to={"/login"}>CONNEXION</Link></Col>
           <Col xs lg="2" style={{ borderBottom: "solid", height: "40px", paddingRight: "0px", paddingLeft: "0px" }}><b>CREATE AN ACCOUNT</b></Col>
         </Row>
         

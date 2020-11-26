@@ -6,6 +6,9 @@ const Menu = () => {
     return (
         
         <Container style={{ marginBottom: "200px"}}>
+        <Row style={{ marginTop: "100px", marginBottom: "100px"}}>
+            <h1>YOU ARE THE NEXT LEVEL OF LUXURY</h1>
+        </Row>
             <Row style={{ marginBottom: "100px"}} >
                 <Col style={{ height: "500px", width: "500px", backgroundColor: "#1a1a1a", 
                             paddingRight: "0px", paddingLeft: "0px"}}>
