@@ -13,7 +13,10 @@ const navbar = (props) => {
         
             <p>{props.userInSession.firstname} {props.userInSession.lastname}</p>
             <p>
-                <Link to='/' style={{textDecoration: 'none'}}>My Brands</Link>
+                <Link to='/'>My Brands</Link> <Link to='/profil'>My Profile</Link>
+            </p>
+            <p>
+                
             </p>
             
             <p>
