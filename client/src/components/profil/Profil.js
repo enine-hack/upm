@@ -17,11 +17,11 @@ class Profil extends Component {
             <Row style={{ marginTop: "50px", marginBottom: "40px", justifyContent:"center" }}><h1>MY PROFIL</h1></Row>
             
       
-            <p>Welcome</p>
+            <p>Welcome {this.props.user.firstname} {this.props.user.lastname}</p>
 
             <Row>
                 <Col><b>Account ID</b></Col>
-                <Col>FFFF</Col>
+                <Col>{this.props.user._id}</Col>
             </Row>
 
             <Row >
@@ -31,7 +31,7 @@ class Profil extends Component {
 
             <Row >
                 <Col><b>Member since</b></Col>
-                <Col>25/11/2020</Col>
+                <Col>{this.props.user.createdAt}</Col>
             </Row>
 
             <Row>
