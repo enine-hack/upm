@@ -66,6 +66,10 @@ function profiledit(
 }
 export {profiledit}
 
+function deleteprofil() {
+  return service.delete('/profil', {}).then(response => response.data)
+}
+export {deleteprofil}
 
 
 

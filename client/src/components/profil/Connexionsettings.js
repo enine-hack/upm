@@ -24,18 +24,6 @@ class Connexionsettings extends Component {
 
   }
 
-  // handleChangeEmail = (event) => {  
-  //   this.setState({
-  //     email:event.target.value
-  //   })
-  // }
-
-  // handleChangePass = (event) => {  
-  //   this.setState({
-  //     password:event.target.value
-  //   })
-  // }
-
   handleChange = (event) => {
     const {type, value, name} = event.target;
 

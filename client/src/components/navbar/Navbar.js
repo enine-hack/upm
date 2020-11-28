@@ -21,7 +21,7 @@ const navbar = (props) => {
             
             <p>
                 <button onClick={(e) => {
-                logout().then(() => props.updateUser(null))
+                logout().then(() => props.updateUser(false))
                 }}>LOG OUT</button>
             </p>
 
