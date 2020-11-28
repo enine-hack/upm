@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
 class Signup extends Component {
-  state = { email: '', password: '' }
+  state = { email: '', password: '', error: "" }
   // HERE
   handleFormSubmit = (event) => {
     event.preventDefault();
@@ -12,10 +12,10 @@ class Signup extends Component {
     const password = this.state.password;
     signup(email, password)
       .then(response => {
-        this.setState({email: "", password: ""});
+        this.setState({email: "", password: "", error: ""});
         this.props.updateUser(response)
       })
-      .catch( error => console.log(error) )
+      .catch(err => this.setState({error: err.response.data.message}))
   }
   // HERE
   handleChange = (event) => {  
@@ -46,8 +46,17 @@ class Signup extends Component {
           <input style={{ width: "380px", marginBottom: "40px", borderStyle: "none none solid none", borderWidth: "1px", borderColor: "#E5E5E5" }} 
                  type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
         </Col>
+        
           <Col><button style={{ width: "380px", height: "45px", border: "none", backgroundColor: "#1a1a1a", color: "white" }}>SIGN UP</button></Col>
+          
+          
+          {this.state.error && (
+              <p>{this.state.error}</p>
+            )}
         </form>
+
+      
+
         </Row>
       </Container>
     )

@@ -40,9 +40,7 @@ class Login extends Component {
 
         <Row style={{ marginTop: "40px", justifyContent: "center"}}>
           <form onSubmit={this.handleFormSubmit} >
-          {this.state.error && (
-              <p>{this.state.error}</p>
-            )}
+          
 
             <Col>
               <input style={{ width: "380px", marginBottom: "30px", borderStyle: "none none solid none", borderWidth: "1px", borderColor: "#E5E5E5" }}
@@ -57,6 +55,12 @@ class Login extends Component {
               <input style={{ width: "380px", height: "45px", border: "none", backgroundColor: "#1a1a1a", color: "white" }} type="submit" value="LOG IN" />
             </Col>
           </form>
+
+
+          
+          {this.state.error && (
+              <p>{this.state.error}</p>
+            )}
         </Row>
           
       </Container>
