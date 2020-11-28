@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// import {profiledit} from '../auth/auth-service';
+import {profiledit} from '../auth/auth-service';
 import { Container, Row, Col } from 'react-bootstrap';
 
 class CompleteProfile extends Component {
@@ -37,25 +37,25 @@ class CompleteProfile extends Component {
         const idWechat = this.state.idWechat;
         const idLine = this.state.idLine;
 
-        // profiledit(
-        //     civility,
-        //     firstname,
-        //     lastname,
-        //     dateOfBirth,
-        //     numberAddress,
-        //     typeofstreet,
-        //     additionalAddress,
-        //     zipcode,
-        //     city,
-        //     country,
-        //     mobileNumber,
-        //     idWechat,
-        //     idLine
-        // ).then(response => {
-        //     this.props.updateUser(response);
+        profiledit(
+            civility,
+            firstname,
+            lastname,
+            dateOfBirth,
+            numberAddress,
+            typeofstreet,
+            additionalAddress,
+            zipcode,
+            city,
+            country,
+            mobileNumber,
+            idWechat,
+            idLine
+        ).then(response => {
+            this.props.updateUser(response);
            
-        //   })
-        //   .catch( error => console.log(error) )
+          })
+          .catch( error => console.log(error) )
       }
 
     handleChange = (event) => {
@@ -80,11 +80,11 @@ class CompleteProfile extends Component {
             
                 <form onSubmit={this.handleFormSubmit}>
                     <Col>
-                        <select name="civility">
+                        <select name="civility" >
                               
-                         <option value="">Civility</option>
-                         <option value="Madam">Mrs</option>
-                         <option value="Mister">Mr.</option>
+                            <option value="">Civility</option>
+                            <option value="Madam">Madam</option>
+                            <option value="Mister">Mister</option>
                          </select>
                     </Col>
                     <Col>

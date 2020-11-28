@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const userSchema = new Schema(
   {
     civility: {
-      type: String, enum: ['Monsieur', 'Madame']
+      type: String, enum: ['Madam', 'Mister']
     },
     firstname: {
       type: String,
@@ -42,10 +42,7 @@ const userSchema = new Schema(
       type : String,
     },
     country : {
-      type :  Schema.Types.ObjectId, ref: 'Country',
-    },
-    nationality : {
-      type :  Schema.Types.ObjectId, ref: 'Country',
+      type: String, enum: ['France', 'Spain', 'Italy']
     },
     mobileNumber : {
       type : String,

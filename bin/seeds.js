@@ -10,8 +10,6 @@ const Brand = require('../models/brand-model');
 // const User = require('../models/user.model');
 // donner un nom de variable à notre base 
 
-const Country = require('../models/country-model')
-
 
 const dbtitle = 'upm';
 // connecter notre base a mongodb
@@ -2930,29 +2928,13 @@ var datas = [
     }                                                                      
 ]
 
-const p1 = Brand.create(datas);
-p1.then(brands => console.log(`${brands.length} brands created!`))
+Brand.create(datas).then(datas => {
+  console.log(`OK, ${datas.length} have been created.`);
+  mongoose.connection.close();
+}).catch(err => {
+  console.log('oops',err)
+});
 
-// tableau des countries
-var datas = [
-  {
-    country : 'France',
-    language: 'French',
-    flagurl: 'https://images-na.ssl-images-amazon.com/images/I/3177XLVjriL._AC_SX425_.jpg',
-  },
-  {
-    country : 'Spain',
-    language: 'Spanish',
-    flagurl: 'https://images-na.ssl-images-amazon.com/images/I/210uaqEmyZL._AC_.jpg',
-  }
-]
-
-const p2 = Country.create(datas);
-p2.then(countries => console.log(`${countries.length} countries created!`))
-Promise.all([p1, p2])
-  .then(() => mongoose.disconnect())
-  .catch(err => console.error(err))
-;
 
 // // importer toutes les marques dans la bdd
 // Brand.create(brands).then(brands => {

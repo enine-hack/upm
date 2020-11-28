@@ -27,25 +27,39 @@ function logout() {
 export {logout}
 
 
-// function profiledit() {
-//   return service.post('/profiledit', {
-//     civility,
-//     firstname,
-//     lastname,
-//     dateOfBirth,
-//     numberAddress,
-//     typeofstreet,
-//     additionalAddress,
-//     zipcode,
-//     city,
-//     country,
-//     mobileNumber,
-//     idWechat,
-//     idLine
-//   })
-//     .then(response => response.data)
-// }
-// export {profiledit}
+function profiledit(
+    civility,
+    firstname,
+    lastname,
+    dateOfBirth,
+    numberAddress,
+    typeofstreet,
+    additionalAddress,
+    zipcode,
+    city,
+    country,
+    mobileNumber,
+    idWechat,
+    idLine
+) {
+  return service.post('/profiledit', {
+    civility,
+    firstname,
+    lastname,
+    dateOfBirth,
+    numberAddress,
+    typeofstreet,
+    additionalAddress,
+    zipcode,
+    city,
+    country,
+    mobileNumber,
+    idWechat,
+    idLine
+  })
+    .then(response => response.data)
+}
+export {profiledit}
 
 
 
