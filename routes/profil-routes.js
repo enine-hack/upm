@@ -67,21 +67,20 @@ profilRoutes.put('/profil', (req, res, next)=>{
 
 // DELETE/PROFIL  => to delete our profil
 profilRoutes.delete('/profil', (req, res, next)=>{
-  if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
+  if(!mongoose.Types.ObjectId.isValid(req.session.currentUser._id)) {
     res.status(400).json({ message: 'Specified id is not valid' });
     return;
   }
-  User.findByIdAndRemove(req.params.id)
+  User.findByIdAndRemove(req.session.currentUser._id)
     .then(() => {
-      res.json({ message: `Your profile is removed successfully (${req.params.id})` });
+      res.json({ message: `Your profile is removed successfully` });
     })
     .catch( err => {
       res.json(err);
     })
 })
 
-//PROFILE EDIT EN COURS
-
+//PROFILE EDIT
 profilRoutes.post("/profiledit", (req, res, next) => {
   const {civility,
         firstname,
