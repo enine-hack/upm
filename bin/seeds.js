@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useCreateIndex
 ;
  
 // tableau des marques
-var datas = [
+const brands = [
     {
     brandname: '&TRADITION',
     categorie: 'Maison',
@@ -2928,35 +2928,12 @@ var datas = [
     }                                                                      
 ]
 
-Brand.create(datas).then(datas => {
-  console.log(`OK, ${datas.length} have been created.`);
+Brand.create(brands).then(brands => {
+  console.log(`OK, ${brands.length} have been created.`);
   mongoose.connection.close();
 }).catch(err => {
   console.log('oops',err)
 });
-
-
-// // importer toutes les marques dans la bdd
-// Brand.create(brands).then(brands => {
-//     console.log(`OK, ${brands.length} have been created.`);
-  
-//     mongoose.connection.close();
-// }).catch(err => {
-//     console.log('oops',err)
-// });
-
-// // importer toutes les countries dans la bdd
-// Country.create(countries).then(countries => {
-//   console.log(`OK, ${countries.length} have been created.`);
-
-//   mongoose.connection.close();
-// }).catch(err => {
-//   console.log('oops',err)
-// });
-
-
-
-
 
 
 

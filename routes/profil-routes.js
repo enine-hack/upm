@@ -10,18 +10,6 @@ const { populate } = require('../models/user-model');
 
 // Route GET/PROFIL => to show our profil
 profilRoutes.get('/profil', (req, res, next) => {
-  // console.log(req.session.currentUser)
-  // // if(req.session.user){res.status(200).json(req.session.user);
-  // // return;
-  // // }
-  // // res.status(403).json({message: 'Non autorisé'})
-  // User.find(req.session.currentUser)
-  //   .then(allTheProfilInfo => {
-  //     res.json(allTheProfilInfo);
-  //   })
-  //   .catch(err => {
-  //     res.json(err);
-  //   })
   if (!req.session.currentUser) {
     res.status(400).json({
       message: "Please login before access the user profile",

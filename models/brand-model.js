@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
+const Schema   = mongoose.Schema;
 
 const brandSchema = new Schema({
     brandname: String,
@@ -16,4 +17,6 @@ const brandSchema = new Schema({
     }
 );
 
-module.exports = model('Brand', brandSchema);
+const Brand = mongoose.model('Brand', brandSchema)
+
+module.exports = Brand;

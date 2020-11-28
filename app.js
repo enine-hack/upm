@@ -79,6 +79,8 @@ app.use(cors({
 // Routes middleware
 app.use('/api', require('./routes/auth-routes'));
 app.use('/api', require('./routes/profil-routes'));
+app.use('/api', require('./routes/allbrands-routes'));
+
 
 // Middleware error
 app.use((err, req, res, next) => {
