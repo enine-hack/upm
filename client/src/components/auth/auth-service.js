@@ -26,6 +26,11 @@ function logout() {
 }
 export {logout}
 
+function profilsettings(email, password) {
+  return service.put('/profil', {email, password}).then(response => response.data)
+}
+export {profilsettings}
+
 
 function profiledit(
     civility,

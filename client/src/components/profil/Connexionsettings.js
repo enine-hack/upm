@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
+import {profilsettings} from '../auth/auth-service';
 import { Container, Row, Col } from 'react-bootstrap';
 
 class Connexionsettings extends Component {
@@ -8,45 +9,39 @@ class Connexionsettings extends Component {
     password: '',
   }
 
+  handleFormSubmit = (event) => {
+      event.preventDefault()
+      
+      const email = this.state.email;
+      const password = this.state.password;
+
+      profilsettings(email, password)
+        .then(response => {
+        this.props.updateUser(response);
+       
+      })
+      .catch( error => console.log(error) )   
+
+  }
+
+  // handleChangeEmail = (event) => {  
+  //   this.setState({
+  //     email:event.target.value
+  //   })
+  // }
+
+  // handleChangePass = (event) => {  
+  //   this.setState({
+  //     password:event.target.value
+  //   })
+  // }
+
   handleChange = (event) => {
     const {type, value, name} = event.target;
 
     this.setState({
         [name]: value
-    })
-    console.log('title after:   ', this.state.email)
-    console.log(event.target)
-
-  }
-
-  handleFormSubmit = (event) => {
-      const email = this.state.email;
-      const password = this.state.password;
-
-      event.preventDefault()
-
-      axios.put(`http://localhost:5000/api/profil}`, { email, password })
-      .then( () => {
-        this.props.updateUser();
-        //404 !!!!
-        
-  
-      })
-      .catch( error => console.log(error) )
-      
-
-  }
-
-  handleChangeEmail = (event) => {  
-    this.setState({
-      email:event.target.value
-    })
-  }
-
-  handleChangePass = (event) => {  
-    this.setState({
-      password:event.target.value
-    })
+    });
   }
     
     render() {
@@ -60,12 +55,14 @@ class Connexionsettings extends Component {
 
               <Col>
               <label>Email</label>
-                <input type="email" name="email" value={this.state.email} placeholder={this.props.user.email} onChange={e => this.handleChangeEmail(e)}/>
+                <input type="email" name="email" value={this.state.email} placeholder={this.props.user.email}
+                       onChange={event => this.handleChange(event)}/>
               </Col>
 
               <Col>
               <label>Password</label>
-                <input type="password" name="password" value={this.state.password} placeholder="********" onChange={e => this.handleChangePass(e)} />
+                <input type="password" name="password" value={this.state.password} placeholder="********"
+                       onChange={event => this.handleChange(event)} />
               </Col>
 
               <button>CHANGE SETTINGS</button>
