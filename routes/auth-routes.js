@@ -52,11 +52,14 @@ authRoutes.post('/login', (req, res, next) => {
   const {email, password} = req.body
   User.findOne({email}).then(user => {
     if (!user) {
-      return next(new Error('No user with that e-mail'))
+      res.status(400).json({ message: 'No user with that e-mail.' })
+      return;
+     
     }
     // compareSync
     if (bcrypt.compareSync(password, user.password) !== true) {
-      return next(new Error('Wrong credentials'))
+      res.status(400).json({ message: 'Wrong password.' })
+      return;
     } else {
       req.session.currentUser = user
       res.json(user)
