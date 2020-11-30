@@ -54,13 +54,17 @@ class Login extends Component {
             
               <input style={{ width: "380px", height: "45px", border: "none", backgroundColor: "#1a1a1a", color: "white" }} type="submit" value="LOG IN" />
             </Col>
+
+            {/* Affichage du message d'erreur */}
+            {this.state.error && (
+              <p>{this.state.error}</p>
+            )}
+
           </form>
 
 
           
-          {this.state.error && (
-              <p>{this.state.error}</p>
-            )}
+
         </Row>
           
       </Container>

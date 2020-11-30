@@ -9,6 +9,10 @@ import {deleteprofil} from '../auth/auth-service';
 // PARENT DE CONNEXION SETTING ET DE COMPLETEPROFILE
 
 class Profil extends Component {
+  state = {
+    showformconnexionsettings: false,
+    showformfillprofile: false
+    }
 
   render(){
     if (isnull(this.props.user)) return '..loading'
@@ -37,14 +41,33 @@ class Profil extends Component {
                 <Col>{this.props.user.createdAt}</Col>
             </Row>           
 
-            <Row style={{ width: "550px", marginTop: "50px" }}>
-              <Connexionsettings user={this.props.user} updateUser={this.props.updateUser}/>
-              {/* 404 */}
-            </Row>
+            <button onClick={(event) => {
+              this.setState({
+                showformconnexionsettings: !this.state.showformconnexionsettings
+              })
 
-            <Row style={{ width: "550px", marginTop: "50px" }}>
+            }}>CONNEXION SETTINGS</button>
+
+            {this.state.showformconnexionsettings &&  <Connexionsettings user={this.props.user} updateUser={this.props.updateUser} />}
+
+            {/* <Row style={{ width: "550px", marginTop: "50px" }}>
+              <Connexionsettings user={this.props.user} updateUser={this.props.updateUser}/>
+              
+            </Row> */}
+
+            <button onClick={(event) => {
+              this.setState({
+                showformfillprofile: !this.state.showformfillprofile
+              })
+
+            }}>COMPLETE MY PROFILE</button>
+
+            {this.state.showformfillprofile &&  <Completeprofile updateUser={this.props.updateUser} />}
+
+
+            {/* <Row style={{ width: "550px", marginTop: "50px" }}>
               <Completeprofile updateUser={this.props.updateUser} />
-            </Row>
+            </Row> */}
 
             
             <button onClick={(e) => {
