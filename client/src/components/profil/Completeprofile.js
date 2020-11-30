@@ -73,7 +73,7 @@ class CompleteProfile extends Component {
     render(){
         return(
             <Container>
-                <p><b>COMPLETE MY PROFILE</b></p>
+               
                  
                 <p> Fill out your profile and directly benefit from all the advantages linked to your loyalty accounts.</p>
 

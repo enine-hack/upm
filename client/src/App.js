@@ -44,8 +44,6 @@ class App extends Component {
         
        <Route exact path="/" component={Cover}/>
        
-       
-
         <Switch>
           
           <Route exact path='/login' render={() => <Login updateUser={this.updateLoggedInUser}/>}/>

@@ -25,35 +25,49 @@ class Signup extends Component {
   // handleChange() and handleSubmit() will be added here
   render() {
     return (
-      <Container style={{ marginTop: "80px", marginBottom: "200px"}}>
-        <h2 style={{ paddingBottom: "30px" }}>MY ACCOUNT</h2>
-        <Row style={{ justifyContent: "center", alignItems: "center", height: "40px"}}>
-          <Col xs lg="2" style={{ height: "40px" }}><Link to={"/login"}>CONNEXION</Link></Col>
-          <Col xs lg="2" style={{ borderBottom: "solid", height: "40px", paddingRight: "0px", paddingLeft: "0px" }}><b>CREATE AN ACCOUNT</b></Col>
+      <Container className="Signup-login">
+       
+        <h3>MY ACCOUNT</h3>
+        
+        <Row className="Signuplogin-center">
+          <Col className="Col-h40" 
+               xs={{ span: 5, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 2, offset: 0 }}><Link to={"/login"}>
+               CONNEXION</Link></Col>
+          <Col className="Col-h40 Border-bottom-solid"
+               xs={{ span: 5, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 2, offset: 0 }} >
+               <b>REGISTER</b></Col>
         </Row>
         
-        <hr style={{ marginTop: "0px", marginBottom: "40px", width: "380px" }}></hr>
-
-        <p style={{ marginBottom: "30px", textAlign: "center", marginLeft: "auto", marginRight: "auto", width: "390px", }}>Create an account for a personalized luxious shopping fidelity experience and gain privileges faster.</p>
-
-        <Row style={{ marginTop: "40px", justifyContent: "center"}}>
-        <form onSubmit={this.handleFormSubmit}>
-        <Col >
-          <input style={{ width: "380px", marginBottom: "30px", borderStyle: "none none solid none", borderWidth: "1px", borderColor: "#E5E5E5" }}
-                 type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
-        </Col>
-        <Col>
-          <input style={{ width: "380px", marginBottom: "40px", borderStyle: "none none solid none", borderWidth: "1px", borderColor: "#E5E5E5" }} 
-                 type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-        </Col>
         
-          <Col><button style={{ width: "380px", height: "45px", border: "none", backgroundColor: "#1a1a1a", color: "white" }}>SIGN UP</button></Col>
+        <Row>
+          <Col xs={12} sm={{ span: 8, offset: 2 }} md={{ span: 4, offset: 4 }} >
+            <p className="Signup-description">
+              Create an account for a personalized luxious shopping fidelity experience and gain privileges faster.
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="Signuplogin-center">
+          <form onSubmit={this.handleFormSubmit}>
+          <Col >
+            <input className="Input-form-style" style={{ width: "380px"}}
+                  type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
+          </Col>
+          <Col>
+            <input className="Input-form-style" style={{ width: "380px"}} 
+                  type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+          </Col>
           
-          
-          {this.state.error && (
-              <p>{this.state.error}</p>
-            )}
-        </form>
+          <Col><button className="Button-form-style"
+          style={{ width: "380px"}}>SIGN UP</button>
+          </Col>
+            
+          {/* Affichage message d'erreur */}
+            {this.state.error && (
+                <p className="Error-form-message-style">{this.state.error}
+                  </p>
+              )}
+          </form>
 
       
 

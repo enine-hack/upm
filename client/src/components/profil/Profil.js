@@ -41,6 +41,7 @@ class Profil extends Component {
                 <Col>{this.props.user.createdAt}</Col>
             </Row>           
 
+            <Row>
             <button onClick={(event) => {
               this.setState({
                 showformconnexionsettings: !this.state.showformconnexionsettings
@@ -49,12 +50,11 @@ class Profil extends Component {
             }}>CONNEXION SETTINGS</button>
 
             {this.state.showformconnexionsettings &&  <Connexionsettings user={this.props.user} updateUser={this.props.updateUser} />}
+            </Row>
+            
+  
 
-            {/* <Row style={{ width: "550px", marginTop: "50px" }}>
-              <Connexionsettings user={this.props.user} updateUser={this.props.updateUser}/>
-              
-            </Row> */}
-
+           <Row>
             <button onClick={(event) => {
               this.setState({
                 showformfillprofile: !this.state.showformfillprofile
@@ -63,18 +63,15 @@ class Profil extends Component {
             }}>COMPLETE MY PROFILE</button>
 
             {this.state.showformfillprofile &&  <Completeprofile updateUser={this.props.updateUser} />}
+            </Row>
 
 
-            {/* <Row style={{ width: "550px", marginTop: "50px" }}>
-              <Completeprofile updateUser={this.props.updateUser} />
-            </Row> */}
-
-            
+            <Row>
             <button onClick={(e) => {
               console.log(this.props.user)
               deleteprofil(e).then(() => this.props.updateUser(false))
             }}>Delete account</button>
-
+            </Row>
             
             
           

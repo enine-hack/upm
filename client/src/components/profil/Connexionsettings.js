@@ -37,7 +37,7 @@ class Connexionsettings extends Component {
           <Container>
             <form onSubmit={this.handleFormSubmit}>
 
-              <p><b>CONNEXION SETTINGS</b></p>
+              
 
               <p>Change your Email or Password</p>
 

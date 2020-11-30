@@ -37,3 +37,76 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+ ######  ####  ######   ##    ##    ##     ## ########        ## ##        #######   ######      #### ##    ##    ########   #######  ##     ## 
+##    ##  ##  ##    ##  ###   ##    ##     ## ##     ##      ##  ##       ##     ## ##    ##      ##  ###   ##    ##     ## ##     ##  ##   ##  
+##        ##  ##        ####  ##    ##     ## ##     ##     ##   ##       ##     ## ##            ##  ####  ##    ##     ## ##     ##   ## ##   
+ ######   ##  ##   #### ## ## ##    ##     ## ########     ##    ##       ##     ## ##   ####     ##  ## ## ##    ########  ##     ##    ###    
+      ##  ##  ##    ##  ##  ####    ##     ## ##          ##     ##       ##     ## ##    ##      ##  ##  ####    ##     ## ##     ##   ## ##   
+##    ##  ##  ##    ##  ##   ###    ##     ## ##         ##      ##       ##     ## ##    ##      ##  ##   ###    ##     ## ##     ##  ##   ##  
+ ######  ####  ######   ##    ##     #######  ##        ##       ########  #######   ######      #### ##    ##    ########   #######  ##     ## 
+*/
+
+
+.Signup-login {
+  text-align: center;
+ 
+  margin-top: 80px;
+  margin-bottom: 200px;
+  
+  
+}
+
+.Signup-login h3 {
+  padding-bottom: 40px;
+}
+
+.Signuplogin-center {
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-left: 0px;
+  margin-bottom: 40px;  
+}
+
+.Col-h40 {
+  height: 40px;
+}
+
+.Border-bottom-solid {
+  border-bottom: solid;
+}
+
+.Signuplogin-description {
+  margin-bottom: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.Input-form-style {
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: #E5E5E5;
+  background-color: #F6F6F6;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  margin-bottom: 30px
+}
+
+.Button-form-style {
+  height: 45px;
+  border: none;
+  background-color: #1a1a1a;
+  color: white
+}
+
+.Error-form-message-style {
+  margin-top: 20px;
+  color: red
+}
+
+
+
