@@ -27,7 +27,7 @@ class Profil extends Component {
             <p>Welcome {this.props.user.firstname} {this.props.user.lastname}</p>
 
             <Row className="Profil-datas">
-                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 2, offset: 4 }}
+                <Col xs={{ span: 3, offset: 1 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
                      className="Profil-col-title">
                 <b>Account ID</b></Col>
                 <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
@@ -36,7 +36,7 @@ class Profil extends Component {
             </Row>
 
             <Row className="Profil-datas">
-                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 2, offset: 4 }}
+                <Col xs={{ span: 3, offset: 1 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
                      className="Profil-col-title">
                 <b>Registered account</b></Col>
                 <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
@@ -45,7 +45,7 @@ class Profil extends Component {
             </Row>
 
             <Row className="Profil-datas">
-                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 2, offset: 4 }}
+                <Col xs={{ span: 3, offset: 1 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
                      className="Profil-col-title">
                 <b>Member since</b></Col>
                 <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
@@ -57,7 +57,7 @@ class Profil extends Component {
          
 
             <Row >
-            <Col xs={{ span: 7, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 4, offset: 4 }}>
+            <Col xs={{ span: 7, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 6, offset: 3 }}>
             <button className="Profil-form-link" 
                     onClick={(event) => {
                       this.setState({
@@ -80,7 +80,7 @@ class Profil extends Component {
       
 
             <Row >
-              <Col xs={{ span: 7, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 4, offset: 4 }}>
+              <Col xs={{ span: 7, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 6, offset: 3 }}>
                 <button className="Profil-form-link" 
                         onClick={(event) => {
                           this.setState({

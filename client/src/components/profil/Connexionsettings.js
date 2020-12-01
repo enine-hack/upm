@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import {profilsettings} from '../auth/auth-service';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
+
 class Connexionsettings extends Component {
   state = {
     email: '',
@@ -34,28 +36,39 @@ class Connexionsettings extends Component {
     
     render() {
         return (
-          <Container>
-            <form onSubmit={this.handleFormSubmit}>
-
+          <Container className="connexion-settings-style" fluid>
               
-
               <p>Change your Email or Password</p>
+              
+              <Row className="connexion-settings-form-center">
+              <form onSubmit={this.handleFormSubmit}>
 
-              <Col>
-              <label>Email</label>
-                <input type="email" name="email" value={this.state.email} placeholder={this.props.user.email}
-                       onChange={event => this.handleChange(event)}/>
-              </Col>
+                
+                  <Col xs={{span: 12, offset: 3}} sm={{span: 12, offset: 1}} md={{span: 12, offset: 1}}>
+                    <input className="connexion-settings-form-field"
+                          type="email" name="email" value={this.state.email} placeholder="New Email"
+                            onChange={event => this.handleChange(event)}/>
+                  </Col>
 
-              <Col>
-              <label>Password</label>
-                <input type="password" name="password" value={this.state.password} placeholder="********"
-                       onChange={event => this.handleChange(event)} />
-              </Col>
+                  <Col xs={{span: 12, offset: 3}} sm={{span: 12, offset: 1}} md={{span: 12, offset: 1}}>
+                    <input className="connexion-settings-form-field" 
+                          type="password" name="password" value={this.state.password} placeholder="New Password"
+                          onChange={event => this.handleChange(event)} />
+                  </Col>
+               
 
-              <button>CHANGE SETTINGS</button>
-
-            </form>
+                  <Col xs={{ span: 1, offset: 3 }} sm={{ span: 2, offset: 2 }} md={{ span: 12, offset: 1 }}>
+                    <button className="connexion-setting-submit">
+                      CHANGE SETTINGS
+                    </button>
+                  </Col>
+               
+              </form>
+              </Row>
+          
+             
+              
+           
           </Container>
         )
     }
