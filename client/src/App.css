@@ -128,14 +128,24 @@
 ##    ## ##     ##    ###    ########  ##     ## ##     ## 
 */
 
+
 .nav-style {
-  text-align: left;
+  
   margin-top: 15px;
-  margin-bottom: 100px;
+  
 }
 
 .nav-hr {
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: 0px
+}
+
+.nav-style-unlogged {
+  text-align: center;
+}
+
+.nav-style-logged {
+  text-align: left;
 }
 
 /*
@@ -154,12 +164,13 @@
 
 .Profil-style h3 {
   text-align: center;
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 
 .Profil-style p {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   
 }
 
@@ -168,12 +179,46 @@
   
 }
 
-.Profil-col-datas {
+.Profil-col-title {
   background-color:  #F6F6F6;
   padding-top: 15px;
   padding-bottom: 15px
-  
 }
+
+.Profil-col-datas {
+  padding-top: 15px;
+  padding-bottom: 15px
+}
+
+.Profil-form-link {
+  border-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding-left: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Profil-delete-button {
+  margin: auto;
+  display:inline-block;
+  margin-top: 200px;
+	background-color:white;
+	border-radius:50px;
+	border:1px solid red;
+	
+	cursor:pointer;
+	color:#ff0000;
+	font-size:15px;
+	padding:8px 50px;
+
+}
+/* .Profil-delete-button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+} */
+
 
 
 

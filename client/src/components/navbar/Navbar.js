@@ -9,7 +9,7 @@ const navbar = (props) => {
   return (
     <nav className="nav-style">
       {props.userInSession ? (
-          <Container fluid>
+          <Container className="nav-style-logged" fluid>
             <Row>
             <Col><Link to='/'>UPOSH | ME</Link></Col>
               <Col md="auto">{props.userInSession.firstname} {props.userInSession.lastname}</Col>
@@ -28,7 +28,7 @@ const navbar = (props) => {
           </Container>
         
       ) : (
-        <Container fluid >
+        <Container className="nav-style-unlogged" fluid >
             <Row style={{ marginTop: "8px", marginBottom: "8px", height: "40px", alignItems: "center" }}>
 
                 <Col md="auto" style={{ paddingLeft: "15px" }}>
