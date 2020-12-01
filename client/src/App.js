@@ -9,7 +9,8 @@ import Login from './components/auth/Login'
 import Navbar from './components/navbar/Navbar';
 import Menu from './components/landing/Menu';
 import Footer from './components/footer/Footer';
-import Profil from './components/profil/Profil'
+import Profil from './components/profil/Profil';
+import Brandslist from './components/brands/Brandslist';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
@@ -55,7 +56,11 @@ class App extends Component {
           <Route exact path="/profil" render={() => (
               <Profil user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
             )} />
-          {/* <Route exact path="/projects" component={ProjectList}/>
+
+          <Route exact path="/brandslist" component={Brandslist}/>
+
+
+          {/* 
           <Route exact path="/projects/:id" component={ProjectDetails} />
           <Route exact path="/projects/:id/tasks/:taskId" component={TaskDetails} /> */}
         </Switch>

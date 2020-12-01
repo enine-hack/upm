@@ -24,9 +24,9 @@ profilRoutes.put('/profil', (req, res, next)=>{
 
 
     User.findByIdAndUpdate(req.session.currentUser._id, updateUser, { new: true })
-    .then((currentUser) => {
+    .then((updatedUser) => {
       
-      res.status(200).json(updateUser);
+      res.status(200).json(updatedUser);
       
     })
     .catch((error) => {
