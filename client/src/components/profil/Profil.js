@@ -20,25 +20,35 @@ class Profil extends Component {
 
     return(
         
-        <Container style={{ width: "550px", marginBottom: "100px" }}>
-
-            <h1>MY PROFIL</h1>
+        <Container className="Profil-style">
+            
+            <h3>MY PROFIL</h3>
                   
             <p>Welcome {this.props.user.firstname} {this.props.user.lastname}</p>
 
-            <Row>
-                <Col><b>Account ID</b></Col>
-                <Col>{this.props.user._id}</Col>
+            <Row className="Profil-datas">
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 2, offset: 4 }}
+                     className="Profil-col-datas">
+                <b>Account ID</b></Col>
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
+                     >
+                {this.props.user._id}</Col>
             </Row>
 
-            <Row >
-                <Col><b>Registered account</b></Col>
-                <Col>{this.props.user.email}</Col>
+            <Row className="Profil-datas">
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 2, offset: 4 }}
+                     className="Profil-col-datas">
+                <b>Registered account</b></Col>
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}>
+                {this.props.user.email}</Col>
             </Row>
 
-            <Row >
-                <Col><b>Member since</b></Col>
-                <Col>{this.props.user.createdAt}</Col>
+            <Row className="Profil-datas">
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 2, offset: 4 }}
+                     className="Profil-col-datas">
+                <b>Member since</b></Col>
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}>
+                {this.props.user.createdAt}</Col>
             </Row>           
 
             <Row>

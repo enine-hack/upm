@@ -9,23 +9,23 @@ const navbar = (props) => {
   return (
     <nav className="nav-style">
       {props.userInSession ? (
-          <div>
-        
-            <p>{props.userInSession.firstname} {props.userInSession.lastname}</p>
-            <p>
-                <Link to='/'>My Brands</Link> <Link to='/profil'>My Profile</Link>
-            </p>
-            <p>
-                
-            </p>
-            
-            <p>
+          <Container fluid>
+            <Row>
+            <Col><Link to='/'>UPOSH | ME</Link></Col>
+              <Col md="auto">{props.userInSession.firstname} {props.userInSession.lastname}</Col>
+              <Col md="auto"><Link to='/'>Brands</Link></Col>
+              <Col md="auto"><Link to='/profil'>Profile</Link></Col>
+              <Col xs lg="1">
                 <button onClick={(e) => {
-                logout().then(() => props.updateUser(false))
-                }}>LOG OUT</button>
-            </p>
+                  logout().then(() => props.updateUser(false))
+                  }}>LOG OUT</button>
+              </Col>
 
-          </div>
+            </Row>    
+            
+            <hr className="nav-hr"></hr>
+
+          </Container>
         
       ) : (
         <Container fluid >

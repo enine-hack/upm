@@ -46,8 +46,8 @@ class App extends Component {
        
         <Switch>
           
-          <Route exact path='/login' render={() => <Login updateUser={this.updateLoggedInUser}/>}/>
-          <Route exact path="/signup" render={() => <Signup updateUser={this.updateLoggedInUser}/>} />
+          <Route exact path='/login' render={() => <Login user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>}/>
+          <Route exact path="/signup" render={() => <Signup user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>} />
   
           <Route exact path="/profil" render={() => (
               <Profil user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
