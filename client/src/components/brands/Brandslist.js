@@ -26,64 +26,81 @@ class Brandslist extends Component {
     render(){
         
       return(
+        
           <>
-
-        { this.state.listOfBrands.map( brand => {
+          <h3>LES PLUS AJOUTEES</h3>
+            { this.state.listOfBrands.map( brand => {
               return (
+                
                 <div key={brand._id}>
 
                 <Container >
-                    <h3>LES PLUS AJOUTEES</h3>
-                    <Row>
                     <Link to={`/brandslist/${brand._id}`}>
-                        <Col><img src={brand.logoUrl}/></Col>
-                        <Col>{brand.brandname}</Col>
+                    
+                    { brand.popularity > 1 ? (
+                        <Row>
+                            {/* <Col> <img src={brand.logoUrl}/></Col> */}
+                            <Col>
+                                {brand.brandname}
+                            </Col> 
+                        </Row>
+                        ) : (
+                            <></>
+                    )}
+
                     </Link>
-                    </Row>
+                    
                 </Container>
 
                 <hr></hr>
 
-                <Container>
-                    <Row>
-                        <Col>+</Col>
-                        <Col>Autre Marque</Col>
-                    </Row>
-                </Container>
-
-                <hr></hr>
-
-                <Container>
-                    <Row>
-                    <Link to={`/brandslist/${brand._id}`}>
-                        <Col><img src={brand.logoUrl}/></Col>
-                        <Col>{brand.brandname}</Col>
-                    </Link>
-                    </Row>
-                </Container>
+               
                 </div>
+                )}
             )}
-        )}
+
+            <Container>
+                <Row>
+                    <Col>+</Col>
+                    <Col>Autre Marque</Col>
+                </Row>
+            </Container>
+
+
+
+            <h3>A</h3>
+
+            { this.state.listOfBrands.map( brand => {
+              return (
+                
+                <div key={brand._id}>
+
+                <Container >
+                    <Link to={`/brandslist/${brand._id}`}>
+                    
+                    { brand.brandname.startsWith('A') ? (
+                        <Row>
+                            {/* <Col> <img src={brand.logoUrl}/></Col> */}
+                            <Col>
+                                {brand.brandname}
+                            </Col> 
+                        </Row>
+                        ) : (
+                            <></>
+                    )}
+
+                    </Link>
+                    
+                </Container>
+
+                <hr></hr>
+                </div>
+                )}
+            )}
+
         </>
     
-
       )
     }
   }
   export default Brandslist;
-
-
-  {/* <div>
-            { this.state.listOfBrands.map( brand => {
-              return (
-                <div key={brand._id}>
-
-                    <Link to={`/brandslist/${brand._id}`}>
-                        <li><img src={brand.logoUrl}/></li>
-                        <li><h3>{brand.brandname}</h3></li>
-                    </Link>
-
-                </div>
-              )})
-            }
-          </div> */}
