@@ -8,24 +8,6 @@ const { restart } = require('nodemon');
 const { populate } = require('../models/user-model');
 
 
-// Route GET/PROFIL => to show our profil
-profilRoutes.get('/profil', (req, res, next) => {
-  if (!req.session.currentUser) {
-    res.status(400).json({
-      message: "Please login before access the user profile",
-    });
-    return;
-  }
-  console.log('id:', req.session.currentUser._id)
-  User.findById(req.session.currentUser._id)
-
-    .then((currentUser) => {
-      res.status(200).json({ currentUser });
-    })
-    .catch((err) => {
-      res.status(400).json({ message: "No user found" });
-    });
-});
 
 
 // PUT/PROFIL => to update our profil
@@ -52,6 +34,25 @@ profilRoutes.put('/profil', (req, res, next)=>{
     });
 
 })
+
+// Route GET/PROFIL => to show our profil
+profilRoutes.get('/profil', (req, res, next) => {
+  if (!req.session.currentUser) {
+    res.status(400).json({
+      message: "Please login before access the user profile",
+    });
+    return;
+  }
+  console.log('id:', req.session.currentUser._id)
+  User.findById(req.session.currentUser._id)
+
+    .then((currentUser) => {
+      res.status(200).json({ currentUser });
+    })
+    .catch((err) => {
+      res.status(400).json({ message: "No user found" });
+    });
+});
 
 // DELETE/PROFIL  => to delete our profil
 profilRoutes.delete('/profil', (req, res, next)=>{

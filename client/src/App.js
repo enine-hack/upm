@@ -27,15 +27,18 @@ class App extends Component {
         })
     }
   }
+  
   // 
-  componentDidMount() {
-    this.fetchUser();
-  }
   updateLoggedInUser = (userObj) => {
     this.setState({
       loggedInUser: userObj
     })
   }
+
+  componentDidMount() {
+    this.fetchUser();
+  }
+
   render() {
     return (
       <div className="App">
