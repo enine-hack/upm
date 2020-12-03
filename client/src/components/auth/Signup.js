@@ -49,24 +49,25 @@ class Signup extends Component {
 
         <Row className="Signuplogin-center">
           <form onSubmit={this.handleFormSubmit}>
-          <Col >
-            <input className="Input-form-style" style={{ width: "380px"}}
-                  type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
-          </Col>
-          <Col>
-            <input className="Input-form-style" style={{ width: "380px"}} 
-                  type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-          </Col>
-          
-          <Col><button className="Button-form-style"
-          style={{ width: "380px"}}>SIGN UP</button>
-          </Col>
+            <Col >
+              <input className="Input-form-style" style={{ width: "380px"}}
+                    type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
+            </Col>
+            <Col>
+              <input className="Input-form-style" style={{ width: "380px"}} 
+                    type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+            </Col>
             
-          {/* Affichage message d'erreur */}
-            {this.state.error && (
-                <p className="Error-form-message-style">{this.state.error}
-                  </p>
-              )}
+            <Col><button className="Button-form-style"
+            style={{ width: "380px"}}>SIGN UP</button>
+            </Col>
+              
+            {/* Affichage message d'erreur */}
+              {this.state.error && (
+                  <p className="Error-form-message-style">{this.state.error}
+                    </p>
+                )}
+            
           </form>
 
       

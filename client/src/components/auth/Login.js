@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
 class Login extends Component {
-  state = { email: '', password: '', error: "" }
+  state = { email: '', password: '', error: "", confirmation:"" }
   handleFormSubmit = (event) => {
     event.preventDefault();
+
     const email = this.state.email;
     const password = this.state.password;
+
     login(email, password)
       .then(response => {
         console.log('connected to your account')
         
-          this.setState({ email: "", password: "", error: "" });
+          this.setState({ email: "", password: "", error: "", confirmation: "You are now connected to your account" });
           this.props.updateUser(response);
           
       })
@@ -61,14 +63,18 @@ class Login extends Component {
             </Col>
             <Col>
             
-              <input className="Button-form-style"
-              style={{ width: "380px"}} type="submit" value="LOG IN" />
+              <input  className="Button-form-style"
+                      style={{ width: "380px"}} 
+                      type="submit" value="LOG IN" />
             </Col>
 
             {/* Affichage du message d'erreur */}
             {this.state.error && (
               <p className="Error-form-message-style">{this.state.error}</p>
             )}
+            
+            {/* Affichage du message de confirmation logged */}
+            <p className="Confirm-form-message-style">{this.state.confirmation}</p>
 
           </form>
 

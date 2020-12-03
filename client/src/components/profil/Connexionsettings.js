@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {profilsettings} from '../auth/auth-service';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -33,6 +33,18 @@ class Connexionsettings extends Component {
         [name]: value
     });
   }
+
+  // handleChangeEmail = (event) => {  
+  //   this.setState({
+  //     email:event.target.value
+  //   })
+  // }
+
+  // handleChangePassword = (event) => {  
+  //   this.setState({
+  //     password:event.target.value
+  //   })
+  // }
     
     render() {
         return (
@@ -41,7 +53,8 @@ class Connexionsettings extends Component {
               
               
               <div>
-                <form className="connexion-settings-form-center" onSubmit={this.handleFormSubmit}>                
+                <form className="connexion-settings-form-center" 
+                      onSubmit={this.handleFormSubmit}>                
                 <p>Change your Email or Password</p>
                   <input className="connexion-settings-form-field"
                         type="email" name="email" value={this.state.email} placeholder="New Email"
