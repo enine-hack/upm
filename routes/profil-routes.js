@@ -12,13 +12,19 @@ const { populate } = require('../models/user-model');
 
 // PUT/PROFIL => to update our profil
 profilRoutes.put('/profil', (req, res, next)=>{
- 
-    const { email, password } = req.body;
-    
+
+    const { password } = req.body;
+
+    if (password.length < 8) {
+      res.status(400).json({ message: 'Please make your password at least 8 characters long for security purposes.' });
+      return;
+    }
+
+
     const salt = bcrypt.genSaltSync(10);
     const hashPass = bcrypt.hashSync(password, salt);
     let updateUser = {
-      email: email,
+      // email: email,
       password: hashPass,
     };
 
@@ -95,6 +101,7 @@ profilRoutes.post("/profiledit", (req, res, next) => {
 
   const aNewProfile = {
     civility: civility,
+    firstname: firstname,
     lastname: lastname,
     dateOfBirth: dateOfBirth,
     numberAddress: numberAddress,
@@ -109,8 +116,8 @@ profilRoutes.post("/profiledit", (req, res, next) => {
   };
 
   User.findByIdAndUpdate(req.session.currentUser._id, aNewProfile)
-      .then(() => {
-        res.status(200).json({ message : 'Profile updated' })
+        .then((updatedUser) => {
+          res.status(200).json(updatedUser);
       }).catch(err => {
         res.status(500).json(err)
       })

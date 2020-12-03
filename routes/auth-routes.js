@@ -17,6 +17,7 @@ authRoutes.post('/signup', (req, res, next) => {
     res.status(400).json({ message: 'Please make your password at least 8 characters long for security purposes.' });
     return;
   }
+  
   User.findOne({ email })
     .then(foundUser => {
       if (foundUser) {
@@ -63,6 +64,7 @@ authRoutes.post('/login', (req, res, next) => {
     } else {
       req.session.currentUser = user
       res.json(user)
+     
     }
   }).catch(next)
 });
