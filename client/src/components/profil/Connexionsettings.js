@@ -7,32 +7,34 @@ import { Container } from 'react-bootstrap';
 
 class Connexionsettings extends Component {
   state = {
-    email: '',
-    password: '',
+    // email: this.props.user.email,
+    password: ""
   }
 
   handleFormSubmit = (event) => {
       event.preventDefault()
       
-      const email = this.state.email;
+      // const email = this.state.email;
       const password = this.state.password;
 
-      profilsettings(email, password)
+      profilsettings(password)
         .then(response => {
         this.props.updateUser(response);
+
+
        
       })
       .catch( error => console.log(error) )   
 
   }
 
-  handleChange = (event) => {
-    const {type, value, name} = event.target;
+  // handleChange = (event) => {
+  //   const {type, value, name} = event.target;
 
-    this.setState({
-        [name]: value
-    });
-  }
+  //   this.setState({
+  //       [name]: value
+  //   });
+  // }
 
   // handleChangeEmail = (event) => {  
   //   this.setState({
@@ -40,11 +42,11 @@ class Connexionsettings extends Component {
   //   })
   // }
 
-  // handleChangePassword = (event) => {  
-  //   this.setState({
-  //     password:event.target.value
-  //   })
-  // }
+  handleChangePassword = (event) => {  
+    this.setState({
+      password:event.target.value
+    })
+  }
     
     render() {
         return (
@@ -57,14 +59,14 @@ class Connexionsettings extends Component {
               <div>
                 <form className="connexion-settings-form-center" 
                       onSubmit={this.handleFormSubmit}>                
-                <p>Change your Email or Password</p>
-                  <input className="connexion-settings-form-field"
-                        type="email" name="email" value={this.state.email} placeholder="New Email"
-                          onChange={event => this.handleChange(event)}/>
+                <p>Change your Password</p>
+                  {/* <input className="connexion-settings-form-field"
+                        type="email" name="email" value={this.state.email} 
+                          onChange={event => this.handleChangeEmail(event)}/> */}
                 
                   <input className="connexion-settings-form-field" 
-                        type="password" name="password" value={this.state.password} placeholder="New Password"
-                        onChange={event => this.handleChange(event)} />
+                        type="password" name="password" value={this.state.password}
+                        onChange={event => this.handleChangePassword(event)} />
               
                 
                   <button className="connexion-setting-submit">

@@ -26,8 +26,10 @@ function logout() {
 }
 export {logout}
 
-function profilsettings(email, password) {
-  return service.put('/profil', {email, password}).then(response => response.data)
+function profilsettings(password) {
+  
+  console.log(password)
+  return service.put('/profil', {password}).then(response => response.data)
 }
 export {profilsettings}
 
