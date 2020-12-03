@@ -64,15 +64,19 @@
   align-items: center;
   height: 40px;
   margin-left: 0px;
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
+  
 }
 
 .Col-h40 {
-  height: 40px;
+  height: 50px;
+  padding-top: 11px;
+  
 }
 
 .Border-bottom-solid {
   border-bottom: solid;
+  background-color: #F6F6F6;
 }
 
 .Signuplogin-description {
@@ -117,7 +121,8 @@
 
 .Confirm-form-message-style {
   margin-top: 20px;
-  font-size: 14px
+  font-size: 14px;
+
 }
 
 /*
@@ -286,10 +291,16 @@
  ######   #######  ##     ## ##        ######## ########    ##    ########    ##        ##     ##  #######  ##       #### ######## ######## 
 */
 
-.complete-profil-style p {
+.complete-profil-style-desc {
   margin-top: 20px;
   margin-bottom: 40px;
   text-align: center;
+}
+
+.complete-profil-subtitles {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold
 }
 
 .complete-profil-form-center {

@@ -53,6 +53,7 @@ class CompleteProfile extends Component {
             idLine
         ).then(response => {
             this.props.updateUser(response);
+            
            
           })
           .catch( error => console.log(error) )
@@ -74,8 +75,13 @@ class CompleteProfile extends Component {
             
                 <form   className="complete-profil-form-center"
                         onSubmit={this.handleFormSubmit}>
-                    <p> Fill out your profile and directly benefit from all the advantages linked to your brands loyalty accounts.</p>
+
+                    <p  className="complete-profil-style-desc"> 
+                        Fill out your profile and directly benefit from all the advantages linked to your brands loyalty accounts.</p>
                     
+                    <div  className="complete-profil-subtitles">
+                    ID</div>
+
                     <select className="complete-profil-form-field" name="civility" >    
                         <option value="">Civility</option>
                         <option value="Madam">Madam</option>
@@ -95,7 +101,8 @@ class CompleteProfile extends Component {
                             onChange={(event) =>this.handleChange(event)}/>
                     
 
-                    <p><b>ADDRESS</b></p>
+                    <div  className="complete-profil-subtitles">
+                        ADDRESS</div>
                     
                     <input className="complete-profil-form-Numberadress"
                             type="number" name="numberAddress" value={this.state.numberAddress} placeholder="N°"
@@ -123,7 +130,8 @@ class CompleteProfile extends Component {
 
                     
 
-                    <p><b>CONTACT</b></p>
+                    <div  className="complete-profil-subtitles">
+                        CONTACT</div>
 
                     <input  className="complete-profil-form-field"
                             type="text" name="mobileNumber" value={this.state.mobileNumber} placeholder="Phone number"

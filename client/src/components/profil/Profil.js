@@ -66,7 +66,7 @@ class Profil extends Component {
                       }}>CONNEXION SETTINGS
               </button>
 
-              {this.state.showformconnexionsettings &&  <Connexionsettings updateUser={this.props.updateUser} />}
+              {this.state.showformconnexionsettings &&  <Connexionsettings user={this.props.user} updateUser={this.props.updateUser} />}
               </Col>
             <Col xs={{ span: 1, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 1, offset: 0 }}>
             <button className="Profil-form-link" 
@@ -93,7 +93,7 @@ class Profil extends Component {
                         }}>COMPLETE MY PROFILE
                 </button>
 
-                {this.state.showformfillprofile &&  <Completeprofile user={this.props.user} updateUser={this.props.updateUser} />}
+                {this.state.showformfillprofile &&  <Completeprofile user={this.props.user} updateUser={this.props.updateUser}/>}
               </Col>
             
             

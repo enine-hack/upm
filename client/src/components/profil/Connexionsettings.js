@@ -48,6 +48,8 @@ class Connexionsettings extends Component {
     
     render() {
         return (
+          // AJOUTER IF PROFIL COMPLET => RETOURNER MODIFIER PROFIL
+
           <Container className="connexion-settings-style" fluid>
               
               
