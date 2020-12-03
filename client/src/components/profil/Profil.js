@@ -13,6 +13,7 @@ class Profil extends Component {
     showformconnexionsettings: false,
     showformfillprofile: false
     }
+  
 
   render(){
     if (isnull(this.props.user)) return '..loading'

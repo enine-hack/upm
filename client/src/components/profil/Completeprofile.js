@@ -5,19 +5,19 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 class CompleteProfile extends Component {
     state= { 
-        civility: '',
-        firstname: '',
-        lastname: '',
-        dateOfBirth: '',
-        numberAddress: '',
-        typeofstreet: '',
-        additionalAddress: '',
-        zipcode: '',
-        city: '',
-        country: '',
-        mobileNumber: '',
-        idWechat: '',
-        idLine: ''
+        civility: this.props.user.civility,
+        firstname: this.props.user.firstname,
+        lastname: this.props.user.lastname,
+        dateOfBirth: this.props.user.dateOfBirth,
+        numberAddress: this.props.user.numberAddress,
+        typeofstreet: this.props.user.typeofstreet,
+        additionalAddress: this.props.user.additionalAddress,
+        zipcode: this.props.user.zipcode,
+        city: this.props.user.city,
+        country: this.props.user.country,
+        mobileNumber: this.props.user.mobileNumber,
+        idWechat: this.props.user.idWechat,
+        idLine: this.props.user.idLine
     }
 
     handleFormSubmit = (event) => {

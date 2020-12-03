@@ -35,7 +35,7 @@ class Brandslist extends Component {
               return (                
                 <div key={brand._id}>
                     { brand.popularity > 2 ? (
-                      <Container fluid>
+                      <Container >
                         <Link to={`/brandslist/${brand._id}`}>
                           <Row className="brandlist-row-style">
                               <Col xs lg="auto">

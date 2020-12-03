@@ -11,6 +11,7 @@ import Menu from './components/landing/Menu';
 import Footer from './components/footer/Footer';
 import Profil from './components/profil/Profil';
 import Brandslist from './components/brands/Brandslist';
+import Detailsbrand from './components/brands/Detailsbrand';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
@@ -38,6 +39,7 @@ class App extends Component {
 
   componentDidMount() {
     this.fetchUser();
+    
   }
 
   render() {
@@ -60,10 +62,10 @@ class App extends Component {
             )} />
 
           <Route exact path="/brandslist" component={Brandslist}/>
-
+          <Route exact path="/brandslist/:id" component={Detailsbrand}/>
 
           {/* 
-          <Route exact path="/projects/:id" component={ProjectDetails} />
+          
           <Route exact path="/projects/:id/tasks/:taskId" component={TaskDetails} /> */}
         </Switch>
         
