@@ -391,7 +391,8 @@
 
 
 .brandlist-style {
-  margin-top: 80px
+  margin-top: 80px;
+  width: 1200
 }
 
 .brandlist-style p {
@@ -423,9 +424,10 @@
   border-color: grey;
 }
 
-.brandist-showmore-col-style {
+.brandlist-showmore-col-style {
   background-color: #FBFBFB;
   padding-top: 28px;
+  padding-right: 20px;
 }
 
 .brandlist-showmore-icon {
