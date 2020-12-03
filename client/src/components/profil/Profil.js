@@ -27,7 +27,7 @@ class Profil extends Component {
             <p>Welcome {this.props.user.firstname} {this.props.user.lastname}</p>
 
             <Row className="Profil-datas">
-                <Col xs={{ span: 3, offset: 1 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
                      className="Profil-col-title">
                 <b>Account ID</b></Col>
                 <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
@@ -36,7 +36,7 @@ class Profil extends Component {
             </Row>
 
             <Row className="Profil-datas">
-                <Col xs={{ span: 3, offset: 1 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
                      className="Profil-col-title">
                 <b>Registered account</b></Col>
                 <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
@@ -45,7 +45,7 @@ class Profil extends Component {
             </Row>
 
             <Row className="Profil-datas">
-                <Col xs={{ span: 3, offset: 1 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
+                <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 3, offset: 3 }}
                      className="Profil-col-title">
                 <b>Member since</b></Col>
                 <Col xs={{ span: 4, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 3, offset: 0 }}
@@ -57,48 +57,56 @@ class Profil extends Component {
          
 
             <Row >
-            <Col xs={{ span: 7, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 6, offset: 3 }}>
-            <button className="Profil-form-link" 
-                    onClick={(event) => {
-                      this.setState({
-                        showformconnexionsettings: !this.state.showformconnexionsettings
-                      })
-                    }}>CONNEXION SETTINGS</button>
+              <Col xs={{ span: 10, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 6, offset: 3 }}>
+              <button className="Profil-form-link" 
+                      onClick={(event) => {
+                        this.setState({
+                          showformconnexionsettings: !this.state.showformconnexionsettings
+                        })
+                      }}>CONNEXION SETTINGS
+              </button>
 
-            {this.state.showformconnexionsettings &&  <Connexionsettings user={this.props.user} updateUser={this.props.updateUser} />}
-            </Col>
-            <Col xs={{ span: 1, offset: 3 }} sm={{ span: 2, offset: 2 }} md={{ span: 1, offset: 0 }}>
+              {this.state.showformconnexionsettings &&  <Connexionsettings user={this.props.user} updateUser={this.props.updateUser} />}
+              </Col>
+            <Col xs={{ span: 1, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 1, offset: 0 }}>
             <button className="Profil-form-link" 
                     onClick={(event) => {
                       this.setState({
                         showformconnexionsettings: !this.state.showformconnexionsettings
                       })
-                    }}>></button>
+                    }}>
+                      <img  className="Arrow-down-style"
+                            src={"https://image.flaticon.com/icons/png/512/120/120886.png"}/>
+                    </button>
             </Col>
             </Row>
 
       
 
             <Row >
-              <Col xs={{ span: 7, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 6, offset: 3 }}>
+              <Col xs={{ span: 10, offset: 0 }} sm={{ span: 2, offset: 4 }} md={{ span: 6, offset: 3 }}>
                 <button className="Profil-form-link" 
                         onClick={(event) => {
                           this.setState({
                             showformfillprofile: !this.state.showformfillprofile
                           })
-                        }}>COMPLETE MY PROFILE</button>
+                        }}>COMPLETE MY PROFILE
+                </button>
 
                 {this.state.showformfillprofile &&  <Completeprofile user={this.props.user} updateUser={this.props.updateUser} />}
               </Col>
             
             
-              <Col xs={{ span: 1, offset: 3 }} sm={{ span: 2, offset: 2 }} md={{ span: 1, offset: 0 }}>
+              <Col xs={{ span: 1, offset: 0 }} sm={{ span: 2, offset: 2 }} md={{ span: 1, offset: 0 }}>
                 <button className="Profil-form-link" 
                         onClick={(event) => {
                           this.setState({
                             showformfillprofile: !this.state.showformfillprofile
                           })
-                        }}>></button>
+                        }}>
+                          <img  className="Arrow-down-style"
+                            src={"https://image.flaticon.com/icons/png/512/120/120886.png"}/>
+                </button>
               </Col>
             </Row>
 
@@ -106,10 +114,11 @@ class Profil extends Component {
 
             <Row>
               <button className="Profil-delete-button" 
-            onClick={(e) => {
-              console.log(this.props.user)
-              deleteprofil(e).then(() => this.props.updateUser(false))
-            }}>Delete account</button>
+                      onClick={(e) => {
+                        console.log(this.props.user)
+                        deleteprofil(e).then(() => this.props.updateUser(false))
+                      }}>Delete account
+            </button>
             </Row>
             
             

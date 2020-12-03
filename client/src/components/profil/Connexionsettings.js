@@ -38,33 +38,25 @@ class Connexionsettings extends Component {
         return (
           <Container className="connexion-settings-style" fluid>
               
-              <p>Change your Email or Password</p>
               
-              <Row className="connexion-settings-form-center">
-              <form onSubmit={this.handleFormSubmit}>
-
+              
+              <div>
+                <form className="connexion-settings-form-center" onSubmit={this.handleFormSubmit}>                
+                <p>Change your Email or Password</p>
+                  <input className="connexion-settings-form-field"
+                        type="email" name="email" value={this.state.email} placeholder="New Email"
+                          onChange={event => this.handleChange(event)}/>
                 
-                  <Col xs={{span: 12, offset: 3}} sm={{span: 12, offset: 1}} md={{span: 12, offset: 1}}>
-                    <input className="connexion-settings-form-field"
-                          type="email" name="email" value={this.state.email} placeholder="New Email"
-                            onChange={event => this.handleChange(event)}/>
-                  </Col>
-
-                  <Col xs={{span: 12, offset: 3}} sm={{span: 12, offset: 1}} md={{span: 12, offset: 1}}>
-                    <input className="connexion-settings-form-field" 
-                          type="password" name="password" value={this.state.password} placeholder="New Password"
-                          onChange={event => this.handleChange(event)} />
-                  </Col>
-               
-
-                  <Col xs={{ span: 1, offset: 3 }} sm={{ span: 2, offset: 2 }} md={{ span: 12, offset: 1 }}>
-                    <button className="connexion-setting-submit">
-                      CHANGE SETTINGS
-                    </button>
-                  </Col>
-               
-              </form>
-              </Row>
+                  <input className="connexion-settings-form-field" 
+                        type="password" name="password" value={this.state.password} placeholder="New Password"
+                        onChange={event => this.handleChange(event)} />
+              
+                
+                  <button className="connexion-setting-submit">
+                    CHANGE SETTINGS
+                  </button>                
+                </form>
+              </div>
           
              
               
