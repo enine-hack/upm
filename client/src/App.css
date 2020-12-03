@@ -390,6 +390,80 @@
 */
 
 
+.brandlist-style {
+  margin-top: 80px
+}
+
+.brandlist-style p {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.brandlist-row-style {
+  height: 80px;
+  margin-bottom: 10px;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.brandlist-col-style {
+  background-color: #FBFBFB;
+  padding-top: 28px;
+  text-align: left;
+  color: black
+}
+
+.brandlist-logos {
+	width: 90px;
+  height: 90px;
+  
+  border-style: thin;
+  border-color: grey;
+}
+
+.brandist-showmore-col-style {
+  background-color: #FBFBFB;
+  padding-top: 28px;
+}
+
+.brandlist-showmore-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.brandlist-hr-style {
+  padding-top: 50px;
+  width: 540px;
+  border-bottom:1px solid #EBEBEB;
+  text-align: center;
+  margin: 0 auto
+}
+
+
+.brandist-addbrand-row-style {
+  height: 80px;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.brandist-addbrand-col-style {
+  background-color: #FBFBFB;
+  padding-top: 30px;
+  text-align: left;
+  color: #EB9B00;
+  font-weight: bold
+}
+
+.brandlist-letter-style {
+  margin-top: 50px;
+  margin-bottom: 20px
+}
+
 
 
 
