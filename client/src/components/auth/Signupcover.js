@@ -26,45 +26,47 @@ class Signupcover extends Component {
   render() {
     return (
         <div className="Signup-cover">
-         <h1>THE LUXIOUS APP</h1>
+        <Container fluid>
+          <Col xs={{ span: 12, offset: 1 }} sm={{ span: 3, offset: 4 }} md={{ span: 8, offset: 0 }}>
+            <h1>The Luxury App</h1>
+            
+            <div className="Signup-cover-description">
+              Create an account for a personalized luxious shopping fidelity experience and gain privileges faster.
+            </div>
           
-          <p className="Signup-cover-description">
-            Create an account for a personalized luxious shopping fidelity experience and gain privileges faster.
-          </p>
-      <Container >      
-
-        <Row>
-          <form onSubmit={this.handleFormSubmit}>
-            <Col >
-              <input className="Input-cover-form-style"
-                    type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
-            </Col>
-            <Col>
-              <input className="Input-cover-form-style"  
-                    type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-            </Col>
-            
-            <Col><button className="Button-cover-form-style"
-            >SIGN UP</button>
-            </Col>
+            <form className="Signup-cover-form-style"
+                  onSubmit={this.handleFormSubmit}>
               
-            {/* Affichage message d'erreur */}
-              {this.state.error && (
-                  <p className="Error-form-message-style">{this.state.error}
-                    </p>
-                )}
-            
-          </form>
+                <input className="Input-cover-form-style"
+                      type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
+              
+                <input className="Input-cover-form-style"  
+                      type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+              
+              
+              <button className="Button-cover-form-style"
+              >SIGN UP</button>
+              
+                
+              {/* Affichage message d'erreur */}
+                {this.state.error && (
+                    <p className="Error-form-message-style">{this.state.error}
+                      </p>
+                  )}
+              
+            </form>
+          
 
-          <p>Already have account? 
-          <Link to={"/Login"}>Login</Link>
-        </p>
+            <div>
+              <p>Already have account? 
+                <Link to={"/Login"}>Login</Link>
+              </p>
+            </div>
+          </Col>
 
-      
-
-        </Row>
-      </Container>
+        </Container>
       </div>
+      
     )
   }
 }

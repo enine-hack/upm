@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Container from 'react-bootstrap/Container';
+
 import './App.css';
 
 import Signup from './components/auth/Signup';
