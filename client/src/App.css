@@ -26,8 +26,9 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: black
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -431,7 +432,7 @@
 
 .brandlist-style {
   margin-top: 80px;
-  width: 1200
+ 
 }
 
 .brandlist-style p {
@@ -442,7 +443,7 @@
 }
 
 .brandlist-row-style {
-  height: 80px;
+  height: 70px;
   margin-bottom: 10px;
   justify-content: center;
   margin-right: 10px;
@@ -450,33 +451,33 @@
 
 .brandlist-col-style {
   background-color: #FBFBFB;
-  padding-top: 28px;
+  padding-top: 35px;
   text-align: left;
-  color: black
+  color: black;
+  font-size: 13px
 }
 
 .brandlist-logos {
 	width: 90px;
   height: 90px;
-  
-  border-style: thin;
-  border-color: grey;
+
 }
 
 .brandlist-showmore-col-style {
   background-color: #FBFBFB;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-right: 20px;
 }
 
 .brandlist-showmore-icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .brandlist-hr-style {
   padding-top: 50px;
-  width: 540px;
+  
+  width: 390px;
   border-bottom:1px solid #EBEBEB;
   text-align: center;
   margin: 0 auto
@@ -484,25 +485,49 @@
 
 
 .brandist-addbrand-row-style {
-  height: 80px;
+  height: 70px;
 
   margin-top: 50px;
   margin-bottom: 10px;
   justify-content: center;
   margin-right: 10px;
+  
+}
+
+.brandlist-addbrand-logos {
+
+  border:2px black;
+  border-style: solid none solid solid
+
 }
 
 .brandist-addbrand-col-style {
   background-color: #FBFBFB;
-  padding-top: 30px;
+  padding-top: 25px;
   text-align: left;
-  color: #EB9B00;
-  font-weight: bold
+  font-weight: bold;
+  border:2px black;
+  border-style: solid none solid none;
+  font-size: 13px
+}
+
+.brandlist-showmore-addbrand-col-style {
+  background-color: #FBFBFB;
+  padding-top: 20px;
+  padding-right: 20px;
+  border:2px black;
+  border-style: solid solid solid none
+}
+
+.brandlist-loupe-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .brandlist-letter-style {
   margin-top: 50px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+
 }
 
 
