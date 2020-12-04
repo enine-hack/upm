@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 class Detailsbrand extends Component {
@@ -50,11 +52,87 @@ class Detailsbrand extends Component {
     render(){
     
         return(
+            
             <div>
-            <img src={this.state.coverImage}/>
-            <h1>{this.state.brandname}</h1>
-       
+              <img  className="details-brand-logo"
+              src={this.state.logoUrl}/>
+              <br></br>
+              <img  className="details-brand-cover"
+                    src={this.state.coverImage}/>
+                      
+            <Container  >
+
+
+                  <div  className="details-brand-div-menu ">
+                  <Row>
+                    <Col  xs={{ span: 10, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 9, offset: 0 }}
+                          className="details-brand-button-style">
+                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                        BRAND HOUSE
+                      </Link>
+                    </Col>
+
+                    <Col  xs={{ span: 1, offset: 0 }} sm={{ span: 1, offset: 0 }} md={{ span: 1, offset: 0 }}>
+                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                        <img  className="details-brand-arrow-right-style"
+                              src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                      </Link>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col  md={{ span: 9, offset: 0 }}
+                          className="details-brand-button-style">
+                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                        NEW IN
+                      </Link>
+                    </Col>
+
+                    <Col md={{ span: 1, offset: 0 }}>
+                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                        <img  className="details-brand-arrow-right-style"
+                              src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                      </Link>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col  md={{ span: 9, offset: 0 }}
+                          className="details-brand-button-style">
+                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                      SALES AND EXCLUSIVITIES
+                      </Link>
+                    </Col>
+
+                    <Col md={{ span: 1, offset: 0 }}>
+                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                        <img  className="details-brand-arrow-right-style"
+                              src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                      </Link>
+                    </Col>
+                  </Row>
+                     
+                      
+                        <Col>PRIVILEGE ACCOUNT</Col>
+                        <Col></Col>
+                     
+                        <Col>SHOPPING HISTORY</Col>
+                        <Col></Col>
+                      
+                        <Col>RETURNS AND WARRANTY</Col>
+                        <Col></Col>
+                      
+                        <Col>E-GIFT CARD</Col>
+                        <Col></Col>
+                     
+                        <Col>FEEDBACK</Col>
+                        <Col></Col>
+                  </div> 
+
+            </Container>
             </div>
+       
+           
         )
     }
 }

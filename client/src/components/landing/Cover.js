@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+
 import Signupcover from '../auth/Signupcover'
 
 const Cover = (props) => { 
