@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const Brand       = require('../models/brand-model')
 const User       = require('../models/user-model');
 
-// GET/Profil/favbrands => Affichage de la liste des favorites brands (bouton marque)
+// GET/Profil/favbrands => Affichage de la liste de mon porte marque
 favbrandsRoutes.get('/profil/favoritebrands', (req, res, next) => {
   if (req.session.currentUser) {
         res.status(200).json(req.session.currentUser);
@@ -39,31 +39,68 @@ favbrandsRoutes.get('/profil/favoritebrands', (req, res, next) => {
 })
 
 
-
-// POST//profil/add-favbrand => Ajout d'une nouvelle marque existante en BDD dans profil
+// POST//profil/add-favbrand => Ajout d'une nouvelle marque existante en BDD dans mon portemarque ou d'une nouvelle marque dans mon pending
 favbrandsRoutes.post('/profil/add-favbrand', (req, res, next) => {
-// 1. récupère ma sélection sous forme d'Object ID du Brand model : req.body.id /'String'
-// et transforme le en array
 
+  // recupere l'id, vérifie si c'est bien un string puis converti le en array
   selectedfavbrands = req.body._id; // ma sélection
-    console.log(req.body._id)
-    console.log(typeof(selectedfavbrands))
+    // console.log(req.body._id)
+    // console.log(typeof(selectedfavbrands))
     if(typeof(selectedfavbrands) === 'string'){
        selectedfavbrands = selectedfavbrands.split()
-       console.log(selectedfavbrands)
-       console.log(typeof(selectedfavbrands)) 
+      //  console.log(selectedfavbrands)
+      //  console.log(typeof(selectedfavbrands)) 
       }
+  
+  pendingbrandname = req.body.brandname // ma nouvelle marque qui n'existe pas dans seeds
+  // console.log(pendingbrandname)
+  // console.log(typeof(pendingbrandname))
+  if(typeof(pendingbrandname) === 'string'){
+    pendingbrandname = pendingbrandname.split()
+    // console.log(pendingbrandname)
+    // console.log(typeof(pendingbrandname)) 
+  }
 
+  // verifie que l'id Brand est en BD
   Brand.findById(selectedfavbrands)
+  
   .then(response => {
     console.log(response)
-    if(!response){res.status(404).json({ message: 'Brand not found' })}
-    res.status(200).json(response);
+    if(!response){
+      res.status(200).json({ message: 'New Brand doesnt exist in the DB, so added in the pending brand Array' })
+
+      User.findById(req.session.currentUser)
+        .then((user) =>{
+          pendingbrandname.forEach(newbrand => {
+        // que si pas deja
+        if (!user.pendingfavoritebrands.includes(newbrand)){
+          user.pendingfavoritebrands.push(newbrand)
+          console.log(user.pendingfavoritebrands)
+        }  
+      });
+      user.save()
+        .then(() => {
+          console.log(user.favoritebrands)
+          
+        })
+        .catch((err) => {
+          res.status(400).json({ message: "Favorite brand not saved in DB" });
+        });
+    })
+    .catch((err) => {
+      res.status(400).json({ message: "User id not found" });
+    });
+    
+    }
+
+
+      res.status(200).json(response); // rend l'objet
   })
   .catch(err => {
     res.status(404).json({ message: 'Connexion to database not found' });
   })
 
+  // si il n'existe pas dans l'array => le rajouter
   User.findById(req.session.currentUser)
     .then((user) =>{
       selectedfavbrands.forEach(selectedfavbrand => {
@@ -125,7 +162,8 @@ favbrandsRoutes.get('/profil/favoritebrands/:id', (req, res, next) => {
 
 })
 
-// DELETE/profil/favoritebrands/:id => to delete a specific project
+
+// DELETE/profil/favoritebrands/:id => Supprimer une marque spécifique de mon porte marque
 favbrandsRoutes.delete('/profil/favoritebrands/:id', (req, res, next)=>{
   if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
     res.status(400).json({ message: 'Specified id is not valid' });
@@ -156,5 +194,8 @@ favbrandsRoutes.delete('/profil/favoritebrands/:id', (req, res, next)=>{
       });
  
 })
+
+
+
 
 module.exports = favbrandsRoutes;

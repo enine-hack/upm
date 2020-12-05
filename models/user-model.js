@@ -59,6 +59,8 @@ const userSchema = new Schema(
     // fidelityAccount: [{ type : Schema.Types.ObjectId, ref: 'Fidelity' }],
     // purchaseHistory: [{ type : Schema.Types.ObjectId, ref: 'Purchase' }]
 
+    pendingfavoritebrands: [{type : String}]
+
   },
 
   {
