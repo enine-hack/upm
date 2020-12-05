@@ -26,24 +26,36 @@ class Favbrandslist extends Component {
 
     render() {
         return (
-            <Container>
+            <Container className="wallet-style">
 
                 <h3>MY BRANDS</h3>
+                
+                <button className="wallet-button-style"
+                >ADD BRAND</button>
+                
 
-                <button>ADD BRAND</button>
-
-                <Row>                    
+                <Row   
+                        className="wallet-mainrow-style">
+                        
+                                          
                     { this.state.listOfFavbrands.map( brand => {
                         return (                
                         <div key={brand._id}>
-                        <Col>
+                        <Col   
+                                className="wallet-maincol-style">
                             <img    className="wallet-logoimg-style"
                                     src={brand.logoUrl}/>
                         </Col>
+                        
                         </div>
+
                         )}
                     )}
+                    
                 </Row>
+
+                <button className="wallet-button-style"
+                >ADD BRAND</button>
             </Container>
         );
     }

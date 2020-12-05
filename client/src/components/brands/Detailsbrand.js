@@ -64,8 +64,8 @@ class Detailsbrand extends Component {
 
 
                   <div  className="details-brand-div-menu ">
-                  <Row>
-                    <Col  xs={{ span: 10, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 9, offset: 0 }}
+                  <Row className="details-brand-row-center">
+                    <Col  xs={{ span: 10, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 4, offset: 0 }}
                           className="details-brand-button-style">
                       <Link to={`${this.state.websiteUrl}`}  target="_blank">
                         BRAND HOUSE
