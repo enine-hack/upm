@@ -131,13 +131,30 @@ favbrandsRoutes.delete('/profil/favoritebrands/:id', (req, res, next)=>{
     res.status(400).json({ message: 'Specified id is not valid' });
     return;
   }
-  User.findByIdAndRemove(req.params.id)
-    .then(() => {
-      res.status(200).json({ message: `Brand with ${req.params.id} is removed successfully.` });
-    })
-    .catch( err => {
-      res.status(400).json({ message: 'Specified brand id is not valid' });
-    })
+
+  User.findById(req.session.currentUser)
+  
+    .then(user => {
+      console.log('INITIAL ARRAY', user.favoritebrands)
+      if(!user.favoritebrands.includes(req.params.id)){
+        res.status(404).json({ message: 'NON CA MARCHE PAAAAS' })
+        } res.status(200).json({ message: 'OK CA MARCHE' });
+
+          user.favoritebrands.splice(req.params.id, 1)
+          
+          user.save()
+          .then(() => {
+            console.log('NEW ARRAY FAVBRANDS', user.favoritebrands)
+            
+          })
+          .catch((err) => {
+            res.status(400).json({ message: "Favorite brand not saved in DB" });
+          });
+      })
+      .catch((err) => {
+        res.status(400).json({ message: "User id not found" });
+      });
+ 
 })
 
 module.exports = favbrandsRoutes;
