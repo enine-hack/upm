@@ -1,3 +1,4 @@
+const { json } = require('body-parser');
 const express    = require('express');
 const favbrandsRoutes = express.Router();
 const mongoose = require('mongoose');
@@ -40,21 +41,6 @@ favbrandsRoutes.get('/profil/favoritebrands', (req, res, next) => {
 
 
 // POST//profil/add-favbrand => Ajout d'une nouvelle marque existante en BDD dans profil
-
-// favbrandsRoutes.post('/profil/add-favbrand', (req, res, next) => {
-//   // si user connecté
-//   if (req.session.currentUser) {
-//     res.status(200).json(req.session.currentUser);
-//     return;
-//   }
-
-
-//   res.status(403).json({ message: 'Unauthorized' });
-
-
-
-// });
-
 favbrandsRoutes.post('/profil/add-favbrand', (req, res, next) => {
 // 1. récupère ma sélection sous forme d'Object ID du Brand model : req.body.id /'String'
 // et transforme le en array
@@ -101,6 +87,43 @@ favbrandsRoutes.post('/profil/add-favbrand', (req, res, next) => {
     });
 })
 
+
+// GET/profil/favoritebrands/:id => Affichage d'une MARQUE SPECIFIQUE dans mon portemarque
+favbrandsRoutes.get('/profil/favoritebrands/:id', (req, res, next) => {
+    // va vérifier l'id de mon url 
+    console.log(req.params.id)
+    if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
+      res.status(400).json({ message: 'Brand id is not valid' });
+      return;
+    }
+  
+  // es-tu loggué ?
+  User.findById(req.session.currentUser)
+  
+  .then(user => {
+    console.log(user.favoritebrands)
+    if(!user.favoritebrands.includes(req.params.id)){
+      res.status(404).json({ message: 'NON CA MARCHE PAAAAS' })}
+    res.status(200).json({ message: 'OK CA MARCHE' });
+
+    Brand.findById(req.params.id)
+    .then(response => {
+      console.log(response)
+      if(!response){res.status(404).json({ message: 'Brand not found' })}
+      res.status(200).json(response);
+    })
+    .catch(err => {
+      res.status(404).json({ message: 'Connexion to database not found' });
+    })
+  })
+  .catch(err => {
+    res.status(404).json({ message: 'User not found' });
+  })
+
+
+
+
+})
 
 
 
