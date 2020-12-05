@@ -121,6 +121,8 @@ class Profil extends Component {
                       }}>Delete account
             </button>
             </Row>
+
+
             
             
           

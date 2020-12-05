@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import Profil from './components/profil/Profil';
 import Brandslist from './components/brands/Brandslist';
 import Detailsbrand from './components/brands/Detailsbrand';
+import Favbrandslist from './components/favoritebrands/Favbrandslist';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
@@ -64,9 +65,10 @@ class App extends Component {
           <Route exact path="/brandslist" component={Brandslist}/>
           <Route exact path="/brandslist/:id" component={Detailsbrand}/>
 
-          {/* 
-          
-          <Route exact path="/projects/:id/tasks/:taskId" component={TaskDetails} /> */}
+          <Route exact path="/myfavoritebrands" render={() => (
+              <Favbrandslist user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+            )} />
+
         </Switch>
         
         <Route exact path="/" component={Menu}/>
