@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import isnull from 'lodash.isnull';
-import { Redirect } from 'react-router-dom';
+import service from '../auth/auth-service';
 
 
 class Favbrandslist extends Component {
@@ -8,22 +7,33 @@ class Favbrandslist extends Component {
         listOfFavbrands: []
     }
 
-   
+    getAllFavBrands = () =>{
+        service.get(`/myfavoritebrands`)
+          .then(responseFromApi => {
+              console.log(responseFromApi.data)
+            this.setState({
+                listOfFavbrands: responseFromApi.data
+            })
+          })
+          .catch(err => console.log('Error while fetching brands', err))
+      }
+  
+      componentDidMount() {
+        this.getAllFavBrands();
+      }
 
     render() {
-        if (isnull(this.props.user)) return '..loading'
-        if (this.props.user === false) return <Redirect to='/'/>
-        
+
         return (
             <div>
                 Hello Elo
-                { this.props.user.favoritebrands.map( brand => {
+                {/* { this.props.user.favoritebrands.map( brand => {
                 return (                
                   <div>
                       {brand}
                   </div>
                 )}
-              )}
+              )} */}
             </div>
         );
     }

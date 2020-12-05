@@ -13,7 +13,7 @@ const navbar = (props) => {
             <Row>
             <Col><Link to='/'>UPOSH | ME</Link></Col>
               <Col md="auto">{props.userInSession.firstname} {props.userInSession.lastname}</Col>
-              <Col md="auto"><Link to='/'>Brands</Link></Col>
+              <Col md="auto"><Link to='/myfavoritebrands'>Brands</Link></Col>
               <Col md="auto"><Link to='/profil'>Profile</Link></Col>
               <Col xs lg="1">
                 <button onClick={(e) => {
