@@ -39,4 +39,6 @@ allBrandsRoutes.get('/brandslist/:id', (req, res, next) => {
 
 
 
+
+
 module.exports = allBrandsRoutes;

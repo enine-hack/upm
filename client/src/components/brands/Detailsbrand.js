@@ -73,10 +73,10 @@ class Detailsbrand extends Component {
                     </Col>
 
                     <Col  xs={{ span: 1, offset: 0 }} sm={{ span: 1, offset: 0 }} md={{ span: 1, offset: 0 }}>
-                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                      <a href={this.state.websiteUrl}  target="_blank">
                         <img  className="details-brand-arrow-right-style"
                               src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                      </Link>
+                      </a>
                     </Col>
                   </Row>
 
@@ -130,6 +130,10 @@ class Detailsbrand extends Component {
                   </div> 
 
             </Container>
+            
+
+            {/* APPARAIT SI LA MARQUE EST DANS LE PORTEMARQUE + DELETE DANS LE USERS ARRAY
+            <button> Delete profil </button> */}
             </div>
        
            
