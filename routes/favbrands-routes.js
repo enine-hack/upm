@@ -125,6 +125,19 @@ favbrandsRoutes.get('/profil/favoritebrands/:id', (req, res, next) => {
 
 })
 
-
+// DELETE/profil/favoritebrands/:id => to delete a specific project
+favbrandsRoutes.delete('/profil/favoritebrands/:id', (req, res, next)=>{
+  if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
+    res.status(400).json({ message: 'Specified id is not valid' });
+    return;
+  }
+  User.findByIdAndRemove(req.params.id)
+    .then(() => {
+      res.status(200).json({ message: `Brand with ${req.params.id} is removed successfully.` });
+    })
+    .catch( err => {
+      res.status(400).json({ message: 'Specified brand id is not valid' });
+    })
+})
 
 module.exports = favbrandsRoutes;
