@@ -590,9 +590,29 @@ font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    /* background-color: #FDFDFD; */
     width: 1000px;
     margin: 0 auto;
+   
+  }
+
+  .brandslist_public__cover_img {
+    width: 1000px;
+    height: auto; 
+    filter: grayscale(100%) blur(1px);
+    position: relative
+  }
+
+  .brandslist_public__cover_title {
+    position: absolute;
+    top: 330px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .brandslist_public__l {
     margin-top: 30px;
   }
 
@@ -601,13 +621,183 @@ font-family: 'Montserrat', sans-serif;
     margin-right: auto;
     margin-left: auto;
     font-family: 'Playfair Display', serif;
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
   }
+
+
+.brandslist_public__description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brandslist_public__most_added {
+  background-color: #FAFAFA;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px
+}
+
+.brandslist_public__most_added_row_title {
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #BEBEBE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #8d8d8d
+}
+
+.brandslist_public__most_added_row {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandslist_public_most_added_col1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
 }
 
 .brandslist_public__logo {
-  width: 10px;
-  height: 10px;
+  width: 90px;
+  height: 90px;
+   margin-bottom: 10px;
+  /* margin-right: 30px; */
+  border: 1px solid #EFEFEF;
+  box-shadow: 0px 0px 2px 1px #F0F0F0;
+}
+
+.brandslist_public__brandname {
+  margin-left: 20px;
+  padding-top: 20px;
+  margin-right: 100px;
+}
+
+.brandslist_public__showmore_icon {
+  width: 25px;
+  height: 25px; 
+}
+}
+
+@media all and (max-device-width: 480px) {
+  .brandslist_public {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    /* background-color: #FDFDFD; */
+    width: 1000px;
+    margin: 0 auto;
+   
+  }
+
+  .brandslist_public__cover_img {
+    max-width: 300px;
+    height: auto;
+    filter: grayscale(100%) blur(1px);
+    position: relative
+  }
+
+  .brandslist_public__cover_title {
+    position: absolute;
+    top: 330px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .brandslist_public__l {
+    margin-top: 30px;
+  }
+
+  .brandslist_public__title {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+
+.brandslist_public__description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brandslist_public__most_added {
+  background-color: #FAFAFA;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px
+}
+
+.brandslist_public__most_added_row_title {
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #BEBEBE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #8d8d8d
+}
+
+.brandslist_public__most_added_row {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandslist_public_most_added_col1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.brandslist_public__logo {
+  width: 90px;
+  height: 90px;
+   margin-bottom: 10px;
+  /* margin-right: 30px; */
+  border: 1px solid #EFEFEF;
+  box-shadow: 0px 0px 2px 1px #F0F0F0;
+}
+
+.brandslist_public__brandname {
+  margin-left: 20px;
+  padding-top: 20px;
+  margin-right: 100px;
+}
+
+.brandslist_public__showmore_icon {
+  width: 25px;
+  height: 25px; 
+
+}
+
 }
 
 /*
