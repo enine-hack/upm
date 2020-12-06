@@ -10,7 +10,13 @@ const navbar = (props) => {
     
       {props.userInSession ? (
           <nav className="navbar">
-            
+
+          <div>                
+            <Link to='/signup'>
+              <img  className="navbar__menu_icon" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Symbol_code_ww_45.svg/1024px-Symbol_code_ww_45.svg.png" alt="menu"/>
+            </Link>
+          </div>
             <div className="navbar__logged__UPOSHME">
               <Link to='/'>UPOSH | ME</Link>
             </div>
@@ -20,14 +26,12 @@ const navbar = (props) => {
             </div>
             
             <div className= "navbar__logged_allowed_menu">
-
-              <div>
-                <Link to='/myfavoritebrands'>Brands</Link>
-              </div>
-              <div>
-                <Link to='/profil'>Profile</Link>
-              </div>
-                           
+                <div>
+                  <Link to='/myfavoritebrands'>Brands</Link>
+                </div>
+                <div>
+                  <Link to='/profil'>Profile</Link>
+                </div>        
                 <button onClick={(e) => {
                   logout().then(() => props.updateUser(false))
                   }}>LOG OUT</button>
@@ -40,7 +44,7 @@ const navbar = (props) => {
 
           <div>                
             <Link to='/signup'>
-              <img  className="navbar__unlogged__icon" 
+              <img  className="navbar__menu_icon" 
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Symbol_code_ww_45.svg/1024px-Symbol_code_ww_45.svg.png" alt="menu"/>
             </Link>
           </div>
@@ -49,7 +53,7 @@ const navbar = (props) => {
 
           <div>
             <Link to='/signup'>
-                <img  className="navbar__unlogged__icon" 
+                <img  className="navbar__connexion_icon" 
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsuxUrEVyvCmLYoM5BeyNUOts2akw1RFDYw&usqp=CAU" alt="profil"/>
             </Link>
           </div>
