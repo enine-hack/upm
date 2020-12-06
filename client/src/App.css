@@ -8,6 +8,7 @@ font-family: 'Montserrat', sans-serif;
 
 .App {
   font-family: 'Raleway', sans-serif ;
+
 }
 
 
@@ -238,7 +239,6 @@ font-family: 'Montserrat', sans-serif;
     width: 24px;
     height: 24px
   }
-  
 
   .navbar__connexion_icon {
     width: 24px;
@@ -584,104 +584,30 @@ font-family: 'Montserrat', sans-serif;
 ########  ##     ## ##     ## ##    ## ########  ######## ####  ######     ##    
 */
 
+@media only screen and (min-width: 1024px) {
+  .brandslist_public {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 
-.brandlist-style {
-  margin-top: 80px;
- 
+  .brandslist_public__title {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+  }
 }
 
-.brandlist-style p {
-  margin-bottom: 40px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.brandlist-row-style {
-  height: 70px;
-  margin-bottom: 10px;
-  justify-content: center;
-  margin-right: 10px;
-}
-
-.brandlist-col-style {
-  background-color: #FBFBFB;
-  padding-top: 35px;
-  text-align: left;
-  color: black;
-  font-size: 13px
-}
-
-.brandlist-logos {
-	width: 90px;
-  height: 90px;
-
-}
-
-.brandlist-showmore-col-style {
-  background-color: #FBFBFB;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-
-.brandlist-showmore-icon {
-  width: 18px;
-  height: 18px;
-}
-
-.brandlist-hr-style {
-  padding-top: 50px;
-  
-  width: 390px;
-  border-bottom:1px solid #EBEBEB;
-  text-align: center;
-  margin: 0 auto
-}
-
-
-.brandist-addbrand-row-style {
-  height: 70px;
-
-  margin-top: 50px;
-  margin-bottom: 10px;
-  justify-content: center;
-  margin-right: 10px;
-  
-}
-
-.brandlist-addbrand-logos {
-
-  border:2px black;
-  border-style: solid none solid solid
-
-}
-
-.brandist-addbrand-col-style {
-  background-color: #FBFBFB;
-  padding-top: 25px;
-  text-align: left;
-  font-weight: bold;
-  border:2px black;
-  border-style: solid none solid none;
-  font-size: 13px
-}
-
-.brandlist-showmore-addbrand-col-style {
-  background-color: #FBFBFB;
-  padding-top: 20px;
-  padding-right: 20px;
-  border:2px black;
-  border-style: solid solid solid none
-}
-
-.brandlist-loupe-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.brandlist-letter-style {
-  margin-top: 50px;
-  margin-bottom: 20px;
+.brandslist_public__logo {
+  width: 10px;
+  height: 10px;
 }
 
 /*
