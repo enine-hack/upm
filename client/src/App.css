@@ -640,7 +640,8 @@ font-family: 'Montserrat', sans-serif;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  margin-bottom: 50px
 }
 
 .brandslist_public__most_added_row_title {
@@ -704,23 +705,27 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .brandslist_public__cover_img {
-    max-width: 300px;
+    max-width: 355px;
     height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
     filter: grayscale(100%) blur(1px);
     position: relative
   }
 
   .brandslist_public__cover_title {
     position: absolute;
-    top: 330px;
+    top: 135px;
+    left: 130px;
     color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
   }
 
   .brandslist_public__l {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .brandslist_public__title {
@@ -728,17 +733,19 @@ font-family: 'Montserrat', sans-serif;
     margin-right: auto;
     margin-left: auto;
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    margin-left: 150px;
     margin-bottom: 0px;
   }
 
 
 .brandslist_public__description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  text-align: center;
+  font-size: 9px;
+  text-align: left;
+  margin-left: 150px;
   margin-bottom: 50px;
 }
 
@@ -747,7 +754,11 @@ font-family: 'Montserrat', sans-serif;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+  width: 355px;
+  margin-bottom: 20px;
 }
 
 .brandslist_public__most_added_row_title {
@@ -778,9 +789,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .brandslist_public__logo {
-  width: 90px;
-  height: 90px;
-   margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
   /* margin-right: 30px; */
   border: 1px solid #EFEFEF;
   box-shadow: 0px 0px 2px 1px #F0F0F0;
@@ -789,12 +800,12 @@ font-family: 'Montserrat', sans-serif;
 .brandslist_public__brandname {
   margin-left: 20px;
   padding-top: 20px;
-  margin-right: 100px;
+  margin-right: 1px;
 }
 
 .brandslist_public__showmore_icon {
-  width: 25px;
-  height: 25px; 
+  width: 10px;
+  height: 10px; 
 
 }
 
