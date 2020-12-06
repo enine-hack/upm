@@ -1,52 +1,64 @@
 // components/navbar/Navbar.js
 
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {logout} from '../auth/auth-service'
 
 const navbar = (props) => {
   return (
-    <nav className="nav-style">
+    <>
+    
       {props.userInSession ? (
-          <Container className="nav-style-logged" fluid>
-            <Row>
-            <Col><Link to='/'>UPOSH | ME</Link></Col>
-              <Col md="auto">{props.userInSession.firstname} {props.userInSession.lastname}</Col>
-              <Col md="auto"><Link to='/myfavoritebrands'>Brands</Link></Col>
-              <Col md="auto"><Link to='/profil'>Profile</Link></Col>
-              <Col xs lg="1">
+          <nav className="navbar">
+            
+            <div className="navbar__logged__UPOSHME">
+              <Link to='/'>UPOSH | ME</Link>
+            </div>
+
+            <div className="navbar_logged_customized_name">
+                {props.userInSession.firstname} {props.userInSession.lastname}
+            </div>
+            
+            <div className= "navbar__logged_allowed_menu">
+
+              <div>
+                <Link to='/myfavoritebrands'>Brands</Link>
+              </div>
+              <div>
+                <Link to='/profil'>Profile</Link>
+              </div>
+                           
                 <button onClick={(e) => {
                   logout().then(() => props.updateUser(false))
                   }}>LOG OUT</button>
-              </Col>
+            </div>
 
-            </Row>    
-            
-            <hr className="nav-hr"></hr>
-
-          </Container>
+          </nav>
         
       ) : (
-        <Container className="nav-style-unlogged" fluid >
-            <Row style={{ marginTop: "8px", marginBottom: "8px", height: "40px", alignItems: "center" }}>
+        <nav className="navbar" >
 
-                <Col md="auto" style={{ paddingLeft: "15px" }}>
-                  <Link to='/signup'>
-                    <img style= {{ width: "30px", height: "30px", marginLeft: "20px"}} 
-                        src="https://www.ofunifr.ch/assets/navigation.png" alt="menu"/></Link></Col>
+          <div>                
+            <Link to='/signup'>
+              <img  className="navbar__unlogged__icon" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Symbol_code_ww_45.svg/1024px-Symbol_code_ww_45.svg.png" alt="menu"/>
+            </Link>
+          </div>
 
-                <Col style={{ fontSize: "17px" }}><Link to='/'>UPOSH | ME</Link></Col>
+          <div><Link to='/'>UPOSH | ME</Link></div>
 
-                <Col md="auto">
-                  <Link to='/signup'>
-                    <img style= {{ width: "25px", height: "25px" }} src="https://image.flaticon.com/icons/png/128/3106/3106773.png" alt="profil"/></Link></Col>
-            </Row>
-            <hr style={{ marginTop: "0px", marginBottom:"0px" }}></hr>
-        </Container>
+          <div>
+            <Link to='/signup'>
+                <img  className="navbar__unlogged__icon" 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsuxUrEVyvCmLYoM5BeyNUOts2akw1RFDYw&usqp=CAU" alt="profil"/>
+            </Link>
+          </div>
+            
+            
+        </nav>
       )}
       
-    </nav>
+      </>
   )
 }
 

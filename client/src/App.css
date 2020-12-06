@@ -5,7 +5,7 @@ font-family: 'Montserrat', sans-serif;
 */
 
 .App {
-  text-align: center;
+  
   font-family: 'Raleway', sans-serif ;
 }
 
@@ -217,26 +217,53 @@ font-family: 'Montserrat', sans-serif;
 ##    ## ##     ##    ###    ########  ##     ## ##     ## 
 */
 
+@media only screen and (min-width: 1024px) {
+	
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-.nav-style {
- 
-  padding-top: 15px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-bottom: 1px solid #bfbfbf;
+  }
+
+  .navbar__unlogged__icon {
+    width: 24px;
+    height: 24px
+  }
+
+  .navbar__logged__UPOSHME {
+    margin-left: 5px
+  }
+
+  .navbar_logged_customized_name {
+    margin-left: auto;
+  }
+
+  .navbar__logged_allowed_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 240px;
+    margin-right: 20px;
+    margin-left: 5px
+  }
   
-  
 }
 
-.nav-hr {
-  margin-top: 10px;
-  margin-bottom: 0px
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
 }
 
-.nav-style-unlogged {
-  text-align: center;
-}
 
-.nav-style-logged {
-  text-align: left;
-}
 
 /*
 ########  ########   #######  ######## #### ##       
