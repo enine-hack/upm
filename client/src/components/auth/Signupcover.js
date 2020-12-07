@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {signup} from './auth-service'
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 
 class Signupcover extends Component {
   state = { email: '', password: '', error: "" }
@@ -25,47 +24,56 @@ class Signupcover extends Component {
   // handleChange() and handleSubmit() will be added here
   render() {
     return (
-        <div className="Signup-cover">
-        <Container fluid>
-          <Col xs={{ span: 12, offset: 1 }} sm={{ span: 3, offset: 4 }} md={{ span: 8, offset: 0 }}>
-            <h1>The Luxury App</h1>
-            
-            <div className="Signup-cover-description">
-              Create an account for a personalized luxious shopping fidelity experience and gain privileges faster.
-            </div>
-          
-            <form className="Signup-cover-form-style"
-                  onSubmit={this.handleFormSubmit}>
-              
-                <input className="Input-cover-form-style"
-                      type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
-              
-                <input className="Input-cover-form-style"  
-                      type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-              
-              
-              <button className="Button-cover-form-style"
-              >SIGN UP</button>
-              
+        <div className="signup_cover">
+            <div className="signup_cover__l1">
+                <div className="signup_cover_l2">
+                    <div className="signup_cover__title">
+                      <p>The Luxury App</p>
+                    </div>
+                    <div className="signup_cover__description">
+                        <p>Create an account for a personalized and luxious shopping fidelity experience and gain privileges faster.</p>
+                    </div>
                 
-              {/* Affichage message d'erreur */}
-                {this.state.error && (
-                    <p className="Error-form-message-style">{this.state.error}
-                      </p>
-                  )}
-              
-            </form>
-          
-
-            <div>
-              <p>Already have account? 
-                <Link to={"/Login"}>Login</Link>
-              </p>
+                    <div className="signup_cover__btn_create_account_hidden">
+                        <button className="signup_cover__btn_create_account_style">
+                            CREATE AN ACCOUNT  
+                        </button>
+                    </div>
+                </div>
             </div>
-          </Col>
 
-        </Container>
-      </div>
+            <div className="signup_cover__l3">
+                <form className="signup_cover__form"
+                      onSubmit={this.handleFormSubmit}>
+                    <div>
+                        <input className="signup_cover__input"
+                              type="text" name="email" placeholder="Email" value={this.state.email} onChange={ e => this.handleChange(e)}/>
+                      
+                        <input className="signup_cover__input"  
+                              type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+
+                        <button className="signup_cover__btn_submit"
+                          >SIGN UP
+                        </button>
+                    </div>
+
+                    <div className="signup_cover__signup_redirect">
+                      <p>Already have account ?
+                        <Link to={"/Login"}> Login</Link>
+                      </p>
+                    </div>
+                                      
+                  {/* Affichage message d'erreur */}
+                    {this.state.error && (
+                        <p className="Error-form-message-style">{this.state.error}
+                          </p>
+                      )}
+                  
+                </form>
+            </div>
+
+           </div>
+        
       
     )
   }

@@ -51,89 +51,134 @@ class Detailsbrand extends Component {
   
     render(){
     
-        return(
-            
-            <div>
-              <img  className="details-brand-logo"
-              src={this.state.logoUrl}/>
-              <br></br>
-              <img  className="details-brand-cover"
-                    src={this.state.coverImage}/>
-                      
-            <Container  >
+        return( 
+            <div className="details_brand_public">
+                <div className="details_brand_public__l1">
+                    <div>
+                        <img  className="details_brand_public__cover"
+                              src={this.state.coverImage}/>
+                    </div>      
+                
+                    <div  className="details_brand_public__l2">
+                        <img  className="details_brand_public__logo"
+                              src={this.state.logoUrl}/>
+                        
+                        <div className="details_brand_public__l3">
+                            <div className="details_brand_public__l4">
+                                <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                    BRAND HOUSE
+                                  </Link>
+                                </div>
+                                <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                                </div>
+                            </div>
 
+                            <div className="details_brand_public__l4">
+                              
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  NEW IN
+                                  </Link>
+                              
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              
+                            </div>
 
-                  <div  className="details-brand-div-menu ">
-                  <Row className="details-brand-row-center">
-                    <Col  xs={{ span: 10, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 4, offset: 0 }}
-                          className="details-brand-button-style">
-                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
-                        BRAND HOUSE
-                      </Link>
-                    </Col>
+                            <div className="details_brand_public__l4">
+                              <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  SALES AND EXCLUSIVITIES
+                                  </Link>
+                              </div>
+                              <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              </div>
+                            </div>
 
-                    <Col  xs={{ span: 1, offset: 0 }} sm={{ span: 1, offset: 0 }} md={{ span: 1, offset: 0 }}>
-                      <a href={this.state.websiteUrl}  target="_blank">
-                        <img  className="details-brand-arrow-right-style"
-                              src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                      </a>
-                    </Col>
-                  </Row>
+                            <div className="details_brand_public__l4">
+                              <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  PRIVILEGE ACCOUNT
+                                  </Link>
+                              </div>
+                              <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              </div>
+                            </div>
 
-                  <Row>
-                    <Col  md={{ span: 9, offset: 0 }}
-                          className="details-brand-button-style">
-                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
-                        NEW IN
-                      </Link>
-                    </Col>
+                            <div className="details_brand_public__l4">
+                              <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  SHOPPING HISTORY
+                                  </Link>
+                              </div>
+                              <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              </div>
+                            </div>
 
-                    <Col md={{ span: 1, offset: 0 }}>
-                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
-                        <img  className="details-brand-arrow-right-style"
-                              src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                      </Link>
-                    </Col>
-                  </Row>
+                            <div className="details_brand_public__l4">
+                              <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  RETURNS AND WARRANTY
+                                  </Link>
+                              </div>
+                              <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              </div>
+                            </div>
 
-                  <Row>
-                    <Col  md={{ span: 9, offset: 0 }}
-                          className="details-brand-button-style">
-                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
-                      SALES AND EXCLUSIVITIES
-                      </Link>
-                    </Col>
+                            <div className="details_brand_public__l4">
+                              <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  E-GIFT CARD
+                                  </Link>
+                              </div>
+                              <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              </div>
+                            </div>
 
-                    <Col md={{ span: 1, offset: 0 }}>
-                      <Link to={`${this.state.websiteUrl}`}  target="_blank">
-                        <img  className="details-brand-arrow-right-style"
-                              src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                      </Link>
-                    </Col>
-                  </Row>
-                     
-                      
-                        <Col>PRIVILEGE ACCOUNT</Col>
-                        <Col></Col>
-                     
-                        <Col>SHOPPING HISTORY</Col>
-                        <Col></Col>
-                      
-                        <Col>RETURNS AND WARRANTY</Col>
-                        <Col></Col>
-                      
-                        <Col>E-GIFT CARD</Col>
-                        <Col></Col>
-                     
-                        <Col>FEEDBACK</Col>
-                        <Col></Col>
-                  </div> 
+                            <div className="details_brand_public__l4">
+                              <div>
+                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  FEEDBACK
+                                  </Link>
+                              </div>
+                              <div>
+                                  <a href={this.state.websiteUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                  </a>
+                              </div>
+                            </div>
 
-            </Container>
-            
-
-            {/* APPARAIT SI LA MARQUE EST DANS LE PORTEMARQUE + DELETE DANS LE USERS ARRAY
-            <button> Delete profil </button> */}
+                        </div>  
+                       
+                    </div>          
+                </div> 
             </div>
        
            
