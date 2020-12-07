@@ -4,7 +4,10 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
+.a {
+  color: black;
 
+}
 
 .App {
   font-family: 'Raleway', sans-serif ;
@@ -58,118 +61,19 @@ font-family: 'Montserrat', sans-serif;
  ######   #######     ###    ######## ##     ## 
 */
 
-@media only screen and (min-width: 1600px) {
-  .landing__cover_img {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  .signup_cover__l1 {
-    position: absolute;
-    top: 250px;
-    left: 550px;
-    color: white;
-  }
 
-  .signup_cover_l2 {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-  }
-
-  .signup_cover__title {
-    font-family: 'Playfair Display', 'serif';
-    font-weight: bold;
-    font-size: 100px;
-    margin-bottom: 0px;
-    
-  }
-  
-  .signup_cover__description {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-    width: 350px;
-    color: rgba(255, 255, 255, .6)
-  }
-  
-  .signup_cover__btn_create_account_hidden {
-    display:none;
-  }
-
-  .signup_cover__btn_create_account_style {
-    width: 200px;
-    margin-bottom: 20px;
-    border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, .8);
-    font-size: 13px;
-  }
-
-  .signup_cover__l3 {
-    /* display:none; */
-    position: absolute;
-    width: 300px;
-    top: 380px;
-    left: 30px;
-    color: white;
-  }
-
-  .signup_cover__form {
-    width: 300px;
-  }
-  
-  .signup_cover__input {
-    background-color: rgba(255, 255, 255, .1);
-    border-style: none none solid none;
-    border-width: 1px;
-    border-color: #6E6E6E;
-    padding-top: 8px;
-    padding-bottom: 3px;
-    padding-left: 7px;
-    margin-bottom: 20px;
-    color: white;
-    margin-left: 0;
-    width: 300px;
-    border-radius: 2px;
-    font-size: 10px
-    
-  }
-  
-  .signup_cover__btn_submit {
-    width: 300px;
-    margin-bottom: 10px;
-    border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, .8);
-    font-size: 11px
-  }
-
-  .signup_cover__signup_redirect {
-    font-family: 'Raleway', sans-serif;
-    font-size: 11px;
-    color: rgba(255, 255, 255, .6)
-  }
-
-}
 
 @media only screen and (min-width: 1024px) {
   .landing__cover_img {
     width: 100%;
-    height: 900px;
+    height: 950px;
     position: relative;
   }
   
   .signup_cover__l1 {
     position: absolute;
-    top: 250px;
-    left: 30px;
+    top: 300px;
+    left: 100px;
     color: white;
   }
 
@@ -215,8 +119,8 @@ font-family: 'Montserrat', sans-serif;
     /* display:none; */
     position: absolute;
     width: 300px;
-    top: 380px;
-    left: 30px;
+    top: 450px;
+    left: 100px;
     color: white;
   }
 
@@ -457,6 +361,270 @@ font-family: 'Montserrat', sans-serif;
   }
 
 }
+
+/*
+##          ###    ##    ## ########  #### ##    ##  ######      ##     ## ######## ##    ## ##     ## 
+##         ## ##   ###   ## ##     ##  ##  ###   ## ##    ##     ###   ### ##       ###   ## ##     ## 
+##        ##   ##  ####  ## ##     ##  ##  ####  ## ##           #### #### ##       ####  ## ##     ## 
+##       ##     ## ## ## ## ##     ##  ##  ## ## ## ##   ####    ## ### ## ######   ## ## ## ##     ## 
+##       ######### ##  #### ##     ##  ##  ##  #### ##    ##     ##     ## ##       ##  #### ##     ## 
+##       ##     ## ##   ### ##     ##  ##  ##   ### ##    ##     ##     ## ##       ##   ### ##     ## 
+######## ##     ## ##    ## ########  #### ##    ##  ######      ##     ## ######## ##    ##  #######  
+*/
+
+@media only screen and (min-width: 1024px) {
+  .landing_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .landing_menu__main_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .landing_menu__l1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+  }
+
+  .landing_menu__l1_bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  .landing_menu__l1_bloc_img {
+    width: 350px;
+    height: 300px;
+    margin-right: 50px;
+    margin-left: 50px;      
+  }
+
+  .landing_menu__l1_bloc_btn {
+    margin:0 auto;
+    width: 350px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    background-color: white;
+    color: #fff;
+    border: none;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .landing_menu_l2 {
+
+  }
+
+  .landing_menu__l2_img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+  }
+
+  .landing_menu_l2_title {
+    position: absolute;
+    top: 1900px;
+    color: white;
+    background-color: rgba(255, 255, 255, .6);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 25px;
+    
+  }
+  
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .landing_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .landing_menu__main_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .landing_menu__l1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .landing_menu__l1_bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .landing_menu__l1_bloc_img {
+    width: 220px;
+    height: 170px;    
+  }
+
+  .landing_menu__l1_bloc_btn {
+    margin:0 auto;
+    width: 200px;
+    margin-bottom: 50px;
+    font-size: 13px;
+    background-color: white;
+    color: #fff;
+    border: none
+  }
+
+  .landing_menu_l2 {
+
+  }
+
+  .landing_menu__l2_img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .landing_menu_l2_title {
+    position: absolute;
+    top: 1480px;
+    color: white;
+    background-color: rgba(255, 255, 255, .6);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 20px;
+  }
+  
+}
+
+
+@media all and (max-device-width: 480px) {
+  .landing_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .landing_menu__main_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .landing_menu__l1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .landing_menu__l1_bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .landing_menu__l1_bloc_img {
+    width: 200px;
+    height: 150px;    
+  }
+
+  .landing_menu__l1_bloc_btn {
+    margin:0 auto;
+    width: 200px;
+    margin-bottom: 30px;
+    font-size: 11px;
+    background-color: white;
+    color: #fff;
+    border: none
+  }
+
+  .landing_menu_l2 {
+
+  }
+  
+  .landing_menu__l2_img {
+    width: 100%;
+    height: auto;
+  }
+
+  .landing_menu_l2_title {
+    position: absolute;
+    top: 1080px;
+    color: white;
+    background-color: rgba(255, 255, 255, .6);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+  }
+  
+}
+
+
+/*
+########  #######   #######  ######## ######## ########  
+##       ##     ## ##     ##    ##    ##       ##     ## 
+##       ##     ## ##     ##    ##    ##       ##     ## 
+######   ##     ## ##     ##    ##    ######   ########  
+##       ##     ## ##     ##    ##    ##       ##   ##   
+##       ##     ## ##     ##    ##    ##       ##    ##  
+##        #######   #######     ##    ######## ##     ## 
+*/
+
+
+.footer {
+  text-align: center;
+}
+
+.footer__l2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer__l2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  
+}
+
+.footer__l3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  /* justify-content: center; */
+}
+
+.footer__l1 p{
+  text-align: center;
+  font-size: 10px;
+}
+
+
+
+
+
 
 
 /*
@@ -1268,6 +1436,11 @@ font-family: 'Montserrat', sans-serif;
 ##        ##     ## ##     ## ##        ##  ##    ##         ##     ##         ##     ## ##          ##    ##     ##  ##  ##       ##    ## 
 ##         #######  ########  ######## ####  ######          ########          ########  ########    ##    ##     ## #### ########  ######  
 */
+
+.font_lightgray {
+  color: #B5B5B5
+}
+
 @media only screen and (min-width: 1600px) {
   .details_brand_public {
     width: 1600px;
@@ -1304,7 +1477,7 @@ font-family: 'Montserrat', sans-serif;
       display: flex;
       flex-direction: column;
       margin-top: 30px;
-      margin-left: 15px;
+      margin-left: 30px;
       
     }
   
@@ -1509,56 +1682,177 @@ font-family: 'Montserrat', sans-serif;
 ##         #######  ##     ##    ##    ######## ##     ## ##     ## ##     ##  ##### ##  #######  ########  ######  
 */
 
+@media only screen and (min-width: 1024px) {
+  .wallet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    position: relative;
+  }
 
+  .wallet__l1 p {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
 
-.wallet-style h3 {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 10px;
-}
-
-.wallet-button-style {
-  margin-bottom: 100px;
-  padding: 10px 40px 10px 40px;
-  margin-top: 50px;
-  font-size: 12px;
-  border: none;
-  background-color: #1a1a1a;
-  color: white
-}
-
-.wallet-mainrow-style {
-  justify-content: left;  
-}
-
-.wallet-maincol-style {
-  
-  padding-top: 25px;
-  padding-bottom: 25px;
-  /* background-color: #F7F7F7; */
-}
-
-.wallet-logoimg-style {
-  width: 110px;
-  height: 110px;
-  border: 1px solid #EFEFEF;
-  box-shadow: 0px 0px 2px 1px #F0F0F0;
-  margin-left: 28px;
-  margin-right: 10px;
-  
-}
-
-.wallet-addbrandcol-style {
+  }
  
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #F7F7F7
+
+  .wallet_btn_add {
+    /* display: none; */
+    position: absolute;
+    top: 0px;
+    left: 900px; 
+
+  }
+
+  .wallet__btn_add_img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .wallet__l2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+  }
+
+  .wallet__l2_logo {
+    width: 90px;
+    height: 90px;
+    box-shadow: 0px 0px 2px 1px #F0F0F0;
+    margin-left: 2px;
+    margin-right: 10px;
+    margin-top: 15px;
+    
+  }
+  .wallet_menu_btn_bloc {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .wallet_menu_btn_bloc p {
+    font-size: 13px;
+  }
+
+  .wallet__menu {
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    
+    top: 100%;
+    width: 100%;
+    margin-top: -5em;
+  }
+
+  .wallet__menu_btn {
+    border: none;
+    background-color: white;
+    margin-top: 10px
+    
+  }
+
+  .wallet__menu_btn_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .darkblue {
+    color: #0002B0;
+    
+  }
+
+  .background_grey {
+    background-color: #F6F6F6;
+    font-weight: bold;
+  }
 }
 
+@media only screen and (max-device-width: 480px) {
+  .wallet {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
 
+  .wallet__l1 {
+    border-bottom: 1px solid lightgrey;
+  }
 
+  .wallet_btn_add {
+    position: absolute;
+    top: 0px;
+    left: 310px; 
 
+  }
 
+  .wallet__btn_add_img {
+    width: 20px;
+    height: 20px;
+  }
 
+  .wallet__l2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  .wallet__l2_logo {
+    width: 90px;
+    height: 90px;
+    box-shadow: 0px 0px 2px 1px #F0F0F0;
+    margin-left: 2px;
+    margin-right: 10px;
+    margin-top: 15px;
+    
+  }
+  .wallet_menu_btn_bloc {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .wallet_menu_btn_bloc p {
+    font-size: 13px;
+  }
 
+  .wallet__menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    top: 100%;
+    width: 100%;
+    margin-top: -6em;
+  }
+
+  .wallet__menu_btn {
+    border: none;
+    background-color: white;
+    
+  }
+
+  .wallet__menu_btn_img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px
+  }
+
+  .darkblue {
+    color: #0002B0;
+    
+  }
+
+  .background_grey {
+    background-color: #F6F6F6;
+    font-weight: bold;
+  }
+}

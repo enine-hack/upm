@@ -66,112 +66,109 @@ class Detailsbrand extends Component {
                         <div className="details_brand_public__l3">
                             <div className="details_brand_public__l4">
                                 <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  <a href={this.state.websiteUrl} target="_blank">
                                     BRAND HOUSE
-                                  </Link>
+                                  </a>
                                 </div>
                                 <div>
                                   <a href={this.state.websiteUrl}  target="_blank">
                                       <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
                                 </div>
                             </div>
 
                             <div className="details_brand_public__l4">
                               
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                              <a href={this.state.newinUrl} target="_blank">
                                   NEW IN
-                                  </Link>
+                                  </a>
                               
-                                  <a href={this.state.websiteUrl}  target="_blank">
+                                  <a href={this.state.newinUrl}  target="_blank">
                                       <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
                               
                             </div>
 
-                            <div className="details_brand_public__l4">
+                            <div className="details_brand_public__l4 font_lightgray">
                               <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  
                                   SALES AND EXCLUSIVITIES
-                                  </Link>
+                                  
                               </div>
                               <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                                  </a>
+                                <img  className="details_brand_public__arrow_right font_lightgra"
+                                      src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4">
+                            <div className="details_brand_public__l4 font_lightgray">
                               <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                               
                                   PRIVILEGE ACCOUNT
-                                  </Link>
+                                  
                               </div>
                               <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                                  </a>
+                                      <img  className="details_brand_public__arrow_right font_lightgray"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4">
+                            <div className="details_brand_public__l4 font_lightgray">
                               <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  
                                   SHOPPING HISTORY
-                                  </Link>
+                                  
                               </div>
                               <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                                  </a>
+                                  
+                                      <img  className="details_brand_public__arrow_right font_lightgra"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  
                               </div>
                             </div>
 
                             <div className="details_brand_public__l4">
                               <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                              <a href={this.state.returnPolicyUrl}  target="_blank">
                                   RETURNS AND WARRANTY
-                                  </Link>
+                                  </a>
                               </div>
                               <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
+                                  <a href={this.state.returnPolicyUrl}  target="_blank">
                                       <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4">
+                            <div className="details_brand_public__l4 font_lightgray">
                               <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                  
                                   E-GIFT CARD
-                                  </Link>
+                                  
                               </div>
                               <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                                  </a>
+                                  
+                                      <img  className="details_brand_public__arrow_right font_lightgra"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4">
+                            <div className="details_brand_public__l4 font_lightgray">
                               <div>
-                                  <Link to={`${this.state.websiteUrl}`}  target="_blank">
+                                 
                                   FEEDBACK
-                                  </Link>
+                                  
                               </div>
                               <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png"/>
-                                  </a>
+                                  
+                                      <img  className="details_brand_public__arrow_right font_lightgray"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                 
                               </div>
                             </div>
 

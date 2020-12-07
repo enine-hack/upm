@@ -1,63 +1,54 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+
 
 const Menu = () => { 
     return (
-        
-        <Container style={{ marginBottom: "200px"}}>
-        <Row style={{ marginTop: "100px", marginBottom: "100px"}}>
-            <h1>YOU ARE THE NEXT LEVEL OF LUXURY</h1>
-        </Row>
-            <Row style={{ marginBottom: "100px"}} >
-                <Col style={{ height: "500px", width: "500px", backgroundColor: "#1a1a1a", 
-                            paddingRight: "0px", paddingLeft: "0px"}}>
-                    <h4><Link to='/'
-                        style={{ lineHeight: "500px", textAlign: "center", marginTop: "auto", marginBottom: "auto" }}>CONCEPT</Link></h4></Col>
+        <div className="landing_menu">
+            <div className="landing_menu__main_title">
+                <p>You are the next level of luxury</p>
+            </div>
 
-                <Col style= {{ paddingRight: "200px", paddingLeft: "0px"}} >
-                    <img style= {{ width: "670px", height:"500px" }}
-                        src ="https://s1.1zoom.me/big0/267/Men_Closeup_Camera_462030.jpg"/>
-                </Col>
+            <div className="landing_menu__l1">
+                <div className="landing_menu__1_bloc">
+                    <div>
+                    <img    className="landing_menu__l1_bloc_img"
+                            src ="https://cdn.trendhunterstatic.com/phpthumbnails/196/196249/196249_1_800.jpeg"/>
+                    </div>
+                    <div>
+                        <button className="landing_menu__l1_bloc_btn">
+                        <a href="/">CONCEPT</a>
+                        </button>
+                    </div>
+                </div>
+                <div className="landing_menu_l1_bloc">
+                    <div>
+                        <img    className="landing_menu__l1_bloc_img"
+                                src ="https://www.collegedeparis.fr/wp-content/uploads/2018/01/ouverture-bachelor-marketing-du-luxe-cdp-700x465.jpg "/>
+                    </div>
+                    <div>
+                        <button className="landing_menu__l1_bloc_btn">
+                        <a href="/brandslist">ALL BRANDS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className="landing_menu__l2">
+                <div>
+                    <img className="landing_menu__l2_img"
+                        src ="https://images.unsplash.com/photo-1496517463163-3550265405c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"/>
+                </div>
+                <div >
+                    <p className= "landing_menu_l2_title">
+                        <Link to='/signup'>LIVE THE EXPERIENCE</Link>
+                    </p>
+                </div>
 
-            </Row>
-                
-            <Row style={{ marginBottom: "100px"}} >
-                <Col style= {{ paddingRight: "200px", paddingLeft: "0px"}} >
-                        <img style= {{ width: "670px", height:"500px" }}
-                            src ="https://www.collegedeparis.fr/wp-content/uploads/2018/01/ouverture-bachelor-marketing-du-luxe-cdp-700x465.jpg "/></Col>
-
-                <Col style={{ height: "500px", width: "500px", backgroundColor: "#1a1a1a", 
-                            paddingRight: "0px", paddingLeft: "0px"}}>
-                    <h4><Link to='/'
-                        style={{ lineHeight: "500px", textAlign: "center", marginTop: "auto", marginBottom: "auto" }}>ALL LUXURY BRANDS</Link></h4></Col>
-
-            </Row>
-
-            <Row style={{ marginBottom: "100px"}} >
-                <Col style={{ height: "500px", width: "500px", backgroundColor: "#DD8B00", 
-                            paddingRight: "0px", paddingLeft: "0px"}}>
-                    <h4><Link to='/'
-                        style={{ lineHeight: "500px", textAlign: "center", marginTop: "auto", marginBottom: "auto" }}>LIVE THE EXPERIENCE</Link></h4></Col>
-
-                <Col style= {{ paddingRight: "200px", paddingLeft: "0px"}} >
-                    <img style= {{ width: "670px", height:"500px" }}
-                        src ="https://www.hugoboss.com/on/demandware.static/-/Sites-hb-eu/default/dw09f6edfa/search-result-images/BOSS_HUGO_Black_Friday_640x422_Footer.jpg"/></Col>
-            </Row>
-
-            <Row style={{ marginBottom: "100px"}} >
-                <Col style= {{ paddingRight: "200px", paddingLeft: "0px"}} >
-                        <img style= {{ width: "670px", height:"500px" }}
-                            src ="https://cdn.trendhunterstatic.com/phpthumbnails/196/196249/196249_1_800.jpeg"/></Col>
-
-                <Col style={{ height: "500px", width: "500px", backgroundColor: "#1a1a1a", 
-                            paddingRight: "0px", paddingLeft: "0px"}}>
-                    <h4><Link to='/'
-                        style={{ lineHeight: "500px", textAlign: "center", marginTop: "auto", marginBottom: "auto" }}>PARTNERS ZONE</Link></h4></Col>
-
-            </Row>
-        </Container>
-        
+                <div>
+                    <Link to= "/">PARTNERS ZONE</Link>
+                </div>
+    </div>
+        </div>
     )
   }
    

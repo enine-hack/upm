@@ -1,25 +1,49 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 import Newsletter from '../footer/Newsletter';
 
 const Footer = (props) => {
     return (
-        <Container fluid className="footer-style">
-        <hr></hr>
-        <Container>
-            <Row style={{ height: "50px", marginBottom: "30px"}}>
-                <Col xs lg="auto" style={{ marginTop:"8px"}}> <Link to= "/">FAQ</Link></Col>
-                <Col xs lg="auto" style={{ marginTop:"8px"}}> <Link to= "/">CONTACT</Link></Col>
-                <Col xs lg="auto" style={{ marginTop:"8px"}}> <Link to= "/">LEGAL TERMS</Link></Col>
-                <Col xs lg="auto" style={{ marginTop:"8px"}}> <Link to= "/">PRIVACY POLICY</Link></Col>
-                <Col xs lg="auto" style={{ marginLeft:"auto"}}> <Newsletter /></Col>
-        
-                
-            </Row>
-            </Container> 
+        <div className="footer">
+            <hr></hr>
+            <div className="footer__l1">
 
-        </Container>     
+                <div className="footer__l2">
+                    <div>
+                        <Link to= "/">FAQ</Link>
+                    </div>
+                    <div>
+                        <Link to= "/">CONTACT</Link>
+                    </div>
+                    <div>
+                        <Link to= "/">LEGAL TERMS</Link>
+                    </div>
+                    <div>
+                        <Link to= "/">PRIVACY POLICY</Link>
+                    </div>
+                </div>
+ 
+                    
+                <div className="footer__l3">
+                    {/* <Newsletter /> */}
+                    <form>
+                    NEWSLETTER
+                    <br></br>
+                    <input type="email" name="email" placeholder="Email"/>
+                    <input type="submit" value="Email" />
+                    </form>
+                </div>
+
+                <div>
+                    <p>UPOSH | ME</p>
+                </div>    
+                    
+            
+                    
+                
+            </div> 
+
+        </div>     
   )
 }
 
