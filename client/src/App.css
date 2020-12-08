@@ -6,7 +6,6 @@ font-family: 'Montserrat', sans-serif;
 
 .a {
   color: black;
-
 }
 
 .App {
@@ -20,11 +19,6 @@ font-family: 'Montserrat', sans-serif;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -1061,10 +1055,6 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
-
-
-
-
 /*
  ######  ####  ######   ##    ##    ##     ## ########        ## ##        #######   ######      #### ##    ##    ########   #######  ##     ## 
 ##    ##  ##  ##    ##  ###   ##    ##     ## ##     ##      ##  ##       ##     ## ##    ##      ##  ###   ##    ##     ## ##     ##  ##   ##  
@@ -1169,7 +1159,7 @@ font-family: 'Montserrat', sans-serif;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    /* position: fixed; */
     padding-top: 14px;
     padding-bottom: 10px;
     color: black;

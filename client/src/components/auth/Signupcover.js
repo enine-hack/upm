@@ -59,7 +59,8 @@ class Signupcover extends Component {
 
                     <div className="signup_cover__signup_redirect">
                       <p>Already have account ?
-                        <Link to={"/Login"}> Login</Link>
+                        <Link style={{ color:"white" }}
+                              to={"/Login"}> Login</Link>
                       </p>
                     </div>
                                       

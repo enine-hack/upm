@@ -72,7 +72,7 @@ class App extends Component {
         </Switch>
         
         <Route exact path="/" component={Menu}/>
-        <Route exact path="/" component={Footer}/>
+        <Footer/>
         
 
       </div>

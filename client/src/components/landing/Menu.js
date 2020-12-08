@@ -18,7 +18,8 @@ const Menu = () => {
                     </div>
                     <div>
                         <button className="landing_menu__l1_bloc_btn">
-                        <a href="/">THE APP</a>
+                        <a  style={{ color:"black"}}
+                            href="/">THE APP</a>
                         </button>
                     </div>
                 </div>

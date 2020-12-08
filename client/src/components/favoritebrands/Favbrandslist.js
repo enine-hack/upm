@@ -4,7 +4,8 @@ import service from '../auth/auth-service';
 
 class Favbrandslist extends Component {
     state = { 
-        listOfFavbrands: []
+        listOfFavbrands: [],
+        listOfPendingbrands: []
     }
 
     getAllFavBrands = () =>{
@@ -15,11 +16,24 @@ class Favbrandslist extends Component {
                 listOfFavbrands: responseFromApi.data.currentUser.favoritebrands
             })
           })
-          .catch(err => console.log('Error while fetching brands', err))
+          .catch(err => console.log('Error while fetching fav brands', err))
       }
+    
+    getAllPendingBrands = () =>{
+    service.get(`/myfavoritebrands`)
+        .then(responseFromApi => {
+            console.log(responseFromApi.data.currentUser.pendingfavoritebrands)
+        this.setState({
+            listOfPendingbrands: responseFromApi.data.currentUser.pendingfavoritebrands
+        })
+        })
+        .catch(err => console.log('Error while fetching pending brands', err))
+    }
+  
   
       componentDidMount() {
         this.getAllFavBrands();
+        this.getAllPendingBrands();
       }
 
     render() {
@@ -43,6 +57,22 @@ class Favbrandslist extends Component {
                          
                             <img    className="wallet__l2_logo"
                                     src={brand.logoUrl}/>
+
+                        </div>
+
+                        )}
+                    )}
+                </div>
+
+                <hr></hr>
+                            {/* REFAIRE LE CSS ICI */}
+                <div className="">
+                            
+                    { this.state.listOfPendingbrands.map( brand => {
+                        return (                
+                        <div >
+                         
+                             {brand}
 
                         </div>
 
@@ -76,7 +106,6 @@ class Favbrandslist extends Component {
                     </div>
 
                 </div>
-
 
             </div>
         );
