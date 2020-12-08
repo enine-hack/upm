@@ -13,6 +13,8 @@ import Profil from './components/profil/Profil';
 import Brandslist from './components/brands/Brandslist';
 import Detailsbrand from './components/brands/Detailsbrand';
 import Favbrandslist from './components/favoritebrands/Favbrandslist';
+import Addfavbrand from './components/favoritebrands/Addfavbrand';
+import Detailsfavbrand from './components/favoritebrands/Detailsfavbrand';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
@@ -68,8 +70,16 @@ class App extends Component {
           <Route exact path="/myfavoritebrands" render={() => (
               <Favbrandslist user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
             )} />
+          
+          <Route exact path="/addfavbrand" render={() => (
+              <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+              )} />
 
-        </Switch>
+          <Route exact path="/myfavoritebrands/:id" render={() => (
+              <Detailsfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+              )} />
+
+          </Switch>
         
         <Route exact path="/" component={Menu}/>
         <Footer/>

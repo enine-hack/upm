@@ -1328,27 +1328,3 @@ class Brandslist extends Component {
   export default Brandslist;
 
 
-
-              {/* <Container>
-                <Row className="brandist-addbrand-row-style">
-                    <Col xs={{ span: 4, offset: 0 }} sm={{ span: 4, offset: 0 }} md={{ span: 2, offset: 0 }}
-                         className="brandlist-addbrand-logos">
-                      <img  className="brandlist-loupe-icon"
-                            src={"https://friconix.com/png/fi-xtluhl-magnifying-glass-thin.png"}/>
-                    </Col>
-                    
-                    <Col   xs={{ span: 5, offset: 0 }} sm={{ span: 4, offset: 0 }} md={{ span: 2, offset: 0 }}
-                          className="brandist-addbrand-col-style">
-                     <Link to='/'>ANOTHER BRAND </Link>
-                    </Col>
-
-                    <Col  xs={{ span: 2, offset: 0 }} sm={{ span: 1, offset: 0 }} md={{ span: 1, offset: 0 }}
-                                    className="brandlist-showmore-addbrand-col-style">
-                                <Link to='/'>
-                                  <img  className="brandlist-showmore-icon"
-                                        src={"https://pngimg.com/uploads/plus/plus_PNG54.png"}/>
-                                </Link>
-                    </Col>
-                    
-                </Row>
-            </Container> */}

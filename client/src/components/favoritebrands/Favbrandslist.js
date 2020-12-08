@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import service from '../auth/auth-service';
+import Addfavbrand from './Addfavbrand';
 
 
 class Favbrandslist extends Component {
@@ -36,15 +37,25 @@ class Favbrandslist extends Component {
         this.getAllPendingBrands();
       }
 
+    //   addFavbrand = (newbrand) => {
+    //     const favbrandsCopy = [...this.state.listOfFavbrands];
+    //     favbrandsCopy.push(newbrand);
+    //     this.setState({listOfFavbrands: favbrandsCopy});
+    //     { alert("New brand added!") }
+    // }
+
     render() {
         return (
             <div className="wallet">
+
+            {/* <Addfavbrand addnewbrand={(newbrand) => this.addFavbrand(newbrand)}/> */}
+
                 <div className="wallet__l1">
                     <p>My brands</p>
                     
                     <div className="wallet_btn_add">
-                        <a href="/"><img    className="wallet__btn_add_img"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1024px-OOjs_UI_icon_add.svg.png"/>
+                        <a href="/addfavbrand"><img    className="wallet__btn_add_img"
+                           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1024px-OOjs_UI_icon_add.svg.png"/>
                         </a>
                     </div>
                 </div>

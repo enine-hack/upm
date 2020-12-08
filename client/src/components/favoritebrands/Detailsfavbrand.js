@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-
-class Detailsbrand extends Component {
+class Detailsfavbrand extends Component {
     state = {}
 
     // 
     componentDidMount(){
-      this.getSingleBrand();
+      this.getSingleFavBrand();
     }
 
     //
-    getSingleBrand = () => {
+    getSingleFavBrand = () => {
         const { params } = this.props.match;
         console.log('param:', params)
-        axios.get(`http://localhost:5000/api/brandslist/${params.id}`)
+        axios.get(`http://localhost:5000/api/myfavoritebrands/${params.id}`)
           .then( responseFromApi =>{
             const theBrand = responseFromApi.data;
             
@@ -183,4 +182,4 @@ class Detailsbrand extends Component {
 
 
 
-export default Detailsbrand;
+export default Detailsfavbrand;
