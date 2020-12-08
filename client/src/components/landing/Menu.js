@@ -7,24 +7,25 @@ const Menu = () => {
         <div className="landing_menu">
             <div className="landing_menu__main_title">
                 <p>You are the next level of luxury</p>
+
             </div>
 
             <div className="landing_menu__l1">
-                <div className="landing_menu__1_bloc">
+                <div className="landing_menu__l1_bloc">
                     <div>
                     <img    className="landing_menu__l1_bloc_img"
-                            src ="https://cdn.trendhunterstatic.com/phpthumbnails/196/196249/196249_1_800.jpeg"/>
+                            src ="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"/>
                     </div>
                     <div>
                         <button className="landing_menu__l1_bloc_btn">
-                        <a href="/">CONCEPT</a>
+                        <a href="/">THE APP</a>
                         </button>
                     </div>
                 </div>
-                <div className="landing_menu_l1_bloc">
+                <div className="landing_menu__l1_bloc">
                     <div>
                         <img    className="landing_menu__l1_bloc_img"
-                                src ="https://www.collegedeparis.fr/wp-content/uploads/2018/01/ouverture-bachelor-marketing-du-luxe-cdp-700x465.jpg "/>
+                                src ="https://images.unsplash.com/photo-1549385117-ba4f57c7144f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 "/>
                     </div>
                     <div>
                         <button className="landing_menu__l1_bloc_btn">
@@ -34,20 +35,33 @@ const Menu = () => {
                 </div>
             </div>
             <div className="landing_menu__l2">
-                <div>
-                    <img className="landing_menu__l2_img"
-                        src ="https://images.unsplash.com/photo-1496517463163-3550265405c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"/>
-                </div>
-                <div >
-                    <p className= "landing_menu_l2_title">
-                        <Link to='/signup'>LIVE THE EXPERIENCE</Link>
-                    </p>
-                </div>
+                <p><i>I’m a man of simple tastes, I’m always satisfied with the best.</i> <br></br><b>Oscar Wilde</b></p>
+                
+                <button className="landing_menu__l2_btn">
+                        <a href="/brandslist">LIVE THE EXPERIENCE</a>
+                        </button>  
+            </div>
 
+            <div className="landing_menu__l3">
                 <div>
-                    <Link to= "/">PARTNERS ZONE</Link>
+                    <img    className="landing_menu__l3_img"
+                            src="https://cdn.trendhunterstatic.com/phpthumbnails/196/196249/196249_1_800.jpeg"/>
                 </div>
-    </div>
+                <div>
+                    <div>
+                        <button className="landing_menu__l3_btn">
+                            <a href="/">PARTNERS ZONE</a>
+                        </button> 
+                    </div>
+                    <div>
+                        <p className="landing_menu__l3_desc">Access the timelessness and luxury of tomorrow.</p>
+                    </div>
+                    
+                </div>
+            
+                
+                    
+            </div>
         </div>
     )
   }

@@ -9,32 +9,27 @@ const Footer = (props) => {
             <div className="footer__l1">
 
                 <div className="footer__l2">
-                    <div>
-                        <Link to= "/">FAQ</Link>
+                    <div className="footer__l2_bloc">
+                        <div>
+                            <Link to= "/">FAQ</Link>
+                        </div>
+                        <div>
+                            <Link to= "/">CONTACT</Link>
+                        </div>
+                        <div>
+                            <Link to= "/">LEGAL TERMS</Link>
+                        </div>
+                        <div>
+                            <Link to= "/">PRIVACY POLICY</Link>
+                        </div>
                     </div>
-                    <div>
-                        <Link to= "/">CONTACT</Link>
-                    </div>
-                    <div>
-                        <Link to= "/">LEGAL TERMS</Link>
-                    </div>
-                    <div>
-                        <Link to= "/">PRIVACY POLICY</Link>
-                    </div>
-                </div>
- 
-                    
-                <div className="footer__l3">
-                    {/* <Newsletter /> */}
-                    <form>
-                    NEWSLETTER
-                    <br></br>
-                    <input type="email" name="email" placeholder="Email"/>
-                    <input type="submit" value="Email" />
-                    </form>
+
+                    {/* className="footer__l3" */}
+                    <Newsletter />
+
                 </div>
 
-                <div>
+                <div className="footer__uposhme">
                     <p>UPOSH | ME</p>
                 </div>    
                     
