@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {login} from './auth-service';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+
+
 class Login extends Component {
   state = { email: '', password: '', error: "", confirmation:"" }
   handleFormSubmit = (event) => {

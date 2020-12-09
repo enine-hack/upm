@@ -1657,69 +1657,597 @@ font-family: 'Montserrat', sans-serif;
 ##        ##     ##  #######  ##       #### ######## 
 */
 
-.Profil-style {
-  text-align: left;
+@media only screen and (min-width: 1600px)  {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 80px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+  }
+
+  .profile__title {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile_username {
+    width: 700px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .profile__l1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 25%;
+
+    margin-bottom: 30px;
+  }
+
+  .profile__l1_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .profile__main_info {
+    background-color: #F5F5F5;
+    width: 160px;
+    padding-left: 10px;
+    padding-top: 8px;
+    height: 35px;;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+  }
+
+  .profile__userdata {
+    padding-left: 10px;
+    padding-top: 12px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .profile__l2 {
+    width: 100%;
+
+    margin-bottom: 155px;
+  }
+
+
+  .profile__l2_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .profile__btn_showform {
+    border-style: none none solid none;
+    border-width: 1px;
+    background-color: white;
+    padding-bottom: 4px;
+    width: 15vw;
+    text-align: left;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile__btn_arrow_showform {
+    margin-left: 10px;
+    width: 8vw;
+    border-style: none;
+    background-color: white;
+
+  }
+
+  .profile__img_arrow_showform {
+    width: 10px;
+    height: 10px;
+  }
+
+  .profile__btn_delete {
+    margin: auto;
+    display: inline-block;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    background-color:white;
+    border: none;
+    color:#ff0000;
+    font-size: 12px;
+   
+    
+  }
+
+
+
+
+
 }
 
-.Profil-style h3 {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  
+@media only screen and (min-width: 1024px) and (max-width: 1600px)  {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+  }
+
+  .profile__title {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile_username {
+    width: 700px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .profile__l1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 40%;
+
+    margin-bottom: 30px;
+  }
+
+  .profile__l1_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .profile__main_info {
+    background-color: #F5F5F5;
+    width: 140px;
+    padding-left: 10px;
+    padding-top: 8px;
+    height: 35px;;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+  }
+
+  .profile__userdata {
+    padding-left: 10px;
+    padding-top: 12px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .profile__l2 {
+    width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+
+  .profile__l2_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .profile__btn_showform {
+    border-style: none none solid none;
+    border-width: 1px;
+    background-color: white;
+    padding-bottom: 4px;
+    width: 30vw;
+    text-align: left;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile__btn_arrow_showform {
+    margin-left: 10px;
+    width: 8vw;
+    border-style: none;
+    background-color: white;
+
+  }
+
+  .profile__img_arrow_showform {
+    width: 10px;
+    height: 10px;
+  }
+
+  .profile__btn_delete {
+    margin: auto;
+    display: inline-block;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    background-color:white;
+    border: none;
+    color:#ff0000;
+    font-size: 12px;
+   
+    
+  }
+
+
+
+
+
 }
 
-.Profil-style p {
-  text-align: center;
-  margin-bottom: 60px;
-  
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+  }
+
+  .profile__title {
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile_username {
+    width: 700px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .profile__l1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 40%;
+
+    margin-bottom: 30px;
+  }
+
+  .profile__l1_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .profile__main_info {
+    background-color: #F5F5F5;
+    width: 140px;
+    padding-left: 10px;
+    padding-top: 8px;
+    height: 35px;;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+  }
+
+  .profile__userdata {
+    padding-left: 10px;
+    padding-top: 12px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .profile__l2 {
+    width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+
+  .profile__l2_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .profile__btn_showform {
+    border-style: none none solid none;
+    border-width: 1px;
+    background-color: white;
+    padding-bottom: 4px;
+    width: 30vw;
+    text-align: left;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile__btn_arrow_showform {
+    margin-left: 10px;
+    width: 8vw;
+    border-style: none;
+    background-color: white;
+
+  }
+
+  .profile__img_arrow_showform {
+    width: 10px;
+    height: 10px;
+  }
+
+  .profile__btn_delete {
+    margin: auto;
+    display: inline-block;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    background-color:white;
+    border: none;
+    color:#ff0000;
+    font-size: 12px;
+   
+    
+  }
+
+
+
+
+
 }
 
-.Profil-datas {
-  padding-top: 2px;
-  
-  
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+  }
+
+  .profile__title {
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile_username {
+    width: 400px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .profile__l1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 40%;
+
+    margin-bottom: 30px;
+  }
+
+  .profile__l1_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .profile__main_info {
+    background-color: #F5F5F5;
+    width: 140px;
+    padding-left: 10px;
+    padding-top: 8px;
+    height: 35px;;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+  }
+
+  .profile__userdata {
+    padding-left: 10px;
+    padding-top: 12px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .profile__l2 {
+    width: 100%;
+
+    margin-bottom: 80px;
+  }
+
+
+  .profile__l2_bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .profile__btn_showform {
+    border-style: none none solid none;
+    border-width: 1px;
+    background-color: white;
+    padding-bottom: 4px;
+    width: 30vw;
+    text-align: left;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+  }
+
+  .profile__btn_arrow_showform {
+    margin-left: 10px;
+    width: 8vw;
+    border-style: none;
+    background-color: white;
+
+  }
+
+  .profile__img_arrow_showform {
+    width: 10px;
+    height: 10px;
+  }
+
+  .profile__btn_delete {
+    margin: auto;
+    display: inline-block;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    background-color:white;
+    border: none;
+    color:#ff0000;
+    font-size: 12px;
+   
+    
+  }
+
+
+
+
+
 }
 
-.Profil-col-title {
-  background-color:  #F6F6F6;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 10px
-}
+@media all and (max-device-width: 480px) {
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-.Profil-col-datas {
-  padding-top: 15px;
-  padding-bottom: 15px
-}
+      margin-top: 30px;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+    }
 
-.Profil-form-link {
-  border-style: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding-left: 0px;
-  font-size: 15px;
-  font-weight: bold;
-}
+    .profile__title {
+      font-size: 13px;
+      font-weight: bold;
 
-.Arrow-down-style {
-  width: 10px;
-  height: 10px;
-  /* margin-left: 60px */
-}
+      margin-bottom: 20px;
+    }
 
-.Profil-delete-button {
-  margin: auto;
-  display: inline-block;
-  margin-top: 200px;
-  margin-bottom: 200px;
-	background-color:white;
-	border-radius:50px;
-	border:1px solid red;
-	color:#ff0000;
-	font-size:15px;
-  padding:8px 50px;
-  
+    .profile_username {
+      width: 300px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .profile__l1 {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      width: 90%;
+
+      margin-bottom: 30px;
+    }
+
+    .profile__l1_bloc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .profile__main_info {
+      background-color: #F5F5F5;
+      width: 140px;
+      padding-left: 10px;
+      padding-top: 8px;
+      height: 35px;;
+      margin-bottom: 5px;
+
+      font-weight: bold;
+    }
+
+    .profile__userdata {
+      padding-left: 10px;
+      padding-top: 12px;
+      height: 35px;
+      margin-bottom: 5px;
+    }
+
+    .profile__l2 {
+      width: 90%;
+
+      margin-bottom: 30px;
+    }
+
+
+    .profile__l2_bloc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%
+    }
+
+    .profile__btn_showform {
+      border-style: none none solid none;
+      border-width: 1px;
+      background-color: white;
+      padding-bottom: 4px;
+      width: 80vw;
+      text-align: left;
+      font-weight: bold;
+
+      margin-bottom: 20px;
+    }
+
+    .profile__btn_arrow_showform {
+      margin-left: 10px;
+      width: 10vw;
+      border-style: none;
+      background-color: white;
+
+    }
+
+    .profile__img_arrow_showform {
+      width: 10px;
+      height: 10px;
+    }
+
+    .profile__btn_delete {
+      margin: auto;
+      display: inline-block;
+      margin-top: 250px;
+      margin-bottom: 30px;
+      background-color:white;
+      border: none;
+      color:#ff0000;
+      font-size: 12px;
+     
+      
+    }
+
+
+
+
+
 }
 
 /*
@@ -2235,7 +2763,8 @@ font-family: 'Montserrat', sans-serif;
   .details_brand_public {
     width: 1600px;
     margin: 0 auto; 
-    margin-top: 100px
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
   
     .details_brand_public__l1 {
@@ -2250,17 +2779,19 @@ font-family: 'Montserrat', sans-serif;
   
     .details_brand_public__l2 {
       font-family: 'Raleway', sans-serif;
-      font-size: 15px;
-      margin-top: 30px;
+      font-size: 17px;
+      
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
   
       }
   
     .details_brand_public__logo {
-      width: 100px;
-      height: auto
+      width: 110px;
+      height: auto;
+      margin-left: 40px;
     }
   
     .details_brand_public__l3 {
@@ -2274,8 +2805,8 @@ font-family: 'Montserrat', sans-serif;
     .details_brand_public__l4 {
       display: flex;
       flex-direction: row;
-      
-      width: 250px;
+      margin-left: 25px;
+      width: 350px;
       justify-content: space-between;
       
       margin-top: 10px
@@ -2288,11 +2819,12 @@ font-family: 'Montserrat', sans-serif;
   
   }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
 .details_brand_public {
   width: 1024px;
   margin: 0 auto; 
-  margin-top: 100px
+  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
   .details_brand_public__l1 {
@@ -2312,11 +2844,11 @@ font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
     }
 
   .details_brand_public__logo {
-    width: 70px;
+    width: 90px;
     height: auto
   }
 
@@ -2333,7 +2865,7 @@ font-family: 'Montserrat', sans-serif;
     
     width: 250px;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-top: 10px
   }
 
@@ -2346,9 +2878,10 @@ font-family: 'Montserrat', sans-serif;
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .details_brand_public {
-    width: 700px;
+    width: 100%;
     margin: 0 auto; 
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 200px
   }
   
   .details_brand_public__l1 {
@@ -2358,7 +2891,7 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .details_brand_public__cover {
-    width: 440px;
+    width: 100%;
     height: auto;
   }
   
@@ -2369,6 +2902,7 @@ font-family: 'Montserrat', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
   
       }
   
@@ -2404,9 +2938,10 @@ font-family: 'Montserrat', sans-serif;
 
 @media only screen and (max-device-width: 480px) {
   .details_brand_public {
-    width: 414px;
+    width: 100%;
     margin: 0 auto; 
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 160px;
   }
   
   .details_brand_public__l1 {
@@ -2416,7 +2951,7 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .details_brand_public__cover {
-    width: 414px;
+    width: 100%;
     height: auto;
   }
   
@@ -2427,6 +2962,7 @@ font-family: 'Montserrat', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
   
       }
   

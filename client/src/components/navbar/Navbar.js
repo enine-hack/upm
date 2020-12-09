@@ -28,10 +28,10 @@ const navbar = (props) => {
             
             <div className= "navbar__logged_allowed_menu">
                 <div>
-                  <Link to='/myfavoritebrands'>Brands</Link>
+                  <a href='/myfavoritebrands' className="a_black">Brands</a>
                 </div>
                 <div>
-                  <Link to='/profil'>Profile</Link>
+                  <a href='/profil' className="a_black">Profile</a>
                 </div>        
                 <button onClick={(e) => {
                   logout().then(() => props.updateUser(false))
@@ -50,7 +50,7 @@ const navbar = (props) => {
             </Link>
           </div>
 
-          <div><Link to='/'>UPOSH | ME</Link></div>
+          <div><a href='/' className="a_black">UPOSH | ME</a></div>
 
           <div>
             <Link to='/signup'>

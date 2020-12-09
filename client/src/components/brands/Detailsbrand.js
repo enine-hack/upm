@@ -64,12 +64,12 @@ class Detailsbrand extends Component {
                         <div className="details_brand_public__l3">
                             <div className="details_brand_public__l4">
                                 <div>
-                                  <a href={this.state.websiteUrl} target="_blank">
+                                  <a href={this.state.websiteUrl} target="_blank" className="a_black">
                                     BRAND HOUSE
                                   </a>
                                 </div>
                                 <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
+                                  <a href={this.state.websiteUrl}  target="_blank" className="a_black">
                                       <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
@@ -78,7 +78,7 @@ class Detailsbrand extends Component {
 
                             <div className="details_brand_public__l4">
                               
-                              <a href={this.state.newinUrl} target="_blank">
+                              <a href={this.state.newinUrl} target="_blank" className="a_black">
                                   NEW IN
                                   </a>
                               
@@ -130,7 +130,7 @@ class Detailsbrand extends Component {
 
                             <div className="details_brand_public__l4">
                               <div>
-                              <a href={this.state.returnPolicyUrl}  target="_blank">
+                              <a href={this.state.returnPolicyUrl}  target="_blank" className="a_black">
                                   RETURNS AND WARRANTY
                                   </a>
                               </div>

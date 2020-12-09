@@ -69,7 +69,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -118,7 +118,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -165,7 +165,7 @@ class Brandslist extends Component {
                                     </Link>
 
                                     <Link to={`/brandslist/${brand._id}`}>
-                                        <p  className="brandslist_public__brandname">
+                                        <p  className="brandslist_public__brandname a_black">
                                             {brand.brandname}
                                         </p>
                                     </Link>
@@ -212,7 +212,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -259,7 +259,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -306,7 +306,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -353,7 +353,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -400,7 +400,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -447,7 +447,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -494,7 +494,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -541,7 +541,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -588,7 +588,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -635,7 +635,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -682,7 +682,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -729,7 +729,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -776,7 +776,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -823,7 +823,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -870,7 +870,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -917,7 +917,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -964,7 +964,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1011,7 +1011,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1058,7 +1058,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1105,7 +1105,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1152,7 +1152,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1199,7 +1199,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1246,7 +1246,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
@@ -1293,7 +1293,7 @@ class Brandslist extends Component {
                                 </Link>
 
                                 <Link to={`/brandslist/${brand._id}`}>
-                                    <p  className="brandslist_public__brandname">
+                                    <p  className="brandslist_public__brandname a_black">
                                         {brand.brandname}
                                     </p>
                                 </Link>
