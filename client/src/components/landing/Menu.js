@@ -18,7 +18,7 @@ const Menu = () => {
                     </div>
                     <div>
                         <button className="landing_menu__l1_bloc_btn">
-                        <a  style={{ color:"black"}}
+                        <a  className="a_black"
                             href="/">THE APP</a>
                         </button>
                     </div>
@@ -30,7 +30,9 @@ const Menu = () => {
                     </div>
                     <div>
                         <button className="landing_menu__l1_bloc_btn">
-                        <a href="/brandslist">ALL BRANDS</a>
+                        <a  className="a_black"
+                            href="/brandslist">
+                            ALL BRANDS</a>
                         </button>
                     </div>
                 </div>
@@ -39,7 +41,8 @@ const Menu = () => {
                 <p><i>I’m a man of simple tastes, I’m always satisfied with the best.</i> <br></br><b>Oscar Wilde</b></p>
                 
                 <button className="landing_menu__l2_btn">
-                        <a href="/brandslist">LIVE THE EXPERIENCE</a>
+                        <a  className="a_white"
+                            href="/brandslist">LIVE THE EXPERIENCE</a>
                         </button>  
             </div>
 
@@ -51,7 +54,8 @@ const Menu = () => {
                 <div>
                     <div>
                         <button className="landing_menu__l3_btn">
-                            <a href="/">PARTNERS ZONE</a>
+                            <a  className="a_white"
+                                href="/">PARTNERS ZONE</a>
                         </button> 
                     </div>
                     <div>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {login} from './auth-service';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
-
 class Login extends Component {
   state = { email: '', password: '', error: "", confirmation:"" }
   handleFormSubmit = (event) => {
@@ -28,62 +27,69 @@ class Login extends Component {
   render(){
     
     return(
-      <Container className="Signup-login">
+      <div className="signup_login">
+          <div>
+              <p className="signup_login__title">MY ACCOUNT</p>
+          </div>
 
-        <h3>MY ACCOUNT</h3>
+          <div className="signup_login__l1">
+              <div>
+                  <p className="signup_login_t_selected">
+                      CONNEXION</p>
+              </div>
+              <div>
+                  <Link to={"/signup"}>
+                    <p className="signup_login_t_unselected">
+                    REGISTER</p>
+                  </Link>
+              </div>
+          </div>
 
-        <Row className="Signuplogin-center">
-          <Col className="Col-h40 Border-bottom-solid" 
-               xs={{ span: 5, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 2, offset: 0 }}>
-               <b>CONNEXION</b></Col>
-          <Col className="Col-h40"
-               xs={{ span: 5, offset: 0 }} sm={{ span: 12, offset: 0 }} md={{ span: 2, offset: 0 }} ><Link to={"/signup"}>
-               REGISTER</Link></Col>
-        </Row>
+          <div>
+              
+              <p className="signup_login__desc">
+              Welcome,
+              <br></br>
+              <br></br>
+              Log in using your email address and password.
+              </p>
+          </div>
+          <div>
+              <form className="signup_login__l2"
+                    onSubmit={this.handleFormSubmit} >
+                  <label className="signup_login__l2_label">
+                       EMAIL*</label>    
+                  <input className="signup_login__l2_input"
+                        type="text" name="email" placeholder="j.doe@gmail.com" value={this.state.email} onChange={e => this.handleChange(e)} />
+                  <label className="signup_login__l2_label">
+                       PASSWORD*</label>
+                  <input className="signup_login__l2_input"
+                        type="password" name="password" placeholder="********" value={this.state.password} onChange={ e => this.handleChange(e)} />
+
+                
+                  <input  className="signup_login__l2_btn" 
+                          type="submit" value="LOG IN" />
+     
+
+              {/* Affichage message d'erreur */}
+              {this.state.error && (
+                    <p className="error_form_msg">{this.state.error}
+                      </p>
+                  )}
         
-        <Row>
-          <Col xs={12} sm={{ span: 8, offset: 2 }} md={{ span: 4, offset: 4 }} >
-            <p>Welcome</p>
-            <p className="Signuplogin-description">
-            Log in using your email address and password.
-            </p>
-          </Col>
-        </Row>
-
-        <Row className="Signuplogin-center">
-          <form onSubmit={this.handleFormSubmit} >
-          
-            <Col>
-              <input className="Input-form-style" style={{ width: "380px"}}
-                     type="text" name="email" placeholder="Email" value={this.state.email} onChange={e => this.handleChange(e)} />
-            </Col>
-            <Col>
-              <input className="Input-form-style" style={{ width: "380px"}}
-                     type="password" name="password" placeholder="Password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-            </Col>
-            <Col>
-            
-              <input  className="Button-form-style"
-                      style={{ width: "380px"}} 
-                      type="submit" value="LOG IN" />
-            </Col>
-
-            {/* Affichage du message d'erreur */}
-            {this.state.error && (
-              <p className="Error-form-message-style">{this.state.error}</p>
-            )}
-            
             {/* Affichage du message de confirmation logged */}
-            <p className="Confirm-form-message-style">{this.state.confirmation}</p>
+            <p className="confirm_form_msg">{this.state.confirmation}</p>
 
-          </form>
+      </form>
+
+          </div>
+
+
 
 
           
-
-        </Row>
           
-      </Container>
+      </div>
     )
   }
 }

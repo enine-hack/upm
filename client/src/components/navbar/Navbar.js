@@ -18,7 +18,8 @@ const navbar = (props) => {
             </Link>
           </div>
             <div className="navbar__logged__UPOSHME">
-              <Link to='/'>UPOSH | ME</Link>
+              <a href='/' className="a_black"
+                    >UPOSH | ME</a>
             </div>
 
             <div className="navbar_logged_customized_name">
