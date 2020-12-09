@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 import {profilsettings} from '../auth/auth-service';
-import { Container } from 'react-bootstrap';
+
 
 
 
@@ -20,8 +19,6 @@ class Connexionsettings extends Component {
       profilsettings(password)
         .then(response => {
         this.props.updateUser(response);
-
-
        
       })
       .catch( error => console.log(error) )   
@@ -52,33 +49,32 @@ class Connexionsettings extends Component {
         return (
           // AJOUTER IF PROFIL COMPLET => RETOURNER MODIFIER PROFIL
 
-          <Container className="connexion-settings-style" fluid>
-              
-              
-              
+          <div className="connexion_settings">
               <div>
-                <form className="connexion-settings-form-center" 
+                <p className="connexion_settings__desc">Change your Password</p>
+              </div>
+              <div className="connexion_settings__form" >
+              
+                <form className="connexion_settings__form_bloc"
                       onSubmit={this.handleFormSubmit}>                
-                <p>Change your Password</p>
+                
                   {/* <input className="connexion-settings-form-field"
                         type="email" name="email" value={this.state.email} 
                           onChange={event => this.handleChangeEmail(event)}/> */}
-                
-                  <input className="connexion-settings-form-field" 
+                  <p  className="connexion_settings__label">
+                  NEW PASSWORD</p>
+                  <input className="connexion_settings__input" 
                         type="password" name="password" value={this.state.password}
                         onChange={event => this.handleChangePassword(event)} />
               
                 
-                  <button className="connexion-setting-submit">
+                  <button className="connexion_settings__btn">
                     CHANGE SETTINGS
                   </button>                
                 </form>
               </div>
           
-             
-              
-           
-          </Container>
+          </div>
         )
     }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import isnull from 'lodash.isnull';
-import { Container, Row, Col } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 import Connexionsettings from './Connexionsettings';
 import Completeprofile from './Completeprofile';
