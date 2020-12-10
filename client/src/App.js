@@ -67,7 +67,7 @@ class App extends Component {
           <Route exact path="/brandslist" component={Brandslist}/>
           <Route exact path="/brandslist/:id" component={Detailsbrand}/>
 
-          <Route exact path="/myfavoritebrands" render={() => (
+          <Route exact path="/favoritebrands" render={() => (
               <Favbrandslist user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
             )} />
           
@@ -75,7 +75,7 @@ class App extends Component {
               <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
 
-          <Route exact path="/myfavoritebrands/:id" render={() => (
+          <Route exact path="/favoritebrands/:id" render={() => (
               <Detailsfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
 

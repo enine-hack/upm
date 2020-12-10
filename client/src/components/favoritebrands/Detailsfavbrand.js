@@ -4,7 +4,7 @@ import axios from 'axios';
 class Detailsfavbrand extends Component {
     state = {}
 
-    // 
+    
     componentDidMount(){
       this.getSingleFavBrand();
     }
@@ -13,9 +13,10 @@ class Detailsfavbrand extends Component {
     getSingleFavBrand = () => {
         const { params } = this.props.match;
         console.log('param:', params)
-        axios.get(`http://localhost:5000/api/myfavoritebrands/${params.id}`)
+        axios.get(`http://localhost:5000/api/favoritebrands/${params.id}`, {withCredentials: true})
           .then( responseFromApi =>{
             const theBrand = responseFromApi.data;
+            console.log(theBrand)
             
             this.setState(theBrand);
             console.log(theBrand)
@@ -50,7 +51,8 @@ class Detailsfavbrand extends Component {
     
         return( 
             <div className="details_brand_public">
-                <div className="details_brand_public__l1">
+            HELLO
+                {/* <div className="details_brand_public__l1">
                     <div>
                         <img  className="details_brand_public__cover"
                               src={this.state.coverImage}/>
@@ -172,7 +174,7 @@ class Detailsfavbrand extends Component {
                         </div>  
                        
                     </div>          
-                </div> 
+                </div>  */}
             </div>
        
            

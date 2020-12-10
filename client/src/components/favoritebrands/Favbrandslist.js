@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import service from '../auth/auth-service';
 import Addfavbrand from './Addfavbrand';
+import { Link } from 'react-router-dom';
+
 
 
 class Favbrandslist extends Component {
@@ -10,9 +12,9 @@ class Favbrandslist extends Component {
     }
 
     getAllFavBrands = () =>{
-        service.get(`/myfavoritebrands`)
+        service.get(`/profil`)
           .then(responseFromApi => {
-              console.log(responseFromApi.data.currentUser.favoritebrands)
+            console.log(responseFromApi.data.currentUser.favoritebrands)
             this.setState({
                 listOfFavbrands: responseFromApi.data.currentUser.favoritebrands
             })
@@ -21,7 +23,7 @@ class Favbrandslist extends Component {
       }
     
     getAllPendingBrands = () =>{
-    service.get(`/myfavoritebrands`)
+    service.get(`/profil`)
         .then(responseFromApi => {
             console.log(responseFromApi.data.currentUser.pendingfavoritebrands)
         this.setState({
@@ -37,12 +39,14 @@ class Favbrandslist extends Component {
         this.getAllPendingBrands();
       }
 
-    //   addFavbrand = (newbrand) => {
-    //     const favbrandsCopy = [...this.state.listOfFavbrands];
-    //     favbrandsCopy.push(newbrand);
-    //     this.setState({listOfFavbrands: favbrandsCopy});
-    //     { alert("New brand added!") }
-    // }
+      addFavbrand = (newbrand) => {
+        const favbrandsCopy = [...this.state.listOfFavbrands];
+        favbrandsCopy.push(newbrand);
+        this.setState({
+            listOfFavbrands: favbrandsCopy
+        });
+        { alert("New brand added!") }
+    }
 
     render() {
         return (
@@ -66,8 +70,9 @@ class Favbrandslist extends Component {
                         return (                
                         <div key={brand._id}>
                          
-                            <img    className="wallet__l2_logo"
-                                    src={brand.logoUrl}/>
+                            <Link to={`/favoritebrands/${brand._id}`}>
+                                    <img    className="wallet__l2_logo"
+                                    src={brand.logoUrl}/></Link>
 
                         </div>
 

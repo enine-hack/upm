@@ -30,7 +30,7 @@ const navbar = (props) => {
                     <p class="menu-item-username-p">{props.userInSession.firstname} {props.userInSession.lastname}</p>
                   </li>
                   <li class="menu-item">
-                    <a href="/myfavoritebrands">Brands</a>
+                    <a href="/favoritebrands">Brands</a>
                   </li>
                   <li class="menu-item">
                     <a href="/profil">Profile</a>
