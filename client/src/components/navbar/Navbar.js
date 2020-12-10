@@ -75,6 +75,15 @@ const navbar = (props) => {
               </label>
               <nav class="main-navigation">
                 <ul class="menu">
+                <li class="menu-item">
+                    <a href="/">App</a>
+                  </li>
+                <li class="menu-item">
+                    <a href="/brandslist">All Brands</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="/">Partners</a>
+                  </li>
 
                   
                 
