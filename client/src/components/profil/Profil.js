@@ -111,7 +111,9 @@ class Profil extends Component {
                           </button>
                       </div>
                   </div>
-              </div>   
+              </div>
+
+              
 
               <div>
                   <button className="profile__btn_delete" 

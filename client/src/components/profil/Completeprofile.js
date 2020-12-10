@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import {profiledit} from '../auth/auth-service';
-import { Container, Row, Col } from 'react-bootstrap';
 
 class CompleteProfile extends Component {
     state= { 
@@ -71,89 +69,104 @@ class CompleteProfile extends Component {
 
     render(){
         return(
-            <Container className="complete-profil-style" fluid>          
-            
-                <form   className="complete-profil-form-center"
-                        onSubmit={this.handleFormSubmit}>
-
-                    <p  className="complete-profil-style-desc"> 
+            <div className="complete_profile">
+                <div>
+                    <p  className="complete_profile_desc"> 
                         Fill out your profile and directly benefit from all the advantages linked to your brands loyalty accounts.</p>
-                    
-                    <div  className="complete-profil-subtitles">
-                    ID</div>
+                </div>       
 
-                    <select className="complete-profil-form-field" name="civility" >    
-                        <option value="">Civility</option>
-                        <option value="Madam">Madam</option>
-                        <option value="Mister">Mister</option>
-                    </select>
-                
-                    <input className="complete-profil-form-field"
-                            type="text" name="firstname"  value={this.state.firstname}  placeholder="Firstname"
-                            onChange={(event) =>this.handleChange(event)}/>
-                    
-                    <input className="complete-profil-form-field"
-                            type="text" name="lastname"  value={this.state.lastname} placeholder="Lastname"
-                            onChange={(event) =>this.handleChange(event)}/>
-                
-                    <input className="complete-profil-form-field"
-                            type="text" name="dateOfBirth"  value={this.state.dateOfBirth} placeholder="Date of Birth"
-                            onChange={(event) =>this.handleChange(event)}/>
-                    
+                <div >
+                    <form   className="complete_profile"
+                            onSubmit={this.handleFormSubmit}>
 
-                    <div  className="complete-profil-subtitles">
-                        ADDRESS</div>
-                    
-                    <input className="complete-profil-form-Numberadress"
-                            type="number" name="numberAddress" value={this.state.numberAddress} placeholder="N°"
-                            onChange={(event) =>this.handleChange(event)}/>
-                
-                    <input className="complete-profil-form-typeofstreet"
-                            type="text" name="typeofstreet" value={this.state.typeofstreet} placeholder="Street"
-                            onChange={(event) =>this.handleChange(event)}/>
+                        <p  className="complete_profile_subtitle">
+                            ID</p>
+                        <div className="complete_profile__l1">
+                            <select className="complete_profile__l1_input" name="civility" >    
+                                <option value="">Civility</option>
+                                <option value="Madam">Madam</option>
+                                <option value="Mister">Mister</option>
+                            </select>
+                        
+                            <input className="complete_profile__l1_input"
+                                    type="text" name="firstname"  value={this.state.firstname}  placeholder="Firstname"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                            
+                            <input className="complete_profile__l1_input"
+                                    type="text" name="lastname"  value={this.state.lastname} placeholder="Lastname"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        
+                            <input className="complete_profile__l1_input"
+                                    type="text" name="dateOfBirth"  value={this.state.dateOfBirth} placeholder="Date of Birth"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        
+                        </div>
+                        
+                        <div >
+                            <p className="complete_profile_subtitle">ADDRESS</p>
+                        </div>
+                        
+                        <div className="complete_profile__l2">
+                            <input className="complete_profile__l2_numberAdress"
+                                    type="text" name="numberAddress" value={this.state.numberAddress} placeholder="N°"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        
+                            <input className="complete_profile__l2_typeofstreet"
+                                    type="text" name="typeofstreet" value={this.state.typeofstreet} placeholder="Str, Ave, Blv ..."
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        </div>
 
-                    <input className="complete-profil-form-field"
-                            type="text" name="additionalAddress" value={this.state.additionalAddress} placeholder="Additional address info"
-                            onChange={(event) =>this.handleChange(event)}/>
-                     
-                    <input  className="complete-profil-form-zipcode"
-                            type="text" name="zipcode" value={this.state.zipcode} placeholder="Zip Code"
-                            onChange={(event) =>this.handleChange(event)}/>
-                
-                    <input className="complete-profil-form-city"
-                            type="text" name="city" value={this.state.city} placeholder="City"
-                            onChange={(event) =>this.handleChange(event)}/>
+                        <div className="complete_profile__l1">
+                            <input className="complete_profile__l1_input"
+                                    type="text" name="additionalAddress" value={this.state.additionalAddress} placeholder="Additional address info"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        </div>
 
-                    <input  className="complete-profil-form-field"
-                            type="text" name="country" value={this.state.country} placeholder="Country"
-                            onChange={(event) =>this.handleChange(event)}/>
+                        <div className="complete_profile__l2">
+                            <input  className="complete_profile__l2_zipcode"
+                                    type="text" name="zipcode" value={this.state.zipcode} placeholder="Zip Code"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        
+                            <input className="complete_profile__l2_city"
+                                    type="text" name="city" value={this.state.city} placeholder="City"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        </div>
 
-                    
+                        <div className="complete_profile__l1">
+                        <input  className="complete_profile__l1_input"
+                                type="text" name="country" value={this.state.country} placeholder="Country"
+                                onChange={(event) =>this.handleChange(event)}/>
+                        </div>
+                        
 
-                    <div  className="complete-profil-subtitles">
-                        CONTACT</div>
+                        <div >
+                            <p className="complete_profile_subtitle">CONTACT</p>
+                            </div>
+                        
+                        <div className="complete_profile__l1">
+                            <input  className="complete_profile__l1_input"
+                                    type="text" name="mobileNumber" value={this.state.mobileNumber} placeholder="Phone number"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        
+                            <input  className="complete_profile__l1_input"
+                                    type="text" name="" value={this.state.idWechat} placeholder="ID Wechat"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                        
+                            <input  className="complete_profile__l1_input"
+                                    type="text" name="idLine" value={this.state.idLine} placeholder="ID Line"
+                                    onChange={(event) =>this.handleChange(event)}/>
+                            
+                            <input  className="complete_profile__l1_btn"
+                                    type="submit" value="SUBMIT" />
+                        </div>
+                    </form>
 
-                    <input  className="complete-profil-form-field"
-                            type="text" name="mobileNumber" value={this.state.mobileNumber} placeholder="Phone number"
-                            onChange={(event) =>this.handleChange(event)}/>
-                
-                    <input  className="complete-profil-form-field"
-                            type="text" name="idWechat" value={this.state.idWechat} placeholder="ID Wechat"
-                            onChange={(event) =>this.handleChange(event)}/>
-                
-                    <input  className="complete-profil-form-field"
-                            type="text" name="idLine" value={this.state.idLine} placeholder="ID Line"
-                            onChange={(event) =>this.handleChange(event)}/>
-                    
-                    <input  className="complete-profil-submit"
-                            type="submit" value="SUBMIT" />
-                    
-                </form>
+                </div>
                 
 
                       
            
-            </Container>
+            </div>
         )
 
     }

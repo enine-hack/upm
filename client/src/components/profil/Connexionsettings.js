@@ -69,7 +69,7 @@ class Connexionsettings extends Component {
               
                 
                   <button className="connexion_settings__btn">
-                    CHANGE SETTINGS
+                    CHANGE PASSWORD
                   </button>                
                 </form>
               </div>
