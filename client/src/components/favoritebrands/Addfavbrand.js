@@ -7,7 +7,7 @@ class Addfavbrand extends Component {
 
     state = { 
         listOfBrands: [],
-        listOfAddedBrands: []
+        
     }
 
     getAllBrands = () =>{
@@ -25,11 +25,14 @@ class Addfavbrand extends Component {
     this.getAllBrands();
     }
 
-    handleClick(event) {
-      // this.setState({
-      //   listOfAddedBrands: listOfAddedBrands.push(event.target.brand._id)
-      // })
-      console.log(event.target)
+    handleClick(brandid) {
+
+      this.setState({
+        // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
+        
+      });
+      this.props.addFavbrand(brandid);
+      
     }
 
 
@@ -92,7 +95,7 @@ class Addfavbrand extends Component {
                                     <img className="brandslist_public__logo"
                                         src={brand.logoUrl} />
 
-                                    <button onClick={this.handleClick(brand._id)}>
+                                    <button onClick={()  => this.handleClick(brand._id)}>
                                             {brand.brandname}
                                             {brand._id}
                                         </button>

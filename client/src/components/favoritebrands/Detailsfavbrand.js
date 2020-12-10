@@ -51,8 +51,8 @@ class Detailsfavbrand extends Component {
     
         return( 
             <div className="details_brand_public">
-            HELLO
-                {/* <div className="details_brand_public__l1">
+            
+                <div className="details_brand_public__l1">
                     <div>
                         <img  className="details_brand_public__cover"
                               src={this.state.coverImage}/>
@@ -174,7 +174,7 @@ class Detailsfavbrand extends Component {
                         </div>  
                        
                     </div>          
-                </div>  */}
+                </div> 
             </div>
        
            

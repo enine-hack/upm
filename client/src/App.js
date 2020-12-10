@@ -19,7 +19,7 @@ import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
 class App extends Component {
-  state = { loggedInUser: null }
+  state = { loggedInUser: null, listOfFavbrands: [] }
   //
   fetchUser() {
     if (this.state.loggedInUser === null) {
@@ -44,6 +44,15 @@ class App extends Component {
     this.fetchUser();
     
   }
+
+  addFavbrand = (newbrand) => {
+    const favbrandsCopy = [...this.state.listOfFavbrands];
+    favbrandsCopy.push(newbrand);
+    this.setState({
+        listOfFavbrands: favbrandsCopy
+    });
+    { alert("New brand added!") }
+}
 
   render() {
     return (
@@ -72,11 +81,11 @@ class App extends Component {
             )} />
           
           <Route exact path="/addfavbrand" render={() => (
-              <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+              <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} addFavbrand={this.addFavbrand}/>
               )} />
 
-          <Route exact path="/favoritebrands/:id" render={() => (
-              <Detailsfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+          <Route exact path="/favoritebrands/:id" render={(props) => (
+              <Detailsfavbrand {...props} user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
 
           </Switch>
