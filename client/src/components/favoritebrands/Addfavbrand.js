@@ -25,7 +25,7 @@ class Addfavbrand extends Component {
     this.getAllBrands();
     }
 
-    handleClick(brandid) {
+    handleClick = (brandid) => {
 
       this.setState({
         // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
@@ -34,6 +34,8 @@ class Addfavbrand extends Component {
       this.props.addFavbrand(brandid);
       
     }
+
+
 
 
 
@@ -99,6 +101,8 @@ class Addfavbrand extends Component {
                                             {brand.brandname}
                                             {brand._id}
                                         </button>
+
+
 
                                     {/* <button onClick={(newbrand) => {
                                             // newbrand = this.state.listOfBrands._id;

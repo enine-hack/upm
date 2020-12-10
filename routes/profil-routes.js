@@ -51,6 +51,7 @@ profilRoutes.get('/profil', (req, res, next) => {
   }
   console.log('id:', req.session.currentUser._id)
   User.findById(req.session.currentUser._id)
+    .populate('favoritebrands')
 
     .then((currentUser) => {
       res.status(200).json({ currentUser });
