@@ -16,9 +16,9 @@ const Menu = () => {
                             src ="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"/>
                     </div>
                     <div>
-                        <button className="landing_menu__l1_bloc_btn">
+                        <button className="landing_menu__l1_bloc_btn a_black_landing">
                         <a  className="a_black"
-                            href="/">THE APP</a>
+                            href="/"><p className="landing_menu__l1_bloc_subtitle">THE APP</p></a>
                         </button>
                     </div>
                 </div>
@@ -28,10 +28,10 @@ const Menu = () => {
                                 src ="https://images.unsplash.com/photo-1549385117-ba4f57c7144f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 "/>
                     </div>
                     <div>
-                        <button className="landing_menu__l1_bloc_btn">
+                        <button className="landing_menu__l1_bloc_btn a_black_landing">
                         <a  className="a_black"
                             href="/brandslist">
-                            ALL BRANDS</a>
+                            <p className="landing_menu__l1_bloc_subtitle">ALL BRANDS</p></a>
                         </button>
                     </div>
                 </div>

@@ -36,7 +36,8 @@ class Signupcover extends Component {
                 
                     <div className="signup_cover__btn_create_account_hidden">
                         <button className="signup_cover__btn_create_account_style">
-                            CREATE AN ACCOUNT  
+                            <a  className="a_black"
+                                href='/signup'>CREATE AN ACCOUNT  </a>
                         </button>
                     </div>
                 </div>
