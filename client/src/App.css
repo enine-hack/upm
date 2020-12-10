@@ -1,7 +1,16 @@
 /*
+FONTS FAMILY
 font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Montserrat', sans-serif;
+
+COLORS
+GREY
+FOR TITLES & SUB TITLES
+  color: #7777777;
+FOR backgrounds
+    LIGHT :
+    MEDIUM :
 */
 
 .a_black {
@@ -1513,135 +1522,570 @@ font-family: 'Montserrat', sans-serif;
 ##    ## ##     ##    ###    ########  ##     ## ##     ## 
 */
 
-@media only screen and (min-width: 1024px) {
-	
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 14px;
-    padding-bottom: 10px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
+.site {
+  font-size: 1.05rem;
+  position: relative;
+  word-wrap: break-word;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1.618rem;
+  border-bottom: 1px solid #ebebeb
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+  margin: 0 auto 0.5rem;
+}
+
+.site-branding {
+  flex: 1 0 80%;
+  max-width: 80%;
+}
+
+.site-title {
+  margin: 1rem 0 0;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+.site-header > .top-nav-label {
+  flex: 0 0 auto;
+}
+
+.main-navigation {
+  display: none;
+  flex: 1 0 100%;
+}
+
+.main-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.main-navigation .menu {
+  position: relative;
+  width: 100%;
+}
+
+.main-navigation .menu .menu-item {
+  position: relative;
+}
+
+.main-navigation .menu .menu-item-username {
+  display: block;
+  background-color: #ebebeb;
+  padding: 0.5rem 0.6rem;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.main-navigation .menu .menu-item-username-p {
+
+  margin-bottom: 0px;
+  
+}
+
+.main-navigation .menu .menu-item a {
+  /* background: #efefef; */
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: #ebebeb;
+  color: black;
+  display: block;
+  padding: 0.5rem 0.6rem;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.main-navigation .menu .menu-item a:hover,
+.main-navigation .menu .menu-item a:focus {
+  background: black;
+  color: #efefef;
+}
+
+.main-navigation .menu .menu-item a:active {
+  background: #D29500;
+  color: #efefef;
+}
+
+.main-navigation .menu .menu-item .menu-item-btn-login-img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-navigation .menu .menu-item .menu-item-btn-logout {
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 3px
+}
+
+.main-navigation .menu .menu-item .menu-item-btn-logout-img {
+  width: 20px;
+  height: 20px;
+  
+}
+
+/* Hide/Show Main Menu if checkbox unchecked/checked */
+.site-header > [type="checkbox"]:checked ~ .main-navigation {
+  display: block;
+}
+
+
+
+/* Toggle buttons */
+.top-nav-label {
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  margin-top: 10px;
+  /* margin: 0; */
+  overflow: hidden;
+  padding: 0;
+}
+
+.top-nav-label .open-close-menu {
+  display: block;
+  position: absolute;
+  z-index: 99999;
+}
+
+.top-nav-label .open-close-menu::before,
+.top-nav-label .open-close-menu::after {
+  border-radius: 0.1875rem;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+/* Hamburger button */
+.site-header > .top-nav-label {
+  position: relative;
+  right: 0;
+  top: 0;
+  height: 24px;
+  width: 23px;
+  border-radius: 0.1875rem;
+}
+
+.site-header > .top-nav-label .open-close-menu {
+  background-color:#000000;
+  border-radius: 0.1875rem;
+  height: 0.2rem;
+  left: 0.1875rem;
+  right: 0.1875rem;
+  top: 0.7rem;
+  bottom: 0.5rem;
+  transition: 0.25s ease-in-out 0s;
+}
+
+.site-header > .top-nav-label .open-close-menu::before,
+.site-header > .top-nav-label .open-close-menu::after {
+  background-color: #000000;
+  height: 0.25rem;
+  left: 0;
+  transition-duration: 0.3s, 0.3s;
+  width: 100%;
+}
+
+.site-header > .top-nav-label .open-close-menu::before {
+  top: -1.6875rem;
+  transform-origin: top;
+}
+
+.site-header > .top-nav-label .open-close-menu::after {
+  /* bottom: -0.6875rem; */
+  bottom: -0.4rem;
+  transform-origin: bottom;
+}
+
+/* Hamburger animation */
+.site-header > [type="checkbox"]:checked ~ .top-nav-label .open-close-menu {
+  background: none;
+  transition-delay: 0s, 0.3s;
+}
+
+.site-header
+  > [type="checkbox"]:checked
+  ~ .top-nav-label
+  .open-close-menu::before,
+.site-header
+  > [type="checkbox"]:checked
+  ~ .top-nav-label
+  .open-close-menu::after {
+  left: 0.125rem;
+  transition-delay: 0s, 0.3s;
+}
+
+.site-header
+  > [type="checkbox"]:checked
+  ~ .top-nav-label
+  .open-close-menu::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.site-header
+  > [type="checkbox"]:checked
+  ~ .top-nav-label
+  .open-close-menu::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* Hamburger button hover/focus/active */
+.site-header > .top-nav-label:hover,
+.site-header > input[type="checkbox"]:focus ~ .top-nav-label,
+.site-header > input[type="checkbox"]:hover ~ .top-nav-label {
+  background: white
+}
+
+.site-header > .top-nav-label:hover .open-close-menu,
+.site-header > .top-nav-label:hover .open-close-menu::after,
+.site-header > .top-nav-label:hover .open-close-menu::before,
+.site-header > input[type="checkbox"]:focus ~ .top-nav-label .open-close-menu,
+.site-header
+  > input[type="checkbox"]:focus
+  ~ .top-nav-label
+  .open-close-menu::before,
+.site-header
+  > input[type="checkbox"]:focus
+  ~ .top-nav-label
+  .open-close-menu::after,
+.site-header > input[type="checkbox"]:hover ~ .top-nav-label .open-close-menu,
+.site-header
+  > input[type="checkbox"]:hover
+  ~ .top-nav-label
+  .open-close-menu::before,
+.site-header
+  > input[type="checkbox"]:hover
+  ~ .top-nav-label
+  .open-close-menu::after {
+  background: #000000;
+}
+
+.site-header
+  > input[type="checkbox"]:checked
+  ~ .top-nav-label:hover
+  .open-close-menu,
+.site-header
+  > input[type="checkbox"]:checked:focus
+  ~ .top-nav-label
+  .open-close-menu,
+.site-header
+  > input[type="checkbox"]:checked:hover
+  ~ .top-nav-label
+  .open-close-menu {
+  background: none;
+}
+
+
+
+/* Plus/Minus button animation */
+.main-navigation
+  [type="checkbox"]:checked
+  ~ .top-nav-label
+  .open-close-menu::before {
+  transform: rotate(90deg);
+}
+
+.main-navigation
+  [type="checkbox"]:checked
+  ~ .top-nav-label
+  .open-close-menu::after {
+  transform: rotate(180deg);
+}
+
+/* Hide and place checkbox over the toggle buttons */
+.site-header input[type="checkbox"] {
+  cursor: pointer;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.site-header > input[type="checkbox"] {
+  right: 0.5rem;
+  top: 2.75rem;
+}
+
+
+/* Display the right label if checkbox checked */
+.site-header input[type="checkbox"] + .top-nav-label .close-menu,
+.site-header input[type="checkbox"]:checked + .top-nav-label .open-menu {
+  display: none;
+}
+
+.site-header input[type="checkbox"]:checked + .top-nav-label .close-menu,
+.site-header input[type="checkbox"] + .top-nav-label .open-menu {
+  display: block;
+}
+
+@media all and (max-device-width: 480px) {
+  .site-title {
     font-size: 13px;
-    border-bottom: 1px solid #bfbfbf;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .site-branding {
+    flex: 1 0 30%;
+    max-width: 30%;
   }
 
-  .navbar__menu_icon {
-    width: 24px;
-    height: 24px
+  .site-title {
+    font-size: 14px;
+    margin-top: 6px
   }
 
-  .navbar__connexion_icon {
-    width: 24px;
-    height: 24px
+  .main-navigation .menu .menu-item-username {
+    background-color: #ffffff;
+    margin-top: 8px
   }
 
-  .navbar__logged__UPOSHME {
-    margin-left: 5px;
-    color:black
+  .site-header input[type="checkbox"],
+  .site-header .top-nav-label {
+    display: none;
   }
 
-  .navbar_logged_customized_name {
-    margin-left: auto;
+  .main-navigation {
+    display: block;
+    flex: 1 0 70%;
+    max-width: 70%;
   }
 
-  .navbar__logged_allowed_menu {
+  .main-navigation .menu {
+    border: none;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 240px;
-    margin-right: 20px;
-    margin-left: 5px
+    justify-content: flex-end;
+  }
+
+  .main-navigation .menu::before,
+  .main-navigation .menu::after {
+    display: none;
+  }
+
+  .main-navigation .menu > .menu-item {
+    margin-left: 0.3125rem;
+  }
+
+  .main-navigation .menu .menu-item a {
+    background: #fff;
+    border: none;
+    color: black;
+    padding: 1rem 0.809rem;
+  }
+
+  .main-navigation .menu .menu-item a:hover {
+    background: #fff;
+    color: #D29500;
+    text-decoration: underline;
+  }
+
+  .main-navigation .menu .menu-item a:active {
+    color: #D29500;
+    text-decoration: none;
   }
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .site-branding {
+    flex: 1 0 30%;
+    max-width: 30%;
+  }
 
-    padding-top: 14px;
-    padding-bottom: 10px;
+  .site-title {
+    font-size: 14px;
+    margin-top: 6px
+  }
+
+  .main-navigation .menu .menu-item-username {
+    background-color: #ffffff;
+    margin-top: 8px
+  }
+
+  .site-header input[type="checkbox"],
+  .site-header .top-nav-label {
+    display: none;
+  }
+
+  .main-navigation {
+    display: block;
+    flex: 1 0 70%;
+    max-width: 70%;
+  }
+
+  .main-navigation .menu {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-navigation .menu::before,
+  .main-navigation .menu::after {
+    display: none;
+  }
+
+  .main-navigation .menu > .menu-item {
+    margin-left: 0.3125rem;
+  }
+
+  .main-navigation .menu .menu-item a {
+    background: #fff;
+    border: none;
     color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    border-bottom: 1px solid #bfbfbf;
-    width: 100%
+    padding: 1rem 0.809rem;
   }
 
-  .navbar__menu_icon {
-    width: 24px;
-    height: 24px
+  .main-navigation .menu .menu-item a:hover {
+    background: #fff;
+    color: #D29500;
+    text-decoration: underline;
   }
 
-  .navbar__connexion_icon {
-    width: 24px;
-    height: 24px
+  .main-navigation .menu .menu-item a:active {
+    color: #D29500;
+    text-decoration: none;
   }
 
-  .navbar__logged__UPOSHME {
-    margin-left: 5px
-  }
-
-  .navbar_logged_customized_name {
-    margin-left: auto;
-  }
-
-  .navbar__logged_allowed_menu {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 240px;
-    margin-right: 20px;
-    margin-left: 5px
-  }
 }
 
-@media all and (max-device-width: 480px) {
-  .navbar {
-    
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .site-branding {
+    flex: 1 0 30%;
+    max-width: 30%;
+  }
+
+  .site-title {
+    font-size: 14px;
+    margin-top: 6px
+  }
+
+  .main-navigation .menu .menu-item-username {
+    background-color: #ffffff;
+    margin-top: 8px
+  }
+
+  .site-header input[type="checkbox"],
+  .site-header .top-nav-label {
+    display: none;
+  }
+
+  .main-navigation {
+    display: block;
+    flex: 1 0 70%;
+    max-width: 70%;
+  }
+
+  .main-navigation .menu {
+    border: none;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 14px;
-    padding-bottom: 10px;
+    justify-content: flex-end;
+  }
+
+  .main-navigation .menu::before,
+  .main-navigation .menu::after {
+    display: none;
+  }
+
+  .main-navigation .menu > .menu-item {
+    margin-left: 0.3125rem;
+  }
+
+  .main-navigation .menu .menu-item a {
+    background: #fff;
+    border: none;
     color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    border-bottom: 1px solid #bfbfbf;
-    width: 100%;
+    padding: 1rem 0.809rem;
   }
 
-  .navbar__menu_icon {
-    width: 24px;
-    height: 24px
+  .main-navigation .menu .menu-item a:hover {
+    background: #fff;
+    color: #D29500;
+    text-decoration: underline;
   }
 
-  .navbar__connexion_icon {
-    display: none
+  .main-navigation .menu .menu-item a:active {
+    color: #D29500;
+    text-decoration: none;
   }
 
-  .navbar__logged__UPOSHME {
-    margin-left: 3px
+}
+
+@media only screen and (min-width: 1600px){
+  .site-branding {
+    flex: 1 0 30%;
+    max-width: 30%;
   }
 
-  .navbar_logged_customized_name {
-    display: none
-  }
-
-  .navbar__logged_allowed_menu {
-    display: none
+  .site-title {
+    font-size: 15px;
+    margin-top: 6px
   }
 
 
+
+  .main-navigation .menu .menu-item-username {
+    background-color: #ffffff;
+    margin-top: 8px
+  }
+
+  .site-header input[type="checkbox"],
+  .site-header .top-nav-label {
+    display: none;
+  }
+
+  .main-navigation {
+    display: block;
+    flex: 1 0 70%;
+    max-width: 70%;
+  }
+
+  .main-navigation .menu {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-navigation .menu::before,
+  .main-navigation .menu::after {
+    display: none;
+  }
+
+  .main-navigation .menu > .menu-item {
+    margin-left: 0.3125rem;
+  }
+
+  .main-navigation .menu .menu-item a {
+    background: #fff;
+    border: none;
+    color: black;
+    padding: 1rem 0.809rem;
+    font-size: 14px;
+  }
+
+  .main-navigation .menu .menu-item a:hover {
+    background: #fff;
+    color: #D29500;
+    text-decoration: underline;
+  }
+
+  .main-navigation .menu .menu-item a:active {
+    color: #D29500;
+    text-decoration: none;
+  }
 
 }
 
@@ -3726,6 +4170,7 @@ font-family: 'Montserrat', sans-serif;
   }
 }
 
+
 @media only screen and (max-device-width: 480px) {
   .wallet {
     font-family: 'Raleway', sans-serif;
@@ -3808,3 +4253,8 @@ font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
 }
+
+
+
+
+

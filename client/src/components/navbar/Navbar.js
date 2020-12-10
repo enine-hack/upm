@@ -7,60 +7,91 @@ import {logout} from '../auth/auth-service'
 const navbar = (props) => {
   return (
     <>
-    
       {props.userInSession ? (
-          <nav className="navbar">
+            <div class="site">
+            <header class="site-header">
+              <div class="site-branding">
+                <p class="site-title">
+                <a href="/" className="a_black">UPOSH | ME</a></p>
+              </div>
+              
+              <input type="checkbox" id="top-nav" name="top-nav" aria-labelledby="top-nav-toggle" />
+              <label for="top-nav" class="top-nav-label" id="top-nav-toggle">
+                <span class="open-close-menu">
+                  <span class="open-menu">Open menu</span>
+                  <span class="close-menu">Close menu</span>
+                </span>
+              </label>
+              
 
-          <div>                
-            <Link to='/signup'>
-              <img  className="navbar__menu_icon" 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Symbol_code_ww_45.svg/1024px-Symbol_code_ww_45.svg.png" alt="menu"/>
-            </Link>
+              <nav class="main-navigation">
+                <ul class="menu">
+                  <li class="menu-item-username">
+                    <p class="menu-item-username-p">{props.userInSession.firstname} {props.userInSession.lastname}</p>
+                  </li>
+                  <li class="menu-item">
+                    <a href="/myfavoritebrands">Brands</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="/profil">Profile</a>
+                  </li>
+                  
+                
+                  <li class="menu-item">
+                    <a href="/login">
+                      <img  class="menu-item-btn-login-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsuxUrEVyvCmLYoM5BeyNUOts2akw1RFDYw&usqp=CAU" alt="profil"/>
+                    </a>
+                  </li>
+
+                <li class="menu-item">
+                
+                <button   class="menu-item-btn-logout"
+                          onClick={(e) => {
+                      logout().then(() => props.updateUser(false))
+                      }}>
+                      <img  class="menu-item-btn-logout-img"
+                            src="https://i7.uihere.com/icons/337/535/596/logout-9ba9f57d617c97e633b16f213b37c9d9.png"/>
+                      </button>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            <main class="site-main"></main>
+            <footer class="site-footer"></footer>
           </div>
-            <div className="navbar__logged__UPOSHME">
-              <a href='/' className="a_black"
-                    >UPOSH | ME</a>
-            </div>
-
-            <div className="navbar_logged_customized_name">
-                {props.userInSession.firstname} {props.userInSession.lastname}
-            </div>
-            
-            <div className= "navbar__logged_allowed_menu">
-                <div>
-                  <a href='/myfavoritebrands' className="a_black">Brands</a>
-                </div>
-                <div>
-                  <a href='/profil' className="a_black">Profile</a>
-                </div>        
-                <button onClick={(e) => {
-                  logout().then(() => props.updateUser(false))
-                  }}>LOG OUT</button>
-            </div>
-
-          </nav>
-        
       ) : (
-        <nav className="navbar" >
+        <div class="site">
+            <header class="site-header">
+              <div class="site-branding">
+                <p class="site-title"><a href="/" >UPOSH | ME</a></p>
+              </div>
+              <input type="checkbox" id="top-nav" name="top-nav" aria-labelledby="top-nav-toggle" />
+              <label for="top-nav" class="top-nav-label" id="top-nav-toggle">
+                <span class="open-close-menu">
+                  <span class="open-menu">Open menu</span>
+                  <span class="close-menu">Close menu</span>
+                </span>
+              </label>
+              <nav class="main-navigation">
+                <ul class="menu">
 
-          <div>                
-            <Link to='/signup'>
-              <img  className="navbar__menu_icon" 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Symbol_code_ww_45.svg/1024px-Symbol_code_ww_45.svg.png" alt="menu"/>
-            </Link>
+                  
+                
+                <li class="menu-item">
+                    <a href="/login">
+                      <img  class="menu-item-btn-login-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsuxUrEVyvCmLYoM5BeyNUOts2akw1RFDYw&usqp=CAU" alt="profil"/>
+                    </a>
+                  </li>
+
+
+                </ul>
+              </nav>
+            </header>
+            <main class="site-main"></main>
+            <footer class="site-footer"></footer>
           </div>
-
-          <div><a href='/' className="a_black">UPOSH | ME</a></div>
-
-          <div>
-            <Link to='/signup'>
-                <img  className="navbar__connexion_icon" 
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsuxUrEVyvCmLYoM5BeyNUOts2akw1RFDYw&usqp=CAU" alt="profil"/>
-            </Link>
-          </div>
-            
-            
-        </nav>
       )}
       
       </>
