@@ -84,7 +84,7 @@ favbrandsRoutes.post('/addfavbrand', (req, res, next) => {
           user.update(updatedUserFavbrands)
             .then(() => {
               console.log('user.favoritebrands en base =======>', user.favoritebrands)
-              res.status(200).json({ message: "FavBrands updated" });
+              res.status(200).json(user.favoritebrands);
             })
             .catch((err) => {
             res.status(400).json({ message: "Favorite brand not saved in DB" });

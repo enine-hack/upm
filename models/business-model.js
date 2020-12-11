@@ -8,18 +8,18 @@ const businessSchema = new Schema(
         required: [true, 'Name of society is required.']
       },
     activity: {
-      type: String, enum: ['Mode & Accessoires', 'Beauté & Soins','Maison','Vin & Gastronomie','Sport','Technologie','Jeux & Gadgets']
+      type: String,
+      trim: true,
       },
     country: {
-        type : Schema.Types.ObjectId, ref: 'Country', 
+        type : String, 
         trim: true,
         required: [true, 'Country is required.']
         //match : mettre une liste deroulante ou contrainte de 2 characters type FR
       },
     firstname: {
         type: String,
-        trim: true,
-        required: [true, 'Firstname is required.']
+        trim: true,        
       },
     lastname: {
         type: String,
@@ -29,7 +29,6 @@ const businessSchema = new Schema(
     phone: {
         type: Number,
         trim: true,
-        required: [true, 'Phone number is required.']
       },
     email: {
       type: String,
