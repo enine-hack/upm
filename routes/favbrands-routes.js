@@ -41,16 +41,26 @@ favbrandsRoutes.get('/myfavoritebrands', (req, res, next) => {
 
 // POST//addfavbrand => Ajout d'une nouvelle marque existante en BDD dans mon portemarque ou d'une nouvelle marque dans mon pending
 favbrandsRoutes.post('/addfavbrand', (req, res, next) => {
-
+  // ADD FAVORITE BRANDS QUI EXISTENT EN BDD
   // recupere l'id, vérifie si c'est bien un string puis converti le en array
     selectedfavbrands = req.body._id; // ma sélection
-    console.log('Req.body =======>', req.body._id)
-    console.log(typeof(selectedfavbrands))
+    console.log('FAV BRAND Req.body =======>', req.body._id);
+    console.log(typeof(selectedfavbrands));
     if(typeof(selectedfavbrands) === 'string'){
        selectedfavbrands = selectedfavbrands.split()
        console.log('Selectedfavbrands splited =======>', selectedfavbrands)
-      //  console.log(typeof(selectedfavbrands)) 
+      //console.log(typeof(selectedfavbrands)) 
       }
+  
+  // ADD PENDING BRANDS PAR LEUR BRANDNAME
+  inputBrandname = req.body.brandname // ma nouvelle marque qui n'existe pas dans seeds
+  console.log('PENDING BRAND Req.body =======>', inputBrandname);
+  console.log(typeof(inputBrandname));
+  if(typeof(inputBrandname) === 'string'){
+    inputBrandname = inputBrandname.split()
+    console.log('Pending brandname splited =======>',inputBrandname)
+    //console.log(typeof(pendingbrandname)) 
+  }
 
    // si il n'existe pas dans l'array => le rajouter
    User.findById(req.session.currentUser)
@@ -61,13 +71,16 @@ favbrandsRoutes.post('/addfavbrand', (req, res, next) => {
           if (!user.favoritebrands.includes(selectedfavbrand)){
           user.favoritebrands.push(selectedfavbrand)
           console.log('user.favoritebrands after push =======>', user.favoritebrands)
+          } 
+          else if(user.favoritebrands.includes(selectedfavbrand)){
+          res.status(400).json({ message: "The brand is already in your favorite ones" })
           }  
           });
-
+            // mettre en mémoire la ligne du modèle User à updater
           let updatedUserFavbrands = {
             favoritebrands : user.favoritebrands
           }
-
+            // utiliser update avec la variable en mémoire
           user.update(updatedUserFavbrands)
             .then(() => {
               console.log('user.favoritebrands en base =======>', user.favoritebrands)
@@ -76,60 +89,44 @@ favbrandsRoutes.post('/addfavbrand', (req, res, next) => {
             .catch((err) => {
             res.status(400).json({ message: "Favorite brand not saved in DB" });
              });
+             
       }).catch((err) => {
         res.status(400).json({ message: "User id not found" });
       });
 
-  //pendingbrandname = req.body.brandname // ma nouvelle marque qui n'existe pas dans seeds
-  // console.log(pendingbrandname)
-  // console.log(typeof(pendingbrandname))
-  // if(typeof(pendingbrandname) === 'string'){
-  //   pendingbrandname = pendingbrandname.split()
-    // console.log(pendingbrandname)
-    // console.log(typeof(pendingbrandname)) 
-  // }
 
-  // verifie que l'id Brand est en BD
-  // Brand.findById(selectedfavbrands)
-  
-  // .then(response => {
-  //   console.log('response:', response)
-  //   if(!response){
-  //     // res.status(200).json({ message: 'New Brand doesnt exist in the DB, so added in the pending brand Array' })
-
-  //     User.findById(req.session.currentUser)
-  //       .then((user) =>{
-  //         pendingbrandname.forEach(newbrand => {
-  //       // que si pas deja
-  //       if (!user.pendingfavoritebrands.includes(newbrand)){
-  //         user.pendingfavoritebrands.push(newbrand)
-  //         console.log(user.pendingfavoritebrands)
-  //       }  
-  //     });
-  //     user.save()
-  //       .then(() => {
-  //         // console.log(user.favoritebrands)
-          
-  //       })
-  //       .catch((err) => {
-  //         res.status(400).json({ message: "Favorite brand not saved in DB" });
-  //       });
-  //   })
-  //   .catch((err) => {
-  //     res.status(400).json({ message: "User id not found" });
-  //   });
-    
-  //   }
-
-
-  //     res.status(200).json(response); // rend l'objet
-  // })
-  // .catch(err => {
-  //   res.status(404).json({ message: 'Connexion to database not found' });
-  // })
-
- 
+    // si il n'existe pas dans l'array => le rajouter
+   User.findById(req.session.currentUser)
+      .then((user) =>{
+        console.log('user.pendingfavoritebrands before push =======>', user.pendingfavoritebrands)
+        inputBrandname.forEach(inputBrandname => {
+         // que si pas deja
+        if (!user.pendingfavoritebrands.includes(inputBrandname)){
+        user.pendingfavoritebrands.push(inputBrandname)
+        console.log('user.pendingfavoritebrands after push =======>', user.pendingfavoritebrands)
+       } 
+       else if(user.pendingfavoritebrands.includes(inputBrandname)){
+       res.status(400).json({ message: "The brand is already in pending" })
+       }  
+       });
+         // mettre en mémoire la ligne du modèle User à updater
+       let updatedUserPendingbrands = {
+        pendingfavoritebrands : user.pendingfavoritebrands
+       }
+         // utiliser update avec la variable en mémoire
+       user.update(updatedUserPendingbrands)
+         .then(() => {
+           console.log('user.pendingfavoritebrands en base =======>', user.pendingfavoritebrands)
+           res.status(200).json({ message: "PendingBrands updated" });
+         })
+         .catch((err) => {
+         res.status(400).json({ message: "Pending brand not saved in DB" });
+          });
+    }).catch((err) => {
+     res.status(400).json({ message: "User id not found" });
+   });
 })
+
 
 
 // GET/profil/favoritebrands/:id => Affichage d'une MARQUE SPECIFIQUE dans mon portemarque
