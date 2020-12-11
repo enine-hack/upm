@@ -19,7 +19,7 @@ import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
 class App extends Component {
-  state = { loggedInUser: null, listOfFavbrands: [] }
+  state = { loggedInUser: null }
   //
   fetchUser() {
     if (this.state.loggedInUser === null) {
@@ -52,7 +52,7 @@ class App extends Component {
         listOfFavbrands: favbrandsCopy
     });
     { alert("New brand added!") }
-}
+  }
 
   render() {
     return (

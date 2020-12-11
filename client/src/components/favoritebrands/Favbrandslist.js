@@ -39,16 +39,31 @@ class Favbrandslist extends Component {
         this.getAllPendingBrands();
       }
 
+    //   addFavbrand = (newbrand) => {
+    //     const favbrandsCopy = [...this.state.listOfFavbrands];
+    //     favbrandsCopy.push(newbrand);
+    //     this.setState({
+    //         listOfFavbrands: favbrandsCopy
+    //     });
+    //     { alert("New brand added!") }
+    // }
 
 
     render() {
         return (
             <div className="wallet">
+            
 
-            {/* <Addfavbrand addnewbrand={(newbrand) => this.addFavbrand(newbrand)}/> */}
+            {/* <div style={{display: "none"}}>
+                <Addfavbrand getAllFavbrands={this.getAllFavBrands} addFavbrand={this.addFavbrand}/>
+            </div> */}
+            
 
                 <div className="wallet__l1">
+
+                    <div>
                     <p>My brands</p>
+                    </div>
                     
                     <div className="wallet_btn_add">
                         <a href="/addfavbrand"><img    className="wallet__btn_add_img"
@@ -71,25 +86,40 @@ class Favbrandslist extends Component {
 
                         )}
                     )}
-                </div>
-
-                <hr></hr>
-                            {/* REFAIRE LE CSS ICI */}
-                <div className="">
-                            
                     { this.state.listOfPendingbrands.map( brand => {
-                        return (                
-                        <div >
-                         
-                             {brand}
+                                return (                
+                                <div className="wallet__l3_pendingbrand">
+                                 
+                                     {brand}
+        
+                                </div>
+        
+                                )}
+                            )}
+                        
+                                       
+                            
+                            
 
-                        </div>
-
-                        )}
-                    )}
                 </div>
+
+                
+             
+
+                
                     
-                <div className="wallet__menu">
+
+
+            </div>
+        );
+    }
+}
+
+export default Favbrandslist;
+
+
+
+                {/* <div className="wallet__menu">
                     <div className="wallet_menu_btn_bloc darkblue background_grey">
                         <button className="wallet__menu_btn background_grey">
                         <img    className="wallet__menu_btn_img "
@@ -114,11 +144,4 @@ class Favbrandslist extends Component {
                         <p>PROFIL</p>
                     </div>
 
-                </div>
-
-            </div>
-        );
-    }
-}
-
-export default Favbrandslist;
+                </div> */}

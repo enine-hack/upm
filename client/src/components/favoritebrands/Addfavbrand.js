@@ -7,7 +7,7 @@ class Addfavbrand extends Component {
 
     state = { 
         listOfBrands: [],
-        
+
     }
 
     getAllBrands = () =>{
@@ -26,7 +26,8 @@ class Addfavbrand extends Component {
     }
 
     handleClick = (brandid) => {
-
+      console.log(brandid) // "id3929489324902394839348"
+        
       this.setState({
         // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
         
@@ -35,9 +36,19 @@ class Addfavbrand extends Component {
       
     }
 
+//PROPOSITION
+    // handleClick = (brandid) => {
+    //   console.log(brandid)// "didsmfoij99384703809"
+    //   console.log(typeof(brandid)) //string
 
-
-
+    //   service.post(`/addfavbrand`, {brandid} )
+    //     .then(response => {
+    //       this.props.getAllFavBrands(response)
+    //     })
+    //     .catch(err => console.log('Error while fetching fav brands', err))
+   
+    //   { alert("New brand added!") }
+    // }
 
 
     render() {
@@ -101,16 +112,6 @@ class Addfavbrand extends Component {
                                             {brand.brandname}
                                             {brand._id}
                                         </button>
-
-
-
-                                    {/* <button onClick={(newbrand) => {
-                                            // newbrand = this.state.listOfBrands._id;
-                                            this.props.addnewbrand(newbrand);
-                                            }}
-                                            className="brandslist_public__brandname">
-                                        {brand.brandname}
-                                    </button> */}
                                 
                              </div>
 
