@@ -43,38 +43,42 @@ favbrandsRoutes.get('/myfavoritebrands', (req, res, next) => {
 favbrandsRoutes.post('/addfavbrand', (req, res, next) => {
 
   // recupere l'id, vérifie si c'est bien un string puis converti le en array
-  selectedfavbrands = req.body._id; // ma sélection
-    console.log(req.body._id)
+    selectedfavbrands = req.body._id; // ma sélection
+    console.log('Req.body =======>', req.body._id)
     console.log(typeof(selectedfavbrands))
     if(typeof(selectedfavbrands) === 'string'){
        selectedfavbrands = selectedfavbrands.split()
-       console.log(selectedfavbrands)
+       console.log('Selectedfavbrands splited =======>', selectedfavbrands)
       //  console.log(typeof(selectedfavbrands)) 
       }
 
    // si il n'existe pas dans l'array => le rajouter
    User.findById(req.session.currentUser)
-   .then((user) =>{
-     selectedfavbrands.forEach(selectedfavbrand => {
-       // que si pas deja
-       if (!user.favoritebrands.includes(selectedfavbrand)){
-         user.favoritebrands.push(selectedfavbrand)
-         console.log('les marque pushées', user.favoritebrands)
-       }  
-     });
-     user.save()
-       .then(() => {
-         console.log(user.favoritebrands)
-         
-         res.status(200).json(user);
-       })
-       .catch((err) => {
-         res.status(400).json({ message: "Favorite brand not saved in DB" });
-       });
-   })
-   .catch((err) => {
-     res.status(400).json({ message: "User id not found" });
-   });
+      .then((user) =>{
+        console.log('user.favoritebrands before push =======>', user.favoritebrands)
+        selectedfavbrands.forEach(selectedfavbrand => {
+            // que si pas deja
+          if (!user.favoritebrands.includes(selectedfavbrand)){
+          user.favoritebrands.push(selectedfavbrand)
+          console.log('user.favoritebrands after push =======>', user.favoritebrands)
+          }  
+          });
+
+          let updatedUserFavbrands = {
+            favoritebrands : user.favoritebrands
+          }
+
+          user.update(updatedUserFavbrands)
+            .then(() => {
+              console.log('user.favoritebrands en base =======>', user.favoritebrands)
+              res.status(200).json({ message: "FavBrands updated" });
+            })
+            .catch((err) => {
+            res.status(400).json({ message: "Favorite brand not saved in DB" });
+             });
+      }).catch((err) => {
+        res.status(400).json({ message: "User id not found" });
+      });
 
   //pendingbrandname = req.body.brandname // ma nouvelle marque qui n'existe pas dans seeds
   // console.log(pendingbrandname)
