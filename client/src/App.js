@@ -15,6 +15,7 @@ import Detailsbrand from './components/brands/Detailsbrand';
 import Favbrandslist from './components/favoritebrands/Favbrandslist';
 import Addfavbrand from './components/favoritebrands/Addfavbrand';
 import Detailsfavbrand from './components/favoritebrands/Detailsfavbrand';
+import Prospectcontact from './components/business/Prospectcontact';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 
@@ -88,6 +89,8 @@ class App extends Component {
               <Detailsfavbrand {...props} user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
 
+          <Route exact path='/partners' component={Prospectcontact}/>
+          
           </Switch>
         
         <Route exact path="/" component={Menu}/>

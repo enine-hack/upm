@@ -54,7 +54,7 @@ const Menu = () => {
                     <div>
                         <button className="landing_menu__l3_btn">
                             <a  className="a_white"
-                                href="/">PARTNERS ZONE</a>
+                                href="/partners">PARTNERS ZONE</a>
                         </button> 
                     </div>
                     <div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Signup extends Component {
   state = { email: '', password: '', error: "" }
-  // HERE
+  
   handleFormSubmit = (event) => {
     event.preventDefault();
     const email = this.state.email;
@@ -12,15 +12,17 @@ class Signup extends Component {
     signup(email, password)
       .then(response => {
         this.setState({email: "", password: "", error: ""});
-        this.props.updateUser(response)
+        this.props.updateUser(response)()
       })
       .catch(err => this.setState({error: err.response.data.message}))
   }
-  // HERE
+ 
+
   handleChange = (event) => {  
     const {name, value} = event.target;
     this.setState({[name]: value});
   }
+
   // handleChange() and handleSubmit() will be added here
   render() {
     return (

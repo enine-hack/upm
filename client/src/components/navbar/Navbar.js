@@ -82,7 +82,7 @@ const navbar = (props) => {
                     <a href="/brandslist">All Brands</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/">Partners</a>
+                    <a href="/partners">Partners</a>
                   </li>
 
                   
