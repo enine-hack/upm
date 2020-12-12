@@ -67,7 +67,7 @@ class Addfavbrand extends Component {
 
                 <>  
                             <div className="brandslist_public_most_added_col1">
-                                <Link to='/'>
+                                <Link to='/addnewbrandname'>
                                     +
                                 </Link>
 

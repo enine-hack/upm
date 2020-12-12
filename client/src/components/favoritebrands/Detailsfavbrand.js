@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { deleteonefavbrand } from '../auth/auth-service'
 
 class Detailsfavbrand extends Component {
     state = {}
@@ -29,7 +30,7 @@ class Detailsfavbrand extends Component {
     
     // deleteProject = () => {
     //   const { params } = this.props.match;
-    //   axios.delete(`http://localhost:5000/api/projects/${params.id}`)
+    //   deleteonefavbrand(`http://localhost:5000/api/projects/${params.id}`)
     //     .then(() =>{
     //         this.props.history.push('/projects'); // !!!         
     //     })
@@ -51,6 +52,12 @@ class Detailsfavbrand extends Component {
     
         return( 
             <div className="details_brand_public">
+
+            {/* <button className=""   
+                onClick={this.deleteProject()}
+                  // deleteProject(brandid).then(() => this.props.updateListOfFavBrands())
+                >Delete brand
+                  </button> */}
             
                 <div className="details_brand_public__l1">
                     <div>

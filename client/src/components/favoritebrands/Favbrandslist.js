@@ -33,7 +33,6 @@ class Favbrandslist extends Component {
         .catch(err => console.log('Error while fetching pending brands', err))
     }
   
-  
       componentDidMount() {
         this.getAllFavBrands();
         this.getAllPendingBrands();
@@ -57,6 +56,12 @@ class Favbrandslist extends Component {
             listOfPendingbrands: listOfPendingbrandsCopy
         });
     }
+
+    // updateListOfFavBrands = (Obj) => {
+    //     this.setState({
+    //         listOfFavbrands: Obj
+    //     })
+    //   }
 
 
     render() {
