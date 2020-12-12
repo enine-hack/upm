@@ -50,7 +50,6 @@ class Detailsfavbrand extends Component {
 
             <button className=""   
                 onClick={this.deleteBrand}
-                  // deleteProject(brandid).then(() => this.props.updateListOfFavBrands())
                 >Delete brand
                   </button>
             

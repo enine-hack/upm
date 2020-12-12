@@ -23,19 +23,48 @@ class Onlypendingbrandslist extends Component {
         this.getAllPendingBrands();
         }
 
-    render() {
+    // deletePendingBrand = () => {
+    //     const { params } = this.props.match;
+    //     // console.log(this.props.match)
+        
+    //     deleteonefavbrand(params.id)
+    //         .then(() =>{
+    //             this.props.history.push('/favoritebrands');     
+    //         })
+    //         .catch((err) => {
+    //             console.log('Error while deleting the brand', err)
+    //         })
+    //     }
+
+    render() {  
         return (
             <div>
+
+
+
+
+                <form>
                { this.state.listOfPendingbrands.map( brand => {
-                return (                
-                <div className="">
+                    return (                
+                    <div className="">
+                        
+                    <input type="checkbox" name="brandname" value={brand}/>
+                    {brand}
                     
-                        {brand}
+                    </div>
+                    
 
-                </div>
-
+                    )}
+                
                 )}
-            )}
+              
+
+                <button className=""   
+                        onClick={this.deletePendingBrand}
+                        type="submit"
+                        >Delete brand
+                        </button>
+        </form>
             </div>
         );
     }
