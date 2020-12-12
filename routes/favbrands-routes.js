@@ -164,16 +164,7 @@ favbrandsRoutes.get('/favoritebrands/:id', (req, res, next) => {
 
 // DELETE/favoritebrands/:id => Supprimer une marque spécifique de mon porte marque
 favbrandsRoutes.delete('/favoritebrands/:id', (req, res, next)=>{
-  console.log('toto')
   console.log('REQ PARAMS ID ==', req.params.id) // string
-
- 
-
-  console.log('coucou',req.session.currentUser)
-
-  //User.findById(req.session.currentUser).then(user => console.log('user=', user)).catch(err => console.log('errrr', err))
- res.send('stop')
-  return
 
 
 
@@ -182,33 +173,39 @@ favbrandsRoutes.delete('/favoritebrands/:id', (req, res, next)=>{
     return;
   }
 
-  console.log('coucou',req.session.currentUser)
-
-  User.findById(req.session.currentUser)
-    
+  User.findById(req.session.currentUser._id)
     .then(user => {
-      // console.log('INITIAL ARRAY', user.favoritebrands)
+      console.log('INITIAL ARRAY', user.favoritebrands)
       
       if(user.favoritebrands.includes(req.params.id)){
-        user.favoritebrands.splice(req.params.id, 1);
-        // user.favoritebrands.filter(brand => brand !== req.params.id )
+        user.favoritebrands.pull(req.params.id);
+        user.save()
+          .then(() => {
+            console.log('user.favoritebrands en base =======>', user.favoritebrands)
+            res.status(200).json({ message: "Favbrand ID deleted from wallet" });
+          })
+          .catch((err) => {
+            console.log('err', err)
+          res.status(400).json({ message: "Favbrand ID not deleted from wallet" });
+          });
+
         
-        res.status(200).json({ message: "Favorite brand deleted from your wallet" })
-        console.log(user.favoritebrands)
+        // res.status(200).json({ message: "Favorite brand deleted from your wallet" })
+        // console.log(user.favoritebrands)
       }
 
-      let updatedFavBrands = {
-        favoritebrands : user.favoritebrands
-       }
+      // let updatedFavBrands = {
+      //   favoritebrands : user.favoritebrands
+      //  }
 
-        user.update(updatedFavBrands)
-        .then(() => {
-          console.log('user.favoritebrands en base =======>', user.favoritebrands)
-          res.status(200).json({ message: "Favbrands updated" });
-        })
-        .catch((err) => {
-        res.status(400).json({ message: "Favbrands not saved in DB" });
-         });
+      //   user.update(updatedFavBrands)
+      //   .then(() => {
+      //     console.log('user.favoritebrands en base =======>', user.favoritebrands)
+      //     res.status(200).json({ message: "Favbrands updated" });
+      //   })
+      //   .catch((err) => {
+      //   res.status(400).json({ message: "Favbrands not saved in DB" });
+      //    });
     
     })
     .catch((err) => {
