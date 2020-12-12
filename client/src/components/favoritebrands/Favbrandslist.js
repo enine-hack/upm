@@ -46,7 +46,16 @@ class Favbrandslist extends Component {
         this.setState({
             listOfFavbrands: listOfFavbrandsCopy
         });
-        { alert("New brand added!") }
+       
+    }
+
+    addOnenewPendingInputFavbrand = (newbrand) => {
+        console.log('list pending brands=', this.state.listOfPendingbrands)
+        const listOfPendingbrandsCopy = [...this.state.listOfPendingbrands];
+        listOfPendingbrandsCopy.push(newbrand);
+        this.setState({
+            listOfPendingbrands: listOfPendingbrandsCopy
+        });
     }
 
 
@@ -57,6 +66,7 @@ class Favbrandslist extends Component {
 
             <div style={{display: "none"}}>
                 <Addfavbrand addnewSelectedFavbrands={this.addnewSelectedFavbrands}/>
+                {/* <Addpendingbrand  */}
             </div>
             
 

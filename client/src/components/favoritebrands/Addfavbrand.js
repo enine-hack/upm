@@ -20,24 +20,12 @@ class Addfavbrand extends Component {
           })
           .catch(err => console.log('Error while fetching brands', err))
       }
-    
+
     
     componentDidMount() {
     this.getAllBrands();
     }
 
-    // handleClick = (brandid) => {
-    //   console.log(brandid) // "id3929489324902394839348"
-        
-    //   this.setState({
-    //     // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
-        
-    //   });
-    //   this.props.addFavbrand(brandid);
-      
-    // }
-
-//PROPOSITION
     handleClick = (brandid) => {
       console.log(brandid)// "didsmfoij99384703809"
       console.log(typeof(brandid)) //string
@@ -83,7 +71,7 @@ class Addfavbrand extends Component {
                                     +
                                 </Link>
 
-                                <Link to='/'>
+                                <Link to='/addnewbrandname'>
                                     <p  className="brandslist_public__brandname">
                                     OTHER BRAND
                                     </p>

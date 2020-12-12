@@ -78,7 +78,10 @@ function addfavbrand(brandid) {
 }
 export {addfavbrand}
 
-
+function addpendingbrand(brandname) {
+  return service.post('/addnewbrandname', {brandname} ).then(response => response.data)
+}
+export {addpendingbrand}
 
 
 

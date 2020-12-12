@@ -15,9 +15,11 @@ import Detailsbrand from './components/brands/Detailsbrand';
 import Favbrandslist from './components/favoritebrands/Favbrandslist';
 import Addfavbrand from './components/favoritebrands/Addfavbrand';
 import Detailsfavbrand from './components/favoritebrands/Detailsfavbrand';
+import Addpendingbrand from './components/favoritebrands/Addpendingbrand';
 import Prospectcontact from './components/business/Prospectcontact';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
+
 
 class App extends Component {
   state = { loggedInUser: null }
@@ -42,18 +44,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchUser();
-    
+    this.fetchUser();  
   }
 
-  addFavbrand = (newbrand) => {
-    const favbrandsCopy = [...this.state.listOfFavbrands];
-    favbrandsCopy.push(newbrand);
-    this.setState({
-        listOfFavbrands: favbrandsCopy
-    });
-    { alert("New brand added!") }
-  }
 
   render() {
     return (
@@ -82,8 +75,13 @@ class App extends Component {
             )} />
           
           <Route exact path="/addfavbrand" render={() => (
-              <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} addFavbrand={this.addFavbrand}/>
+              <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
+          
+          <Route exact path="/addnewbrandname" render={() => (
+              <Addpendingbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+              )} />
+          
 
           <Route exact path="/favoritebrands/:id" render={(props) => (
               <Detailsfavbrand {...props} user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
