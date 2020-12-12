@@ -14,28 +14,18 @@ favbrandsRoutes.get('/myfavoritebrands', (req, res, next) => {
       }
       res.status(403).json({ message: 'Unauthorized' });
 
-  // Brand.find({})
-  // .then((allBrandsFromDb) => {
+  
      User.findById(req.session.currentUser)
       .populate('favoritebrands')
       .then((user) => {
-        // const favbrandsId = user.favoritebrands.map(el=>el.id);
-        // allBrandsFromDb.forEach(brand => {
-        //   if (favbrandsId.includes(brand.id)){
-        //   brand.infavorite = true
-        //   }
-        // })
+
         res.status(200).json(user)
       })
       .catch(err => {
         console.log(err , 'error')
         res.status(400).json({ message: 'Favorite brand ID not found.' });
       })
-  // })
-  // .catch(err => {
-  //   console.log(err , 'error')
-  //   res.status(400).json({ message: 'Brand ID in data not found.' });
-  // })
+
 })
 
 
@@ -188,24 +178,7 @@ favbrandsRoutes.delete('/favoritebrands/:id', (req, res, next)=>{
             console.log('err', err)
           res.status(400).json({ message: "Favbrand ID not deleted from wallet" });
           });
-
-        
-        // res.status(200).json({ message: "Favorite brand deleted from your wallet" })
-        // console.log(user.favoritebrands)
       }
-
-      // let updatedFavBrands = {
-      //   favoritebrands : user.favoritebrands
-      //  }
-
-      //   user.update(updatedFavBrands)
-      //   .then(() => {
-      //     console.log('user.favoritebrands en base =======>', user.favoritebrands)
-      //     res.status(200).json({ message: "Favbrands updated" });
-      //   })
-      //   .catch((err) => {
-      //   res.status(400).json({ message: "Favbrands not saved in DB" });
-      //    });
     
     })
     .catch((err) => {
@@ -216,6 +189,62 @@ favbrandsRoutes.delete('/favoritebrands/:id', (req, res, next)=>{
 })
 
 
+// GET/pendingbrands => Affichage de la liste des pending brands
+favbrandsRoutes.get('/pendingbrands', (req, res, next) => {
+  if (req.session.currentUser) {
+    res.status(200).json(req.session.currentUser);
+    return;
+  }
+  res.status(403).json({ message: 'Unauthorized' });
 
+
+ User.findById(req.session.currentUser)
+  .populate('pendingfavoritebrands')
+  .then((user) => {
+
+    res.status(200).json(user)
+  })
+  .catch(err => {
+    console.log(err , 'error')
+    res.status(400).json({ message: 'Pending brands ID not found.' });
+  })
+
+})
+
+// DELETE/favoritebrands/brandname => Supprimer une marque spécifique de mon porte marque
+// favbrandsRoutes.delete('/favoritebrands/brandname', (req, res, next)=>{
+//   console.log('REQ PARAMS ID ==', req.body) // string
+
+
+
+//   // if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
+//   //   res.status(400).json({ message: 'Brand id is not valid' });
+//   //   return;
+//   // }
+
+//   // User.findById(req.session.currentUser._id)
+//   //   .then(user => {
+//   //     console.log('INITIAL ARRAY', user.favoritebrands)
+      
+//   //     if(user.favoritebrands.includes(req.params.id)){
+//   //       user.favoritebrands.pull(req.params.id);
+//   //       user.save()
+//   //         .then(() => {
+//   //           console.log('user.favoritebrands en base =======>', user.favoritebrands)
+//   //           res.status(200).json({ message: "Favbrand ID deleted from wallet" });
+//   //         })
+//   //         .catch((err) => {
+//   //           console.log('err', err)
+//   //         res.status(400).json({ message: "Favbrand ID not deleted from wallet" });
+//   //         });
+//   //     }
+    
+//   //   })
+//   //   .catch((err) => {
+//   //     res.status(400).json({ message: "User id not found" });
+//   //   });
+
+
+// })
 
 module.exports = favbrandsRoutes;

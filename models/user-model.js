@@ -30,7 +30,7 @@ const userSchema = new Schema(
       type : String,
     },
     typeofstreet : {
-      type: String, enum: ['rue', 'ave', 'voie', 'chemin', 'cours', 'passage', 'impasse']
+      type: String,
     },
     additionalAddress : {
       type : String,
@@ -42,7 +42,7 @@ const userSchema = new Schema(
       type : String,
     },
     country : {
-      type: String, enum: ['France', 'Spain', 'Italy']
+      type: String,
     },
     mobileNumber : {
       type : String,
