@@ -116,7 +116,8 @@ profilRoutes.post("/profiledit", (req, res, next) => {
     idLine: idLine
   };
 
-  User.findByIdAndUpdate(req.session.currentUser._id, aNewProfile)
+
+  User.findByIdAndUpdate(req.session.currentUser._id, aNewProfile, { runValidators : true})
         .then((updatedUser) => {
           res.status(200).json(updatedUser);
       }).catch(err => {
