@@ -85,7 +85,7 @@ export {addpendingbrand}
 
 
 function deleteonefavbrand(brandid) {
-  return service.delete('/favoritebrands/:id', {brandid}).then(response => response.data)
+  return service.delete(`/favoritebrands/${brandid}`, {}).then(response => response.data)
 }
 export {deleteonefavbrand}
 

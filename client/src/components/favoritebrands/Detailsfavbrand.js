@@ -28,7 +28,7 @@ class Detailsfavbrand extends Component {
     }
 
     
-    deleteProject = () => {
+    deleteBrand = () => {
       const { params } = this.props.match;
       // console.log(this.props.match)
       
@@ -49,7 +49,7 @@ class Detailsfavbrand extends Component {
             <div className="details_brand_public">
 
             <button className=""   
-                onClick={this.deleteProject}
+                onClick={this.deleteBrand}
                   // deleteProject(brandid).then(() => this.props.updateListOfFavBrands())
                 >Delete brand
                   </button>
