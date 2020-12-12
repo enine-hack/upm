@@ -3,7 +3,7 @@ import {profiledit} from '../auth/auth-service';
 
 class CompleteProfile extends Component {
     state= { 
-        civility: this.props.user.civility || "Madam",
+        civility: this.props.user.civility || "Mister",
         firstname: this.props.user.firstname,
         lastname: this.props.user.lastname,
         dateOfBirth: this.props.user.dateOfBirth,
@@ -82,7 +82,7 @@ class CompleteProfile extends Component {
                         <p  className="complete_profile_subtitle">
                             ID</p>
                         <div className="complete_profile__l1">
-                            <select className="complete_profile__l1_input" name="civility" >    
+                            <select className="complete_profile__l1_input" name="civility" onChange={(event) =>this.handleChange(event)} >    
                                 <option value="">Civility</option>
                                 <option value="Madam">Madam</option>
                                 <option value="Mister">Mister</option>
