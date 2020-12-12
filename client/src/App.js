@@ -16,6 +16,7 @@ import Favbrandslist from './components/favoritebrands/Favbrandslist';
 import Addfavbrand from './components/favoritebrands/Addfavbrand';
 import Detailsfavbrand from './components/favoritebrands/Detailsfavbrand';
 import Addpendingbrand from './components/favoritebrands/Addpendingbrand';
+import Onlypendingbrandslist from './components/favoritebrands/Onlypendingbrandslist'; 
 import Prospectcontact from './components/business/Prospectcontact';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
@@ -73,7 +74,12 @@ class App extends Component {
           <Route exact path="/favoritebrands" render={() => (
               <Favbrandslist user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
             )} />
+
+           <Route exact path="/pendingbrands" render={() => (
+              <Onlypendingbrandslist user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+            )} />
           
+
           <Route exact path="/addfavbrand" render={() => (
               <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
