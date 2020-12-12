@@ -73,7 +73,10 @@ function deleteprofil() {
 }
 export {deleteprofil}
 
-
+function addfavbrand(brandid) {
+  return service.post('/addfavbrandid', {brandid} ).then(response => response.data)
+}
+export {addfavbrand}
 
 
 

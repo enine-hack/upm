@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import service from '../auth/auth-service';
+import {addfavbrand} from '../auth/auth-service'
 
 class Addfavbrand extends Component {
 
     state = { 
         listOfBrands: [],
+        listOfAddedBrands: []
 
     }
 
@@ -25,30 +26,35 @@ class Addfavbrand extends Component {
     this.getAllBrands();
     }
 
-    handleClick = (brandid) => {
-      console.log(brandid) // "id3929489324902394839348"
+    // handleClick = (brandid) => {
+    //   console.log(brandid) // "id3929489324902394839348"
         
-      this.setState({
-        // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
+    //   this.setState({
+    //     // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
         
-      });
-      this.props.addFavbrand(brandid);
+    //   });
+    //   this.props.addFavbrand(brandid);
       
-    }
+    // }
 
 //PROPOSITION
-    // handleClick = (brandid) => {
-    //   console.log(brandid)// "didsmfoij99384703809"
-    //   console.log(typeof(brandid)) //string
+    handleClick = (brandid) => {
+      console.log(brandid)// "didsmfoij99384703809"
+      console.log(typeof(brandid)) //string
 
-    //   service.post(`/addfavbrand`, {brandid} )
-    //     .then(response => {
-    //       this.props.getAllFavBrands(response)
-    //     })
-    //     .catch(err => console.log('Error while fetching fav brands', err))
+      addfavbrand(brandid)
+        .then(response => {
+          console.log('MA REPONSE',response)
+          this.setState({
+            listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
+              });
+              this.props.addnewSelectedFavbrands(this.state.listOfAddedBrands);
+              console.log('LIST OF ADDED BRAND ======', this.state.listOfAddedBrands)
+        })
+        .catch(err => console.log('Error while fetching fav brands', err))
    
-    //   { alert("New brand added!") }
-    // }
+      { alert("New brand added!") }
+    }
 
 
     render() {

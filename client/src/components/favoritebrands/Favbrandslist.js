@@ -39,14 +39,15 @@ class Favbrandslist extends Component {
         this.getAllPendingBrands();
       }
 
-    //   addFavbrand = (newbrand) => {
-    //     const favbrandsCopy = [...this.state.listOfFavbrands];
-    //     favbrandsCopy.push(newbrand);
-    //     this.setState({
-    //         listOfFavbrands: favbrandsCopy
-    //     });
-    //     { alert("New brand added!") }
-    // }
+      addnewSelectedFavbrands = (newbrands) => {
+        console.log('list favbrands =', this.state.listOfFavbrands)
+        const listOfFavbrandsCopy = [...this.state.listOfFavbrands];
+        listOfFavbrandsCopy.push(...newbrands);
+        this.setState({
+            listOfFavbrands: listOfFavbrandsCopy
+        });
+        { alert("New brand added!") }
+    }
 
 
     render() {
@@ -54,9 +55,9 @@ class Favbrandslist extends Component {
             <div className="wallet">
             
 
-            {/* <div style={{display: "none"}}>
-                <Addfavbrand getAllFavbrands={this.getAllFavBrands} addFavbrand={this.addFavbrand}/>
-            </div> */}
+            <div style={{display: "none"}}>
+                <Addfavbrand addnewSelectedFavbrands={this.addnewSelectedFavbrands}/>
+            </div>
             
 
                 <div className="wallet__l1">
