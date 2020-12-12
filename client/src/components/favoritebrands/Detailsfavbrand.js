@@ -28,36 +28,31 @@ class Detailsfavbrand extends Component {
     }
 
     
-    // deleteProject = () => {
-    //   const { params } = this.props.match;
-    //   deleteonefavbrand(`http://localhost:5000/api/projects/${params.id}`)
-    //     .then(() =>{
-    //         this.props.history.push('/projects'); // !!!         
-    //     })
-    //     .catch((err) => {
-    //         console.log('Error while deleting project', err)
-    //     })
-    // }
+    deleteProject = () => {
+      const { params } = this.props.match;
+      // console.log(this.props.match)
+      
+      deleteonefavbrand(params.id)
+        .then(() =>{
+            this.props.history.push('/favoritebrands');     
+        })
+        .catch((err) => {
+            console.log('Error while deleting the brand', err)
+        })
+    }
 
-    // renderAddTaskForm = () => {
-    //   if(!this.state.title){
-    //     this.getSingleProject();
-    //   } else {     
-    //             // pass the project and method getSingleProject() as a props down to AddTask component
-    //     return <AddTask theProject={this.state} getTheProject={this.getSingleProject} />
-    //   }
-    // }
+
   
     render(){
     
         return( 
             <div className="details_brand_public">
 
-            {/* <button className=""   
-                onClick={this.deleteProject()}
+            <button className=""   
+                onClick={this.deleteProject}
                   // deleteProject(brandid).then(() => this.props.updateListOfFavBrands())
                 >Delete brand
-                  </button> */}
+                  </button>
             
                 <div className="details_brand_public__l1">
                     <div>

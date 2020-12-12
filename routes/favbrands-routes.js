@@ -164,18 +164,35 @@ favbrandsRoutes.get('/favoritebrands/:id', (req, res, next) => {
 
 // DELETE/favoritebrands/:id => Supprimer une marque spécifique de mon porte marque
 favbrandsRoutes.delete('/favoritebrands/:id', (req, res, next)=>{
+  console.log('toto')
+  console.log('REQ PARAMS ID ==', req.params.id) // string
+
+ 
+
+  console.log('coucou',req.session.currentUser)
+
+  //User.findById(req.session.currentUser).then(user => console.log('user=', user)).catch(err => console.log('errrr', err))
+ res.send('stop')
+  return
+
+
+
   if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
-    res.status(400).json({ message: 'Specified id is not valid' });
+    res.status(400).json({ message: 'Brand id is not valid' });
     return;
   }
 
+  console.log('coucou',req.session.currentUser)
+
   User.findById(req.session.currentUser)
-    //console.log("MA LISTE DE FAV BRAND ====>", req.session.currentUser.favoritebrands )
+    
     .then(user => {
       // console.log('INITIAL ARRAY', user.favoritebrands)
       
       if(user.favoritebrands.includes(req.params.id)){
         user.favoritebrands.splice(req.params.id, 1);
+        // user.favoritebrands.filter(brand => brand !== req.params.id )
+        
         res.status(200).json({ message: "Favorite brand deleted from your wallet" })
         console.log(user.favoritebrands)
       }
