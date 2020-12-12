@@ -12,7 +12,7 @@ class Signupcover extends Component {
     signup(email, password)
       .then(response => {
         this.setState({email: "", password: "", error: ""});
-        this.props.updateUser(response)
+        this.props.updateUser(response);
       })
       .catch(err => this.setState({error: err.response.data.message}))
   }

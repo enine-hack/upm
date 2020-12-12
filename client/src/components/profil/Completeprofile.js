@@ -3,7 +3,7 @@ import {profiledit} from '../auth/auth-service';
 
 class CompleteProfile extends Component {
     state= { 
-        civility: this.props.user.civility,
+        civility: this.props.user.civility || "Madam",
         firstname: this.props.user.firstname,
         lastname: this.props.user.lastname,
         dateOfBirth: this.props.user.dateOfBirth,
