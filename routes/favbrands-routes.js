@@ -211,16 +211,55 @@ favbrandsRoutes.get('/pendingbrands', (req, res, next) => {
 
 })
 
-// DELETE/favoritebrands/brandname => Supprimer une marque spécifique de mon porte marque
-// favbrandsRoutes.delete('/favoritebrands/brandname', (req, res, next)=>{
-//   console.log('REQ PARAMS ID ==', req.body) // string
+// DELETE/pendingbrands => Supprimer une marque spécifique de mon porte marque
+favbrandsRoutes.put('/pendingbrands', (req, res, next)=>{
+    // il faut = 'string'
+    selectedBrandname = req.body; // { brandname: 'BRAND' }
+    console.log('PENDING BRAND SELECTED Req.body           =======>', req.body);
+    brandnameToDelete = selectedBrandname.brandname.toString(); // 'BRAND'
+    console.log(selectedBrandname.brandname.toString())
+
+    User.findById(req.session.currentUser._id)
+    .then(user => {
+      console.log('INITIAL PENDING ARRAY ===>', user.pendingfavoritebrands)
+
+        if(user.pendingfavoritebrands.includes(brandnameToDelete)){
+          user.pendingfavoritebrands.pull(brandnameToDelete);
+          console.log('AFTER PENDING ARRAY ===>', user.pendingfavoritebrands)
+
+          let updateUserPendingArr = {
+            pendingfavoritebrands: user.pendingfavoritebrands,
+          };
+
+          user.save()
+            .then(() => {
+              console.log('user.pendingfavoritebrands en base =======>', user.pendingfavoritebrands)
+              res.status(200).json({ message: "Pending brandname deleted from wallet" });
+            })
+            .catch((err) => {
+              console.log('err', err)
+            res.status(400).json({ message: "Pending brandname not deleted from wallet" });
+            });
+        }
+        else if (!user.pendingfavoritebrands.includes(brandnameToDelete)){
+          res.status(204).json({ message: "Pending brand not found in wallet" });
+        }
+    })
+    .catch(err => {
+      console.log(err , 'error')
+      res.status(400).json({ message: "User id not found" });
+    })
+})
+  
+        
+
+ 
+
+ 
 
 
 
-//   // if(!mongoose.Types.ObjectId.isValid(req.params.id)) {
-//   //   res.status(400).json({ message: 'Brand id is not valid' });
-//   //   return;
-//   // }
+
 
 //   // User.findById(req.session.currentUser._id)
 //   //   .then(user => {
