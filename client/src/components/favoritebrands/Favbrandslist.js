@@ -57,11 +57,7 @@ class Favbrandslist extends Component {
         });
     }
 
-    // updateListOfFavBrands = (Obj) => {
-    //     this.setState({
-    //         listOfFavbrands: Obj
-    //     })
-    //   }
+
 
 
     render() {
@@ -71,7 +67,7 @@ class Favbrandslist extends Component {
 
             <div style={{display: "none"}}>
                 <Addfavbrand addnewSelectedFavbrands={this.addnewSelectedFavbrands}/>
-                {/* <Addpendingbrand  */}
+
             </div>
             
 
