@@ -40,7 +40,7 @@ const Menu = () => {
                 <p><i>I’m a man of simple tastes, I’m always satisfied with the best.</i> <br></br><b>Oscar Wilde</b></p>
                 
                 <button className="landing_menu__l2_btn">
-                        <a  className="a_white"
+                        <a  className="a_white a_white:hover"
                             href="/brandslist">LIVE THE EXPERIENCE</a>
                         </button>  
             </div>

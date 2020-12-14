@@ -106,7 +106,8 @@ class Favbrandslist extends Component {
                                 return (                
                                 <div className="wallet__l3_pendingbrand">
                                  
-                                     <Link to='/pendingbrands'>{brand}</Link>
+                                     <Link className="font_lightgray font_lightgray:hover"
+                                            to='/pendingbrands'>{brand}</Link>
         
                                 </div>
         

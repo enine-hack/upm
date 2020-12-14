@@ -48,10 +48,7 @@ class Detailsfavbrand extends Component {
         return( 
             <div className="details_brand_public">
 
-            <button className=""   
-                onClick={this.deleteBrand}
-                >Delete brand
-                  </button>
+
             
                 <div className="details_brand_public__l1">
                     <div>
@@ -66,12 +63,14 @@ class Detailsfavbrand extends Component {
                         <div className="details_brand_public__l3">
                             <div className="details_brand_public__l4">
                                 <div>
-                                  <a href={this.state.websiteUrl} target="_blank">
+                                  <a  className=" a_black a_black:hover"
+                                      href={this.state.websiteUrl} target="_blank">
                                     BRAND HOUSE
                                   </a>
                                 </div>
                                 <div>
-                                  <a href={this.state.websiteUrl}  target="_blank">
+                                  <a  className=" a_black a_black:hover"
+                                      href={this.state.websiteUrl}  target="_blank">
                                       <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
@@ -80,43 +79,45 @@ class Detailsfavbrand extends Component {
 
                             <div className="details_brand_public__l4">
                               
-                              <a href={this.state.newinUrl} target="_blank">
+                              <a  className=" a_black a_black:hover"
+                                  href={this.state.newinUrl} target="_blank">
                                   NEW IN
                                   </a>
                               
-                                  <a href={this.state.newinUrl}  target="_blank">
+                                  <a  className=" a_black a_black:hover"
+                                      href={this.state.newinUrl}  target="_blank">
                                       <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
                               
                             </div>
 
-                            <div className="details_brand_public__l4 font_lightgray">
+                            <div className="details_brand_public__l4">
                               <div>
                                   
                                   SALES AND EXCLUSIVITIES
                                   
                               </div>
                               <div>
-                                <img  className="details_brand_public__arrow_right font_lightgra"
+                                <img  className="details_brand_public__arrow_right"
                                       src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4 font_lightgray">
+                            <div className="details_brand_public__l4">
                               <div>
                                
                                   PRIVILEGE ACCOUNT
                                   
                               </div>
                               <div>
-                                      <img  className="details_brand_public__arrow_right font_lightgray"
+                                      <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4 font_lightgray">
+                            <div className="details_brand_public__l4">
                               <div>
                                   
                                   SHOPPING HISTORY
@@ -124,7 +125,7 @@ class Detailsfavbrand extends Component {
                               </div>
                               <div>
                                   
-                                      <img  className="details_brand_public__arrow_right font_lightgra"
+                                      <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   
                               </div>
@@ -132,19 +133,21 @@ class Detailsfavbrand extends Component {
 
                             <div className="details_brand_public__l4">
                               <div>
-                              <a href={this.state.returnPolicyUrl}  target="_blank">
+                              <a  className=" a_black a_black:hover"
+                                  href={this.state.returnPolicyUrl}  target="_blank">
                                   RETURNS AND WARRANTY
                                   </a>
                               </div>
                               <div>
-                                  <a href={this.state.returnPolicyUrl}  target="_blank">
+                                  <a  className=" a_black a_black:hover"
+                                      href={this.state.returnPolicyUrl}  target="_blank">
                                       <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   </a>
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4 font_lightgray">
+                            <div className="details_brand_public__l4">
                               <div>
                                   
                                   E-GIFT CARD
@@ -152,13 +155,13 @@ class Detailsfavbrand extends Component {
                               </div>
                               <div>
                                   
-                                      <img  className="details_brand_public__arrow_right font_lightgra"
+                                      <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                   
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4 font_lightgray">
+                            <div className="details_brand_public__l4">
                               <div>
                                  
                                   FEEDBACK
@@ -166,13 +169,21 @@ class Detailsfavbrand extends Component {
                               </div>
                               <div>
                                   
-                                      <img  className="details_brand_public__arrow_right font_lightgray"
+                                      <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                  
                               </div>
                             </div>
 
-                        </div>  
+
+
+                        </div>
+                        <div>
+                            <button className="details_user_favbrand__btn_delete"   
+                                    onClick={this.deleteBrand}
+                                    >Delete brand
+                                      </button>
+                            </div> 
                        
                     </div>          
                 </div> 

@@ -12,7 +12,7 @@ const navbar = (props) => {
             <header class="site-header">
               <div class="site-branding">
                 <p class="site-title">
-                <a href="/" className="a_black">UPOSH | ME</a></p>
+                <a href="/" className="a_black a_black:hover">UPOSH | ME</a></p>
               </div>
               
               <input type="checkbox" id="top-nav" name="top-nav" aria-labelledby="top-nav-toggle" />
@@ -64,7 +64,7 @@ const navbar = (props) => {
         <div class="site">
             <header class="site-header">
               <div class="site-branding">
-                <p class="site-title"><a href="/" >UPOSH | ME</a></p>
+                <p class="site-title"><a href="/" className="a_black a_black:hover" >UPOSH | ME</a></p>
               </div>
               <input type="checkbox" id="top-nav" name="top-nav" aria-labelledby="top-nav-toggle" />
               <label for="top-nav" class="top-nav-label" id="top-nav-toggle">

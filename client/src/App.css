@@ -17,8 +17,28 @@ FOR backgrounds
   color: black;
 }
 
+.a_black:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .a_white {
   color: white;
+}
+
+.a_white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+.font_lightgray {
+  color: #B5B5B5
+}
+
+.font_lightgray:hover {
+  color: #B5B5B5;
+  text-decoration: none;
 }
 
 .App {
@@ -1943,7 +1963,7 @@ navbar
   .main-navigation .menu .menu-item a:hover {
     background: #fff;
     color: #D29500;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .main-navigation .menu .menu-item a:active {
@@ -2005,7 +2025,7 @@ navbar
   .main-navigation .menu .menu-item a:hover {
     background: #fff;
     color: #D29500;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .main-navigation .menu .menu-item a:active {
@@ -2067,7 +2087,7 @@ navbar
   .main-navigation .menu .menu-item a:hover {
     background: #fff;
     color: #D29500;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .main-navigation .menu .menu-item a:active {
@@ -2132,7 +2152,7 @@ navbar
   .main-navigation .menu .menu-item a:hover {
     background: #fff;
     color: #D29500;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .main-navigation .menu .menu-item a:active {
@@ -3878,9 +3898,7 @@ navbar
 ##         #######  ########  ######## ####  ######          ########          ########  ########    ##    ##     ## #### ########  ######  
 */
 
-.font_lightgray {
-  color: #B5B5B5
-}
+
 
 @media only screen and (min-width: 1600px) {
   .details_brand_public {
@@ -3947,7 +3965,7 @@ navbar
   width: 1024px;
   margin: 0 auto; 
   margin-top: 100px;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
   .details_brand_public__l1 {
@@ -3968,6 +3986,7 @@ navbar
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 30px
     }
 
   .details_brand_public__logo {
@@ -4004,7 +4023,7 @@ navbar
     width: 100%;
     margin: 0 auto; 
     margin-top: 0px;
-    margin-bottom: 200px
+    margin-bottom: 100px;
   }
   
   .details_brand_public__l1 {
@@ -4064,7 +4083,7 @@ navbar
     width: 100%;
     margin: 0 auto; 
     margin-top: 0px;
-    margin-bottom: 160px;
+    margin-bottom: 50px;
   }
   
   .details_brand_public__l1 {
@@ -4553,6 +4572,67 @@ navbar
 }
 
 /*
+########    ###    ##     ## ########     ########  ######## ########    ###    #### ##        ######  
+##         ## ##   ##     ## ##     ##    ##     ## ##          ##      ## ##    ##  ##       ##    ## 
+##        ##   ##  ##     ## ##     ##    ##     ## ##          ##     ##   ##   ##  ##       ##       
+######   ##     ## ##     ## ########     ##     ## ######      ##    ##     ##  ##  ##        ######  
+##       #########  ##   ##  ##     ##    ##     ## ##          ##    #########  ##  ##             ## 
+##       ##     ##   ## ##   ##     ##    ##     ## ##          ##    ##     ##  ##  ##       ##    ## 
+##       ##     ##    ###    ########     ########  ########    ##    ##     ## #### ########  ######  
+*/
+
+@media only screen and (min-width: 1600px) {
+  .details_user_favbrand__btn_delete {
+    border: none;
+    background-color: #ffffff;
+    color: red;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .details_user_favbrand__btn_delete {
+    border: none;
+    background-color: #ffffff;
+    color: red;
+    margin-top: 50px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .details_user_favbrand__btn_delete {
+    border: none;
+    background-color: #ffffff;
+    color: red;
+    margin-top: 50px;
+    font-size: 12px;
+    
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .details_user_favbrand__btn_delete {
+    border: none;
+    background-color: #ffffff;
+    color: red;
+    margin-top: 50px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .details_user_favbrand__btn_delete {
+    border: none;
+    background-color: #ffffff;
+    color: red;
+    margin-top: 50px;
+    font-size: 10px;
+  }
+}
+
+/*
    ###    ########  ########  ########    ###    ##     ## ########  ########     ###    ##    ## ########   ######  
   ## ##   ##     ## ##     ## ##         ## ##   ##     ## ##     ## ##     ##   ## ##   ###   ## ##     ## ##    ## 
  ##   ##  ##     ## ##     ## ##        ##   ##  ##     ## ##     ## ##     ##  ##   ##  ####  ## ##     ## ##       
@@ -4561,6 +4641,7 @@ navbar
 ##     ## ##     ## ##     ## ##       ##     ##   ## ##   ##     ## ##    ##  ##     ## ##   ### ##     ## ##    ## 
 ##     ## ########  ########  ##       ##     ##    ###    ########  ##     ## ##     ## ##    ## ########   ######  
 */
+
 
 
 /*

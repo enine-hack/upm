@@ -11,16 +11,20 @@ const Footer = (props) => {
                 <div className="footer__l2">
                     <div className="footer__l2_bloc">
                         <div>
-                            <Link to= "/">FAQ</Link>
+                            <Link   className="a_black a_black:hover"
+                                    to= "/">FAQ</Link>
                         </div>
                         <div>
-                            <Link to= "/">CONTACT</Link>
+                            <Link   className="a_black a_black:hover"
+                                    to= "/">CONTACT</Link>
                         </div>
                         <div>
-                            <Link to= "/">LEGAL TERMS</Link>
+                            <Link   className="a_black a_black:hover"
+                                    to= "/">LEGAL TERMS</Link>
                         </div>
                         <div>
-                            <Link to= "/">PRIVACY POLICY</Link>
+                            <Link   className="a_black a_black:hover"
+                                    to= "/">PRIVACY POLICY</Link>
                         </div>
                     </div>
 

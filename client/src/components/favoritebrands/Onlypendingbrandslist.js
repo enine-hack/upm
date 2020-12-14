@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import service from '../auth/auth-service';
+import { deleteonependingbrand } from '../auth/auth-service'
 
 class Onlypendingbrandslist extends Component {
     state = { 
         
-        listOfPendingbrands: []
+        listOfPendingbrands: [],
+        checked: false,
     }
 
     getAllPendingBrands = () =>{
@@ -19,48 +21,66 @@ class Onlypendingbrandslist extends Component {
         }
     
     componentDidMount() {
-        
         this.getAllPendingBrands();
         }
 
-    // deletePendingBrand = () => {
-    //     const { params } = this.props.match;
-    //     // console.log(this.props.match)
-        
-    //     deleteonefavbrand(params.id)
-    //         .then(() =>{
-    //             this.props.history.push('/favoritebrands');     
-    //         })
-    //         .catch((err) => {
-    //             console.log('Error while deleting the brand', err)
-    //         })
-    //     }
+
+
+        handleCheckboxChange = (event) => {
+        const {type, value, name, checked} = event.target;
+    
+        this.setState({
+          [name]: value, // brandname : 'BRANDNAME';
+          checked: checked 
+        });
+      }
+
+    
+      handleFormSubmit = (event) => {
+        event.preventDefault();
+        const brandname = this.state.listOfPendingbrands.brandname
+        deleteonependingbrand(brandname)
+            .then(response => {
+                
+                this.props.updateUser(response);
+                this.setState ({
+                    checked : false
+                })
+                
+            })
+            .catch( error => console.log(error) )
+      }
+    
 
     render() {  
         return (
             <div>
+                <form onSubmit={this.handleFormSubmit}>
+                <label>
+                    { this.state.listOfPendingbrands.map( brand => {
+                        return (                
+                        <div className="">
+                            {brand}
+                            <input
+                            name="brandname"
+                            value={brand}
+                            type="checkbox"
+                            checked={this.handleCheckboxChange}
+                            onChange={this.handleChange} />
 
-
-
-
-                <form>
-               { this.state.listOfPendingbrands.map( brand => {
-                    return (                
-                    <div className="">
-                        
-                    <input type="checkbox" name="brandname" value={brand}/>
-                    {brand}
+                        </div>
+                       
+                        )}
                     
-                    </div>
-                    
-
                     )}
-                
-                )}
+                    
+                        
+
+                </label>
+              
               
 
                 <button className=""   
-                        onClick={this.deletePendingBrand}
                         type="submit"
                         >Delete brand
                         </button>

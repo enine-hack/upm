@@ -90,3 +90,8 @@ function deleteonefavbrand(brandid) {
 export {deleteonefavbrand}
 
 
+function deleteonependingbrand(brandname) {
+  return service.put(`/pendingbrands`, {brandname}).then(response => response.data)
+}
+export {deleteonependingbrand}
+
