@@ -6,7 +6,7 @@ class Onlypendingbrandslist extends Component {
     state = { 
         
         listOfPendingbrands: [],
-        checked: false,
+      
     }
 
     getAllPendingBrands = () =>{
@@ -26,30 +26,24 @@ class Onlypendingbrandslist extends Component {
 
 
 
-        handleCheckboxChange = (event) => {
-        const {type, value, name, checked} = event.target;
+    handleClick = (brand) => {
+    console.log(brand)// "didsmfoij99384703809"
+    console.log(typeof(brand)) //string
     
+    deleteonependingbrand(brand)
+    .then(response => {
+        console.log('MA REPONSE',response)
+        this.props.updateUser(response);
         this.setState({
-          [name]: value, // brandname : 'BRANDNAME';
-          checked: checked 
-        });
-      }
-
+            listOfPendingbrands: [...this.state.listOfAddedBrands].pull(brand)
+              });
+        
+        
+    })
+    .catch( error => console.log(error) )
+    { alert("Brandname deleted!") }
+    }     
     
-      handleFormSubmit = (event) => {
-        event.preventDefault();
-        const brandname = this.state.listOfPendingbrands.brandname
-        deleteonependingbrand(brandname)
-            .then(response => {
-                
-                this.props.updateUser(response);
-                this.setState ({
-                    checked : false
-                })
-                
-            })
-            .catch( error => console.log(error) )
-      }
     
 
     render() {  
@@ -60,13 +54,15 @@ class Onlypendingbrandslist extends Component {
                     { this.state.listOfPendingbrands.map( brand => {
                         return (                
                         <div className="">
-                            {brand}
-                            <input
+                            <button onClick={()  => this.handleClick(brand)}>
+                                {brand}
+                            </button>
+                            {/* <input
                             name="brandname"
                             value={brand}
                             type="checkbox"
-                            checked={this.handleCheckboxChange}
-                            onChange={this.handleChange} />
+                            defaultChecked={this.state.checked}
+                            onChange={this.handleCheck} /> */}
 
                         </div>
                        
