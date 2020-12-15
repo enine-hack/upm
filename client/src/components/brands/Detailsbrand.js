@@ -14,7 +14,7 @@ class Detailsbrand extends Component {
     getSingleBrand = () => {
         const { params } = this.props.match;
         console.log('param:', params)
-        axios.get(`${process.env.REACT_APP_APIURL || ""}/brandslist/${params.id}`)
+        axios.get(`${process.env.REACT_APP_APIURL || ""}/api/brandslist/${params.id}`)
         
           .then( responseFromApi =>{
             const theBrand = responseFromApi.data;
