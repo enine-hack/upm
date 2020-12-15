@@ -37,7 +37,11 @@ const businessSchema = new Schema(
       lowercase: true,
       trim: true,
       match: [/.*@.*\..*/, 'Invalid email']
-    }
+    },
+    comments: {
+      type: String,
+      trim: true
+      }
   },
   {
     timestamps: true

@@ -53,6 +53,7 @@ class CompleteProfile extends Component {
             idWechat,
             idLine
         ).then(response => {
+            
             this.setState({
                 error: '',
                 confirmation: "Your profile is updated"

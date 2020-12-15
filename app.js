@@ -46,7 +46,7 @@ app.use(require('node-sass-middleware')({
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
@@ -93,5 +93,11 @@ app.use((err, req, res, next) => {
 const index = require('./routes/index');
 app.use('/', index);
 
+// For any other routes: serve client/build/index.html SPA
+app.use((req, res, next) => {
+  res.sendFile(`${__dirname}/client/build/index.html`, err => {
+    if (err) next(err)
+  })
+});
 
 module.exports = app;

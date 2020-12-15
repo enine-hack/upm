@@ -12,7 +12,8 @@ class Addfavbrand extends Component {
     }
 
     getAllBrands = () =>{
-        axios.get(`http://localhost:5000/api/brandslist`)
+        axios.get(`${process.env.REACT_APP_APIURL || ""}/brandslist`)
+        // axios.get(`http://localhost:5000/api/brandslist`)
           .then(responseFromApi => {
             this.setState({
               listOfBrands: responseFromApi.data

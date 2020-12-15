@@ -11,7 +11,8 @@ businessRoutes.post('/partners', (req, res, next) => {
           firstname,
           lastname,
           phone,
-          email} = req.body
+          email,
+          comments} = req.body
   
   if (!email || !society || !country || !lastname) {
     res.status(400).json({ message: 'For a better service, please provide at least your email, lastname contact, society and country' });
@@ -26,7 +27,8 @@ businessRoutes.post('/partners', (req, res, next) => {
     firstname: firstname,
     lastname: lastname,
     phone: phone,
-    email: email
+    email: email,
+    comments: comments
   })
 
   aNewProspect.save()
@@ -35,6 +37,7 @@ businessRoutes.post('/partners', (req, res, next) => {
     })
           
     .catch(err => {
+      console.log(err)
       res.status(400).json({ message: 'Saving prospect to database went wrong.' });
       })
 });

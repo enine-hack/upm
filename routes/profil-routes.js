@@ -5,7 +5,7 @@ const bcrypt     = require('bcryptjs');
 
 const User       = require('../models/user-model');
 const { restart } = require('nodemon');
-const { populate } = require('../models/user-model');
+const { populate, count } = require('../models/user-model');
 
 
 
@@ -98,6 +98,12 @@ profilRoutes.post("/profiledit", (req, res, next) => {
       message: "Please login before access the user profile",
     });
     return;
+  }
+
+  if (!firstname && !lastname && !dateOfBirth && !numberAddress && !typeofstreet && !additionalAddress && !zipcode && !city && !country && !mobileNumber && !idWechat && !idLine) {
+    res.status(400).json({
+      message: "Your profile is empty. Please complete your profile to benefit from a personalized experience"});
+      return;
   }
 
   const aNewProfile = {
