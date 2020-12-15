@@ -119,9 +119,7 @@ handleChange = (event) => {
                                     <p className="partners_error_form_msg">{this.state.error}
                                     
                                     </p>
-                                   
-                                        
-                                    
+
                                 )}
 
                              {/* Affichage du message de confirmation logged */}

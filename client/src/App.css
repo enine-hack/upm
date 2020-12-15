@@ -9,8 +9,8 @@ GREY
 FOR TITLES & SUB TITLES
   color: #7777777;
 FOR backgrounds
-    LIGHT :
-    MEDIUM :
+    LIGHT : #ebebeb
+    MEDIUM : 
 */
 
 .a_black {
@@ -140,7 +140,7 @@ FOR backgrounds
     margin-left: 0;
     width: 300px;
     border-radius: 2px;
-    font-size: 10px
+    font-size: 13px
     
   }
   
@@ -172,7 +172,7 @@ FOR backgrounds
   
   .signup_cover__l1 {
     position: absolute;
-    top: 190px;
+    top: 210px;
     left: 20px;
     color: white;
   }
@@ -205,14 +205,14 @@ FOR backgrounds
   }
 
   .signup_cover__btn_create_account_style {
-    width: 200px;
+    width: 180px;
     margin-bottom: 20px;
     border: none;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 2px;
-    background-color: rgba(255, 255, 255, .8);
-    font-size: 13px;
+    background-color: rgba(255, 255, 255, .3);
+    font-size: 11px;
   }
 
   .signup_cover__l3 {
@@ -271,33 +271,32 @@ FOR backgrounds
   
   .signup_cover__l1 {
     position: absolute;
-    width: 350px;
-    top: 80px;
-    left: 10px;
+    width: 90vw;
+    top: 200px;
+    left: 15px;
     color: white;
   }
 
   .signup_cover_l2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .signup_cover__title {
     font-family: 'Playfair Display', 'serif';
     font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 0px;
+    font-size: 20px;
+    margin-bottom: 14px;
   }
   
   .signup_cover__description {
     padding-top: 0px;
-    padding-bottom: 70px;
+    
     font-family: 'Raleway', sans-serif;
     font-size: 11px;
-    text-align: center;
-    width: 280px;
-    color: rgba(255, 255, 255, .6)
+    width: 80vw;
+    color: rgba(255, 255, 255, .6);
+    margin-bottom: 3px;
   }
 
   .signup_cover__btn_create_account_hidden {
@@ -305,12 +304,11 @@ FOR backgrounds
   }
 
   .signup_cover__btn_create_account_style {
-    width: 150px;
+    width: 140px;
     border: none;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 1px;
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .3);
     font-size: 8px
   }
   
@@ -439,6 +437,7 @@ FOR backgrounds
     width: 100vw;
     height: 370px;
     font-size: 30px;
+    font-family: 'Playfair Display', serif;
     padding-top: 110px;
     padding-bottom: 50px;
   }
@@ -446,11 +445,12 @@ FOR backgrounds
   .landing_menu__l2_btn {
     border: none;
     background-color: #1a1a1a;
-    font-size: 17px;
+    font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
     
   }
 
@@ -558,10 +558,11 @@ FOR backgrounds
 
   .landing_menu__l2 {
     background-color:#ebebeb;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     width: 100vw;
     height: 250px;
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 80px;
     padding-bottom: 50px;
   }
@@ -569,6 +570,7 @@ FOR backgrounds
   .landing_menu__l2_btn {
     border: none;
     background-color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     padding-left: 15px;
     padding-right: 15px;
@@ -679,17 +681,19 @@ FOR backgrounds
 
   .landing_menu__l2 {
     background-color:#ebebeb;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     width: 100vw;
     height: 200px;
-    font-size: 15px;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
   .landing_menu__l2_btn {
     border: none;
     background-color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1172,6 +1176,7 @@ FOR backgrounds
     /* background-color: #EEEEEE; */
     height: 40px
   }
+  
 
   .signup_login_t_selected {
     font-weight: bold;
@@ -1232,18 +1237,19 @@ FOR backgrounds
     color: white
   }
   
-  .error_form_msg {
-    font-size: 12px;
-    margin-top: 10px;
+  .signup_login__error_form_msg {
+    font-size: 15px;
+    margin-top: 15px;
     color: #D61111;
     font-style: italic;
     text-align: center;
   }
   
-  .confirm_form_msg {
-    margin-top: 10px;
-    font-size: 12px;
-    font-style: italic;
+  .signup_login__confirm_form_msg {
+    margin-top: 17px;
+    font-size: 16px;
+    width: 300px;
+    font-weight: bold;
     text-align: center;
   
   }
@@ -1255,7 +1261,7 @@ FOR backgrounds
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     
     margin-top: 80px;
     margin-bottom: 150px;
@@ -1350,17 +1356,20 @@ FOR backgrounds
     color: white
   }
   
-  .error_form_msg {
-    font-size: 11px;
-    margin-top: 10px;
+  .signup_login__error_form_msg {
+    font-size: 12px;
+    margin-top: 12px;
     color: #D61111;
     font-style: italic;
     text-align: center;
   }
   
-  .Confirm-form-message-style {
-    margin-top: 20px;
+  .signup_login__confirm_form_msg {
+    margin-top: 15px;
     font-size: 14px;
+    width: 240px;
+    font-weight: bold;
+    text-align: center;
   
   }
 }
@@ -1466,17 +1475,20 @@ FOR backgrounds
     color: white
   }
   
-  .error_form_msg {
-    font-size: 11px;
-    margin-top: 10px;
+  .signup_login__error_form_msg {
+    font-size: 12px;
+    margin-top: 11px;
     color: #D61111;
     font-style: italic;
     text-align: center;
   }
   
-  .Confirm-form-message-style {
-    margin-top: 20px;
+  .signup_login__confirm_form_msg {
+    margin-top: 15px;
     font-size: 14px;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
   
   }
 }
@@ -1582,17 +1594,20 @@ FOR backgrounds
     color: white
   }
   
-  .error_form_msg {
-    font-size: 11px;
+  .signup_login__error_form_msg {
+    font-size: 12px;
     margin-top: 10px;
     color: #D61111;
     font-style: italic;
     text-align: center;
   }
   
-  .Confirm-form-message-style {
-    margin-top: 20px;
+  .signup_login__confirm_form_msg {
+    margin-top: 15px;
     font-size: 14px;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
   
   }
 }
@@ -1610,7 +1625,7 @@ FOR backgrounds
 navbar
 */
 
-.site {
+.navbar {
   font-size: 1.05rem;
   position: relative;
   word-wrap: break-word;
@@ -1627,6 +1642,7 @@ navbar
   align-items: center;
   position: relative;
   margin: 0 auto;
+  width: 95vw;
 }
 
 .site-branding {
@@ -2834,10 +2850,28 @@ navbar
     border-style: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-color: #1a1a1a;
     font-size: 11px;
     color: white
+  }
+
+  .connexion_settings_error_form_msg {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #D61111;
+    font-style: italic;
+    text-align: center;
+    width: 15vw;
+  }
+  
+  .connexion_settings_confirm_form_msg {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    
   }
 
 }
@@ -2888,10 +2922,27 @@ navbar
     border-style: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-color: #1a1a1a;
     font-size: 11px;
     color: white
+  }
+
+  .connexion_settings_error_form_msg {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #D61111;
+    font-style: italic;
+    text-align: center;
+    width: 30vw;
+  }
+  
+  .connexion_settings_confirm_form_msg {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
 }
@@ -2942,10 +2993,27 @@ navbar
     border-style: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-color: #1a1a1a;
     font-size: 11px;
     color: white
+  }
+
+  .connexion_settings_error_form_msg {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #D61111;
+    font-style: italic;
+    text-align: center;
+    width: 30vw;
+  }
+  
+  .connexion_settings_confirm_form_msg {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
 }
@@ -2996,10 +3064,27 @@ navbar
     border-style: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-color: #1a1a1a;
     font-size: 11px;
     color: white
+  }
+
+  .connexion_settings_error_form_msg {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #D61111;
+    font-style: italic;
+    text-align: center;
+    width: 30vw;
+  }
+  
+  .connexion_settings_confirm_form_msg {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
 }
@@ -3042,11 +3127,28 @@ navbar
     border-style: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-color: #1a1a1a;
     font-size: 11px;
     color: white
   }
+
+  .connexion_settings_error_form_msg {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #D61111;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .connexion_settings_confirm_form_msg {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
 
 }
 
@@ -4414,12 +4516,13 @@ navbar
 } 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .wallet {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-top: 20px;
     position: relative;
+    height: 95vh;
    
   }
 
@@ -4510,6 +4613,7 @@ navbar
     text-align: center;
     margin-top: 20px;
     position: relative;
+    height: 95vh;
    
   }
 
@@ -4517,18 +4621,19 @@ navbar
     display: flex;
     flex-direction: row;
     width: auto;
-    margin-left: 45vw;
+    margin-left: 40vw;
     
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: bold;
+    width: 90vw;
   }
 
   
 
   .wallet_btn_add {
     
-    margin-left: 34vw;
+    margin-left: 24vw;
 
   }
 
@@ -4542,10 +4647,7 @@ navbar
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    width: 100vw;
-    margin-bottom: 270px;
+
   }
 
   .wallet__l3 {
@@ -4599,14 +4701,17 @@ navbar
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-top: 20px;
-    position: relative;
+
+    height: 95vw;
+    
+    margin-bottom: 800px;
    
   }
 
   .wallet__l1 {
     display: flex;
     flex-direction: row;
-    width: 90vw;
+    width: 70vw;
     margin-left: 40vw;
     
     font-family: 'Montserrat', sans-serif;
@@ -4618,7 +4723,7 @@ navbar
 
   .wallet_btn_add {
     
-    margin-left: 30vw;
+    margin-left: 20vw;
 
   }
 

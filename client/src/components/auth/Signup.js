@@ -3,7 +3,10 @@ import {signup} from './auth-service'
 import { Link } from 'react-router-dom';
 
 class Signup extends Component {
-  state = { email: '', password: '', error: "" }
+  state = { email: '',
+  password: '',
+  error: "",
+  confirmation: "" }
   
   handleFormSubmit = (event) => {
     event.preventDefault();
@@ -11,10 +14,15 @@ class Signup extends Component {
     const password = this.state.password;
     signup(email, password)
       .then(response => {
-        this.setState({email: "", password: "", error: ""});
+        this.setState({email: "", 
+        password: "",
+        error: "",
+        confirmation: 'Welcome, your account has been created.'});
         this.props.updateUser(response);
+          
         
       })
+     
       .catch(err => this.setState({error: err.response.data.message}))
   }
  
@@ -34,10 +42,10 @@ class Signup extends Component {
           
           <div className="signup_login__l1">
               <div >
-                  <Link to={"/login"}>
-                    <p className="signup_login_t_unselected">
+                  <a href="/login">
+                    <p className="signup_login_t_unselected signup_login_t_unselected:hover">
                         CONNEXION</p>
-                  </Link>
+                  </a>
               </div>
               <div>
                     <p className="signup_login_t_selected">
@@ -69,7 +77,13 @@ class Signup extends Component {
                 
               {/* Affichage message d'erreur */}
                 {this.state.error && (
-                    <p className="error_form_msg">{this.state.error}
+                    <p className="signup_login__error_form_msg">{this.state.error}
+                      </p>
+                  )}
+
+              {/* Affichage message d'erreur */}
+              {this.state.confirmation && (
+                    <p className="signup_login__confirm_form_msg">{this.state.confirmation}
                       </p>
                   )}
               

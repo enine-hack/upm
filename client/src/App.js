@@ -32,7 +32,8 @@ class App extends Component {
           this.setState({loggedInUser: response})
         })
         .catch(err => {
-          this.setState({loggedInUser: false}) 
+          this.setState({loggedInUser: false})
+          
         })
     }
   }
@@ -42,6 +43,7 @@ class App extends Component {
     this.setState({
       loggedInUser: userObj
     })
+
   }
 
   componentDidMount() {
@@ -98,7 +100,8 @@ class App extends Component {
           </Switch>
         
         <Route exact path="/" component={Menu}/>
-        <Footer/>
+        <Footer exact path="/" component={Footer}/>
+        
         
 
       </div>

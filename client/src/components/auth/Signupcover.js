@@ -25,13 +25,14 @@ class Signupcover extends Component {
   render() {
     return (
         <div className="signup_cover">
+        
             <div className="signup_cover__l1">
                 <div className="signup_cover_l2">
-                    <div className="signup_cover__title">
-                      <p>The Luxury App</p>
+                    <div >
+                      <p className="signup_cover__title">The Luxury App</p>
                     </div>
-                    <div className="signup_cover__description">
-                        <p>Create an account for a personalized and luxious shopping fidelity experience and gain privileges faster.</p>
+                    <div >
+                        <p className="signup_cover__description">Create an account for a personalized and luxious shopping fidelity experience and gain privileges faster.</p>
                     </div>
                 
                     <div className="signup_cover__btn_create_account_hidden">

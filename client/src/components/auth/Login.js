@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 
 
 class Login extends Component {
-  state = { email: '', password: '', error: "", confirmation:"" }
+  state = { email: '',
+  password: '',
+  error: "",
+  confirmation:"" }
   handleFormSubmit = (event) => {
     event.preventDefault();
 
@@ -74,12 +77,12 @@ class Login extends Component {
 
               {/* Affichage message d'erreur */}
               {this.state.error && (
-                    <p className="error_form_msg">{this.state.error}
+                    <p className="signup_login__error_form_msg">{this.state.error}
                       </p>
                   )}
         
             {/* Affichage du message de confirmation logged */}
-            <p className="confirm_form_msg">{this.state.confirmation}</p>
+            <p className="signup_login__confirm_form_msg">{this.state.confirmation}</p>
 
       </form>
 

@@ -7,7 +7,9 @@ import {profilsettings} from '../auth/auth-service';
 class Connexionsettings extends Component {
   state = {
     // email: this.props.user.email,
-    password: ""
+    password: "",
+    error: "",
+    confirmation: ""
   }
 
   handleFormSubmit = (event) => {
@@ -18,10 +20,14 @@ class Connexionsettings extends Component {
 
       profilsettings(password)
         .then(response => {
-        this.props.updateUser(response);
+          this.setState({
+            error: '',
+            confirmation: "Your password has been changed"
+          });
+          this.props.updateUser(response);
        
       })
-      .catch( error => console.log(error) )   
+      .catch(err => this.setState({error: err.response.data.message}))
 
   }
 
@@ -41,7 +47,7 @@ class Connexionsettings extends Component {
 
   handleChangePassword = (event) => {  
     this.setState({
-      password:event.target.value
+      password: event.target.value
     })
   }
     
@@ -70,7 +76,18 @@ class Connexionsettings extends Component {
                 
                   <button className="connexion_settings__btn">
                     CHANGE PASSWORD
-                  </button>                
+                  </button>
+
+                  {/* Affichage message d'erreur */}
+                  {this.state.error && (
+                  <p className="connexion_settings_error_form_msg">{this.state.error}
+
+                  </p>
+
+                  )}
+
+                  {/* Affichage du message de confirmation logged */}
+                  <p className="connexion_settings_confirm_form_msg">{this.state.confirmation}</p>                
                 </form>
               </div>
           

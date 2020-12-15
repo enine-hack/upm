@@ -18,7 +18,7 @@ const Menu = () => {
                     <div>
                         <button className="landing_menu__l1_bloc_btn a_black_landing">
                         <a  className="a_black"
-                            href="/"><p className="landing_menu__l1_bloc_subtitle">THE APP</p></a>
+                            href="/"><p className="landing_menu__l1_bloc_subtitle">CONCEPT</p></a>
                         </button>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Menu = () => {
                 </div>
             </div>
             <div className="landing_menu__l2">
-                <p><i>I’m a man of simple tastes, I’m always satisfied with the best.</i> <br></br><b>Oscar Wilde</b></p>
+                <p>'' I’m a man of simple tastes, I’m always satisfied with the best.'' <br></br><b>Oscar Wilde</b></p>
                 
                 <button className="landing_menu__l2_btn">
                         <a  className="a_white a_white:hover"

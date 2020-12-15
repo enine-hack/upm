@@ -8,7 +8,7 @@ const navbar = (props) => {
   return (
     <>
       {props.userInSession ? (
-            <div class="site">
+            <div class="navbar">
             <header class="site-header">
               <div class="site-branding">
                 <p class="site-title">
@@ -76,7 +76,7 @@ const navbar = (props) => {
               <nav class="main-navigation">
                 <ul class="menu">
                 <li class="menu-item">
-                    <a href="/">App</a>
+                    <a href="/">Concept</a>
                   </li>
                 <li class="menu-item">
                     <a href="/brandslist">All Brands</a>
