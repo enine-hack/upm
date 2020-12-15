@@ -70,11 +70,11 @@ class Addfavbrand extends Component {
                     </Link>
                   
 
-                  <Link to='/'>
+                  
                   <a href="/addnewbrandname"><img    className="brandslist_user_addbrand__btn_add_img"
                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1024px-OOjs_UI_icon_add.svg.png"/>
                         </a>
-                  </Link>
+                  
               </div>
 
                 <div className="brandslist_public__most_added">

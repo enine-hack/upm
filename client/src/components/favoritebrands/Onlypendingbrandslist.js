@@ -3,10 +3,8 @@ import service from '../auth/auth-service';
 import { deleteonependingbrand } from '../auth/auth-service'
 
 class Onlypendingbrandslist extends Component {
-    state = { 
-        
+    state = {  
         listOfPendingbrands: [],
-      
     }
 
     getAllPendingBrands = () =>{
@@ -27,60 +25,68 @@ class Onlypendingbrandslist extends Component {
 
 
     handleClick = (brand) => {
-    console.log(brand)// "didsmfoij99384703809"
+    console.log(brand)// "brandname"
     console.log(typeof(brand)) //string
     
-    deleteonependingbrand(brand)
-    .then(response => {
-        console.log('MA REPONSE',response)
-        this.props.updateUser(response);
-        this.setState({
-            listOfPendingbrands: [...this.state.listOfAddedBrands].pull(brand)
-              });
-        
-        
-    })
-    .catch( error => console.log(error) )
-    { alert("Brandname deleted!") }
+        deleteonependingbrand(brand)
+        .then(response => {
+            console.log('MA REPONSE',response)
+            this.setState({
+                listOfPendingbrands: [...this.state.listOfAddedBrands].pull(brand)
+                });
+            this.props.updateUser(response);
+            
+            
+        })
+        .catch( error => console.log(error) )
+        { alert("Brandname deleted!") }
     }     
     
     
 
     render() {  
         return (
-            <div>
-                <form onSubmit={this.handleFormSubmit}>
-                <label>
+            <div className="wallet_pending">
+
+                <div className="wallet_pending__l1">
+
+                    <div>
+                    <p>My pending brands</p>
+                    </div>
+
+                    <div className="wallet_pending_btn_add">
+                        <a href="/addnewbrandname"><img    className="wallet_pending__btn_add_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1024px-OOjs_UI_icon_add.svg.png"/>
+                        </a>
+                    </div>
+                </div>
+
+            
+                <div className="wallet_pending__l2">
+                    <p className="wallet_pending__l2_title">
+                      DELETE BRANDNAME
+                    </p>
+                    
+                    <div >
                     { this.state.listOfPendingbrands.map( brand => {
                         return (                
-                        <div className="">
-                            <button onClick={()  => this.handleClick(brand)}>
+                        <div className="wallet_pending__l3">
+                            <button className="wallet_pending__btn_brandname"
+                                    onClick={()  => this.handleClick(brand)}>
                                 {brand}
                             </button>
-                            {/* <input
-                            name="brandname"
-                            value={brand}
-                            type="checkbox"
-                            defaultChecked={this.state.checked}
-                            onChange={this.handleCheck} /> */}
-
+                            <button className="brandslist_user_addbrand__btn_addbrand"
+                                    onClick={()  => this.handleClick(brand)}>
+                                <img    className="wallet_pending__img_minus"
+                                        src="https://cdn.iconscout.com/icon/free/png-256/minus-146-475070.png"/>
+                            </button>
                         </div>
-                       
+
                         )}
-                    
                     )}
-                    
-                        
-
-                </label>
+                    </div>       
+                </div>
               
-              
-
-                <button className=""   
-                        type="submit"
-                        >Delete brand
-                        </button>
-        </form>
             </div>
         );
     }

@@ -4985,6 +4985,325 @@ navbar
 ##     ## ########  ########  ########  ##     ## ##     ## ##    ## ########  ##    ## ##     ## ##     ## ######## 
 */
 
+@media only screen and (min-width: 1024px)  {
+  .wallet_pending {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    position: relative;
+   
+  }
+
+  .wallet_pending__l1 {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    margin-left: 17vw;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .wallet_pending_btn_add{
+    margin-left: 7vw;
+  }
+
+  .wallet_pending__btn_add_img {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  .wallet_pending__l2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+   
+    width: 30vw;
+    
+  }
+  
+  .wallet_pending__l2_title {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #BEBEBE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8d8d8d;
+    text-align: left;
+  }
+
+  .wallet_pending__l3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wallet_pending__btn_brandname {
+    border: none;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .wallet_pending__img_minus {
+    width: 13px;
+    height: 13px;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+  .wallet_pending {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    position: relative;
+   
+  }
+
+  .wallet_pending__l1 {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    margin-left: 24vw;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .wallet_pending_btn_add{
+    margin-left: 5vw;
+  }
+
+  .wallet_pending__btn_add_img {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  .wallet_pending__l2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+   
+    width: 40vw;
+    
+  }
+  
+  .wallet_pending__l2_title {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #BEBEBE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8d8d8d;
+    text-align: left;
+  }
+
+  .wallet_pending__l3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wallet_pending__btn_brandname {
+    border: none;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .wallet_pending__img_minus {
+    width: 13px;
+    height: 13px;
+  }
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .wallet_pending {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 400px;
+    position: relative;
+   
+  }
+
+  .wallet_pending__l1 {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    margin-left: 17vw;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .wallet_pending_btn_add{
+    margin-left: 5vw;
+  }
+
+  .wallet_pending__btn_add_img {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  .wallet_pending__l2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+   
+    width: 40vw;
+    
+  }
+  
+  .wallet_pending__l2_title {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #BEBEBE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8d8d8d;
+    text-align: left;
+  }
+
+  .wallet_pending__l3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wallet_pending__btn_brandname {
+    border: none;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .wallet_pending__img_minus {
+    width: 13px;
+    height: 13px;
+  }
+
+
+}
+
+@media all and (max-device-width: 480px) {
+  .wallet_pending {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+   
+  }
+
+  .wallet_pending__l1 {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-left: 53vw;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .wallet_pending_btn_add{
+    margin-left: 15vw;
+  }
+
+  .wallet_pending__btn_add_img {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  .wallet_pending__l2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+   
+    width: 90vw;
+    
+  }
+  
+  .wallet_pending__l2_title {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #BEBEBE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8d8d8d;
+    text-align: left;
+  }
+
+  .wallet_pending__l3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wallet_pending__btn_brandname {
+    border: none;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .wallet_pending__img_minus {
+    width: 13px;
+    height: 13px;
+  }
+
+
+}
 
 
 
