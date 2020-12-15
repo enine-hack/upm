@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bcrypt     = require('bcryptjs');
 
 const User       = require('../models/user-model');
-const { restart } = require('nodemon');
+
 const { populate, count } = require('../models/user-model');
 
 
