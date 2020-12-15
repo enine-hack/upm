@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import {addfavbrand} from '../auth/auth-service'
+import {addfavbrand} from '../auth/auth-service';
 
 class Addfavbrand extends Component {
 
@@ -41,7 +41,7 @@ class Addfavbrand extends Component {
         })
         .catch(err => console.log('Error while fetching fav brands', err))
    
-      { alert("New brand added!") }
+       {alert(`New brand added!`)}
     }
 
 

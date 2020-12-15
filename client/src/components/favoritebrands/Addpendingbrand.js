@@ -19,11 +19,11 @@ class Addpendingbrand extends Component {
           .then(response => {
             console.log('MA REPONSE',response)
             this.setState({ 
-                brandname: brandname
+                brandname: ""
             });
             this.props.addOnenewPendingInputFavbrand(brandname);
-            console.log('THE NEW INPUT BRAND ===', brandname)
-            
+            console.log('THE NEW INPUT BRAND ===', brandname);
+           
           })
           .catch(err => console.log('Error while fetching fav brands', err))
           { alert("New brand added!") }

@@ -15,7 +15,10 @@ class CompleteProfile extends Component {
         country: this.props.user.country,
         mobileNumber: this.props.user.mobileNumber,
         idWechat: this.props.user.idWechat,
-        idLine: this.props.user.idLine
+        idLine: this.props.user.idLine,
+
+        error: "",
+        confirmation: ""
     }
 
     handleFormSubmit = (event) => {
@@ -50,11 +53,15 @@ class CompleteProfile extends Component {
             idWechat,
             idLine
         ).then(response => {
+            this.setState({
+                error: '',
+                confirmation: "Your profile is updated"
+              });
             this.props.updateUser(response);
             
            
           })
-          .catch( error => console.log(error) )
+          .catch(err => this.setState({error: err.response.data.message}))
       }
 
     handleChange = (event) => {
@@ -159,6 +166,17 @@ class CompleteProfile extends Component {
                             <input  className="complete_profile__l1_btn"
                                     type="submit" value="SUBMIT" />
                         </div>
+
+                        {/* Affichage message d'erreur */}
+                        {this.state.error && (
+                        <p className="connexion_settings_error_form_msg">{this.state.error}
+
+                        </p>    
+
+                        )}
+
+                        {/* Affichage du message de confirmation logged */}
+                        <p className="connexion_settings_confirm_form_msg">{this.state.confirmation}</p>
                     </form>
 
                 </div>
