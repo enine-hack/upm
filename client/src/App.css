@@ -862,8 +862,11 @@ FOR backgrounds
 @media only screen and (min-width: 1600px) {
   .footer {
     text-align: left;
-    font-size: 15px
+    font-size: 15px;
+    border-top: 1px solid lightgray
   }
+
+
   
   .footer__uposhme {
     text-align: center;
@@ -932,7 +935,8 @@ FOR backgrounds
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .footer {
     text-align: left;
-    font-size: 11px
+    font-size: 11px;
+    border-top: 1px solid lightgray
   }
   
   .footer__uposhme {
@@ -995,7 +999,8 @@ FOR backgrounds
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .footer {
     text-align: left;
-    font-size: 11px
+    font-size: 11px;
+    border-top: 1px solid lightgray
   }
   
   .footer__uposhme {
@@ -1058,7 +1063,8 @@ FOR backgrounds
 @media all and (max-device-width: 480px) {
 .footer {
   text-align: center;
-  font-size: 10px
+  font-size: 10px;
+  border-top: 1px solid lightgray
 }
 
 .footer__l2_bloc {
@@ -4961,19 +4967,6 @@ navbar
 }
 
 
-/*
-########     ###    ########  ######## ##    ## ######## ########   ######  
-##     ##   ## ##   ##     ##    ##    ###   ## ##       ##     ## ##    ## 
-##     ##  ##   ##  ##     ##    ##    ####  ## ##       ##     ## ##       
-########  ##     ## ########     ##    ## ## ## ######   ########   ######  
-##        ######### ##   ##      ##    ##  #### ##       ##   ##         ## 
-##        ##     ## ##    ##     ##    ##   ### ##       ##    ##  ##    ## 
-##        ##     ## ##     ##    ##    ##    ## ######## ##     ##  ######  
-*/
-
-
-
-
 
 /*
    ###    ########  ########  ########  ########     ###    ##    ## ########  ##    ##    ###    ##     ## ######## 
@@ -4983,6 +4976,257 @@ navbar
 ######### ##     ## ##     ## ##     ## ##   ##   ######### ##  #### ##     ## ##  #### ######### ##     ## ##       
 ##     ## ##     ## ##     ## ##     ## ##    ##  ##     ## ##   ### ##     ## ##   ### ##     ## ##     ## ##       
 ##     ## ########  ########  ########  ##     ## ##     ## ##    ## ########  ##    ## ##     ## ##     ## ######## 
+*/
+
+@media only screen and (min-width: 1024px) {
+  .addpendingbrand {
+    height: 75vh;
+    display: flex;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .addpendingbrand__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .addpendingbrand__bloc_title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .addpendingbrand__bloc_desc {
+    font-size: 12px;
+  }
+
+  .addpendingbrand__form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw
+  }
+  
+  .addpendingbrand__form_input {
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .addpendingbrand__form_btn {
+    font-size: 11px;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    color: #fff;
+  
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .addpendingbrand {
+    height: 75vh;
+    display: flex;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .addpendingbrand__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .addpendingbrand__bloc_title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .addpendingbrand__bloc_desc {
+    font-size: 12px;
+  }
+
+  .addpendingbrand__form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw
+  }
+  
+  .addpendingbrand__form_input {
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+    font-size: 10px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .addpendingbrand__form_btn {
+    font-size: 9px;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    color: #fff;
+  
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .addpendingbrand {
+    height: 75vh;
+    display: flex;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .addpendingbrand__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .addpendingbrand__bloc_title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .addpendingbrand__bloc_desc {
+    font-size: 12px;
+  }
+
+  .addpendingbrand__form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw
+  }
+  
+  .addpendingbrand__form_input {
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+    font-size: 10px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .addpendingbrand__form_btn {
+    font-size: 9px;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    color: #fff;
+  
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .addpendingbrand {
+    height: 100vh;
+    display: flex;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .addpendingbrand__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .addpendingbrand__bloc_title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .addpendingbrand__bloc_desc {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .addpendingbrand__form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw
+  }
+  
+  .addpendingbrand__form_input {
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+    font-size: 10px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .addpendingbrand__form_btn {
+    font-size: 9px;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    color: #fff;
+  
+  }
+}
+
+/*
+########  ######## ##    ## ########  #### ##    ##  ######      ########  ########     ###    ##    ## ########   ######  
+##     ## ##       ###   ## ##     ##  ##  ###   ## ##    ##     ##     ## ##     ##   ## ##   ###   ## ##     ## ##    ## 
+##     ## ##       ####  ## ##     ##  ##  ####  ## ##           ##     ## ##     ##  ##   ##  ####  ## ##     ## ##       
+########  ######   ## ## ## ##     ##  ##  ## ## ## ##   ####    ########  ########  ##     ## ## ## ## ##     ##  ######  
+##        ##       ##  #### ##     ##  ##  ##  #### ##    ##     ##     ## ##   ##   ######### ##  #### ##     ##       ## 
+##        ##       ##   ### ##     ##  ##  ##   ### ##    ##     ##     ## ##    ##  ##     ## ##   ### ##     ## ##    ## 
+##        ######## ##    ## ########  #### ##    ##  ######      ########  ##     ## ##     ## ##    ## ########   ######  
 */
 
 @media only screen and (min-width: 1024px)  {

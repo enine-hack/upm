@@ -31,34 +31,41 @@ class Addpendingbrand extends Component {
 
     render() {
         return (
-            <div>
-                <form   className=""
-                            onSubmit={this.handleFormSubmit}>
-
-                        
-                        <div className="">
-                            <input className=""
-                                    type="text" name="brandname"  value={this.state.brandname}  placeholder="Brandname"
-                                    onChange={(event) =>this.handleChange(event)}/>
-                            
-                            
-                            <button className="">
-                                        ADD NEW BRAND</button>
-                                        
-                                            
-                            {/* Affichage message d'erreur */}
-                                {this.state.error && (
-                                    <p className="error_form_msg">{this.state.error}
-                                    </p>
-                                )}
-
-                             {/* Affichage du message de confirmation logged */}
-                            <p className="confirm_form_msg">{this.state.confirmation}</p>
-                        </div>
-                        
-                       
-                    </form>
+            <div className="addpendingbrand">
                 
+                <div className="addpendingbrand__bloc">
+                    <p className="addpendingbrand__bloc_title">
+                        Other brand
+                    </p>
+                    <p className="addpendingbrand__bloc_desc">
+                        ENTER A BRANDNAME
+                    </p>
+                    <form onSubmit={this.handleFormSubmit}>
+
+                            
+                            <div className="addpendingbrand__form">
+                                
+                                <input className="addpendingbrand__form_input"
+                                        type="text" name="brandname"  value={this.state.brandname}  placeholder="Brandname"
+                                        onChange={(event) =>this.handleChange(event)}/>
+                                
+                                
+                                <button className="addpendingbrand__form_btn">
+                                            ADD NEW BRAND</button>
+                                            
+                                                
+                                {/* Affichage message d'erreur */}
+                                    {this.state.error && (
+                                        <p className="error_form_msg">{this.state.error}
+                                        </p>
+                                    )}
+
+                                {/* Affichage du message de confirmation logged */}
+                                <p className="confirm_form_msg">{this.state.confirmation}</p>
+                            </div>
+                            
+                        </form>
+                    </div>
             </div>
         );
     }

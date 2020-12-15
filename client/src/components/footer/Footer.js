@@ -5,7 +5,7 @@ import Newsletter from '../footer/Newsletter';
 const Footer = (props) => {
     return (
         <div className="footer">
-            <hr></hr>
+            
             <div className="footer__l1">
 
                 <div className="footer__l2">
