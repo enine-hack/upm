@@ -2,8 +2,9 @@
   "name": "upm",
   "version": "0.0.0",
   "private": true,
+  
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./bin/www",
     "dev": "DEBUG=upm:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www",
     "build": "cd client && npm install && npm run build"
