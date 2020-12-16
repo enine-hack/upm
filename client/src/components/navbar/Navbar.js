@@ -76,7 +76,7 @@ const navbar = (props) => {
               <nav class="main-navigation">
                 <ul class="menu">
                 <li class="menu-item">
-                    <a href="/">Concept</a>
+                    <a href="/concept">Concept</a>
                   </li>
                 <li class="menu-item">
                     <a href="/brandslist">All Brands</a>

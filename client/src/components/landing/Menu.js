@@ -18,7 +18,7 @@ const Menu = () => {
                     <div>
                         <button className="landing_menu__l1_bloc_btn a_black_landing">
                         <a  className="a_black"
-                            href="/"><p className="landing_menu__l1_bloc_subtitle">CONCEPT</p></a>
+                            href="/concept"><p className="landing_menu__l1_bloc_subtitle">CONCEPT</p></a>
                         </button>
                     </div>
                 </div>
