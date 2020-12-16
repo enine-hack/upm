@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import {addfavbrand} from '../auth/auth-service';
+import Searchbrand from './Searchbrand';
 
 class Addfavbrand extends Component {
 
     state = { 
         listOfBrands: [],
-        listOfAddedBrands: []
+        listOfAddedBrands: [],
+        showSearchResults: false,
+        query:''
 
     }
 
@@ -45,9 +48,17 @@ class Addfavbrand extends Component {
        {alert(`New brand added!`)}
     }
 
+    handlerSearchChange = (event) => {
+      console.log("hi, from change", event.target.value)
+      this.setState({
+         query: event.target.value,
+         showSearchResults: !this.state.showSearchResults
+      })
+  }
+
 
     render() {
-        
+      
 
         return( 
         
@@ -60,23 +71,27 @@ class Addfavbrand extends Component {
                     </p>
                 </div>
 
-
-              <div className="brandslist_user_addbrand__otherbrand ">  
                 
-                    <Link className="a_black a_gold:hover"
-                          to='/addnewbrandname'>
-                        
-                        Other brand
-                       
-                    </Link>
-                  
+                <Searchbrand search={this.handlerSearchChange}
+                             query={this.state.query}/>
 
+                <div className="searchbrand_results">
+                 {this.state.showSearchResults && this.state.listOfBrands.filter(brand => brand.brandname.toLowerCase().includes(this.state.query.toLowerCase())).map(brand => (
+                    <div key={brand._id}>
+                        <>  
+                        <div className="searchbrand_results_l">                              
+                          <button className="searchbrand_results_btn"
+                                  onClick={()  => this.handleClick(brand._id)}>
+                                  {brand.brandname}
+                          </button>
+                        </div>
+                        </>
+                    </div>
+                  ))}
                   
-                  <a href="/addnewbrandname"><img    className="brandslist_user_addbrand__btn_add_img"
-                           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1024px-OOjs_UI_icon_add.svg.png"/>
-                        </a>
-                  
-              </div>
+                </div>
+            
+
 
                 <div className="brandslist_public__most_added">
                     <p className="brandslist_public__most_added_row_title">
@@ -125,6 +140,24 @@ class Addfavbrand extends Component {
                   
                 )}
                 </div>
+
+                <div className="brandslist_user_addbrand__otherbrand ">  
+                
+                  <Link className="a_black a_gold:hover"
+                        to='/addnewbrandname'>
+                      
+                      Other brand
+                    
+                  </Link>
+              
+
+              
+                  <a href="/addnewbrandname"><img    className="brandslist_user_addbrand__btn_add_img"
+                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/OOjs_UI_icon_add.svg/1024px-OOjs_UI_icon_add.svg.png"/>
+                    </a>
+              
+          </div>
+
                 
                 {/* A */}
                 <div className="brandslist_public__most_added">
