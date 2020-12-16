@@ -54,7 +54,7 @@ class Addfavbrand extends Component {
          query: event.target.value,
          showSearchResults: !this.state.showSearchResults
       })
-  }
+    }
 
 
     render() {

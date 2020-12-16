@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Searchbrand from '../favoritebrands/Searchbrand';
 
 class Brandslist extends Component {
 
     state = { 
-        listOfBrands: []
+        listOfBrands: [],
+        showSearchResults: false,
+        query:''
     }
 
     getAllBrands = () =>{
@@ -21,6 +24,14 @@ class Brandslist extends Component {
 
     componentDidMount() {
       this.getAllBrands();
+    }
+
+    handlerSearchChange = (event) => {
+      console.log("hi, from change", event.target.value)
+      this.setState({
+         query: event.target.value,
+         showSearchResults: !this.state.showSearchResults
+      })
     }
 
     render(){
@@ -48,7 +59,26 @@ class Brandslist extends Component {
                     </p>
                 </div>
 
+                <Searchbrand search={this.handlerSearchChange}
+                             query={this.state.query}/>
 
+                <div className="searchbrand_results">
+                 {this.state.showSearchResults && this.state.listOfBrands.filter(brand => brand.brandname.toLowerCase().includes(this.state.query.toLowerCase())).map(brand => (
+                    <div key={brand._id} className="searchbrand_results_l">
+                        <>
+                        
+                        <a className="a_black a_black:hover"
+                              href={`/brandslist/${brand._id}`}>
+                            <p  >
+                                {brand.brandname}
+                            </p>
+                        </a>
+                        
+                        </>
+                    </div>
+                  ))}
+                  
+                </div>
 
                 <div className="brandslist_public__most_added">
                     <p className="brandslist_public__most_added_row_title">
