@@ -109,20 +109,6 @@ class Detailsbrand extends Component {
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4">
-                              <div>
-                              <a href={this.state.returnPolicyUrl}  target="_blank" className="a_black">
-                                  RETURNS AND WARRANTY
-                                  </a>
-                              </div>
-                              <div>
-                                  <a href={this.state.returnPolicyUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
-                                  </a>
-                              </div>
-                            </div>
-
                             <div className="details_brand_public__l4 font_lightgray">
                               <div>
                                   
@@ -137,6 +123,8 @@ class Detailsbrand extends Component {
                               </div>
                             </div>
 
+                            
+
                             <div className="details_brand_public__l4 font_lightgray">
                               <div>
                                  
@@ -148,6 +136,34 @@ class Detailsbrand extends Component {
                                       <img  className="details_brand_public__arrow_right font_lightgray"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                  
+                              </div>
+                            </div>
+
+                            <div className="details_brand_public__l4">
+                              <div>
+                              <a href={this.state.returnPolicyUrl}  target="_blank" className="a_black">
+                                  RETURNS AND WARRANTY
+                                  </a>
+                              </div>
+                              <div>
+                                  <a href={this.state.returnPolicyUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  </a>
+                              </div>
+                            </div>
+
+                            <div className="details_brand_public__l4">
+                              <div>
+                              <a href={this.state.shopUrl}  target="_blank" className="a_black">
+                                  STORE LOCATOR
+                                  </a>
+                              </div>
+                              <div>
+                                  <a href={this.state.shopUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  </a>
                               </div>
                             </div>
 

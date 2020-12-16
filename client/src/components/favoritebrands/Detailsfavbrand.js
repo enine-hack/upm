@@ -132,21 +132,7 @@ class Detailsfavbrand extends Component {
                               </div>
                             </div>
 
-                            <div className="details_brand_public__l4">
-                              <div>
-                              <a  className=" a_black a_black:hover"
-                                  href={this.state.returnPolicyUrl}  target="_blank">
-                                  RETURNS AND WARRANTY
-                                  </a>
-                              </div>
-                              <div>
-                                  <a  className=" a_black a_black:hover"
-                                      href={this.state.returnPolicyUrl}  target="_blank">
-                                      <img  className="details_brand_public__arrow_right"
-                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
-                                  </a>
-                              </div>
-                            </div>
+                            
 
                             <div className="details_brand_public__l4">
                               <div>
@@ -173,6 +159,38 @@ class Detailsfavbrand extends Component {
                                       <img  className="details_brand_public__arrow_right"
                                             src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
                                  
+                              </div>
+                            </div>
+
+                            <div className="details_brand_public__l4">
+                              <div>
+                              <a  className=" a_black a_black:hover"
+                                  href={this.state.returnPolicyUrl}  target="_blank">
+                                  RETURNS AND WARRANTY
+                                  </a>
+                              </div>
+                              <div>
+                                  <a  className=" a_black a_black:hover"
+                                      href={this.state.returnPolicyUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  </a>
+                              </div>
+                            </div>
+
+                            <div className="details_brand_public__l4">
+                              <div>
+                              <a  className=" a_black a_black:hover"
+                                  href={this.state.shopUrl}  target="_blank">
+                                  STORE LOCATOR
+                                  </a>
+                              </div>
+                              <div>
+                                  <a  className=" a_black a_black:hover"
+                                      href={this.state.shopUrl}  target="_blank">
+                                      <img  className="details_brand_public__arrow_right"
+                                            src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
+                                  </a>
                               </div>
                             </div>
 
