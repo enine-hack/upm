@@ -81,7 +81,8 @@ app.use('/api', require('./routes/auth-routes'));
 app.use('/api', require('./routes/profil-routes'));
 app.use('/api', require('./routes/allbrands-routes'));
 app.use('/api', require('./routes/favbrands-routes'));
-app.use('/api', require('./routes/business-routes'))
+app.use('/api', require('./routes/business-routes'));
+app.use('/api', require('./routes/newsletters-routes'))
 
 // Middleware error
 app.use((err, req, res, next) => {
