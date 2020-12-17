@@ -87,8 +87,8 @@ class App extends Component {
               <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
           
-          <Route exact path="/addnewbrandname" render={(props) => (
-              <Addpendingbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} history={props.history}/>
+          <Route exact path="/addnewbrandname" render={() => (
+              <Addpendingbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
           
 

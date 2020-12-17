@@ -28,7 +28,7 @@ class Addpendingbrand extends Component {
           })
           .catch(err => console.log('Error while fetching fav brands', err))
           { alert("New brand added!") }
-          this.props.history.push('/favoritebrands')
+        //   this.props.history.push('/favoritebrands')
     }
 
     render() {

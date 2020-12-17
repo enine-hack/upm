@@ -41,7 +41,7 @@ const Menu = () => {
                 
                 <button className="landing_menu__l2_btn">
                         <a  className="a_white a_white:hover"
-                            href="/brandslist">LIVE THE EXPERIENCE</a>
+                            href="/signup">LIVE THE EXPERIENCE</a>
                         </button>  
             </div>
 
