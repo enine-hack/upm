@@ -11,7 +11,8 @@ class Addfavbrand extends Component {
         listOfAddedBrands: [],
         showSearchResults: false,
         query:'',
-        mostAddedBrands: []
+        mostAddedBrands: [],
+        brandId: ''
 
     }
 
@@ -20,17 +21,24 @@ class Addfavbrand extends Component {
         
           .then(responseFromApi => {
             const listOfBrands = responseFromApi.data;
-            console.log(Math.floor(Math.random()*listOfBrands.length)) //INDEX RANDOM
+           
             let listOfBrandsCopy = listOfBrands;
             let popularlistOfBrands = listOfBrandsCopy.filter((e) => {return e.popularity > 2})
+
+            
             let random = popularlistOfBrands.sort(() => {return 0.5 - Math.random()}).slice(0, 5);
+            console.log(this.state.brandId)
+            // const mostAddedBrandsCopy = [...this.state.mostAddedBrands]
+          
+            // const brandIndexToRemoveForMostAdded = random.findIndex(e => e.id === this.state.brandId);
+            // console.log('indextoremove:', brandIndexToRemoveForMostAdded)
+            // mostAddedBrands: [...this.state.mostAddedBrands].splice(brandIndexToRemoveForMostAdded, 1),
+
             this.setState({
               listOfBrands: listOfBrands,
-              // mostAddedBrands : [...listOfBrands].splice(Math.floor(Math.random()*listOfBrands.length),5)
-              mostAddedBrands: random
+              mostAddedBrands: random,
             })
-            // console.log(listOfBrands)
-            console.log(this.state.mostAddedBrands)
+           
             
           })
           .catch(err => console.log('Error while fetching brands', err))
@@ -42,19 +50,33 @@ class Addfavbrand extends Component {
     }
 
     handleClick = (brandid) => {
-      console.log(brandid)// "didsmfoij99384703809"
-      console.log(typeof(brandid)) //string
+      // console.log(brandid)// "didsmfoij99384703809"
+      // console.log(typeof(brandid)) //string
+      // console.log(this.state.mostAddedBrands)
+
+
+
+
+
+      // const listOfBrandsCopy = [...this.state.listOfBrands]
+      // console.log(listOfBrandsCopy)
+
+      // const brandIndexToRemoveForlistOfBrands = listOfBrandsCopy.findIndex(e => e.id === brandid);
+      // console.log('indextoremove:', brandIndexToRemoveForlistOfBrands)
 
       addfavbrand(brandid)
         .then(response => {
           console.log('MA REPONSE',response) //mon wallet
-          const brandIndexToRemove = [...this.state.mostAddedBrands].findIndex(brandid);
+
           
           this.setState({
             // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid],
-            mostAddedBrands: [...this.state.mostAddedBrands].splice(brandIndexToRemove, 1),
-            // listOfBrands: [...this.state.listOfBrands]
+            
+            brandId: brandid,
+            // mostAddedBrands: [...this.state.mostAddedBrands].splice(brandIndexToRemoveForMostAdded, 1),
+            // listOfBrands: [...this.state.listOfBrands].splice(brandIndexToRemoveForlistOfBrands,1)
             });
+           
               // console.log('LIST OF ADDED BRAND ======', this.state.listOfAddedBrands)
               // console.log('LIST OF MOST ADDED BRAND ======', this.state.mostAddedBrands)
               // console.log('LIST OF BRANDS ======', this.state.listOfAddedBrands)
@@ -65,6 +87,7 @@ class Addfavbrand extends Component {
         .catch(err => console.log('Error while fetching fav brands', err))
    
        {alert(`New brand added!`)}
+      //  this.props.history.push('/favoritebrands')
     }
 
     handlerSearchChange = (event) => {
@@ -124,15 +147,15 @@ class Addfavbrand extends Component {
                                     
                     <div className="brandslist_public__most_added_row"
                           key={brand._id}>
-                          {/* { brand.popularity >= 2 ? ( */}
+                          
                           
                             <>  
                             <div className="brandslist_public_most_added_col1">
                                 
                               <button className="brandslist_user_addbrand__btn_addbrand"
                                       onClick={()  => this.handleClick(brand._id)}>
-                                  <img className="brandslist_public__logo"
-                                  src={brand.logoUrl} />        
+                                  <img className="brandslist_public__logo" 
+                                  src={brand.logoUrl} alt="photo" />        
                               </button>
                               
                               <button className="brandslist_user_addbrand__btn_addbrand"
@@ -150,10 +173,7 @@ class Addfavbrand extends Component {
                              
                             </>
 
-                            {/* ) : (
 
-                            <></>
-                        )} */}
 
                     </div>
                     

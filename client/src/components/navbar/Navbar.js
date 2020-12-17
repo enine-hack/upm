@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import {logout} from '../auth/auth-service'
 
 const navbar = (props) => {
+  
   return (
     <>
       {props.userInSession ? (

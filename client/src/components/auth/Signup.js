@@ -19,6 +19,7 @@ class Signup extends Component {
         error: "",
         confirmation: 'Welcome, your account has been created.'});
         this.props.updateUser(response);
+        this.props.history.push('/profil')
           
         
       })

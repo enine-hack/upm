@@ -31,8 +31,9 @@ class Onlypendingbrandslist extends Component {
         deleteonependingbrand(brand)
         .then(response => {
             console.log('MA REPONSE',response)
+            const listOfPendingBrandsCopy = [...this.state.listOfPendingbrands]
             this.setState({
-                listOfPendingbrands: [...this.state.listOfAddedBrands].pull(brand)
+                listOfPendingbrands: listOfPendingBrandsCopy.pull(brand)
                 });
             this.props.updateUser(response);
             

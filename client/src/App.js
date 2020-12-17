@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 
 import './App.css';
-
+import { Redirect } from 'react-router-dom';
 import Signup from './components/auth/Signup';
 import Login from './components/auth/Login'
 import Navbar from './components/navbar/Navbar';
@@ -52,19 +52,20 @@ class App extends Component {
 
 
   render() {
+    
     return (
       <div className="App">
       
        <Navbar userInSession={this.state.loggedInUser} updateUser={this.updateLoggedInUser} />
         
-       <Route exact path="/" render={() => (
-          <Cover user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+       <Route exact path="/" render={(props) => (
+          <Cover user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} history={props.history}/>
        )} />
        
         <Switch>
           
-          <Route exact path='/login' render={() => <Login user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>}/>
-          <Route exact path="/signup" render={() => <Signup user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>} />
+          <Route exact path='/login' render={(props) => <Login user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} history={props.history}/>}/>
+          <Route exact path="/signup" render={(props) => <Signup user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} history={props.history}/>} />
   
           <Route exact path="/profil" render={() => (
               <Profil user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
@@ -86,8 +87,8 @@ class App extends Component {
               <Addfavbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
               )} />
           
-          <Route exact path="/addnewbrandname" render={() => (
-              <Addpendingbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser}/>
+          <Route exact path="/addnewbrandname" render={(props) => (
+              <Addpendingbrand user={this.state.loggedInUser} updateUser={this.updateLoggedInUser} history={props.history}/>
               )} />
           
 

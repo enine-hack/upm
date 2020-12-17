@@ -23,10 +23,12 @@ class Addpendingbrand extends Component {
             });
             this.props.addOnenewPendingInputFavbrand(brandname);
             console.log('THE NEW INPUT BRAND ===', brandname);
+            
            
           })
           .catch(err => console.log('Error while fetching fav brands', err))
           { alert("New brand added!") }
+          this.props.history.push('/favoritebrands')
     }
 
     render() {

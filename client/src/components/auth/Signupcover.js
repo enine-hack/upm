@@ -13,6 +13,7 @@ class Signupcover extends Component {
       .then(response => {
         this.setState({email: "", password: "", error: ""});
         this.props.updateUser(response);
+        this.props.history.push('/profil');
       })
       .catch(err => this.setState({error: err.response.data.message}))
   }

@@ -21,8 +21,7 @@ class Login extends Component {
         
           this.setState({ email: "", password: "", error: "", confirmation: "You are now connected to your account" });
           this.props.updateUser(response);
-          // <Redirect to='/myfavoritebrands'/>
-          // this.props.history.push('/myfavoritebrands')
+          this.props.history.push('/favoritebrands')
           
       })
       .catch(err => this.setState({error: err.response.data.message}))
