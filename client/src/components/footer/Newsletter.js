@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 const Newsletter = (props) => {
+    
     return (
         <div className="footer__l3">
         {/* <Newsletter /> */}
