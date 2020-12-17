@@ -59,7 +59,7 @@ class Brandslist extends Component {
                     </p>
                 </div>
 
-                <Searchbrand search={this.handlerSearchChange}
+                {/* <Searchbrand search={this.handlerSearchChange}
                              query={this.state.query}/>
 
                 <div className="searchbrand_results">
@@ -78,9 +78,9 @@ class Brandslist extends Component {
                     </div>
                   ))}
                   
-                </div>
+                </div> */}
 
-                <div className="brandslist_public__most_added">
+                {/* <div className="brandslist_public__most_added">
                     <p className="brandslist_public__most_added_row_title">
                       MOST ADDED
                     </p>
@@ -122,7 +122,7 @@ class Brandslist extends Component {
                   )}
                   
                 )}
-                </div>
+                </div> */}
                 
                 {/* A */}
                 <div className="brandslist_public__most_added">
