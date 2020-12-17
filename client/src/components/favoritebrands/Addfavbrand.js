@@ -10,7 +10,8 @@ class Addfavbrand extends Component {
         listOfBrands: [],
         listOfAddedBrands: [],
         showSearchResults: false,
-        query:''
+        query:'',
+        mostAddedBrands: []
 
     }
 
@@ -18,9 +19,12 @@ class Addfavbrand extends Component {
         axios.get(`${process.env.REACT_APP_APIURL || ""}/api/brandslist`)
         
           .then(responseFromApi => {
+            const listOfBrands = responseFromApi.data
             this.setState({
-              listOfBrands: responseFromApi.data
+              listOfBrands: listOfBrands,
+              mostAddedBrands : [...listOfBrands].splice(Math.floor(Math.random()*listOfBrands.length),5)
             })
+            
           })
           .catch(err => console.log('Error while fetching brands', err))
       }
@@ -38,10 +42,16 @@ class Addfavbrand extends Component {
         .then(response => {
           console.log('MA REPONSE',response)
           this.setState({
-            listOfAddedBrands: [...this.state.listOfAddedBrands, brandid]
+            listOfAddedBrands: [...this.state.listOfAddedBrands, brandid],
+            mostAddedBrands: [...this.state.mostAddedBrands],
+            listOfBrands: [...this.state.listOfBrands]
               });
-              this.props.addnewSelectedFavbrands(this.state.listOfAddedBrands);
               console.log('LIST OF ADDED BRAND ======', this.state.listOfAddedBrands)
+              console.log('LIST OF MOST ADDED BRAND ======', this.state.mostAddedBrands)
+              console.log('LIST OF BRANDS ======', this.state.listOfAddedBrands)
+              // this.props.addnewSelectedFavbrands(this.state.listOfAddedBrands);
+              
+             
         })
         .catch(err => console.log('Error while fetching fav brands', err))
    
@@ -57,8 +67,10 @@ class Addfavbrand extends Component {
     }
 
 
+
     render() {
       
+
 
         return( 
         
@@ -98,12 +110,12 @@ class Addfavbrand extends Component {
                       MOST ADDED
                     </p>
                 
-                { this.state.listOfBrands.splice(Math.floor(Math.random()*this.state.listOfBrands.length),20).map( brand => {
+                { this.state.mostAddedBrands.map( brand => {
                   return (
                                     
                     <div className="brandslist_public__most_added_row"
                           key={brand._id}>
-                          { brand.popularity > 2 ? (
+                          { brand.popularity >= 2 ? (
                           
                             <>  
                             <div className="brandslist_public_most_added_col1">
