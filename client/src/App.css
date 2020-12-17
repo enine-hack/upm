@@ -6187,15 +6187,15 @@ searchbrand
   }
 
   .concept__grey_zone {
-    background-color: #ebebeb;
+    background-color: #fff;
     height: 40vh;
     position: relative;
     
   }
 
   .concept__white_zone {
-    background-color: #fff;
-    height: 60vh;
+    background-color: #000000;
+    height: 90vh;
     position: relative;
   }
 
@@ -6205,45 +6205,50 @@ searchbrand
   }
 
   .concept_pictures_t {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     filter: grayscale(100%);
     /* transform: rotate(180deg) */
   }
 
   .concept__title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 5px;
     margin-left: 30px;
-    font-weight: bold;
+    color: #fff;
   }
 
   .concept__subtitle {
     margin-left: 30px;
     font-size: 15px;
+    opacity: 0.5;
+    color: #fff;
   }
 
 .concept__descriptions {
   display: flex;
   justify-content: left;
   margin-left: 300px;
+  color: #fff;
 }
 
   .concept__desc1 {
-    margin-left: 30px;
+    margin-left: 150px;
     width: 20vw;
-    font-size: 13px;
+    font-size: 14px;
     text-align: justify;
+    color: #fff;
 
   }
 
   .concept__desc2 {
-    margin-left: 60px;
+    margin-left: 100px;
     width: 20vw;
-    font-size: 13px;
+    font-size: 14px;
     text-align: justify;
+    color: #fff;
 
   }
 }
@@ -6254,103 +6259,110 @@ searchbrand
   }
 
   .concept__grey_zone {
-    background-color: #ebebeb;
+    background-color: #fff;
     height: 40vh;
     position: relative;
   }
 
   .concept__white_zone {
-    background-color: #fff;
-    height: 60vh;
+    background-color: #000000;
+    height: 80vh;
     position: relative;
   }
 
   .concept_pictures {
     position : absolute;
-    top: 30vh;
+    top: 24.9vh;
   }
 
   .concept_pictures_t {
-    width: 250px;
-    height: 250px;
+    width: 305px;
+    height: 305px;
     filter: grayscale(100%);
     /* transform: rotate(180deg) */
   }
 
   .concept__title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Monserrat', sans-serif;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 5px;
     margin-left: 30px;
-    font-weight: bold;
+    color: #fff;
   }
 
   .concept__subtitle {
     margin-left: 30px;
     font-size: 15px;
+    opacity: 0.5;
+    color: #fff;
   }
 
 .concept__descriptions {
   display: flex;
   justify-content: left;
   margin-left: 300px;
+  color: #fff;
 }
 
   .concept__desc1 {
-    margin-left: 0px;
-    width: 30vw;
+    margin-left: 40px;
+    width: 25vw;
     font-size: 13px;
     text-align: justify;
+    color: #fff;
 
   }
 
   .concept__desc2 {
-    margin-left: 20px;
-    width: 30vw;
+    margin-left: 60px;
+    width: 25vw;
     font-size: 13px;
     text-align: justify;
+    color: #fff;
 
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .concept__grey_zone {
-    background-color: #ebebeb;
+    background-color: #fff;
     height: 40vh;
     position: relative;
   }
 
   .concept__white_zone {
-    background-color: #fff;
-    height: 60vh;
+    background-color: #000000;
+    height: 7 0vh;
     position: relative;
   }
 
   .concept_pictures {
     position : absolute;
-    top: 30vh;
+    top: 27vh;
   }
 
   .concept_pictures_t {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     filter: grayscale(100%);
     /* transform: rotate(180deg) */
   }
 
   .concept__title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 5px;
     margin-left: 20px;
-    font-weight: bold;
+    color: #fff
   }
 
   .concept__subtitle {
     margin-left: 20px;
     font-size: 11px;
+    opacity: 0.5;
+    color: #fff;
   }
 
   .concept__desc1 {
@@ -6358,6 +6370,7 @@ searchbrand
     width: 50vw;
     font-size: 12px;
     text-align: justify;
+    color: #fff
 
   }
 
@@ -6366,26 +6379,27 @@ searchbrand
     width: 50vw;
     font-size: 12px;
     text-align: justify;
+    color: #fff
 
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .concept__grey_zone {
-    background-color: #ebebeb;
+    background-color: #fff;
     height: 40vh;
     position: relative;
   }
 
   .concept__white_zone {
-    background-color: #fff;
+    background-color: #000000;
     height: 60vh;
     position: relative;
   }
 
   .concept_pictures {
     position : absolute;
-    top: 30vh;
+    top: 28.5vh;
   }
 
   .concept_pictures_t {
@@ -6396,88 +6410,95 @@ searchbrand
   }
 
   .concept__title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 5px;
     margin-left: 20px;
-    font-weight: bold;
+    color: #fff
   }
 
   .concept__subtitle {
     margin-left: 20px;
     font-size: 11px;
+    opacity: 0.5;
+    color: #fff
   }
 
   .concept__desc1 {
     margin-left: 20px;
-    width: 60vw;
+    width: 50vw;
     font-size: 12px;
     text-align: justify;
+    color: #fff
 
   }
 
   .concept__desc2 {
     margin-left: 20px;
-    width: 60vw;
+    width: 50vw;
     font-size: 12px;
     text-align: justify;
+    color: #fff
 
   }
 }
 
 @media all and (max-device-width: 480px) {
   .concept__grey_zone {
-    background-color: #ebebeb;
+    background-color: #fff;
     height: 40vh;
     position: relative;
   }
 
   .concept__white_zone {
-    background-color: #fff;
+    background-color: #000000;
     height: 60vh;
     position: relative;
   }
 
   .concept_pictures {
     position : absolute;
-    top: 30vh;
+    top: 31.3vh;
   }
 
   .concept_pictures_t {
     width: 200px;
     height: 200px;
     filter: grayscale(100%);
-    /* transform: rotate(180deg) */
   }
 
   .concept__title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 5px;
     margin-left: 20px;
-    font-weight: bold;
+    color: #fff
   }
 
   .concept__subtitle {
     margin-left: 20px;
     font-size: 11px;
+    opacity: 0.5;
+    color: #fff
   }
 
   .concept__desc1 {
     margin-left: 20px;
     width: 90vw;
-    font-size: 12px;
+    font-size: 11px;
     text-align: justify;
+    color: #fff
 
   }
 
   .concept__desc2 {
     margin-left: 20px;
     width: 90vw;
-    font-size: 12px;
+    font-size: 11px;
     text-align: justify;
+    color: #fff
 
   }
 }

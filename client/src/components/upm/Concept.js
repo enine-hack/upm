@@ -21,11 +21,11 @@ class Concept extends Component {
 
                 <div className="concept__descriptions">
                     <div>
-                    <p className="concept__desc1">is a WebApp that helps you add and view all the news and lastest products of your favorite high-end and luxury brands. You will also soon benefits from exceptional features such as the access to your purchase history, sales and exclusive privileges linked to your loyalty accounts.</p>
+                    <p className="concept__desc1">This is a WebApp that helps you add and view all the news and lastest products of your favorite high-end and luxury brands. You will also soon benefits from exceptional features such as the access to your purchase history, sales and exclusive privileges linked to your loyalty accounts.</p>
                     </div>
                     <div>
                     <p className="concept__desc2">Today, UPOSH|ME is at the concept stage. The first release is a platform that's still accessible. You will be able to explore the exclusive gift collections and offer something that is sure to please your lovers and friends. Don't loose any more time to find a unique and original gift idea in a record time for any occasion on  
-                        <u><a  className="a_black a_black:hover"
+                        <u><a  className="a_white a_white:hover"
                             href="https://www.uposhme.com/" target="_blank"> www.uposhme.com</a></u> (french version).</p>
                     </div>
                 </div>
