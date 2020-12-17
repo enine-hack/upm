@@ -19,11 +19,18 @@ class Addfavbrand extends Component {
         axios.get(`${process.env.REACT_APP_APIURL || ""}/api/brandslist`)
         
           .then(responseFromApi => {
-            const listOfBrands = responseFromApi.data
+            const listOfBrands = responseFromApi.data;
+            console.log(Math.floor(Math.random()*listOfBrands.length)) //INDEX RANDOM
+            let listOfBrandsCopy = listOfBrands;
+            let popularlistOfBrands = listOfBrandsCopy.filter((e) => {return e.popularity > 2})
+            let random = popularlistOfBrands.sort(() => {return 0.5 - Math.random()}).slice(0, 5);
             this.setState({
               listOfBrands: listOfBrands,
-              mostAddedBrands : [...listOfBrands].splice(Math.floor(Math.random()*listOfBrands.length),5)
+              // mostAddedBrands : [...listOfBrands].splice(Math.floor(Math.random()*listOfBrands.length),5)
+              mostAddedBrands: random
             })
+            // console.log(listOfBrands)
+            console.log(this.state.mostAddedBrands)
             
           })
           .catch(err => console.log('Error while fetching brands', err))
@@ -40,15 +47,17 @@ class Addfavbrand extends Component {
 
       addfavbrand(brandid)
         .then(response => {
-          console.log('MA REPONSE',response)
+          console.log('MA REPONSE',response) //mon wallet
+          const brandIndexToRemove = [...this.state.mostAddedBrands].findIndex(brandid);
+          
           this.setState({
-            listOfAddedBrands: [...this.state.listOfAddedBrands, brandid],
-            mostAddedBrands: [...this.state.mostAddedBrands],
-            listOfBrands: [...this.state.listOfBrands]
-              });
-              console.log('LIST OF ADDED BRAND ======', this.state.listOfAddedBrands)
-              console.log('LIST OF MOST ADDED BRAND ======', this.state.mostAddedBrands)
-              console.log('LIST OF BRANDS ======', this.state.listOfAddedBrands)
+            // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid],
+            mostAddedBrands: [...this.state.mostAddedBrands].splice(brandIndexToRemove, 1),
+            // listOfBrands: [...this.state.listOfBrands]
+            });
+              // console.log('LIST OF ADDED BRAND ======', this.state.listOfAddedBrands)
+              // console.log('LIST OF MOST ADDED BRAND ======', this.state.mostAddedBrands)
+              // console.log('LIST OF BRANDS ======', this.state.listOfAddedBrands)
               // this.props.addnewSelectedFavbrands(this.state.listOfAddedBrands);
               
              
@@ -115,7 +124,7 @@ class Addfavbrand extends Component {
                                     
                     <div className="brandslist_public__most_added_row"
                           key={brand._id}>
-                          { brand.popularity >= 2 ? (
+                          {/* { brand.popularity >= 2 ? ( */}
                           
                             <>  
                             <div className="brandslist_public_most_added_col1">
@@ -141,10 +150,10 @@ class Addfavbrand extends Component {
                              
                             </>
 
-                            ) : (
+                            {/* ) : (
 
                             <></>
-                        )}
+                        )} */}
 
                     </div>
                     
