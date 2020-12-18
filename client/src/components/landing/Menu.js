@@ -12,7 +12,7 @@ const Menu = () => {
             <div className="landing_menu__l1">
                 <div className="landing_menu__l1_bloc">
                     <div>
-                    <img    className="landing_menu__l1_bloc_img"
+                    <img    className="landing_menu__l1_bloc_img "
                             src ="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"/>
                     </div>
                     <div>

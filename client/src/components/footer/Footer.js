@@ -16,7 +16,7 @@ const Footer = (props) => {
                         </div>
                         <div>
                             <Link   className="a_black a_gold:hover"
-                                    to= "/">CONTACT</Link>
+                                    to= "/contact">CONTACT</Link>
                         </div>
                         <div>
                             <Link   className="a_black a_gold:hover"

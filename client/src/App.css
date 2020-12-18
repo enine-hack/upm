@@ -9,8 +9,9 @@ GREY
 FOR TITLES & SUB TITLES
   color: #7777777;
 FOR backgrounds
-    LIGHT : #ebebeb
+    LIGHT : #fafafa, #ebebeb
     MEDIUM : 
+BLACK : #1a1a1a 
 */
 
 .a_black {
@@ -403,6 +404,12 @@ FOR backgrounds
     height: 500px;
     filter: grayscale(100%);    
   }
+
+  /* .landing_menu__l1_bloc_img:hover {
+    width: 500px;
+    height: 500px;
+    filter: grayscale(0%);    
+  } */
 
   .landing_menu__l1_bloc_btn {
     width: 200px;
@@ -7145,4 +7152,245 @@ faq
   }
 
 
+}
+
+
+/*
+ ######   #######  ##    ## ########    ###     ######  ######## 
+##    ## ##     ## ###   ##    ##      ## ##   ##    ##    ##    
+##       ##     ## ####  ##    ##     ##   ##  ##          ##    
+##       ##     ## ## ## ##    ##    ##     ## ##          ##    
+##       ##     ## ##  ####    ##    ######### ##          ##    
+##    ## ##     ## ##   ###    ##    ##     ## ##    ##    ##    
+ ######   #######  ##    ##    ##    ##     ##  ######     ##    
+contact
+ */
+
+ @media only screen and (min-width: 1600px) {
+  .contact {
+    margin:0; /*annule marge par defaut*/
+    background : #fafafa;
+    height: 70vh;
+  }
+
+  .contact__l1 {
+    width: 60vw;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+
+  .contact__title {
+    font-size: 20px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .contact__btn {
+    display: block;
+    margin: 0 auto;
+
+    border:1px solid #ebebeb;
+    background-color: #1a1a1a;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 11px;
+  }
+}
+
+ @media only screen and (min-width: 1025px) and (max-width: 1600px){
+  .contact {
+    margin:0; /*annule marge par defaut*/
+    background : #fafafa;
+    height: 70vh;
+  }
+
+  .contact__l1 {
+    width: 60vw;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+
+  .contact__title {
+    font-size: 17px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .contact__btn {
+    display: block;
+    margin: 0 auto;
+
+    border:1px solid #ebebeb;
+    background-color: #1a1a1a;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 11px;
+  }
+}
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px){
+  .contact {
+    margin:0; /*annule marge par defaut*/
+    background : #fafafa;
+    height: 70vh;
+  }
+
+  .contact__l1 {
+    width: 60vw;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+
+  .contact__title {
+    font-size: 17px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .contact__btn {
+    display: block;
+    margin: 0 auto;
+
+    border:1px solid #ebebeb;
+    background-color: #1a1a1a;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 11px;
+  }
+}
+ 
+ @media only screen and (min-width: 480px) and (max-width: 768px){
+  .contact {
+    margin:0; /*annule marge par defaut*/
+    background : #fafafa;
+    height: 70vh;
+  }
+
+  .contact__l1 {
+    width: 60vw;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+
+  .contact__title {
+    font-size: 17px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .contact__btn {
+    display: block;
+    margin: 0 auto;
+
+    border:1px solid #ebebeb;
+    background-color: #1a1a1a;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 11px;
+  }
+}
+
+@media all and (max-device-width: 480px) {
+  .contact {
+    margin:0; /*annule marge par defaut*/
+    background : #fafafa;
+    height: 70vh;
+  }
+
+  .contact__l1 {
+    width: 90vw;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
+
+  .contact__title {
+    font-size: 15px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .contact__btn {
+    display: block;
+    margin: 0 auto;
+
+    border:1px solid #ebebeb;
+    background-color: #1a1a1a;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 10px;
+  }
 }
