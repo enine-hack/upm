@@ -21,6 +21,7 @@ import Prospectcontact from './components/business/Prospectcontact';
 import {loggedin} from './components/auth/auth-service';
 import Cover from './components/landing/Cover';
 import Concept from './components/upm/Concept';
+import Faq from './components/upm/faq';
 
 class App extends Component {
   state = { loggedInUser: null }
@@ -99,6 +100,7 @@ class App extends Component {
           <Route exact path='/partners' component={Prospectcontact}/>
           
           <Route exact path='/concept' component={Concept}/>
+          <Route exact path='/faq' component={Faq}/>
           </Switch>
         
         <Route exact path="/" component={Menu}/>

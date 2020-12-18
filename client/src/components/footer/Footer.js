@@ -11,31 +11,33 @@ const Footer = (props) => {
                 <div className="footer__l2">
                     <div className="footer__l2_bloc">
                         <div>
-                            <Link   className="a_black a_black:hover"
-                                    to= "/">FAQ</Link>
+                            <Link   className="a_black a_gold:hover"
+                                    to= "/faq">FAQ</Link>
                         </div>
                         <div>
-                            <Link   className="a_black a_black:hover"
+                            <Link   className="a_black a_gold:hover"
                                     to= "/">CONTACT</Link>
                         </div>
                         <div>
-                            <Link   className="a_black a_black:hover"
+                            <Link   className="a_black a_gold:hover"
                                     to= "/">LEGAL TERMS</Link>
                         </div>
                         <div>
-                            <Link   className="a_black a_black:hover"
+                            <Link   className="a_black a_gold:hover"
                                     to= "/">PRIVACY POLICY</Link>
                         </div>
                     </div>
+
+                    
+                <div className="footer__uposhme">
+                    UPOSH | ME
+                </div>    
 
                     {/* className="footer__l3" */}
                     <Newsletter />
 
                 </div>
 
-                <div className="footer__uposhme">
-                    <p>UPOSH | ME</p>
-                </div>    
                     
             
                     

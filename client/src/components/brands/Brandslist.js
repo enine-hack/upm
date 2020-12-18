@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Searchbrand from '../favoritebrands/Searchbrand';
+// import Searchbrand from '../favoritebrands/Searchbrand';
 
 class Brandslist extends Component {
 
@@ -59,6 +59,60 @@ class Brandslist extends Component {
                     </p>
                 </div>
 
+                <div className="brandslist__all_letters">
+                <a  className=" brandslist__letter a_black a_black:hover"
+                    href="##">#</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#a">A</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#b">B</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#c">C</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#d">D</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#e">E</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#f">F</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#g">G</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#h">H</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#i">I</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#j">J</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#k">K</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#l">L</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#m">M</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#n">N</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#o">O</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#p">P</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#r">R</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#s">S</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#t">T</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#u">U</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#v">V</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#w">W</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#x">X</a>
+                <a  className="brandslist__letter a_black a_black:hover"
+                            href="#y">Y</a>
+                <a  className=" brandslist__letter a_black a_black:hover"
+                            href="#z">Z</a>
+                </div>
                 {/* <Searchbrand search={this.handlerSearchChange}
                              query={this.state.query}/>
 
@@ -124,11 +178,19 @@ class Brandslist extends Component {
                 )}
                 </div> */}
                 
+                
+                    <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* A */}
                 <div className="brandslist_public__most_added">
                 
                     <div>
-                      <p className="brandslist_public__most_added_row_title">
+                      <p  id="a"
+                          className="brandslist_public__most_added_row_title">
                         A
                       </p>
                     </div>
@@ -172,11 +234,18 @@ class Brandslist extends Component {
                 </div>
               </div>
 
+              <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* B */}
                 <div className="brandslist_public__most_added">
                 
                     <div>
-                      <p className="brandslist_public__most_added_row_title">
+                      <p  id="b"
+                          className="brandslist_public__most_added_row_title">
                         B
                       </p>
                     </div>
@@ -219,11 +288,18 @@ class Brandslist extends Component {
                 </div>
               </div>
 
+              <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* C */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="c"
+                      className="brandslist_public__most_added_row_title">
                     C
                   </p>
                 </div>
@@ -266,11 +342,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* D */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="d"
+                      className="brandslist_public__most_added_row_title">
                     D
                   </p>
                 </div>
@@ -313,11 +396,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* E */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="e"
+                      className="brandslist_public__most_added_row_title">
                     E
                   </p>
                 </div>
@@ -360,11 +450,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* F */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="f"
+                      className="brandslist_public__most_added_row_title">
                     F
                   </p>
                 </div>
@@ -407,11 +504,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* G */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="g"
+                      className="brandslist_public__most_added_row_title">
                     G
                   </p>
                 </div>
@@ -454,11 +558,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* H */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="h"
+                      className="brandslist_public__most_added_row_title">
                     H
                   </p>
                 </div>
@@ -501,11 +612,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* I */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="i"
+                      className="brandslist_public__most_added_row_title">
                     I
                   </p>
                 </div>
@@ -548,11 +666,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* J */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="j"
+                      className="brandslist_public__most_added_row_title">
                     J
                   </p>
                 </div>
@@ -595,11 +720,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* K */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="k"
+                      className="brandslist_public__most_added_row_title">
                     K
                   </p>
                 </div>
@@ -641,12 +773,18 @@ class Brandslist extends Component {
             )}
             </div>
           </div>
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
 
                 {/* L */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="l"
+                      className="brandslist_public__most_added_row_title">
                     L
                   </p>
                 </div>
@@ -689,11 +827,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* M */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="m"
+                      className="brandslist_public__most_added_row_title">
                     M
                   </p>
                 </div>
@@ -735,12 +880,18 @@ class Brandslist extends Component {
             )}
             </div>
           </div>
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
 
                 {/* N */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="n"
+                      className="brandslist_public__most_added_row_title">
                     N
                   </p>
                 </div>
@@ -783,11 +934,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* O */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="o"
+                      className="brandslist_public__most_added_row_title">
                     O
                   </p>
                 </div>
@@ -830,11 +988,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* P */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="p"
+                      className="brandslist_public__most_added_row_title">
                     P
                   </p>
                 </div>
@@ -877,11 +1042,17 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
                 {/* R */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="r"
+                      className="brandslist_public__most_added_row_title">
                     R
                   </p>
                 </div>
@@ -924,11 +1095,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* S */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p id="s"
+                      className="brandslist_public__most_added_row_title">
                     S
                   </p>
                 </div>
@@ -971,11 +1149,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* T */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="t"
+                      className="brandslist_public__most_added_row_title">
                     T
                   </p>
                 </div>
@@ -1018,11 +1203,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* U */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="u"
+                      className="brandslist_public__most_added_row_title">
                     U
                   </p>
                 </div>
@@ -1065,11 +1257,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* V */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="v"
+                      className="brandslist_public__most_added_row_title">
                     V
                   </p>
                 </div>
@@ -1112,11 +1311,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* W */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="w"
+                      className="brandslist_public__most_added_row_title">
                     W
                   </p>
                 </div>
@@ -1159,11 +1365,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* X */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p id="x"
+                      className="brandslist_public__most_added_row_title">
                     X
                   </p>
                 </div>
@@ -1206,11 +1419,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* Y */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="y"
+                      className="brandslist_public__most_added_row_title">
                     Y
                   </p>
                 </div>
@@ -1253,11 +1473,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* Z */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="z"
+                      className="brandslist_public__most_added_row_title">
                     Z
                   </p>
                 </div>
@@ -1300,11 +1527,18 @@ class Brandslist extends Component {
             </div>
           </div>
 
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn">
+                        ↑
+                        </p></a>
+
                 {/* # */}
                 <div className="brandslist_public__most_added">
                 
                 <div>
-                  <p className="brandslist_public__most_added_row_title">
+                  <p  id="#"
+                      className="brandslist_public__most_added_row_title">
                     #
                   </p>
                 </div>
@@ -1344,8 +1578,17 @@ class Brandslist extends Component {
                 </div>
               )}
             )}
+            
             </div>
+
+
           </div>
+
+          <a  className="a_black a_black:hover"
+                        href="#">
+                        <p className="brandslist_topOfPage__btn_end">
+                        Top of Page
+                        </p></a>
 
 
 
