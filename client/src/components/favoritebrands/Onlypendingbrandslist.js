@@ -27,13 +27,16 @@ class Onlypendingbrandslist extends Component {
     handleClick = (brand) => {
     console.log(brand)// "brandname"
     console.log(typeof(brand)) //string
+
+    const listOfPendingbrands = this.state.listOfPendingbrands;
+    const listOfPendingbrandsUpdate = listOfPendingbrands.filter(el => el !== brand)
     
         deleteonependingbrand(brand)
         .then(response => {
             console.log('MA REPONSE',response)
             const listOfPendingBrandsCopy = [...this.state.listOfPendingbrands]
             this.setState({
-                listOfPendingbrands: listOfPendingBrandsCopy.pull(brand)
+                listOfPendingbrands : listOfPendingbrandsUpdate,
                 });
             this.props.updateUser(response);
             
