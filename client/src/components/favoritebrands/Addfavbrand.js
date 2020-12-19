@@ -52,42 +52,34 @@ class Addfavbrand extends Component {
     handleClick = (brandid) => {
       // console.log(brandid)// "didsmfoij99384703809"
       // console.log(typeof(brandid)) //string
-      // console.log(this.state.mostAddedBrands)
+      console.log('coucou', this.state.mostAddedBrands)
+      const mostAddedBrands = this.state.mostAddedBrands
+      const mostAddedBrandsUpdated = mostAddedBrands.filter(el => el._id !== brandid)
 
+      const listOfBrands = this.state.listOfBrands
+      const listOfBrandsUpdated = listOfBrands.filter(el => el._id !== brandid)
 
-
-
-
-      // const listOfBrandsCopy = [...this.state.listOfBrands]
-      // console.log(listOfBrandsCopy)
-
-      // const brandIndexToRemoveForlistOfBrands = listOfBrandsCopy.findIndex(e => e.id === brandid);
-      // console.log('indextoremove:', brandIndexToRemoveForlistOfBrands)
 
       addfavbrand(brandid)
         .then(response => {
           console.log('MA REPONSE',response) //mon wallet
-
+          
           
           this.setState({
-            // listOfAddedBrands: [...this.state.listOfAddedBrands, brandid],
-            
-            brandId: brandid,
-            // mostAddedBrands: [...this.state.mostAddedBrands].splice(brandIndexToRemoveForMostAdded, 1),
-            // listOfBrands: [...this.state.listOfBrands].splice(brandIndexToRemoveForlistOfBrands,1)
+
+            mostAddedBrands : mostAddedBrandsUpdated,
+            listOfBrands : listOfBrandsUpdated
+
             });
            
-              // console.log('LIST OF ADDED BRAND ======', this.state.listOfAddedBrands)
-              // console.log('LIST OF MOST ADDED BRAND ======', this.state.mostAddedBrands)
-              // console.log('LIST OF BRANDS ======', this.state.listOfAddedBrands)
-              // this.props.addnewSelectedFavbrands(this.state.listOfAddedBrands);
+
               
              
         })
         .catch(err => console.log('Error while fetching fav brands', err))
    
        {alert(`New brand added!`)}
-      //  this.props.history.push('/favoritebrands')
+     
     }
 
     handlerSearchChange = (event) => {
